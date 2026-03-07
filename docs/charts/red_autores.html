@@ -54,6 +54,7 @@
   .tt-citas { font-size:12px; color:#e6edf3; }
   .tt-tag   { display:inline-block; border-radius:4px; padding:1px 6px;
               font-size:10px; font-weight:600; margin-top:4px; }
+  #tt-papers { max-width:220px; }
 
   #info {
     position:absolute; bottom:20px; right:20px; z-index:10;
@@ -99,6 +100,7 @@
   <div class="tt-corr" id="tt-corr"></div>
   <div class="tt-citas" id="tt-citas"></div>
   <div id="tt-tag" class="tt-tag"></div>
+  <div id="tt-papers"></div>
 </div>
 
 <div id="info">Scroll para zoom · Arrastrar para mover · Click nodo para resaltar vecinos</div>
@@ -183,7 +185,7 @@ fetch("../data/autores_red.json").then(r => r.json()).then(data => {
   const LABEL = {
     new_keynesian:"New Keynesian / DSGE", econometria:"Econometría",
     monetarista:"Monetarista", nueva_clasica:"Nueva Clásica",
-    rbc:"Real Business Cycle", keynesiano_orig:"Keynes original",
+    rbc:"Real Business Cycle",
     heterodoxo:"Heterodoxo", estructuralista:"Estructuralista latinoamericano",
     no_clasificado:"No clasificado"
   };
@@ -197,6 +199,21 @@ fetch("../data/autores_red.json").then(r => r.json()).then(data => {
                        d.corriente === "no_clasificado" ? "" : "MAINSTREAM";
     tag.style.background = d.corriente === "heterodoxo" ? "#E17055" :
                            d.corriente === "no_clasificado" ? "transparent" : "#1f6feb";
+    // Papers que lo citan
+    const papersEl = document.getElementById("tt-papers");
+    papersEl.innerHTML = "";
+    if (d.papers && d.papers.length) {
+      papersEl.innerHTML = `<div style="font-size:10px;color:#7d8590;margin-top:6px;margin-bottom:3px">Papers Banxico que lo citan:</div>`;
+      d.papers.slice(0,4).forEach(p => {
+        const a = document.createElement("a");
+        a.href = p.url || "#"; a.target = "_blank";
+        a.textContent = `${p.anio ? p.anio+'·' : ''}${p.titulo.slice(0,45)}…`;
+        a.style.cssText = "display:block;font-size:10px;color:#4ECDC4;text-decoration:none;margin-top:2px;opacity:.85;";
+        a.onmouseover = () => a.style.opacity = 1;
+        a.onmouseout  = () => a.style.opacity = .85;
+        papersEl.appendChild(a);
+      });
+    }
     tag.style.color = "#fff";
     tooltip.style.opacity = 1;
     moveTooltip(e);

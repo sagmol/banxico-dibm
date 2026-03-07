@@ -1,0 +1,397 @@
+{
+  "por_periodo": [
+    {
+      "id": "early_IT",
+      "label": "IT consolidado",
+      "anio_ini": 2001,
+      "anio_fin": 2008,
+      "n_papers": 12,
+      "n_refs": 197,
+      "n_clasificadas": 153,
+      "pct_ortodoxo": 100.0,
+      "pct_heterodoxo": 0.0,
+      "top_journals": [
+        {
+          "j": "Econometrica",
+          "n": 13
+        },
+        {
+          "j": "Journal of International Economics",
+          "n": 10
+        },
+        {
+          "j": "American Economic Review",
+          "n": 9
+        },
+        {
+          "j": "Federal Reserve",
+          "n": 9
+        },
+        {
+          "j": "Journal of Econometrics",
+          "n": 8
+        }
+      ],
+      "top_autores": [
+        {
+          "a": "Bernanke",
+          "n": 11
+        },
+        {
+          "a": "Bai",
+          "n": 7
+        },
+        {
+          "a": "Ball",
+          "n": 5
+        },
+        {
+          "a": "Andrews",
+          "n": 4
+        },
+        {
+          "a": "Capistr",
+          "n": 3
+        },
+        {
+          "a": "Galí",
+          "n": 3
+        }
+      ],
+      "cat_dist": {
+        "ortodoxo": 121,
+        "institucional": 32
+      },
+      "subcat_dist": {
+        "tier1_generalist": 35,
+        "econometria": 23,
+        "libro_mainstream": 18,
+        "macro_monetario": 17,
+        "otros_mainstream": 17,
+        "wp_bc_avanzado": 14
+      }
+    },
+    {
+      "id": "post_crisis",
+      "label": "Post-crisis 2008",
+      "anio_ini": 2009,
+      "anio_fin": 2015,
+      "n_papers": 21,
+      "n_refs": 447,
+      "n_clasificadas": 300,
+      "pct_ortodoxo": 99.7,
+      "pct_heterodoxo": 0.3,
+      "top_journals": [
+        {
+          "j": "Banco de México WP",
+          "n": 23
+        },
+        {
+          "j": "Econometrica",
+          "n": 16
+        },
+        {
+          "j": "Journal of Monetary Economics",
+          "n": 16
+        },
+        {
+          "j": "American Economic Review",
+          "n": 16
+        },
+        {
+          "j": "ECB Working Paper",
+          "n": 14
+        }
+      ],
+      "top_autores": [
+        {
+          "a": "Capistrán",
+          "n": 10
+        },
+        {
+          "a": "Chiquiar",
+          "n": 8
+        },
+        {
+          "a": "Christiano",
+          "n": 7
+        },
+        {
+          "a": "Noriega",
+          "n": 5
+        },
+        {
+          "a": "Bernanke",
+          "n": 5
+        },
+        {
+          "a": "Benavides",
+          "n": 5
+        }
+      ],
+      "cat_dist": {
+        "ortodoxo": 212,
+        "institucional": 87,
+        "heterodoxo": 1
+      },
+      "subcat_dist": {
+        "tier1_generalist": 52,
+        "wp_bc_avanzado": 40,
+        "macro_monetario": 38,
+        "otros_mainstream": 38,
+        "econometria": 34,
+        "libro_mainstream": 23
+      }
+    },
+    {
+      "id": "reciente",
+      "label": "Reciente",
+      "anio_ini": 2016,
+      "anio_fin": 2025,
+      "n_papers": 52,
+      "n_refs": 1267,
+      "n_clasificadas": 895,
+      "pct_ortodoxo": 99.8,
+      "pct_heterodoxo": 0.2,
+      "top_journals": [
+        {
+          "j": "American Economic Review",
+          "n": 90
+        },
+        {
+          "j": "Journal of Monetary Economics",
+          "n": 61
+        },
+        {
+          "j": "Banco de México WP",
+          "n": 50
+        },
+        {
+          "j": "Quarterly Journal of Economics",
+          "n": 41
+        },
+        {
+          "j": "Journal of Political Economy",
+          "n": 41
+        }
+      ],
+      "top_autores": [
+        {
+          "a": "Bernanke",
+          "n": 21
+        },
+        {
+          "a": "Blanchard",
+          "n": 13
+        },
+        {
+          "a": "Cavallo",
+          "n": 10
+        },
+        {
+          "a": "Gertler",
+          "n": 8
+        },
+        {
+          "a": "Chiquiar",
+          "n": 8
+        },
+        {
+          "a": "Hamilton",
+          "n": 8
+        }
+      ],
+      "cat_dist": {
+        "ortodoxo": 707,
+        "institucional": 186,
+        "heterodoxo": 2
+      },
+      "subcat_dist": {
+        "tier1_generalist": 222,
+        "macro_monetario": 151,
+        "otros_mainstream": 128,
+        "econometria": 70,
+        "wp_multilateral": 65,
+        "wp_bc_avanzado": 62
+      }
+    }
+  ],
+  "por_anio": [
+    {
+      "anio": 2004,
+      "n_papers": 1,
+      "n_refs": 65,
+      "n_cls": 48,
+      "pct_ort": 100.0,
+      "pct_het": 0.0
+    },
+    {
+      "anio": 2005,
+      "n_papers": 1,
+      "n_refs": 12,
+      "n_cls": 12,
+      "pct_ort": 100.0,
+      "pct_het": 0.0
+    },
+    {
+      "anio": 2006,
+      "n_papers": 6,
+      "n_refs": 62,
+      "n_cls": 50,
+      "pct_ort": 100.0,
+      "pct_het": 0.0
+    },
+    {
+      "anio": 2007,
+      "n_papers": 2,
+      "n_refs": 31,
+      "n_cls": 25,
+      "pct_ort": 100.0,
+      "pct_het": 0.0
+    },
+    {
+      "anio": 2008,
+      "n_papers": 2,
+      "n_refs": 27,
+      "n_cls": 18,
+      "pct_ort": 100.0,
+      "pct_het": 0.0
+    },
+    {
+      "anio": 2009,
+      "n_papers": 4,
+      "n_refs": 68,
+      "n_cls": 44,
+      "pct_ort": 100.0,
+      "pct_het": 0.0
+    },
+    {
+      "anio": 2010,
+      "n_papers": 6,
+      "n_refs": 163,
+      "n_cls": 113,
+      "pct_ort": 100.0,
+      "pct_het": 0.0
+    },
+    {
+      "anio": 2011,
+      "n_papers": 2,
+      "n_refs": 33,
+      "n_cls": 17,
+      "pct_ort": 100.0,
+      "pct_het": 0.0
+    },
+    {
+      "anio": 2012,
+      "n_papers": 2,
+      "n_refs": 62,
+      "n_cls": 43,
+      "pct_ort": 100.0,
+      "pct_het": 0.0
+    },
+    {
+      "anio": 2013,
+      "n_papers": 2,
+      "n_refs": 41,
+      "n_cls": 30,
+      "pct_ort": 100.0,
+      "pct_het": 0.0
+    },
+    {
+      "anio": 2014,
+      "n_papers": 3,
+      "n_refs": 40,
+      "n_cls": 25,
+      "pct_ort": 96.0,
+      "pct_het": 4.0
+    },
+    {
+      "anio": 2015,
+      "n_papers": 2,
+      "n_refs": 40,
+      "n_cls": 28,
+      "pct_ort": 100.0,
+      "pct_het": 0.0
+    },
+    {
+      "anio": 2016,
+      "n_papers": 3,
+      "n_refs": 53,
+      "n_cls": 38,
+      "pct_ort": 100.0,
+      "pct_het": 0.0
+    },
+    {
+      "anio": 2017,
+      "n_papers": 9,
+      "n_refs": 209,
+      "n_cls": 151,
+      "pct_ort": 100.0,
+      "pct_het": 0.0
+    },
+    {
+      "anio": 2018,
+      "n_papers": 6,
+      "n_refs": 131,
+      "n_cls": 91,
+      "pct_ort": 100.0,
+      "pct_het": 0.0
+    },
+    {
+      "anio": 2019,
+      "n_papers": 3,
+      "n_refs": 82,
+      "n_cls": 51,
+      "pct_ort": 100.0,
+      "pct_het": 0.0
+    },
+    {
+      "anio": 2020,
+      "n_papers": 5,
+      "n_refs": 86,
+      "n_cls": 54,
+      "pct_ort": 100.0,
+      "pct_het": 0.0
+    },
+    {
+      "anio": 2021,
+      "n_papers": 6,
+      "n_refs": 89,
+      "n_cls": 67,
+      "pct_ort": 100.0,
+      "pct_het": 0.0
+    },
+    {
+      "anio": 2022,
+      "n_papers": 2,
+      "n_refs": 66,
+      "n_cls": 43,
+      "pct_ort": 100.0,
+      "pct_het": 0.0
+    },
+    {
+      "anio": 2023,
+      "n_papers": 8,
+      "n_refs": 144,
+      "n_cls": 108,
+      "pct_ort": 100.0,
+      "pct_het": 0.0
+    },
+    {
+      "anio": 2024,
+      "n_papers": 6,
+      "n_refs": 205,
+      "n_cls": 146,
+      "pct_ort": 100.0,
+      "pct_het": 0.0
+    },
+    {
+      "anio": 2025,
+      "n_papers": 4,
+      "n_refs": 202,
+      "n_cls": 146,
+      "pct_ort": 98.6,
+      "pct_het": 1.4
+    }
+  ]
+}

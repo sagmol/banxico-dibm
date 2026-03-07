@@ -1,0 +1,30 @@
+{
+  "autocitacion": {
+    "n_autocitas": 79,
+    "pct_global": 4.13,
+    "nota": "Aumenta de 16.4% (IT consolidado) a 22% (reciente) — el corpus se vuelve más autorreferencial"
+  },
+  "paradoja_calvo": {
+    "n_citas": 14,
+    "papers_que_lo_citan": 14,
+    "contexto": "Siempre citado como Calvo (1983) Staggered prices — el modelo técnico, no al economista como voz latinoamericana",
+    "otros_latam": {
+      "Mendoza": 9,
+      "Rebelo": 11,
+      "Gali": 15,
+      "Uribe": 7,
+      "Stiglitz": 3
+    }
+  },
+  "debates_ausentes": {
+    "MMT": 0,
+    "secular_stagnation": 0,
+    "economia_feminista": 0,
+    "financializacion": 0,
+    "decrecimiento": 0,
+    "post_keynesiano": 1,
+    "heterodoxia": 1,
+    "desigualdad_piketty": 1,
+    "clima": 1
+  }
+}

@@ -1,0 +1,501 @@
+{
+  "total_papers_con_abstract": 562,
+  "top_terminos_ortodoxos": [
+    {
+      "term": "inflation expectations",
+      "freq": 15
+    },
+    {
+      "term": "inflation targeting",
+      "freq": 12
+    },
+    {
+      "term": "general equilibrium",
+      "freq": 11
+    },
+    {
+      "term": "dsge",
+      "freq": 8
+    },
+    {
+      "term": "new keynesian",
+      "freq": 8
+    },
+    {
+      "term": "bayesian",
+      "freq": 8
+    },
+    {
+      "term": "output gap",
+      "freq": 5
+    },
+    {
+      "term": "dynamic stochastic",
+      "freq": 5
+    },
+    {
+      "term": "phillips curve",
+      "freq": 3
+    },
+    {
+      "term": "optimal monetary policy",
+      "freq": 2
+    },
+    {
+      "term": "forward guidance",
+      "freq": 2
+    },
+    {
+      "term": "central bank independence",
+      "freq": 2
+    },
+    {
+      "term": "impulse response",
+      "freq": 2
+    },
+    {
+      "term": "microfoundations",
+      "freq": 1
+    },
+    {
+      "term": "nominal rigidities",
+      "freq": 1
+    },
+    {
+      "term": "rational expectations",
+      "freq": 1
+    },
+    {
+      "term": "nairu",
+      "freq": 1
+    },
+    {
+      "term": "monetary transmission",
+      "freq": 1
+    },
+    {
+      "term": "credibility",
+      "freq": 1
+    },
+    {
+      "term": "taylor rule",
+      "freq": 1
+    }
+  ],
+  "top_terminos_heterodoxos": [
+    {
+      "term": "distribution",
+      "freq": 41
+    },
+    {
+      "term": "power",
+      "freq": 16
+    },
+    {
+      "term": "financial instability",
+      "freq": 1
+    },
+    {
+      "term": "cost-push",
+      "freq": 1
+    }
+  ],
+  "por_periodo": [
+    {
+      "periodo": "pre_IT",
+      "n_papers": 114,
+      "prom_ort": 0.01,
+      "prom_het": 0.0,
+      "pct_con_vocab_ort": 0.9,
+      "top_terms": [
+        {
+          "term": "bayesian",
+          "freq": 1
+        }
+      ]
+    },
+    {
+      "periodo": "early_IT",
+      "n_papers": 82,
+      "prom_ort": 0.21,
+      "prom_het": 0.1,
+      "pct_con_vocab_ort": 15.9,
+      "top_terms": [
+        {
+          "term": "inflation expectations",
+          "freq": 5
+        },
+        {
+          "term": "inflation targeting",
+          "freq": 4
+        },
+        {
+          "term": "general equilibrium",
+          "freq": 2
+        },
+        {
+          "term": "dynamic stochastic",
+          "freq": 2
+        },
+        {
+          "term": "new keynesian",
+          "freq": 1
+        },
+        {
+          "term": "phillips curve",
+          "freq": 1
+        },
+        {
+          "term": "loss function",
+          "freq": 1
+        },
+        {
+          "term": "output gap",
+          "freq": 1
+        }
+      ]
+    },
+    {
+      "periodo": "post_crisis",
+      "n_papers": 150,
+      "prom_ort": 0.17,
+      "prom_het": 0.15,
+      "pct_con_vocab_ort": 15.3,
+      "top_terms": [
+        {
+          "term": "general equilibrium",
+          "freq": 5
+        },
+        {
+          "term": "dsge",
+          "freq": 3
+        },
+        {
+          "term": "inflation expectations",
+          "freq": 3
+        },
+        {
+          "term": "bayesian",
+          "freq": 3
+        },
+        {
+          "term": "inflation targeting",
+          "freq": 3
+        },
+        {
+          "term": "monetary transmission",
+          "freq": 1
+        },
+        {
+          "term": "credibility",
+          "freq": 1
+        },
+        {
+          "term": "dynamic stochastic",
+          "freq": 1
+        }
+      ]
+    },
+    {
+      "periodo": "reciente",
+      "n_papers": 216,
+      "prom_ort": 0.22,
+      "prom_het": 0.13,
+      "pct_con_vocab_ort": 16.7,
+      "top_terms": [
+        {
+          "term": "inflation expectations",
+          "freq": 7
+        },
+        {
+          "term": "new keynesian",
+          "freq": 6
+        },
+        {
+          "term": "dsge",
+          "freq": 5
+        },
+        {
+          "term": "inflation targeting",
+          "freq": 5
+        },
+        {
+          "term": "general equilibrium",
+          "freq": 4
+        },
+        {
+          "term": "bayesian",
+          "freq": 4
+        },
+        {
+          "term": "output gap",
+          "freq": 3
+        },
+        {
+          "term": "phillips curve",
+          "freq": 2
+        }
+      ]
+    }
+  ],
+  "por_anio": [
+    {
+      "anio": 1978,
+      "n_papers": 4,
+      "prom_ort": 0.25,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 1979,
+      "n_papers": 10,
+      "prom_ort": 0.0,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 1980,
+      "n_papers": 16,
+      "prom_ort": 0.0,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 1981,
+      "n_papers": 16,
+      "prom_ort": 0.0,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 1982,
+      "n_papers": 8,
+      "prom_ort": 0.0,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 1983,
+      "n_papers": 3,
+      "prom_ort": 0.0,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 1984,
+      "n_papers": 4,
+      "prom_ort": 0.0,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 1985,
+      "n_papers": 1,
+      "prom_ort": 0.0,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 1987,
+      "n_papers": 4,
+      "prom_ort": 0.0,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 1988,
+      "n_papers": 1,
+      "prom_ort": 0.0,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 1990,
+      "n_papers": 1,
+      "prom_ort": 0.0,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 1991,
+      "n_papers": 1,
+      "prom_ort": 0.0,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 1995,
+      "n_papers": 9,
+      "prom_ort": 0.0,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 1996,
+      "n_papers": 5,
+      "prom_ort": 0.0,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 1997,
+      "n_papers": 9,
+      "prom_ort": 0.0,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 1998,
+      "n_papers": 7,
+      "prom_ort": 0.0,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 1999,
+      "n_papers": 7,
+      "prom_ort": 0.0,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 2000,
+      "n_papers": 8,
+      "prom_ort": 0.0,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 2001,
+      "n_papers": 8,
+      "prom_ort": 0.0,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 2002,
+      "n_papers": 12,
+      "prom_ort": 0.0,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 2003,
+      "n_papers": 5,
+      "prom_ort": 0.0,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 2004,
+      "n_papers": 7,
+      "prom_ort": 0.0,
+      "prom_het": 0.14
+    },
+    {
+      "anio": 2005,
+      "n_papers": 5,
+      "prom_ort": 0.2,
+      "prom_het": 0.0
+    },
+    {
+      "anio": 2006,
+      "n_papers": 15,
+      "prom_ort": 0.47,
+      "prom_het": 0.2
+    },
+    {
+      "anio": 2007,
+      "n_papers": 15,
+      "prom_ort": 0.33,
+      "prom_het": 0.13
+    },
+    {
+      "anio": 2008,
+      "n_papers": 15,
+      "prom_ort": 0.27,
+      "prom_het": 0.13
+    },
+    {
+      "anio": 2009,
+      "n_papers": 18,
+      "prom_ort": 0.17,
+      "prom_het": 0.22
+    },
+    {
+      "anio": 2010,
+      "n_papers": 20,
+      "prom_ort": 0.05,
+      "prom_het": 0.2
+    },
+    {
+      "anio": 2011,
+      "n_papers": 18,
+      "prom_ort": 0.33,
+      "prom_het": 0.28
+    },
+    {
+      "anio": 2012,
+      "n_papers": 18,
+      "prom_ort": 0.17,
+      "prom_het": 0.17
+    },
+    {
+      "anio": 2013,
+      "n_papers": 24,
+      "prom_ort": 0.17,
+      "prom_het": 0.12
+    },
+    {
+      "anio": 2014,
+      "n_papers": 27,
+      "prom_ort": 0.22,
+      "prom_het": 0.07
+    },
+    {
+      "anio": 2015,
+      "n_papers": 25,
+      "prom_ort": 0.12,
+      "prom_het": 0.08
+    },
+    {
+      "anio": 2016,
+      "n_papers": 23,
+      "prom_ort": 0.17,
+      "prom_het": 0.17
+    },
+    {
+      "anio": 2017,
+      "n_papers": 22,
+      "prom_ort": 0.32,
+      "prom_het": 0.09
+    },
+    {
+      "anio": 2018,
+      "n_papers": 27,
+      "prom_ort": 0.15,
+      "prom_het": 0.11
+    },
+    {
+      "anio": 2019,
+      "n_papers": 21,
+      "prom_ort": 0.19,
+      "prom_het": 0.19
+    },
+    {
+      "anio": 2020,
+      "n_papers": 20,
+      "prom_ort": 0.4,
+      "prom_het": 0.1
+    },
+    {
+      "anio": 2021,
+      "n_papers": 26,
+      "prom_ort": 0.15,
+      "prom_het": 0.12
+    },
+    {
+      "anio": 2022,
+      "n_papers": 20,
+      "prom_ort": 0.2,
+      "prom_het": 0.15
+    },
+    {
+      "anio": 2023,
+      "n_papers": 21,
+      "prom_ort": 0.29,
+      "prom_het": 0.24
+    },
+    {
+      "anio": 2024,
+      "n_papers": 20,
+      "prom_ort": 0.2,
+      "prom_het": 0.1
+    },
+    {
+      "anio": 2025,
+      "n_papers": 16,
+      "prom_ort": 0.19,
+      "prom_het": 0.0
+    }
+  ]
+}
