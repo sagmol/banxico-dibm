@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Corpus intelectual del Banco de México</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Sans+3:wght@300;400;600&family=Source+Code+Pro&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --azul-oscuro:  #023047;
+      --azul-medio:   #219ebc;
+      --azul-claro:   #8ecae6;
+      --amarillo:     #ffb703;
+      --naranja:      #fb8500;
+      --rojo:         #e63946;
+      --gris-bg:      #f8f9fa;
+      --gris-borde:   #dee2e6;
+      --texto:        #212529;
+      --texto-suave:  #6c757d;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: "Source Sans 3", sans-serif;
+      font-weight: 300;
+      color: var(--texto);
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    /* ── NAV ─────────────────────────────────────────────── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--azul-oscuro);
+      padding: 0 2rem;
+      display: flex; align-items: center; gap: 2rem;
+      height: 52px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    nav .brand {
+      font-family: "Playfair Display", serif;
+      font-size: 1rem; color: #fff; font-weight: 600;
+      white-space: nowrap;
+    }
+    nav a {
+      color: rgba(255,255,255,0.75); text-decoration: none;
+      font-size: 0.85rem; font-weight: 400;
+      transition: color .2s;
+      white-space: nowrap;
+    }
+    nav a:hover { color: var(--amarillo); }
+    nav .spacer { flex: 1; }
+    nav .gh-link {
+      display: flex; align-items: center; gap: .4rem;
+      background: rgba(255,255,255,0.1);
+      padding: .3rem .8rem; border-radius: 4px;
+      font-size: .8rem;
+    }
+
+    /* ── HERO ────────────────────────────────────────────── */
+    .hero {
+      background: linear-gradient(135deg, var(--azul-oscuro) 0%, #034e6e 100%);
+      color: #fff;
+      padding: 5rem 2rem 4rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      line-height: 1.2; margin-bottom: 1rem;
+    }
+    .hero h1 span { color: var(--amarillo); }
+    .hero p {
+      max-width: 680px; margin: 0 auto 2rem;
+      font-size: 1.05rem; opacity: .85; font-weight: 300;
+    }
+    .hero-stats {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    .stat-box {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 8px; padding: 1rem 1.5rem;
+      min-width: 130px;
+    }
+    .stat-box .num {
+      font-family: "Playfair Display", serif;
+      font-size: 2rem; font-weight: 600;
+      color: var(--amarillo); display: block;
+    }
+    .stat-box .lbl { font-size: .8rem; opacity: .8; }
+
+    /* ── LAYOUT ──────────────────────────────────────────── */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+
+    section { padding: 4rem 0; }
+    section:nth-child(even) { background: var(--gris-bg); }
+
+    .section-header { margin-bottom: 2.5rem; }
+    .section-tag {
+      display: inline-block;
+      font-size: .7rem; font-weight: 600; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--azul-medio);
+      margin-bottom: .4rem;
+    }
+    .section-header h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+      color: var(--azul-oscuro); margin-bottom: .5rem;
+    }
+    .section-header p { color: var(--texto-suave); max-width: 680px; }
+
+    /* ── CHART IFRAME ────────────────────────────────────── */
+    .chart-wrap {
+      border: 1px solid var(--gris-borde);
+      border-radius: 8px; overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      margin-bottom: 2rem;
+      background: #fff;
+    }
+    .chart-wrap iframe {
+      width: 100%; border: none; display: block;
+    }
+    .chart-caption {
+      padding: .6rem 1rem;
+      font-size: .78rem; color: var(--texto-suave);
+      border-top: 1px solid var(--gris-borde);
+      background: var(--gris-bg);
+    }
+
+    /* Charts en grid 2 columnas */
+    .chart-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* ── HALLAZGOS ────────────────────────────────────────── */
+    .findings {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.2rem; margin-bottom: 2.5rem;
+    }
+    .finding-card {
+      background: #fff; border-left: 4px solid var(--azul-medio);
+      border-radius: 0 6px 6px 0;
+      padding: 1rem 1.2rem;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    }
+    .finding-card.accent { border-left-color: var(--amarillo); }
+    .finding-card.red    { border-left-color: var(--rojo); }
+    .finding-card h4 {
+      font-family: "Playfair Display", serif;
+      font-size: 1rem; color: var(--azul-oscuro);
+      margin-bottom: .3rem;
+    }
+    .finding-card p { font-size: .88rem; color: var(--texto-suave); }
+
+    /* ── PERÍODOS ─────────────────────────────────────────── */
+    .periodos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem; margin-bottom: 2.5rem;
+    }
+    .periodo-card {
+      border-radius: 8px; padding: 1.2rem;
+      color: #fff;
+    }
+    .periodo-card.p1 { background: var(--azul-claro); color: var(--azul-oscuro); }
+    .periodo-card.p2 { background: var(--azul-medio); }
+    .periodo-card.p3 { background: var(--azul-oscuro); }
+    .periodo-card.p4 { background: var(--amarillo); color: var(--azul-oscuro); }
+    .periodo-card .años { font-size: .8rem; opacity: .8; margin-bottom: .2rem; }
+    .periodo-card h4 { font-family: "Playfair Display", serif; font-size: 1rem; margin-bottom: .3rem; }
+    .periodo-card .docs { font-size: 1.5rem; font-weight: 600; }
+
+    /* ── FOOTER ──────────────────────────────────────────── */
+    footer {
+      background: var(--azul-oscuro); color: rgba(255,255,255,0.6);
+      text-align: center; padding: 2rem;
+      font-size: .82rem;
+    }
+    footer a { color: var(--azul-claro); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<!-- ── NAV ───────────────────────────────────────────────── -->
+<nav>
+  <span class="brand">Corpus DIBM · Banxico</span>
+  <a href="#temporal">Temporal</a>
+  <a href="#temas">Temas JEL</a>
+  <a href="#red">Red de coautoría</a>
+  <div class="spacer"></div>
+  <a href="https://github.com/sagmol/banxico-dibm" class="gh-link" target="_blank">
+    GitHub ↗
+  </a>
+</nav>
+
+<!-- ── HERO ──────────────────────────────────────────────── -->
+<div class="hero">
+  <div class="container">
+    <h1>El <span>archivo intelectual</span><br>del Banco de México</h1>
+    <p>Análisis bibliométrico e histórico del corpus completo de documentos de
+    investigación del DIBM (1978–2025). Quiénes escriben, qué estudian,
+    con quiénes dialogan y cómo cambia todo eso en el tiempo.</p>
+
+    <div class="hero-stats">
+      <div class="stat-box"><span class="num">563</span><span class="lbl">documentos</span></div>
+      <div class="stat-box"><span class="num">447</span><span class="lbl">autores únicos</span></div>
+      <div class="stat-box"><span class="num">379</span><span class="lbl">códigos JEL</span></div>
+      <div class="stat-box"><span class="num">700</span><span class="lbl">vínculos de coautoría</span></div>
+      <div class="stat-box"><span class="num">47</span><span class="lbl">años de producción</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── SECCIÓN: TEMPORAL ─────────────────────────────────── -->
+<section id="temporal">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Análisis temporal</span>
+      <h2>La producción a lo largo del tiempo</h2>
+      <p>El corpus se distribuye de manera muy desigual: el 56% de los documentos
+      se concentra en el período posterior a la adopción formal del esquema de
+      metas de inflación (2002–2019).</p>
+    </div>
+
+    <div class="periodos">
+      <div class="periodo-card p1">
+        <div class="años">1978 – 1994</div>
+        <h4>Pre-estabilización</h4>
+        <div class="docs">70 docs</div>
+      </div>
+      <div class="periodo-card p2">
+        <div class="años">1995 – 2001</div>
+        <h4>Transición</h4>
+        <div class="docs">53 docs</div>
+      </div>
+      <div class="periodo-card p3">
+        <div class="años">2002 – 2019</div>
+        <h4>IT consolidado</h4>
+        <div class="docs">317 docs</div>
+      </div>
+      <div class="periodo-card p4">
+        <div class="años">2020 – 2025</div>
+        <h4>Reciente</h4>
+        <div class="docs">123 docs</div>
+      </div>
+    </div>
+
+    <div class="chart-wrap">
+      <iframe src="charts/temporal_produccion_anual.html" height="520"></iframe>
+      <div class="chart-caption">Producción anual con hitos históricos. Los puntos de quiebre de 2002 y 2008 son claramente visibles.</div>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-wrap">
+        <iframe src="charts/temporal_acumulado.html" height="480"></iframe>
+        <div class="chart-caption">Crecimiento acumulado del corpus.</div>
+      </div>
+      <div class="chart-wrap">
+        <iframe src="charts/temporal_autores_activos.html" height="480"></iframe>
+        <div class="chart-caption">Investigadores activos por año.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECCIÓN: TEMAS JEL ────────────────────────────────── -->
+<section id="temas">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Análisis temático</span>
+      <h2>¿Qué estudia el Banco de México?</h2>
+      <p>Los códigos JEL revelan la agenda de investigación. Los temas dominantes son
+      inflación, política monetaria y métodos cuantitativos de series de tiempo —
+      lo que es coherente con el mandato institucional de la institución.</p>
+    </div>
+
+    <div class="findings">
+      <div class="finding-card">
+        <h4>E31 — Inflación</h4>
+        <p>El código más frecuente del corpus: 48 asignaciones. La obsesión central del banco central.</p>
+      </div>
+      <div class="finding-card accent">
+        <h4>E52 — Política monetaria</h4>
+        <p>43 asignaciones. Junto con E31 forma el núcleo duro de la agenda de investigación.</p>
+      </div>
+      <div class="finding-card red">
+        <h4>C22 / C53 — Métodos</h4>
+        <p>Series de tiempo y predicción: el arsenal metodológico preferido para estudiar inflación y ciclos.</p>
+      </div>
+    </div>
+
+    <div class="chart-wrap">
+      <iframe src="charts/jel_top20.html" height="580"></iframe>
+      <div class="chart-caption">Top 20 códigos JEL por frecuencia total. El dominio del grupo E (macro) y C (métodos) es abrumador.</div>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-wrap">
+        <iframe src="charts/jel_grupos_barras.html" height="520"></iframe>
+        <div class="chart-caption">Frecuencia total por grupo JEL.</div>
+      </div>
+      <div class="chart-wrap">
+        <iframe src="charts/jel_heatmap_periodo.html" height="520"></iframe>
+        <div class="chart-caption">Heatmap: distribución temática por período histórico (% del total de asignaciones JEL en cada período).</div>
+      </div>
+    </div>
+
+    <div class="chart-wrap">
+      <iframe src="charts/jel_top_por_periodo.html" height="400"></iframe>
+      <div class="chart-caption">Top 5 códigos JEL en cada período histórico.</div>
+    </div>
+
+    <div class="chart-wrap">
+      <iframe src="charts/jel_e_detalle.html" height="540"></iframe>
+      <div class="chart-caption">Evolución interna del grupo E (macroeconomía). El quiebre de 2001 marca el momento en que E5 (política monetaria) consolida su dominio.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECCIÓN: RED DE COAUTORÍA ─────────────────────────── -->
+<section id="red">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Red de coautoría</span>
+      <h2>¿Quiénes escriben y con quiénes dialogan?</h2>
+      <p>La red conecta a 447 autores a través de 700 vínculos de coautoría.
+      El 58% pertenece a un único componente gigante: una comunidad académica
+      relativamente cohesionada. Se detectaron 10 clusters internos.</p>
+    </div>
+
+    <div class="findings">
+      <div class="finding-card">
+        <h4>Manuel Ramos Francia</h4>
+        <p>El autor más prolífico: 31 documentos. Figura central durante el período de consolidación del IT.</p>
+      </div>
+      <div class="finding-card accent">
+        <h4>Daniel Chiquiar</h4>
+        <p>21 documentos. Especialista en economía laboral y comercio exterior — un eje temático diferente al núcleo monetario.</p>
+      </div>
+      <div class="finding-card red">
+        <h4>58% en componente gigante</h4>
+        <p>261 de 447 autores están conectados entre sí. El resto son islas: investigadores que solo publicaron solos o con un solo colaborador.</p>
+      </div>
+    </div>
+
+    <div class="chart-wrap">
+      <iframe src="charts/red_coautoria.html" height="720"></iframe>
+      <div class="chart-caption">
+        Red interactiva de coautoría (autores con ≥ 2 publicaciones).
+        Cada color representa una comunidad detectada por el algoritmo Louvain.
+        El tamaño del nodo refleja la productividad. Pasa el cursor sobre un nodo para ver detalles.
+      </div>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-wrap">
+        <iframe src="charts/autores_top_productivos.html" height="720"></iframe>
+        <div class="chart-caption">Top 30 autores por número de documentos publicados.</div>
+      </div>
+      <div class="chart-wrap">
+        <iframe src="charts/autores_centralidad.html" height="720"></iframe>
+        <div class="chart-caption">Autores con mayor centralidad de intermediación: quiénes funcionan como puentes entre comunidades.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────────── -->
+<footer>
+  <p>
+    Datos: <a href="https://www.banxico.org.mx/DIBM/" target="_blank">DIBM · Banco de México</a>
+    &nbsp;·&nbsp;
+    Código: <a href="https://github.com/sagmol/banxico-dibm" target="_blank">github.com/sagmol/banxico-dibm</a>
+    &nbsp;·&nbsp;
+    Corpus: 563 documentos · 1978–2025
+  </p>
+</footer>
+
+</body>
+</html>

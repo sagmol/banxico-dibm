@@ -1,0 +1,448 @@
+autor_id,nombre,n_papers,grado,grado_ponderado,centralidad_grado,centralidad_entre,en_gcc
+814,Ramos Francia Manuel,31,17,49,0.0381,0.112536,True
+621,Chiquiar Daniel,21,21,40,0.0471,0.248048,True
+603,Capistrán Carlos,16,11,21,0.0247,0.058662,True
+691,Guerrero Víctor M.,13,3,6,0.0067,0.015355,True
+914,Werner Wainfeld Alejandro,13,10,14,0.0224,0.0,False
+845,Alejandrina Salcedo,12,20,28,0.0448,0.266615,True
+669,García-Verdú Santiago,12,5,14,0.0112,0.008459,True
+711,Miriam Juárez-Torres,12,13,21,0.0291,0.074765,True
+906,Vera y Ferrer Gabriel,12,18,48,0.0404,0.053044,True
+635,Cuadra Gabriel,12,11,20,0.0247,0.07849,True
+775,Noriega Antonio E.,11,6,15,0.0135,0.022958,True
+702,Marco A. Hernandez Vega,11,4,6,0.009,0.007692,True
+703,Raúl Ibarra,11,11,14,0.0247,0.066058,True
+798,Jorge Pérez Pérez,11,20,20,0.0448,0.126344,True
+891,Torres García Alberto,11,9,11,0.0202,0.201645,True
+817,Erick Rangel,11,12,19,0.0269,0.076251,True
+704,Ize Alain,10,3,3,0.0067,0.015325,True
+889,Leonardo Torre,10,11,20,0.0247,0.093947,True
+651,Rocío Elizondo,10,7,13,0.0157,0.015431,True
+781,Ortiz Martínez Guillermo,9,2,5,0.0045,0.007692,True
+848,Sámano Daniel,9,12,14,0.0269,0.214418,True
+631,Cortés Espada Josué Fernando,9,8,11,0.0179,0.159502,True
+690,Guerrero-Escobar Santiago,8,8,13,0.0179,0.048568,True
+722,Leal-Ordoñez Julio C.,8,5,5,0.0112,0.022988,True
+664,Garcés Díaz Daniel,8,3,3,0.0067,0.0,False
+729,Irving Llamosas-Rosas,8,6,14,0.0135,0.000119,True
+836,Roldán-Peña Jessica,8,13,17,0.0291,0.095557,True
+888,Tobal Martín,8,4,7,0.009,4.6e-05,True
+557,Carlo Alcaraz,8,14,19,0.0314,0.209299,True
+609,Julio A. Carrillo,8,11,14,0.0247,0.062082,True
+685,González Méndez Héctor E.,7,0,0,0.0,0.0,False
+614,Cebreros Alfonso,7,11,14,0.0247,0.020556,True
+583,Benavides Guillermo,7,3,4,0.0067,0.001193,True
+797,Pérez López Elguézabal Alejandro,6,1,1,0.0022,0.0,True
+787,Padilla Alberto,6,0,0,0.0,0.0,False
+696,Hernández-del-Valle Gerardo,6,5,8,0.0112,0.013074,True
+633,Covarrubias Enrique,6,3,3,0.0067,0.02482,True
+918,Ysusi Carla,6,0,0,0.0,0.0,False
+613,Castellanos Pascacio Sara Gabriela,6,8,8,0.0179,0.111197,True
+751,Martínez Trigueros Lorenza,6,3,4,0.0067,0.0,False
+731,López-Martín Bernabé,6,6,6,0.0135,0.089011,True
+733,López Noria Gabriela,6,2,2,0.0045,0.0,False
+658,Felipe J. Fonseca,5,5,9,0.0112,8.6e-05,True
+872,Solís Leopoldo,5,2,5,0.0045,0.015325,True
+869,Sidaoui José Julián,5,6,7,0.0135,0.207822,True
+697,Hernández Juan R.,5,5,5,0.0112,0.035148,True
+713,Kaiser Karen,5,3,3,0.0067,0.0,False
+812,Ramírez Claudia,5,11,12,0.0247,0.081479,True
+818,Rangel José Gonzalo,5,4,6,0.009,0.010179,True
+820,Reyes Heroles Jesús,5,14,40,0.0314,0.161895,True
+864,Schwartz Rosenthal Moisés,5,4,4,0.009,0.074755,True
+745,Martínez André,5,5,6,0.0112,0.038046,True
+619,Chávez Juan Carlos,5,5,7,0.0112,0.007737,True
+927,Díaz de León Carrillo Alejandro,5,6,6,0.0135,0.074755,True
+648,Díez-Canedo Juan,5,13,40,0.0291,0.0,True
+833,Rodríguez-Pérez Cid Alonso,5,8,11,0.0179,0.083698,True
+552,Aguilar-Argaez Ana María,5,10,14,0.0224,0.073134,True
+582,Bazdresch Santiago,5,3,5,0.0067,0.0,False
+561,Jorge Alvarado,5,8,13,0.0179,0.046441,True
+558,Alexandrova-Kabadjova Biliana,4,6,7,0.0135,0.030502,True
+867,Seira Enrique,4,7,7,0.0157,0.038105,True
+579,Bátiz-Zuk Enrique,4,4,5,0.009,0.0,False
+874,Diego Solórzano,4,2,2,0.0045,0.007692,True
+780,María José Orraca,4,7,9,0.0157,0.121331,True
+899,Vargas Aguayo Alberto,4,3,3,0.0067,0.0,True
+593,Bush Georgia,4,3,3,0.0067,0.0,False
+847,Salgado Banda Héctor,4,4,5,0.009,0.0,False
+749,Martínez-Ovando Juan Carlos,4,4,5,0.009,0.022958,True
+846,Salgado Alfredo,4,1,1,0.0022,0.0,False
+807,Puggioni Daniela,4,8,9,0.0179,0.011082,True
+827,Rizzo Sócrates,4,14,40,0.0314,0.022899,True
+776,Nuguer Victoria,4,6,6,0.0135,0.031457,True
+808,Puigvert Jonathan,4,5,8,0.0112,0.008578,True
+710,Juárez González Laura,4,5,5,0.0112,0.0,False
+860,Horacio Sapriza,4,6,8,0.0135,0.0,True
+949,Lenin Arango-Castillo,4,5,7,0.0112,0.01537,True
+723,Leal Vizcaíno René,4,7,10,0.0157,0.030502,True
+725,Lever Guzmán Carlos,4,3,3,0.0067,0.0,False
+726,Leyva Gustavo,4,2,3,0.0045,0.0,False
+624,Cóndor Richard,4,1,1,0.0022,0.0,True
+643,Delajara Marcelo,4,1,1,0.0022,0.0,True
+671,Gaytán González Alejandro,4,3,4,0.0067,0.045411,True
+941,Lorenzo Aldeco Leo,4,5,5,0.0112,0.030561,True
+905,Ventosa-Santaulària Daniel,4,1,4,0.0022,0.0,True
+771,Murillo Garza José Antonio,4,4,4,0.009,0.025483,True
+556,Carlos Alba,3,4,7,0.009,0.000153,True
+922,Zazueta Borboa Francisco,3,3,6,0.0067,6.7e-05,True
+567,Antón Sarabia Arturo,3,2,2,0.0045,0.0,False
+951,Miguel A. Mascarúa Lara,3,0,0,0.0,0.0,False
+646,de Melo Gioia,3,3,3,0.0067,0.0,False
+572,Arnaud Enrique,3,13,39,0.0291,0.0,True
+560,Altimir Oscar,3,13,39,0.0291,0.0,True
+612,José L. Casco,3,2,2,0.0045,0.0,True
+616,Cervantes Jesús,3,13,39,0.0291,0.0,True
+562,Nicolás Amoroso,3,8,8,0.0179,0.028305,True
+564,André Marine Charlotte,3,3,3,0.0067,0.0,False
+568,Aportela Rodríguez Fernando,3,3,3,0.0067,0.0,False
+1172,Héctor M. Núñez,3,3,3,0.0067,0.0,False
+954,Arellano Gonzalez Jesus,3,2,4,0.0045,0.0,True
+623,Luis Fernando Colunga Ramos,3,1,2,0.0022,0.0,True
+955,Alex Rivadeneira,3,5,5,0.0112,0.0,True
+738,Mac Donald Diana E.,3,2,2,0.0045,0.0,False
+602,Cañón Salazar Carlos Iván,3,4,4,0.009,0.0,False
+645,Del Villar Rafael,3,5,6,0.0112,0.045322,True
+584,Bergsman Joel,3,13,39,0.0291,0.0,True
+653,León Fernández Bujanda,3,8,8,0.0179,0.025391,True
+900,Vaughan Daniel,3,0,0,0.0,0.0,False
+610,Carstens Carstens Agustín,3,3,3,0.0067,0.0,False
+740,Maldonado Víctor,3,13,39,0.0291,0.0,True
+863,Schwabe Rainer,3,4,4,0.009,0.0,False
+715,Kochen Federico,3,4,5,0.009,0.00187,True
+673,Gibson William,3,13,39,0.0291,0.0,True
+852,Sánchez García Oscar,3,3,4,0.0067,0.0,False
+834,Rodríguez-Zamora Carolina,3,3,3,0.0067,0.015355,True
+829,Rodríguez Arnulfo,3,4,5,0.009,0.015325,True
+668,García Verdú Rodrigo,3,3,3,0.0067,0.122691,True
+680,Gómez Octavio,3,13,39,0.0291,0.0,True
+667,Garcia-Medina Cecilia,3,3,3,0.0067,0.0,False
+683,González García Jesús R.,3,3,3,0.0067,0.030413,True
+931,Salas Martín del Campo Javier,3,2,2,0.0045,0.022899,True
+684,Eva González,3,6,9,0.0135,0.027514,True
+923,Zazueta César,3,13,39,0.0291,0.0,True
+737,Lusting Nora,3,13,39,0.0291,0.0,True
+796,Pérez-Cervantes Fernando,3,1,1,0.0022,0.0,False
+784,Rodolfo Oviedo,3,6,6,0.0135,0.007692,True
+774,Negrin José Luis,3,2,2,0.0045,0.0,False
+882,Taylor Lance,3,13,39,0.0291,0.0,True
+887,Timmermann Allan,3,2,4,0.0045,0.0,True
+811,Miroslava Quiroga-Trevino,3,5,7,0.0112,0.015325,True
+757,Messmacher Linartas Miguel,3,5,5,0.0112,0.0,False
+935,Kroft Kory,2,3,6,0.0067,0.0,True
+686,Graf Noriega Juan Pablo,2,0,0,0.0,0.0,False
+654,Fernandez-Corugedo Emilio,2,0,0,0.0,0.0,False
+830,Rodriguez Maria Jose,2,1,1,0.0022,0.0,False
+652,Engle Robert F.,2,1,2,0.0022,0.0,True
+929,Gómez Zaldívar Manuel de Jesús,2,3,4,0.0067,0.000397,True
+946,Calderón Mariana,2,8,8,0.0179,0.027652,True
+628,Contreras Juan,2,3,3,0.0067,0.0,False
+832,Rodríguez Pedro N.,2,2,3,0.0045,0.0,True
+933,Zedillo Ponce de León Ernesto,2,0,0,0.0,0.0,False
+689,Guerra de Luna Alfonso,2,1,1,0.0022,0.0,True
+828,Roa Mónica,2,4,4,0.009,0.014562,True
+698,Hernández Manuel A.,2,2,2,0.0045,0.0,True
+666,García Ana Laura,2,3,3,0.0067,0.015325,True
+639,Dal Borgo Mariela,2,0,0,0.0,0.0,False
+932,Brenda Samaniego,2,6,6,0.0135,0.01691,True
+630,Córdoba José,2,1,1,0.0022,0.0,True
+663,Gamboa González Rafael,2,0,0,0.0,0.0,False
+853,Sánchez-Martínez Manuel,2,2,4,0.0045,0.0,True
+695,Heffner-Rodríguez Aldo,2,5,6,0.0112,0.030306,True
+937,Notowidigdo Matthew J.,2,3,6,0.0067,0.0,True
+823,Reynoso del Valle Alejandro,2,1,1,0.0022,0.0,False
+854,Sánchez-Romeu Paula,2,2,2,0.0045,0.007692,True
+855,Sánchez Valadez Manuel,2,0,0,0.0,0.0,False
+548,Abarca Gustavo,2,3,4,0.0067,0.002487,True
+936,Laliberté Jean-William,2,3,6,0.0067,0.0,True
+657,Flores Segovia Miguel A.,2,2,3,0.0045,0.0,True
+782,Osuna Gómez Daniel,2,0,0,0.0,0.0,False
+897,Urrutia Carlos,2,1,2,0.0022,0.0,False
+627,Benjamín Contreras-Astiazarán,2,5,5,0.0112,0.046721,True
+816,Ranciere Romain,2,1,2,0.0022,0.0,True
+772,Musacchio Aldo,2,2,3,0.0045,0.0,True
+769,Mosqueda Chávez Marco Tulio,2,4,4,0.009,0.020182,True
+1176,Jesús Arellano-González,2,2,3,0.0045,0.0,True
+766,Morales-Ramos Eduardo,2,0,0,0.0,0.0,False
+720,Lara Sánchez José Luis,2,1,2,0.0022,0.0,False
+617,Chapa Cantú Joana C.,2,4,4,0.009,0.028932,True
+724,Lelo-de-Larrea Alejandra,2,2,2,0.0045,0.0,False
+585,Bernal Verdugo Lorenzo E.,2,1,2,0.0022,0.0,False
+870,Sines Richard H.,2,1,2,0.0022,0.0,True
+594,Cabral Torres René,2,3,3,0.0067,0.015325,True
+732,López Moctezuma Gabriel,2,1,2,0.0022,0.0,True
+575,Backal Daniel,2,3,4,0.0067,5.9e-05,True
+601,Campos-Ortiz Francisco,2,6,6,0.0135,0.0,False
+753,Mateos Hanel Calixto,2,2,2,0.0045,0.052599,True
+873,Solís-Robleda Francisco,2,1,2,0.0022,0.0,True
+917,Yslas Renato,2,2,3,0.0045,0.0,True
+788,Padilla Pablo,2,2,3,0.0045,0.0,True
+744,Márquez Diez-Canedo Javier,2,1,1,0.0022,0.0,False
+1217,Ángelo Gutiérrez-Daza,2,2,2,0.0045,0.0,False
+608,Carriles Rubio Jorge,2,3,3,0.0067,0.0,True
+734,López Ornelas Luis Fernando,2,2,2,0.0045,0.00287,True
+597,Calderón Gabriela,2,2,2,0.0045,0.0,False
+773,Naranjo González Mauricio,2,0,0,0.0,0.0,False
+591,Bravo-Benítez Bernardo,1,3,3,0.0067,0.0,True
+592,Breccia Adriana,1,1,1,0.0022,0.0,False
+599,Camero Eduardo,1,1,1,0.0022,0.0,True
+595,Calderón Angel,1,2,2,0.0045,0.0,True
+596,Calderón-Colín Roberto,1,1,1,0.0022,0.0,False
+598,Cámara Fuertes Luis R.,1,2,2,0.0045,0.0,False
+687,Gray Daniel,1,2,2,0.0045,0.0,False
+600,Campero Alejandra,1,1,1,0.0022,0.0,False
+604,Carabarín Aguirre Mauricio,1,1,1,0.0022,0.0,False
+605,Cárdenas Javier,1,2,2,0.0045,0.0,True
+606,Cardozo-Medeiros Diego,1,1,1,0.0022,0.0,False
+581,Battelle Holly,1,1,1,0.0022,0.0,False
+580,Batsaikhan Mongoljin,1,5,5,0.0112,0.0,False
+589,Boné José Antonio,1,1,1,0.0022,0.0,True
+590,Boonman Tjeerd,1,3,3,0.0067,0.0,False
+799,Pérez Porrúa Juan Manuel,1,0,0,0.0,0.0,False
+588,Bobonis Gustavo J.,1,2,2,0.0045,0.0,False
+587,Bladt Mogens,1,2,2,0.0045,0.003846,True
+586,Bishop Kelly C.,1,1,1,0.0022,0.0,False
+693,Gutiérrez Villanueva Rubí,1,2,2,0.0045,0.020346,True
+694,Hansen Christian,1,3,3,0.0067,0.0,True
+705,Jallath Coria Eduardo,1,1,1,0.0022,0.0,False
+793,Peersman Gert,1,2,2,0.0045,0.0,True
+803,Pfutze Tobias,1,1,1,0.0022,0.0,False
+802,Pfaff Alexander,1,4,4,0.009,0.0,False
+801,Peydró José-Luis,1,3,3,0.0067,0.0,True
+800,Pérez-Reyna David,1,1,1,0.0022,0.0,True
+577,Balafoutas Loukas,1,5,5,0.0112,0.0,False
+795,Peña Tonatiuh,1,2,2,0.0045,0.0,False
+794,Peláez Gómez Carlos D.,1,1,1,0.0022,0.0,False
+578,Baqueiro Cárdenas Armando,1,2,2,0.0045,0.0,True
+571,Armendáriz Villarreal Thelma,1,1,1,0.0022,0.0,True
+549,Abudu Bolanle,1,2,2,0.0045,0.0,False
+611,Casanova Martha,1,1,1,0.0022,0.0,True
+681,Gómez-Zamudio Luis M.,1,1,1,0.0022,0.0,True
+679,Gómez Cram Roberto,1,2,2,0.0045,0.0,False
+678,Giri Rahul,1,2,2,0.0045,0.0,True
+676,Giorgio Zanarone,1,1,1,0.0022,0.0,False
+660,Freyaldenhoven Simon,1,3,3,0.0067,0.0,True
+675,Gil Hubert Johanna,1,2,2,0.0045,0.0,True
+674,Gil Díaz Francisco,1,1,1,0.0022,0.0,False
+672,Gelos Gaston,1,1,1,0.0022,0.0,False
+670,Garza-Garcia Jesus Gustavo,1,2,2,0.0045,0.0,False
+665,García-Almanza Alma L.,1,2,2,0.0045,0.0,True
+662,Galván Sybel,1,1,1,0.0022,0.0,True
+661,Gallón Santiago,1,2,2,0.0045,0.0,False
+620,Chen Liang,1,2,2,0.0045,0.0,False
+615,Cecchetti Stephen,1,2,2,0.0045,0.0,False
+565,Angeles Galvan Daniel,1,2,2,0.0045,0.020346,True
+550,Accinelli Elvio,1,1,1,0.0022,0.0,True
+576,Bailliu Jeannine,1,3,3,0.0067,0.0,False
+574,Atal Vidya,1,2,2,0.0045,0.0,True
+573,Arroyo Miranda Juan,1,2,2,0.0045,0.0,False
+777,Olivares-Guzmán Sergio I.,1,2,2,0.0045,0.0,True
+570,Arias S. Luis Gerardo,1,1,1,0.0022,0.0,True
+569,Ardavín Ituarte José Antonio,1,2,2,0.0045,0.0,False
+566,Antón Arturo,1,1,1,0.0022,0.0,True
+563,Amuedo Dorantes Catalina,1,1,1,0.0022,0.0,False
+607,Carmona Sánchez Juan F.,1,1,1,0.0022,0.0,False
+559,Alonso-Ortiz Jorge,1,1,1,0.0022,0.0,True
+555,Aiolfi Marco,1,2,2,0.0045,0.007692,True
+554,Ahn T. K.,1,5,5,0.0112,0.0,False
+553,Aguirre Castro Armando,1,1,1,0.0022,0.0,False
+551,Aguayo Téllez Ernesto,1,2,2,0.0045,0.0,True
+792,Pech Moreno Luis Alberto,1,3,3,0.0067,0.0,True
+838,Román Aguilar Fernando,1,1,1,0.0022,0.0,False
+791,Patel Elena,1,2,2,0.0045,0.0,False
+730,López Castañón Calixto,1,1,1,0.0022,0.0,False
+727,Lim Jean,1,1,1,0.0022,0.0,True
+718,Kuper Gerard H.,1,3,3,0.0067,0.0,False
+768,Moreno Othón M.,1,0,0,0.0,0.0,False
+717,Kruger Mark,1,3,3,0.0067,0.0,False
+716,Krause Stefan,1,2,2,0.0045,0.0,False
+714,Kaplan David,1,2,2,0.0045,0.0,True
+712,Jurado Pedroza Wilfrido,1,0,0,0.0,0.0,False
+709,Jiménez Hernández Diego J,1,2,2,0.0045,0.0,True
+708,Jean-Francois Wen,1,1,1,0.0022,0.0,False
+707,Jaramillo Rodríguez Jorge,1,3,3,0.0067,0.0,True
+742,Marcos Yacamán Jesús,1,0,0,0.0,0.0,False
+743,Marín Ana Georgina,1,1,1,0.0022,0.0,False
+746,Martínez Chombo Eduardo,1,0,0,0.0,0.0,False
+747,Martínez-Jaramillo Serafín,1,3,3,0.0067,0.0,True
+767,Moreno Navarro Lorenzo,1,0,0,0.0,0.0,False
+765,Morales Ramírez Alejandro,1,1,1,0.0022,0.0,True
+764,Mora Israel,1,1,1,0.0022,0.0,False
+763,Morais Bernardo,1,3,3,0.0067,0.0,True
+762,Mollick André V.,1,2,2,0.0045,0.0,True
+761,Molina Danielken,1,1,1,0.0022,0.0,True
+760,Mohamed Abdulkadir,1,2,2,0.0045,0.0,False
+759,Miranda Alfonso,1,2,2,0.0045,0.0,False
+758,Milo Caraza Alexis,1,1,1,0.0022,0.0,False
+756,Mendoza Enrique G.,1,3,3,0.0067,0.003754,True
+755,Mekonnen Teddy,1,1,1,0.0022,0.0,True
+754,Maydón Garza Marín,1,1,1,0.0022,0.0,False
+752,Mastrobuoni Giovanni,1,3,3,0.0067,0.0,False
+750,Martínez Serafín,1,2,2,0.0045,0.0,False
+748,Martínez José N,1,2,2,0.0045,0.0,True
+728,Livas René,1,3,3,0.0067,5.4e-05,True
+735,López Videla Bruno,1,1,1,0.0022,0.0,False
+790,Panlasigui Stephanie,1,4,4,0.009,0.0,False
+736,Loucks Colby J.,1,4,4,0.009,0.0,False
+789,Palma Brenda,1,2,2,0.0045,0.0,False
+786,Pacheco-González Carlos,1,1,1,0.0022,0.0,True
+785,Oviedo-Pacheco Mariana,1,1,1,0.0022,0.0,False
+783,Oviedo Marco,1,1,1,0.0022,0.0,True
+779,Olivella Virginia,1,1,1,0.0022,0.0,True
+804,Piaggio Matías,1,1,1,0.0022,0.0,False
+805,Poilly Céline,1,1,1,0.0022,0.0,True
+806,Ponce Alejandro,1,2,2,0.0045,0.0,True
+809,Putterman Louis,1,5,5,0.0112,0.0,False
+840,Romero Hidalgo Roberto,1,1,1,0.0022,0.0,False
+839,Romero Alberto,1,3,3,0.0067,0.0,False
+837,Roldán-Rodríguez Adriana,1,2,2,0.0045,0.0,True
+835,Rojas Francisco Javier,1,1,1,0.0022,0.0,True
+831,Rodríguez-Oreggia Eduardo,1,1,1,0.0022,0.0,False
+826,Rico Jimena,1,4,4,0.009,0.0,False
+825,Richardson James W.,1,2,2,0.0045,0.0,True
+824,Rho Caterina,1,2,2,0.0045,0.0,False
+822,Reyna Cerecero Mario,1,2,2,0.0045,0.0,False
+821,Reyes R. Francisco,1,3,3,0.0067,0.0,True
+819,Rattia-Lima Ernesto,1,1,1,0.0022,0.0,True
+815,Ramos Tercero Raúl,1,1,1,0.0022,0.0,False
+813,Ramírez de Aguilar Alberto,1,2,2,0.0045,0.0,True
+810,Quella Núria,1,3,3,0.0067,0.001184,True
+778,Olivar Santiago,1,2,2,0.0045,0.0,False
+770,Mosqueda Jordán,1,3,3,0.0067,0.0,True
+706,Jan P.A.M. Jacobs,1,3,3,0.0067,0.0,False
+719,Lambertini Luisa,1,2,2,0.0045,0.0,True
+741,Mandujano Javier,1,1,1,0.0022,0.0,True
+739,Machado Alina,1,2,2,0.0045,0.0,False
+682,González Fidel,1,2,2,0.0045,0.0,True
+1237,Mauricio Stern,1,0,0,0.0,0.0,False
+688,Greenham Llorente Laura Elena,1,1,1,0.0022,0.0,True
+1239,Bulat Gafarov,1,2,2,0.0045,0.0,False
+866,Seade Kuri Jesús,1,0,0,0.0,0.0,False
+1238,Francisco J. Martínez-Ramírez,1,2,2,0.0045,0.007574,True
+868,Shapiro Jesse M.,1,3,3,0.0067,0.0,True
+850,Sánchez Arroyo Abdón,1,0,0,0.0,0.0,False
+1234,Eduardo Martínez González,1,1,1,0.0022,0.0,True
+1231,Sara Hutchinson Tovar,1,2,2,0.0045,0.001884,True
+896,Turrent y Díaz Eduardo,1,0,0,0.0,0.0,False
+1162,Karla Neri Hernández,1,2,2,0.0045,0.0,True
+959,Adame Espinosa Francisco,1,0,0,0.0,0.0,False
+911,Walker Stephen G.,1,1,1,0.0022,0.0,True
+912,Wan Rui,1,2,2,0.0045,0.0,False
+913,Wauters Joris,1,2,2,0.0045,0.0,True
+958,Orozco Vázquez Miguel,1,0,0,0.0,0.0,False
+957,Trujillo Alejandro,1,1,1,0.0022,0.0,False
+915,Yamada Katsunori,1,3,3,0.0067,0.0,False
+956,González-Holden Alexa,1,1,1,0.0022,0.0,False
+916,Yesin Toledo Rubén,1,0,0,0.0,0.0,False
+919,Zabludowsky Jaime,1,1,1,0.0022,0.0,False
+920,Zamarripa Guillermo,1,2,2,0.0045,0.0,True
+953,Casillas Ramón,1,3,3,0.0067,0.001062,True
+952,Medina Espidio Sebastián,1,1,1,0.0022,0.0,False
+921,Zamudio Fernández Juan José,1,1,1,0.0022,0.0,False
+843,Salas Fernando,1,0,0,0.0,0.0,False
+950,Molina Martínez G. Stefano,1,2,2,0.0045,0.007574,True
+924,Zerecero Miguel,1,1,1,0.0022,0.0,True
+925,Zuccardi Huertas Igor Esteban,1,0,0,0.0,0.0,False
+948,Jaume David,1,5,5,0.0112,3.7e-05,True
+947,Inguanzo José A.,1,5,5,0.0112,3.7e-05,True
+926,Zúñiga Gerardo,1,2,2,0.0045,0.003846,True
+865,Seade Durán Juan Jesús,1,2,2,0.0045,0.0,False
+1246,Agustina Colonna,1,1,1,0.0022,0.0,True
+930,Casarín de la Cabada Daniel,1,1,1,0.0022,0.0,False
+862,Schoellman Todd,1,2,2,0.0045,0.0,True
+1256,Anna D. Mata,1,1,1,0.0022,0.0,False
+881,Takayama Naoki,1,1,1,0.0022,0.0,True
+849,Sanchez-Amador David,1,3,3,0.0067,0.0,True
+1248,Gustavo A. García,1,2,2,0.0045,0.0,True
+1270,Alberto Montagnoli,1,2,2,0.0045,0.0,True
+875,Solórzano-Margain Juan Pablo,1,3,3,0.0067,0.0,True
+879,Sutter Matthias,1,5,5,0.0112,0.0,False
+1269,Christoph Thoenissen,1,2,2,0.0045,0.0,True
+1252,Marco A. Esteban Aguirre,1,2,2,0.0045,0.001884,True
+880,Swenson Jennifer,1,4,4,0.009,0.0,False
+1207,Cindy Rangel,1,4,4,0.009,0.011401,True
+876,Soria Luis M.,1,2,2,0.0045,0.0,True
+877,Stefanou Spiro E.,1,1,1,0.0022,0.0,True
+1227,Rita Karolina Cantú Zendejas,1,3,3,0.0067,0.005548,True
+878,Suher Michael,1,1,1,0.0022,0.0,True
+856,Sandoval Bustos Maritza,1,2,2,0.0045,0.001884,True
+871,Sod Hoffs Gabriel,1,0,0,0.0,0.0,False
+1247,David Bernal,1,2,2,0.0045,0.0,True
+1245,Constantino Carreto,1,4,4,0.009,0.0,True
+1244,Jesse M. Shapiro,1,4,4,0.009,0.0,True
+857,Sandoval Hernández Aldo,1,1,1,0.0022,0.0,False
+1243,Christian B. Hansen,1,4,4,0.009,0.0,True
+858,Sannabe Atsushi,1,3,3,0.0067,0.0,False
+859,San Vicente Portes Luis,1,2,2,0.0045,0.0,True
+851,Sánchez-Cajal Fátima,1,2,2,0.0045,0.0,False
+1242,Simon Freyaldenhoven,1,4,4,0.009,0.0,True
+1241,Armando R. Colina,1,2,2,0.0045,0.0,False
+1240,Jens Hilscher,1,2,2,0.0045,0.0,False
+861,Saucedo Eduardo,1,2,2,0.0045,0.0,True
+928,Gálvez-Soriano Oscar de Jesús,1,0,0,0.0,0.0,False
+945,Velázquez Jhasua,1,2,2,0.0045,0.0,True
+692,Gutierrez Emilio,1,2,2,0.0045,0.0,False
+904,Velázquez Ramón,1,2,2,0.0045,0.0,True
+963,Altinok Ahmet,1,1,1,0.0022,0.0,False
+962,Zárate Román D.,1,2,2,0.0045,0.0,True
+961,Vial Lecaros Felipe,1,2,2,0.0045,0.0,True
+907,Viarengo Martina,1,2,2,0.0045,0.003846,True
+908,Villalpando B. Mario,1,0,0,0.0,0.0,False
+844,Salazar Cavazos Diana,1,2,2,0.0045,0.0,False
+6,Angel Espinoza E.,1,0,0,0.0,0.0,False
+842,Ruiz Claudia,1,3,3,0.0067,0.0,True
+638,Dai Meixing,1,1,1,0.0022,0.0,False
+650,Elizondo Alan,1,1,1,0.0022,0.0,True
+649,Dixon Huw,1,1,1,0.0022,0.0,True
+647,Diego-Fernández Forseck María,1,3,3,0.0067,0.006858,True
+644,De la Peña Rogelio,1,0,0,0.0,0.0,False
+642,De la Garza Adrián,1,3,3,0.0067,0.0,False
+641,De la Cerda Clara,1,1,1,0.0022,0.0,False
+640,De Giorgi Giacomo,1,2,2,0.0045,0.0,False
+637,Cunha Jesse M.,1,2,2,0.0045,0.0,False
+656,Flores Lagunes Alfonso,1,2,2,0.0045,0.0,False
+636,Cuevas Alfredo,1,2,2,0.0045,0.0,False
+634,Cruz Aguayo Yyannú,1,2,2,0.0045,0.0,False
+632,Costa Daniela,1,1,1,0.0022,0.0,False
+629,Contreras Oscar F.,1,1,1,0.0022,0.0,False
+626,Constandse Christian,1,2,2,0.0045,0.000926,True
+625,Conesa Labastida Andrés,1,0,0,0.0,0.0,False
+622,Chortareas Georgios E.,1,2,2,0.0045,0.0,False
+655,Fernández Raúl,1,2,2,0.0045,0.0,False
+659,Fragoso Edna,1,2,2,0.0045,0.001184,True
+841,Rubli Adrian,1,2,2,0.0045,0.0,False
+677,Girardone Claudia,1,2,2,0.0045,0.0,False
+967,Horacio Reyes Rocha,1,1,1,0.0022,0.0,True
+969,José G. Nuño-Ledesma,1,1,1,0.0022,0.0,True
+944,González Juan Pedro,1,2,2,0.0045,0.0,True
+903,Vela Treviño Oscar,1,1,1,0.0022,0.0,True
+934,Katia García Loredo,1,1,1,0.0022,0.0,True
+943,Ramírez-Álvarez Aurora A.,1,2,2,0.0045,0.0,True
+942,Jurado Jose A.,1,2,2,0.0045,0.0,True
+938,Nuño Ledesma José G.,1,2,2,0.0045,0.0,False
+939,Wu Steven Y.,1,2,2,0.0045,0.0,False
+910,Villalvazo Martin Sergio,1,1,1,0.0022,0.0,True
+960,De-la-Mora Paula,1,3,3,0.0067,0.007994,True
+1161,Diego Mayorga,1,2,2,0.0045,0.0,True
+909,Villalpando Luis H.,1,1,1,0.0022,0.0,False
+1158,Laura Kurczyn,1,2,2,0.0045,0.0,True
+883,Téllez León Elizabeth,1,1,1,0.0022,0.0,True
+884,Tello Benjamín,1,0,0,0.0,0.0,False
+885,Tertilt Michèle,1,2,2,0.0045,0.0,True
+886,Teshima Kensuke,1,2,2,0.0045,0.0,True
+1155,Miguel A. Ballester,1,2,2,0.0045,0.0,False
+1154,Jose Apesteguia,1,2,2,0.0045,0.0,False
+890,Torres-Ferro Mauricio,1,2,2,0.0045,0.0,True
+1153,Andrés Gallegos-Vargas,1,2,2,0.0045,0.0,True
+892,Traficante Guido,1,1,1,0.0022,0.0,False
+893,Treviño Juan Pedro,1,2,2,0.0045,0.002525,True
+894,Tristao Ignez,1,2,2,0.0045,0.0,False
+895,Trupkin Danilo R.,1,2,2,0.0045,0.0,True
+940,Balagtas Joseph V.,1,2,2,0.0045,0.0,False
+1152,Darwin Cortés,1,2,2,0.0045,0.0,True
+1151,Jaime Sainz-Santamaría,1,2,2,0.0045,0.0,False
+898,Uysal Pinar,1,2,2,0.0045,0.0,True
+1150,Adán L. Martínez-Cruz,1,2,2,0.0045,0.0,False
+901,Vedenov Dmitry,1,2,2,0.0045,0.0,True
+902,Vela Dib Abraham,1,1,1,0.0022,0.0,False
+1283,Regina Briseño,1,2,2,0.0045,0.007574,True
