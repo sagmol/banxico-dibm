@@ -112,12 +112,6 @@ El análisis distingue al menos tres etapas:
 2. **Transición (1995–2001):** consolidación del DIBM, ajuste post-crisis
 3. **Régimen de metas de inflación (2002–presente):** producción sistemática, JEL codes disponibles
 
-## Limitaciones conocidas
-
-- Los documentos anteriores a 1995 tienen cobertura escasa (menos del 10% del corpus).
-- Las "Palabras clave" no están disponibles en el API actual (campo vacío).
-- El 36% de los documentos no tiene URL de PDF disponible públicamente.
-- El análisis de bibliografías requiere descarga y parseo de PDFs (Etapa 3).
 
 ## Fuente
 
