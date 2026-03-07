@@ -1,0 +1,380 @@
+codigo,descripcion
+B4,B4 - Metodología económica
+C00,C00 - Generalidades
+C01,C01 - Econometría
+C02,C02 - Métodos matemáticos
+C1,C1 - Métodos econométricos y estadísticos : generalidades
+C10,C10 - Generalidades
+C11,C11 - Bayesian Analysis: General
+C12,C12 - Hypothesis Testing: General
+C13,C13 - Estimación
+C14,C14 - Semiparametric and Nonparametric Methods: General
+C15,C15 - Métodos de simulación estadística | Método de Monte Carlo | Método Bootstrap
+C18,C18 - Methodological Issues: General
+C19,C19 - Other
+C20,C20 - General
+C21,C21 - Cross-Sectional Models | Spatial Models | Treatment Effect Models | Quantile Regressions
+C22,C22 - Time-Series Models | Dynamic Quantile Regressions | Dynamic Treatment Effect Models | Diffusion Processes
+C23,C23 - Panel Data Models | Spatio-temporal Models
+C24,C24 - Truncated and Censored Models | Switching Regression Models | Threshold Regression Models
+C25,C25 - Discrete Regression and Qualitative Choice Models | Discrete Regressors | Proportions | Probabilities
+C26,C26 - Instrumental Variables (IV) Estimation
+C3,C3 - Métodos econométricos : modelos de ecuaciones múltiples/simultáneas | Variables múltiples
+C31,C31 - Cross-Sectional Models | Spatial Models | Treatment Effect Models | Quantile Regressions | Social Interaction Models
+C32,C32 - Modelos de series temporales
+C33,C33 - Panel Data Models | Spatio-temporal Models
+C35,C35 - Discrete Regression and Qualitative Choice Models | Discrete Regressors | Proportions
+C36,C36 - Instrumental Variables (IV) Estimation
+C38,C38 - Classification Methods | Cluster Analysis | Principal Components | Factor Models
+C4,C4 - Métodos econométricos y estadísticos : temas especiales
+C41,C41 - Duration Analysis | Optimal Timing Strategies
+C43,C43 - Index Numbers and Aggregation
+C44,C44 - Teoría de la decisión estadística | Investigación operativa
+C45,C45 - Neural Networks and Related Topics
+C46,C46 - Specific Distributions | Specific Statistics
+C49,C49 - Other
+C5,C5 - Modelización econométrica
+C51,C51 - Construcción de modelos y estimación
+C52,C52 - Evaluación y contraste de modelos
+C53,C53 - Predicción y otras aplicaciones de modelos
+C55,C55 - Large Data Sets: Modeling and Analysis
+C58,C58 - Financial Econometrics
+C60,C60 - Generalidades
+C61,C61 - Técnicas de optimización | Modelos de programación | Análisis dinámico
+C62,C62 - Condiciones de existencia y estabilidad del equilibrio
+C63,C63 - Técnicas de computación
+C65,C65 - Herramientas matemáticas diversas
+C67,C67 - Modelos input-output
+C68,C68 - Computable General Equilibrium Models
+C7,C7 - Game Theory and Bargaining Theory
+C70,C70 - General
+C71,C71 - Cooperative Games
+C72,C72 - Noncooperative Games
+C78,C78 - Bargaining Theory | Matching Theory
+C80,C80 - General
+C81,"C81 - Metodología de la recopilación, estimación y organización de datos microeconómicos"
+C83,C83 - Survey Methods | Sampling Methods
+C87,C87 - Programas informáticos de econometría
+C88,C88 - Other Computer Software
+C9,C9 - Diseño de experimentos
+C91,"C91 - Laboratory, Individual Behavior"
+C92,"C92 - Laboratory, Group Behavior"
+C93,C93 - Field Experiments
+D0,D0 - Generalidades
+D00,D00 - Generalidades
+D01,D01 - Comportamiento microeconómico : principios fundamentales
+D04,"D04 - Microeconomic Policy: Formulation, Implementation, and Evaluation"
+D1,D1 - Comportamiento de las economías domésticas y economía familiar
+D10,D10 - Generalidades
+D11,D11 - Economía del consumidor : teoría
+D12,D12 - Economía del consumidor: análisis empíricos
+D13,D13 - Producción de las economías domésticas y asignación dentro de las mismas
+D14,D14 - Finanzas personales
+D18,D18 - Protección del consumidor
+D19,D19 - Otros
+D21,D21 - Comportamiento de la empresa
+D22,D22 - Firm Behavior: Empirical Analysis
+D23,D23 - Comportamiento organizativo| Costes de transacción| Derechos de propiedad
+D24,D24 - Producción| Productividad del capital y del total de factores| Capacidad
+D3,D3 - Distribución
+D31,"D31 - Renta personal, riqueza y sus distribuciones"
+D33,D33 - Factor Income Distribution
+D4,D4 - Estructura de mercado y formación de precios
+D40,D40 - General
+D42,D42 - Monopolio
+D43,D43 - Oligopoly and Other Forms of Market Imperfection
+D47,D47 - Market Design
+D5,D5 - Equilibrio general y desequilibrio
+D50,D50 - General
+D51,D51 - Exchange and Production Economies
+D52,D52 - Incomplete Markets
+D57,D57 - Input&ndash;Output Tables and Analysis
+D58,D58 - Computable and Other Applied General Equilibrium Models
+D60,D60 - General
+D62,D62 - Externalities
+D7,D7 - Análisis de la toma de decisiones colectiva
+D70,D70 - General
+D72,"D72 - Modelos económicos de procesos políticos: búsqueda de rentas económicas, elecciones, legislaturas y comportamiento de los votantes"
+D78,D78 - Análisis positivo de las decisiones políticas y de su ejecución
+D8,"D8 - Información, conocimiento e incertidumbre"
+D80,D80 - General
+D81,D81 - Criteria for Decision-Making under Risk and Uncertainty
+D82,D82 - Asymmetric and Private Information | Mechanism Design
+D83,D83 - Búsqueda | Aprendizaje | Información y conocimiento
+D84,D84 - Expectativas| Especulaciones
+D85,D85 - Network Formation and Analysis: Theory
+D86,D86 - Economics of Contract: Theory
+D9,D9 - Elección intemporal y crecimiento
+D90,D90 - General
+D91,"D91 - Role and Effects of Psychological, Emotional, Social, and Cognitive Factors on Decision Making"
+E,E - Macroeconomía y economía monetaria
+E01,E01 - Medidas y datos sobre la renta y contabiliad nacional (CNE) y riqueza
+E1,E1 - Modelos agregados generales
+E10,E10 - General
+E13,E13 - Neoclásicos
+E16,E16 - Social Accounting Matrix
+E17,E17 - Predicción y simulación
+E2,"E2 - Consumo, ahorro, producción, empleo e inversión"
+E21,E21 - Consumo | Ahorro
+E22,E22 - Capital | Inversión (incluidas existencias) | Capacidad
+E23,E23 - Producción
+E24,E24 - Empleo | Desempleo | Salarios
+E25,E25 - Factores agregados de la distribución de la renta
+E26,E26 - Economía informal | Economía sumergida
+E27,E27 - Predicción y simulación
+E3,"E3 - Precios, fluctuaciones y ciclos económicos"
+E30,E30 - Generalidades
+E31,E31 - Nivel de precios | Inflación | Deflación
+E32,E32 - Fluctuaciones económicas | Ciclos
+E37,E37 - Predicción y simulación
+E4,E4 - Dinero y tipos de interés
+E41,E41 - Demanda de dinero
+E42,E42 - Sistemas monetarios | Patrones | Regímenes | Gobierno y sistema monetario
+E43,E43 - Determinación de los tipos de interés | Estructura temporal de los tipos de interés
+E44,E44 - Mercados financieros y macroeconomía
+E47,E47 - Predicción y simulación
+E5,"E5 - Política monetaria, bancos centrales, oferta de dinero y crédito"
+E50,E50 - Generalidades
+E51,E51 - Oferta monetaria | Crédito | Multiplicadores monetarios
+E52,"E52 - Política monetaria (objetivos, instrumentos y efectos)"
+E58,E58 - Bancos centrales y sus políticas
+E60,E60 - Generalidades
+E61,E61 - Objetivos de política económica | Diseño y coherencia de las políticas | Coordinación de políticas
+E62,"E62 - Política fiscal | Gasto, inversión y finanzas públicas | Tributación"
+E63,E63 - Análisis comparativo o conjunto de las políticas fiscales y monetarias o de estabilización
+E65,E65 - Estudios de episodios concretos de política económica
+E70,E70 - General
+F1,F1 - Comercio
+F10,F10 - Generalidades
+F11,F11 - Modelos neoclásicos de comercio
+F12,F12 - Modelos de comercio con competencia imperfecta y economías de escala
+F13,F13 - Política comercial | Protección | Promoción | Negociaciones comerciales | Organizaciones internacionales
+F14,F14 - Estudios sobre comercio por países y por industria
+F15,F15 - Integración económica
+F16,F16 - Interacciones entre el comercio y el mercado laboral
+F17,F17 - Predicción y simulación de comercio
+F2,F2 - Movimientos internacionales de factores y actividad económica internacional
+F21,F21 - Inversión internacional | Movimientos de capital a largo plazo
+F22,F22 - Migraciones internacionales
+F23,F23 - Empresas multinacionales | Actividad económica internacional
+F3,F3 - Finanzas internacionales
+F30,F30 - Generalidades
+F31,F31 - Tipos de cambio
+F32,F32 - Ajustes de la balanza por cuenta corriente | Movimientos de capital a corto plazo
+F33,F33 - Instituciones y acuerdos monetarios internacionales
+F34,F34 - Préstamos internacionales y problemas relacionados con la deuda externa
+F36,F36 - Aspectos financieros de la integración económica
+F37,F37 - Simulación y predicción de las finanzas internacionales
+F4,F4 - Aspectos macroeconómicos del comercio y las finanzas internacionales
+F40,F40 - Generalidades
+F41,F41 - Macroeconomía de la economía abierta
+F42,F42 - Coordinación y transmisión de la política internacional
+F44,F44 - International Business Cycles
+F47,F47 - Predicción y simulación
+F52,F52 - Seguridad nacional | Nacionalismo económico
+F53,F53 - Acuerdos internacionales y su cumplimiento | Organizaciones internacionales
+F61,F61 - Microeconomic Impacts
+F62,F62 - Macroeconomic Impacts
+F65,F65 - Finance
+G0,G0 - Generalidades
+G00,G00 - Generalidades
+G01,G01 - Financial Crises
+G1,G1 - Mercados financieros en general
+G10,G10 - Generalidades
+G11,G11 - Selección de cartera | Decisiones de inversión
+G12,G12 - Valoración de activos financieros
+G13,G13 - Valoración de activos contingentes y de futuros
+G14,G14 - Información y eficiencia del mercado | Estudios de casos
+G15,G15 - Mercados financieros internacionales
+G17,G17 - Financial Forecasting and Simulation
+G18,G18 - Política pública y regulación
+G19,G19 - Otros
+G2,G2 - Instituciones y servicios financieros
+G20,G20 - Generalidades
+G21,G21 - Bancos | Otras instituciones de depósito | Hipotecas
+G23,G23 - Fondos de pensiones | Otras instituciones financieras privadas
+G28,G28 - Política pública y regulación
+G31,G31 - Presupuesto de capital | Política de inversión
+G32,G32 - Política de financiación| Estructura del capital y de la propiedad
+G38,G38 - Política pública y regulación
+G4,G4 - Behavioral Finance
+G41,"G41 - Role and Effects of Psychological, Emotional, Social, and Cognitive Factors on Decision Making in Financial Markets"
+G51,"G51 - Household Saving, Borrowing, Debt, and Wealth"
+H12,H12 - Crisis Management
+H20,H20 - Generalidades
+H21,H21 - Eficiencia | Imposición óptima
+H22,H22 - Incidencia
+H23,H23 - Externalidades | Efectos redistributivos | Impuestos y subvenciones medioambientales
+H25,H25 - Impuestos y subvenciones de las rentas empresariales
+H3,H3 - Políticas fiscales y comportamiento de los agentes económicos
+H40,H40 - Generalidades
+H41,H41 - Bienes públicos
+H5,H5 - Gasto público de la administración y políticas relacionadas
+H51,H51 - Gasto público de la administración y sanidad
+H53,H53 - Gasto público de la administración y programas de bienestar
+H54,H54 - Infraestructuras | Otras inversiones públicas y stock de capital
+H55,H55 - Seguridad social y pensiones públicas
+H60,H60 - Generalidades
+H61,H61 - Presupuesto | Sistema presupuestario
+H62,H62 - Déficit | Superávit
+H63,H63 - Deuda | Gestión de la deuda
+H71,"H71 - Impuestos, subvenciones e ingresos estatales, autonómicos y locales"
+H74,"H74 - Endeudamiento de la administración estatal, autonómica y local"
+H75,"H75 - Administración estatal, autonómica y local : salud, educación y bienestar"
+H77,H77 - Relaciones intergubernamentales | Federalismo
+I0,I0 - Generalidades
+I00,I00 - Generalidades
+I10,I10 - Generalidades
+I12,"I12 - Producción sanitaria: nutrición, mortalidad, morbilidad, abuso y adicción a sustancias, discapacidad y comportamiento económico"
+I13,"I13 - Health Insurance, Public and Private"
+I14,I14 - Health and Inequality
+I15,I15 - Health and Economic Development
+I18,I18 - Política pública | Regulación | Sanidad pública
+I20,I20 - Generalidades
+I21,I21 - Análisis de la educación
+I24,I24 - Education and Inequality
+I25,I25 - Education and Economic Development
+I28,I28 - Política pública
+I30,I30 - Generalidades
+I32,I32 - Medición y análisis de la pobreza
+I38,I38 - Política pública | Provisión y efectos de los programas de bienestar
+J01,J01 - Economía laboral : generalidades
+J08,J08 - Política de la economía laboral
+J10,J10 - Generalidades
+J11,J11 - Tendencias y previsiones demográficas
+J13,J13 - Fecundidad | Planificación familiar | Atención a la infancia | Infancia | Jóvenes
+J14,J14 - Economía de la ancianidad | Economía de los discapacitados
+J15,J15 - Economía de las minorías y de las razas | No discriminación laboral
+J16,J16 - Economía de genero | No discriminación laboral
+J18,J18 - Política pública
+J2,"J2 - Reparto del tiempo, comportamiento en el trabajo y determinación y creación de empleo | Capital humano"
+J20,J20 - Generalidades
+J21,J21 - Mano de obra y empleo: dimensión y estructura
+J22,J22 - Reparto del tiempo y oferta de trabajo
+J23,J23 - Determinación del empleo | Creación de empleo | Demanda de trabajo | Trabajo por cuenta propia
+J24,J24 - Capital humano | Cualificación | Elección de ocupación | Productividad del trabajo
+J26,J26 - Jubilación | Política de jubilaciones
+J28,J28 - Seguridad | Accidentes | Salud industrial | Satisfacción en el trabajo | Política pública relacionada
+J3,"J3 - Salarios, remuneraciones y costes laborales"
+J30,J30 - Generalidades
+J31,"J31 - Nivel y estructura salarial | Diferencias salariales por cualifación, formación, ocupación, etc."
+J32,J32 - Costes y beneficios laborales no salariales | Pensiones privadas
+J38,J38 - Política pública
+J40,J40 - Generalidades
+J41,"J41 - Contratos: capital humano específico, modelos de confrontación, modelos de salario de eficiencia y mercados de trabajo intemos"
+J42,J42 - Monopsonio | Mercados de trabajo segmentados
+J43,J43 - Mercados de trabajo agrícola
+J44,J44 - Mercados de profesionales y de trabajadores especializados | Ocupaciones | Uso de licencias
+J46,J46 - Informal Labor Markets
+J48,J48 - Política pública
+J6,"J6 - Movilidad, desempleo y vacantes"
+J61,J61 - Movilidad geográfica de la mano de obra | Trabajadores inmigrantes
+J62,"J62 - Movilidad funcional, laboral e intergeneracional"
+J63,J63 - Turnover | Vacancies | Layoffs
+J64,"J64 - Desempleo: modelos, duración, incidencia y búsqueda de empleo"
+J65,J65 - Subsidio de desempleo | Indemnización por despido | Cierre de plantas
+J70,J70 - Generalidades
+J81,J81 - Condiciones de trabajo
+J82,J82 - Composición de la mano de obra
+K31,K31 - Derecho del trabajo
+K32,"K32 - Energy, Environmental, Health, and Safety Law"
+K35,K35 - Personal Bankruptcy Law
+K4,"K4 - Derecho procesal, sistema jurídico y conducta ilegal"
+K42,K42 - Conducta ilegal y aplicación de la ley
+L1,"L1 - Estructura de mercado, estrategia empresarial y funcionamiento del mercado"
+L10,L10 - Generalidades
+L11,"L11 - Producción, fijación de precios y estructura de mercado | Distribución de las empresas por tamaño"
+L13,L13 - Oligopoly and Other Imperfect Markets
+L14,L14 - Transactional Relationships | Contracts and Reputation | Networks
+L16,L16 - Organización industrial y macroeconomía | Estructura macroeconómica industrial | indices de precios industriales
+L2,"L2 - Objetivos, organización y comportamiento de la empresa"
+L20,L20 - General
+L21,L21 - Objetivos de negocio de la empresa
+L22,L22 - Organización de la empresa y estructura de mercado : mercado versus jerarquías | Integración vertical | Conglomerados
+L23,L23 - Organización de la producción
+L24,L24 - Subcontratas| Empresas conjuntas| Licencia tecnológica
+L25,"L25 - Rendimiento de la empresa : tamaño, edad, beneficio y ventas"
+L4,L4 - Política de defensa de la competencia
+L5,L5 - Regulación y política industrial
+L50,L50 - Generalidades
+L51,L51 - Economía de la regulación
+L60,L60 - Generalidades
+L62,L62 - Automóviles | Otro equipo de transporte
+L66,L66 - Alimentación | Bebidas | Cosmética | Tabaco | Vino y bebidas espirituosas
+L80,L80 - Generalidades
+L81,L81 - Comercio minorista y mayorista | Logística | Comercio electrónico
+L86,L86 - Servicios de información e Internet | Programas informáticos
+L88,L88 - Government Policy
+L92,"L92 - Ferrocarriles y otros medios de transporte de superficie : automóviles, autobuses, camiones y transportes fluviales | Puertos"
+M14,M14 - Cultura corporativa | Responsabilidad social corporativa
+M20,M20 - General
+M52,M52 - Compensation and Compensation Methods and Their Effects
+M54,"M54 - Gestión laboral (formación de equipos, atribución de responsabilidades, diseño del puesto de trabajo, tareas y jerarquías, satisfacción en el trabajo)"
+N16,N16 - América Latina | Caribe
+N26,N26 - América Latina | Caribe
+N30,"N30 - General, International, or Comparative"
+N36,N36 - América Latina | Caribe
+N46,N46 - América Latina | Caribe
+N71,N71 - U.S. | Canada: Pre-1913
+N96,N96 - América Latina | Caribe
+O1,O1 - Desarrollo económico
+O10,O10 - Generalidades
+O11,O11 - Análisis macroeconómico del desarrollo económico
+O12,O12 - Análisis microeconómico del desarrollo económico
+O13,O13 - Agricultura | Recursos naturales | Energía | Medio ambiente | Otros productos primarios
+O14,O14 - Industrialización | Industrias manufactureras y de servicios | Elección de tecnología
+O15,O15 - Recursos humanos | Desarrollo humano | Distribución de la renta | Migraciones
+O16,O16 - Mercados financieros | Ahorro e inversión de capital
+O17,"O17 - Sector formal e informal | Economía sumergida | Acuerdos institucionales: aspectos jurídicos, sociales, económicos y políticos"
+O18,"O18 - Análisis regional, urbano y rural"
+O2,O2 - Planificación y política de desarrollo
+O25,O25 - Política industrial
+O31,O31 - Innovación e invención : procesos e incentivos
+O33,O33 - Cambio tecnológico : opciones y consecuencias | Difusión
+O38,O38 - Política pública
+O4,O4 - Crecimiento económico y productividad agregada
+O40,O40 - Generalidades
+O41,"O41 - Modelos de crecimiento de uno, dos o varios sectores"
+O43,O43 - Instituciones y crecimiento
+O44,O44 - Environment and Growth
+O47,O47 - Medición del crecimiento económico | Productividad agregada
+O50,O50 - Generalidades
+O54,O54 - América Latina | Caribe
+P14,P14 - Derechos de propiedad
+P16,P16 - Economía política
+P45,"P45 - Comercio internacional, financiación, inversión y ayuda"
+Q02,Q02 - Commodity Markets
+Q1,Q1 - Agricultura
+Q11,Q11 - Análisis de la oferta y de la demanda global| Precios
+Q12,"Q12 - Análisis microeconómico de las explotaciones agrarias, explotaciones familiares y mercados de inputs agrarios"
+Q13,Q13 - Mercados agrarios y marketing | Cooperativas | Industria agraria
+Q14,Q14 - Finanzas agrarias
+Q15,Q15 - Propiedad y tenencia de la tierra | Reforma agraria | Uso de la tierra | Regadío
+Q18,Q18 - Política agraria | Política alimentaria
+Q23,Q23 - Silvicultura
+Q24,Q24 - Tierra
+Q29,Q29 - Otros
+Q31,Q31 - Oferta y demanda
+Q41,Q41 - Oferta y demanda
+Q42,Q42 - Fuentes de energía alternativa
+Q43,Q43 - Energía y macroeconomía
+Q48,Q48 - Política pública
+Q51,Q51 - Evaluación de los efectos en el medioambiente
+Q53,Q53 - Contaminación del aire | Contaminación del agua | Ruido | Residuos peligrosos | Reciclaje de residuos sólidos
+Q54,Q54 - Clima | Desastres naturales | Calentamiento global
+Q56,Q56 - Desarrollo y medio ambiente | Comercio y medio
+R1,R1 - Economía regional general
+R10,R10 - Generalidades
+R11,"R11 - Actividad económica regional : crecimiento, desarrollo y cambios"
+R12,R12 - Distribución espacial y dimensional de la actividad económica regional | Comercio interregional
+R14,R14 - Modos de uso de la tierra
+R15,R15 - Modelos econométricos y de input-output | Otros modelos
+R2,R2 - Análisis de las economías domésticas
+R21,R21 - Demanda de viviendas
+R23,R23 - Migración regional | Mercado de trabajo regional | Población
+R31,R31 - Oferta y mercados de la vivienda
+R4,R4 - Sistemas de transporte
+R41,"R41 - Transportes : demanda, oferta y congestión | Seguridad y accidentes"
+R42,R42 - Análisis de las inversiones públicas y privadas
+R51,R51 - Financiación en economías urbanas y rurales
+Y4,Y4 - Tesis
