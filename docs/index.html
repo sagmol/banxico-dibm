@@ -197,6 +197,7 @@
   <a href="#temas">Temas JEL</a>
   <a href="#red">Red de coautoría</a>
   <a href="#clusters">Clusters temáticos</a>
+  <a href="#redes-intelectuales" style="color:var(--amarillo);font-weight:600">Redes intelectuales ★</a>
   <div class="spacer"></div>
   <a href="https://github.com/sagmol/banxico-dibm" class="gh-link" target="_blank">
     GitHub ↗
@@ -426,6 +427,85 @@
       <iframe src="charts/clusters_evolucion.html" height="540"></iframe>
       <div class="chart-caption">Evolución de tópicos en el tiempo (desde 1995). El quiebre de 2001 marca el inicio del régimen de metas de inflación.</div>
     </div>
+  </div>
+</section>
+
+<!-- ── REDES INTELECTUALES ────────────────────────────────── -->
+<section id="redes-intelectuales" style="background:#0d1117;color:#e6edf3;padding:4rem 0;">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" style="background:rgba(78,205,196,.15);color:#4ECDC4;">Redes intelectuales · Fase 2</span>
+      <h2 style="color:#e6edf3;">¿A qué universo de ideas recurre el Banxico?</h2>
+      <p style="color:#7d8590;">
+        Análisis bibliométrico de 1,911 referencias extraídas de 85 papers sobre inflación y política monetaria (JEL E3x, E5x).
+        El hallazgo central: <strong style="color:#4ECDC4;">99.8%</strong> de las citas clasificadas apuntan
+        al mainstream ortodoxo. Cero citas a Kalecki, Minsky, Lavoie o al Journal of Post Keynesian Economics.
+      </p>
+    </div>
+
+    <!-- Tarjetas de hallazgos -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:2.5rem;">
+      <div style="background:#0e1420;border:1px solid #1e2738;border-radius:12px;padding:24px;">
+        <div style="font-size:11px;color:#4ECDC4;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">Autor más citado</div>
+        <div style="font-size:2rem;font-weight:900;color:#e6edf3;line-height:1;">37×</div>
+        <div style="font-size:13px;color:#7d8590;margin-top:4px;">Ben Bernanke<br><em>New Keynesian</em></div>
+      </div>
+      <div style="background:#0e1420;border:1px solid #1e2738;border-radius:12px;padding:24px;">
+        <div style="font-size:11px;color:#4ECDC4;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">Corriente dominante</div>
+        <div style="font-size:2rem;font-weight:900;color:#e6edf3;line-height:1;">64%</div>
+        <div style="font-size:13px;color:#7d8590;margin-top:4px;">New Keynesian / DSGE<br><em>de autores canónicos</em></div>
+      </div>
+      <div style="background:#0e1420;border:1px solid #1e2738;border-radius:12px;padding:24px;">
+        <div style="font-size:11px;color:#E17055;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">Pensamiento heterodoxo</div>
+        <div style="font-size:2rem;font-weight:900;color:#E17055;line-height:1;">0</div>
+        <div style="font-size:13px;color:#7d8590;margin-top:4px;">citas a JPKE, Cambridge JE,<br>Kalecki, Minsky o Lavoie</div>
+      </div>
+      <div style="background:#0e1420;border:1px solid #1e2738;border-radius:12px;padding:24px;">
+        <div style="font-size:11px;color:#c084fc;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">Journal #1 citado</div>
+        <div style="font-size:1.4rem;font-weight:900;color:#e6edf3;line-height:1.2;">AER</div>
+        <div style="font-size:13px;color:#7d8590;margin-top:4px;">American Economic Review<br><em>115 citas</em></div>
+      </div>
+    </div>
+
+    <!-- Wrapped y red como tarjetas grandes -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:2rem;">
+
+      <a href="charts/wrapped_ortodoxia.html" target="_blank"
+         style="display:block;text-decoration:none;
+                background:linear-gradient(135deg,#0e1420,#111827);
+                border:1px solid #2e3f5a;border-radius:16px;padding:32px;
+                transition:transform .2s,border-color .2s;"
+         onmouseover="this.style.transform='translateY(-3px)';this.style.borderColor='#4ECDC4'"
+         onmouseout="this.style.transform='';this.style.borderColor='#2e3f5a'">
+        <div style="font-size:28px;margin-bottom:12px;">📊</div>
+        <div style="font-size:11px;color:#4ECDC4;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">Dashboard interactivo</div>
+        <div style="font-size:1.3rem;font-weight:700;color:#e6edf3;margin-bottom:8px;">Wrapped Bibliométrico</div>
+        <div style="font-size:13px;color:#7d8590;line-height:1.6;">
+          Métricas de ortodoxia al estilo Spotify Wrapped: contadores animados, ranking de autores, distribución por corriente teórica y la lista de lo que no aparece.
+        </div>
+        <div style="margin-top:16px;font-size:12px;color:#4ECDC4;">Abrir → </div>
+      </a>
+
+      <a href="charts/red_autores.html" target="_blank"
+         style="display:block;text-decoration:none;
+                background:linear-gradient(135deg,#0e1420,#111827);
+                border:1px solid #2e3f5a;border-radius:16px;padding:32px;
+                transition:transform .2s,border-color .2s;"
+         onmouseover="this.style.transform='translateY(-3px)';this.style.borderColor='#c084fc'"
+         onmouseout="this.style.transform='';this.style.borderColor='#2e3f5a'">
+        <div style="font-size:28px;margin-bottom:12px;">🕸️</div>
+        <div style="font-size:11px;color:#c084fc;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">Grafo D3 interactivo</div>
+        <div style="font-size:1.3rem;font-weight:700;color:#e6edf3;margin-bottom:8px;">Red de co-citación de autores</div>
+        <div style="font-size:13px;color:#7d8590;line-height:1.6;">
+          106 economistas conectados por co-aparición en referencias. Color por corriente teórica. Zoom, drag, filtro por escuela. El cluster New Keynesian domina el centro.
+        </div>
+        <div style="margin-top:16px;font-size:12px;color:#c084fc;">Explorar → </div>
+      </a>
+    </div>
+
+    <p style="font-size:12px;color:#484f58;text-align:center;">
+      Basado en extracción de referencias de 85 PDFs · Scripts 07–09 disponibles en el repositorio
+    </p>
   </div>
 </section>
 
