@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evolución Temporal — Banxico DIBM</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#070a10; color:#e6edf3; font-family:'Inter',system-ui,sans-serif; overflow-x:hidden; }
+
+  /* ── Header ── */
+  .header {
+    padding:40px 60px 30px;
+    background:linear-gradient(135deg,#070a10 60%,#0d1f3c);
+    border-bottom:1px solid #1c2433;
+  }
+  .header h1 { font-size:28px; font-weight:800; letter-spacing:-.5px; }
+  .header h1 span { color:#4ECDC4; }
+  .header p { font-size:14px; color:#7d8590; margin-top:8px; max-width:600px; line-height:1.6; }
+
+  /* ── Periodo tabs ── */
+  .tabs {
+    display:flex; gap:0; padding:0 60px;
+    background:#0d1117; border-bottom:1px solid #1c2433;
+  }
+  .tab {
+    padding:12px 20px; font-size:12px; font-weight:600;
+    text-transform:uppercase; letter-spacing:.8px;
+    color:#7d8590; cursor:pointer; border-bottom:2px solid transparent;
+    transition:all .2s;
+  }
+  .tab:hover { color:#e6edf3; }
+  .tab.active { color:#4ECDC4; border-bottom-color:#4ECDC4; }
+
+  /* ── Secciones ── */
+  .section {
+    padding:50px 60px;
+    border-bottom:1px solid #1c2433;
+  }
+  .section-title {
+    font-size:20px; font-weight:700; margin-bottom:6px;
+  }
+  .section-sub {
+    font-size:13px; color:#7d8590; margin-bottom:32px; line-height:1.5;
+  }
+
+  /* ── Cards de insight ── */
+  .insight-cards {
+    display:flex; gap:16px; margin-bottom:40px; flex-wrap:wrap;
+  }
+  .insight-card {
+    background:#0d1117; border:1px solid #1c2433; border-radius:10px;
+    padding:16px 20px; flex:1; min-width:160px;
+  }
+  .insight-card .val {
+    font-size:28px; font-weight:800; line-height:1;
+  }
+  .insight-card .lbl {
+    font-size:11px; color:#7d8590; margin-top:6px; line-height:1.4;
+  }
+
+  /* ── Charts ── */
+  .chart-wrap {
+    background:#0d1117; border:1px solid #1c2433; border-radius:10px;
+    padding:20px; margin-bottom:24px;
+  }
+  .chart-title {
+    font-size:13px; font-weight:600; color:#cdd9e5; margin-bottom:16px;
+  }
+  svg.chart { display:block; overflow:visible; }
+
+  /* ── Axis ── */
+  .axis path, .axis line { stroke:#1c2433; }
+  .axis text { fill:#7d8590; font-size:10px; }
+  .grid line { stroke:#1c2433; stroke-dasharray:2,3; }
+
+  /* ── Periodo bands ── */
+  .periodo-band { opacity:.07; }
+  .periodo-label { font-size:9px; fill:#7d8590; font-weight:600; text-transform:uppercase; letter-spacing:.6px; }
+
+  /* ── Lines ── */
+  .line-ort { stroke:#4ECDC4; stroke-width:2.5; fill:none; }
+  .line-het { stroke:#FF6B6B; stroke-width:2; fill:none; stroke-dasharray:4,3; }
+  .line-dsge { stroke:#FFE66D; stroke-width:2; fill:none; }
+  .line-it   { stroke:#A29BFE; stroke-width:1.5; fill:none; }
+  .area-ort  { fill:url(#grad-ort); opacity:.15; }
+
+  /* ── Minsky box ── */
+  .minsky-box {
+    background:linear-gradient(135deg,#1a0d1a,#0d1117);
+    border:1px solid #3d1a3d; border-radius:10px;
+    padding:28px 32px; margin-top:24px;
+    display:flex; gap:40px; align-items:center; flex-wrap:wrap;
+  }
+  .minsky-zero {
+    font-size:72px; font-weight:900; color:#FF6B6B;
+    line-height:1; flex:0 0 auto;
+  }
+  .minsky-text h3 { font-size:18px; font-weight:700; margin-bottom:8px; }
+  .minsky-text p { font-size:13px; color:#7d8590; line-height:1.6; max-width:480px; }
+  .minsky-text .debate { font-size:11px; color:#484f58; margin-top:12px; }
+
+  /* ── NLP chips ── */
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; }
+  .chip {
+    padding:4px 10px; border-radius:20px; font-size:11px; font-weight:600;
+    border:1px solid;
+  }
+  .chip.ort { border-color:#4ECDC4; color:#4ECDC4; }
+  .chip.het { border-color:#FF6B6B; color:#FF6B6B; opacity:.6; }
+
+  /* ── Legend inline ── */
+  .legend-inline {
+    display:flex; gap:20px; flex-wrap:wrap;
+    margin-bottom:16px;
+  }
+  .leg-item-i { display:flex; align-items:center; gap:6px; font-size:11px; color:#7d8590; }
+  .leg-line { width:22px; height:2px; border-radius:2px; }
+
+  /* ── Tooltip ── */
+  #tooltip-t {
+    position:fixed; pointer-events:none; z-index:100;
+    background:rgba(13,17,23,.97); border:1px solid #30363d;
+    border-radius:6px; padding:8px 12px; font-size:12px;
+    opacity:0; transition:opacity .1s;
+  }
+
+  /* ── Responsive ── */
+  @media(max-width:760px) {
+    .section, .header { padding:24px 16px; }
+    .tabs { padding:0 16px; overflow-x:auto; }
+    .tab { white-space:nowrap; padding:10px 14px; font-size:11px; }
+    .insight-cards { flex-direction:column; gap:10px; }
+    .insight-card { min-width:unset; }
+    .minsky-box { flex-direction:column; gap:16px; padding:20px; }
+    .minsky-zero { font-size:52px; }
+    #vocab-grid { grid-template-columns:1fr !important; }
+    svg.chart { max-width:100%; overflow-x:auto; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Banxico DIBM · <span>Evolución Temporal</span></h1>
+  <p>¿Cambió la ortodoxia del Banco de México con el tiempo? Análisis de vocabulario en abstracts (563 papers, 1978–2025) y de citas bibliográficas (1,911 refs, 2001–2025).</p>
+</div>
+
+<div class="tabs">
+  <div class="tab active" data-tab="vocabulario">Vocabulario NLP</div>
+  <div class="tab" data-tab="citas">Citas por período</div>
+  <div class="tab" data-tab="minsky">Minsky & lo ausente</div>
+</div>
+
+<div id="tooltip-t"></div>
+
+<!-- ═══════════════ TAB 1: VOCABULARIO NLP ═══════════════ -->
+<div class="section" id="tab-vocabulario">
+
+  <div class="section-title">Vocabulario ortodoxo en abstracts</div>
+  <div class="section-sub">
+    Frecuencia promedio de términos canónicos (DSGE, rational expectations, inflation targeting, etc.)
+    por paper, para cada año del corpus. El quiebre es nítido tras el inflation targeting (2001).
+  </div>
+
+  <div class="insight-cards">
+    <div class="insight-card">
+      <div class="val" style="color:#4ECDC4">0.9%</div>
+      <div class="lbl">de papers pre-2001<br>usan vocabulario DSGE</div>
+    </div>
+    <div class="insight-card">
+      <div class="val" style="color:#FFE66D">15.9%</div>
+      <div class="lbl">post inflation targeting<br>(2001–2008)</div>
+    </div>
+    <div class="insight-card">
+      <div class="val" style="color:#A29BFE">16.7%</div>
+      <div class="lbl">período reciente<br>(2016–2025)</div>
+    </div>
+    <div class="insight-card">
+      <div class="val" style="color:#FF6B6B">0</div>
+      <div class="lbl">papers con vocabulario<br>heterodoxo puro</div>
+    </div>
+  </div>
+
+  <div class="chart-wrap">
+    <div class="chart-title">Promedio de términos ortodoxos por paper · por año (1978–2025)</div>
+    <div class="legend-inline">
+      <div class="leg-item-i"><div class="leg-line" style="background:#4ECDC4"></div>Términos ortodoxos (promedio/paper)</div>
+      <div class="leg-item-i"><div class="leg-line" style="background:#FF6B6B;height:1px;border-top:2px dashed #FF6B6B;background:none"></div>Términos heterodoxos</div>
+    </div>
+    <svg id="chart-nlp" class="chart"></svg>
+  </div>
+
+  <div class="chart-wrap">
+    <div class="chart-title">Top términos ortodoxos por período</div>
+    <div id="chart-terms-grid"></div>
+  </div>
+
+</div>
+
+<!-- ═══════════════ TAB 2: CITAS ═══════════════ -->
+<div class="section" id="tab-citas" style="display:none">
+
+  <div class="section-title">Composición ortodoxa de las referencias</div>
+  <div class="section-sub">
+    % de referencias bibliográficas clasificadas como ortodoxas, por año del paper que cita.
+    No hay un solo año donde las citas heterodoxas superen el 2%.
+  </div>
+
+  <div class="insight-cards">
+    <div class="insight-card">
+      <div class="val" style="color:#4ECDC4">99.8%</div>
+      <div class="lbl">ortodoxo + institucional<br>en todo el corpus</div>
+    </div>
+    <div class="insight-card">
+      <div class="val" style="color:#FFE66D">100%</div>
+      <div class="lbl">IT consolidado<br>(2001–2008)</div>
+    </div>
+    <div class="insight-card">
+      <div class="val" style="color:#A29BFE">99.7%</div>
+      <div class="lbl">post-crisis 2008<br>(2009–2015)</div>
+    </div>
+    <div class="insight-card">
+      <div class="val" style="color:#FF6B6B">0</div>
+      <div class="lbl">citas a Minsky<br>en el corpus completo</div>
+    </div>
+  </div>
+
+  <div class="chart-wrap">
+    <div class="chart-title">% de referencias ortodoxas por año · corpus inflación (2001–2025)</div>
+    <svg id="chart-citas" class="chart"></svg>
+  </div>
+
+  <div class="chart-wrap">
+    <div class="chart-title">Número de referencias por período y tipo</div>
+    <svg id="chart-barras" class="chart"></svg>
+  </div>
+
+</div>
+
+<!-- ═══════════════ TAB 3: MINSKY ═══════════════ -->
+<div class="section" id="tab-minsky" style="display:none">
+
+  <div class="section-title">Lo que no está: la hipótesis del silencio</div>
+  <div class="section-sub">
+    Después de la crisis de 2008, muchos bancos centrales del mundo "rehabilitaron" a Hyman Minsky.
+    La Fed, el BoE y el BIS comenzaron a citar la Hipótesis de Inestabilidad Financiera.
+    El Banxico no lo hizo.
+  </div>
+
+  <div class="minsky-box">
+    <div class="minsky-zero">0</div>
+    <div class="minsky-text">
+      <h3>Citas a Minsky en el corpus Banxico (1978–2025)</h3>
+      <p>A pesar de que la crisis de 2008 validó empíricamente muchas de las predicciones de la
+      Hipótesis de Inestabilidad Financiera (HIF), el Banco de México no incorporó a Minsky
+      ni en sus working papers de inflación, ni en sus modelos DSGE.</p>
+      <div class="debate">
+        Comparar con: Fed NY (Minsky en 12 WPs post-2008), BoE (Financial Stability Reports),
+        BIS Quarterly Review (ciclos financieros Minsky-Kindleberger).
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:32px">
+    <div class="section-title" style="font-size:16px; margin-bottom:8px">Debates económicos ausentes del corpus</div>
+    <div class="section-sub">Términos con cero o presencia marginal (≤1 paper) en 563 documentos, 1978–2025</div>
+    <svg id="chart-ausentes" class="chart"></svg>
+  </div>
+
+  <div style="margin-top:32px">
+    <div class="section-title" style="font-size:16px; margin-bottom:12px">Vocabulario ortodoxo vs heterodoxo en abstracts</div>
+    <div id="vocab-grid"></div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script>
+
+// ── Tabs ──────────────────────────────────────────────────────────────────────
+const TAB_IDS = ["vocabulario", "citas", "minsky"];
+function showTab(id) {
+  TAB_IDS.forEach(t => {
+    const el = document.getElementById("tab-" + t);
+    if (el) el.style.display = (t === id) ? "block" : "none";
+  });
+  document.querySelectorAll(".tab").forEach(t =>
+    t.classList.toggle("active", t.dataset.tab === id));
+  if (id === "citas" && !window._citasDrawn) { drawCitas(); window._citasDrawn = true; }
+  if (id === "minsky" && !window._minskyDrawn) { drawMinsky(); window._minskyDrawn = true; }
+}
+document.querySelectorAll(".tab").forEach(tab => {
+  tab.addEventListener("click", function() { showTab(this.dataset.tab); });
+});
+
+const tt = document.getElementById("tooltip-t");
+function showTT(e, html) {
+  tt.innerHTML = html;
+  tt.style.opacity = 1;
+  tt.style.left = (e.clientX + 14) + "px";
+  tt.style.top  = (e.clientY - 10) + "px";
+}
+function hideTT() { tt.style.opacity = 0; }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// TAB 1: NLP
+// ─────────────────────────────────────────────────────────────────────────────
+Promise.all([
+  fetch("../data/nlp_vocab_anio.json").then(r => r.json()),
+  fetch("../data/nlp_vocab_periodo.json").then(r => r.json()),
+]).then(([anio_data, periodo_data]) => {
+
+  drawNLP(anio_data, periodo_data);
+  drawTermsGrid(periodo_data.por_periodo);
+
+  // Guardar para tab minsky
+  window._periodo_data = periodo_data;
+});
+
+function drawNLP(anio_data, periodo_data) {
+  const W = Math.min(window.innerWidth - 160, 900);
+  const H = 320;
+  const margin = {top:20, right:20, bottom:40, left:48};
+  const iW = W - margin.left - margin.right;
+  const iH = H - margin.top - margin.bottom;
+
+  const svg = d3.select("#chart-nlp")
+    .attr("width", W).attr("height", H);
+
+  const defs = svg.append("defs");
+  const grad = defs.append("linearGradient").attr("id","grad-ort").attr("x1",0).attr("x2",0).attr("y1",0).attr("y2",1);
+  grad.append("stop").attr("offset","0%").attr("stop-color","#4ECDC4").attr("stop-opacity",.4);
+  grad.append("stop").attr("offset","100%").attr("stop-color","#4ECDC4").attr("stop-opacity",0);
+
+  const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+  const data = anio_data.filter(d => d.anio >= 1978 && d.n_papers > 0);
+
+  const x = d3.scaleLinear().domain([1978, 2025]).range([0, iW]);
+  const y = d3.scaleLinear().domain([0, d3.max(data, d => Math.max(d.prom_ort, d.prom_het)) * 1.15]).range([iH, 0]);
+
+  // Grid
+  g.append("g").attr("class","grid")
+    .call(d3.axisLeft(y).ticks(5).tickSize(-iW).tickFormat(""))
+    .select(".domain").remove();
+
+  // Período bands
+  const periodos = [
+    {a:1978,b:2000,label:"Pre-IT",    color:"#7d8590"},
+    {a:2001,b:2008,label:"IT",         color:"#4ECDC4"},
+    {a:2009,b:2015,label:"Post-2008", color:"#FFE66D"},
+    {a:2016,b:2025,label:"Reciente",  color:"#A29BFE"},
+  ];
+  periodos.forEach(p => {
+    const x1 = x(p.a), x2 = x(p.b + 1);
+    g.append("rect").attr("class","periodo-band")
+      .attr("x",x1).attr("y",0).attr("width",x2-x1).attr("height",iH)
+      .attr("fill", p.color);
+    g.append("text").attr("class","periodo-label")
+      .attr("x", x1 + (x2-x1)/2).attr("y", -6)
+      .attr("text-anchor","middle").text(p.label);
+  });
+
+  // IT vertical line
+  g.append("line")
+    .attr("x1",x(2001)).attr("x2",x(2001)).attr("y1",0).attr("y2",iH)
+    .attr("stroke","#4ECDC4").attr("stroke-width",1).attr("stroke-dasharray","4,3").attr("opacity",.5);
+  g.append("text").attr("x",x(2001)+4).attr("y",14)
+    .attr("fill","#4ECDC4").attr("font-size","9px").text("Inflation Targeting →");
+
+  // Area ort
+  const area = d3.area().x(d=>x(d.anio)).y0(iH).y1(d=>y(d.prom_ort)).curve(d3.curveMonotoneX);
+  g.append("path").datum(data).attr("class","area-ort").attr("d",area);
+
+  // Line ort
+  const lineOrt = d3.line().x(d=>x(d.anio)).y(d=>y(d.prom_ort)).curve(d3.curveMonotoneX);
+  g.append("path").datum(data).attr("class","line-ort").attr("d",lineOrt);
+
+  // Line het
+  const lineHet = d3.line().x(d=>x(d.anio)).y(d=>y(d.prom_het)).curve(d3.curveMonotoneX);
+  g.append("path").datum(data).attr("class","line-het").attr("d",lineHet);
+
+  // Dots
+  const dots = g.selectAll(".dot").data(data).join("circle")
+    .attr("cx", d=>x(d.anio)).attr("cy", d=>y(d.prom_ort))
+    .attr("r", 3.5).attr("fill","#4ECDC4").attr("opacity",.8)
+    .on("mouseover", (e,d) => showTT(e,
+      `<b>${d.anio}</b><br>Ort: ${d.prom_ort.toFixed(2)} términos/paper<br>Het: ${d.prom_het.toFixed(2)} términos/paper<br>Papers: ${d.n_papers}`))
+    .on("mouseout", hideTT);
+
+  // Axes
+  g.append("g").attr("class","axis").attr("transform",`translate(0,${iH})`)
+    .call(d3.axisBottom(x).tickFormat(d3.format("d")).ticks(10));
+  g.append("g").attr("class","axis").call(d3.axisLeft(y).ticks(5));
+
+  g.append("text").attr("x",-margin.left+2).attr("y",-10)
+    .attr("fill","#484f58").attr("font-size","9px").text("términos/paper");
+}
+
+function drawTermsGrid(periodos) {
+  const PERIODO_LABEL = {
+    pre_IT:"Pre-IT (< 2001)", early_IT:"IT consolidado (2001–08)",
+    post_crisis:"Post-crisis (2009–15)", reciente:"Reciente (2016–25)"
+  };
+  const COLORS_P = { pre_IT:"#7d8590", early_IT:"#4ECDC4", post_crisis:"#FFE66D", reciente:"#A29BFE" };
+
+  const grid = document.getElementById("chart-terms-grid");
+  grid.style.display = "grid";
+  grid.style.gridTemplateColumns = "repeat(auto-fit,minmax(200px,1fr))";
+  grid.style.gap = "16px";
+
+  periodos.forEach(p => {
+    const maxFreq = d3.max(p.top_terms, t => t.freq) || 1;
+    const col = COLORS_P[p.periodo] || "#4ECDC4";
+    const div = document.createElement("div");
+    div.style.cssText = "background:#161b22;border:1px solid #21262d;border-radius:8px;padding:14px;";
+    div.innerHTML = `<div style="font-size:11px;font-weight:700;color:${col};text-transform:uppercase;letter-spacing:.6px;margin-bottom:12px">${PERIODO_LABEL[p.periodo]||p.periodo}</div>`;
+    p.top_terms.slice(0,6).forEach(t => {
+      const pct = (t.freq / maxFreq * 100).toFixed(0);
+      div.innerHTML += `
+        <div style="margin-bottom:6px">
+          <div style="display:flex;justify-content:space-between;font-size:10px;color:#cdd9e5;margin-bottom:2px">
+            <span>${t.term}</span><span style="color:${col}">${t.freq}x</span>
+          </div>
+          <div style="background:#0d1117;border-radius:2px;height:3px">
+            <div style="background:${col};width:${pct}%;height:3px;border-radius:2px;transition:width .4s"></div>
+          </div>
+        </div>`;
+    });
+    grid.appendChild(div);
+  });
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// TAB 2: CITAS
+// ─────────────────────────────────────────────────────────────────────────────
+function drawCitas() {
+  fetch("../data/temporal_citas.json").then(r => r.json()).then(data => {
+    drawLineCitas(data.por_anio);
+    drawBarrasPeriodo(data.por_periodo);
+  });
+}
+
+function drawLineCitas(anios) {
+  const W = Math.min(window.innerWidth - 160, 900);
+  const H = 300;
+  const margin = {top:20,right:20,bottom:40,left:50};
+  const iW = W - margin.left - margin.right;
+  const iH = H - margin.top - margin.bottom;
+
+  const svg = d3.select("#chart-citas").attr("width",W).attr("height",H);
+  const g = svg.append("g").attr("transform",`translate(${margin.left},${margin.top})`);
+
+  const data = anios.filter(d => d.n_refs >= 5);
+
+  const x = d3.scaleLinear().domain(d3.extent(data,d=>d.anio)).range([0,iW]);
+  const y = d3.scaleLinear().domain([94,101]).range([iH,0]);
+
+  // Grid
+  g.append("g").attr("class","grid")
+    .call(d3.axisLeft(y).ticks(5).tickSize(-iW).tickFormat(""))
+    .select(".domain").remove();
+
+  // 100% line
+  g.append("line").attr("x1",0).attr("x2",iW).attr("y1",y(100)).attr("y2",y(100))
+    .attr("stroke","#4ECDC4").attr("stroke-width",.8).attr("stroke-dasharray","6,3").attr("opacity",.4);
+  g.append("text").attr("x",iW-4).attr("y",y(100)-4)
+    .attr("fill","#4ECDC4").attr("font-size","9px").attr("text-anchor","end").text("100% ortodoxo");
+
+  // Area
+  const defs = svg.append("defs");
+  const grad = defs.append("linearGradient").attr("id","grad-citas").attr("x1",0).attr("x2",0).attr("y1",0).attr("y2",1);
+  grad.append("stop").attr("offset","0%").attr("stop-color","#4ECDC4").attr("stop-opacity",.3);
+  grad.append("stop").attr("offset","100%").attr("stop-color","#4ECDC4").attr("stop-opacity",0);
+  const area = d3.area().x(d=>x(d.anio)).y0(iH).y1(d=>y(d.pct_ort)).curve(d3.curveMonotoneX);
+  g.append("path").datum(data).attr("fill","url(#grad-citas)").attr("d",area);
+
+  // Line
+  const line = d3.line().x(d=>x(d.anio)).y(d=>y(d.pct_ort)).curve(d3.curveMonotoneX);
+  g.append("path").datum(data).attr("class","line-ort").attr("d",line);
+
+  // Dots
+  g.selectAll(".dot-c").data(data).join("circle")
+    .attr("cx",d=>x(d.anio)).attr("cy",d=>y(d.pct_ort))
+    .attr("r",4).attr("fill","#4ECDC4").attr("opacity",.9)
+    .on("mouseover",(e,d)=>showTT(e,
+      `<b>${d.anio}</b><br>${d.pct_ort}% ortodoxo<br>${d.pct_het}% heterodoxo<br>${d.n_refs} referencias<br>${d.n_papers} papers`))
+    .on("mouseout",hideTT);
+
+  // Het dots (small, red)
+  g.selectAll(".dot-h").data(data.filter(d=>d.pct_het>0)).join("circle")
+    .attr("cx",d=>x(d.anio)).attr("cy",d=>y(d.pct_ort - d.pct_het + 100))
+    .attr("r",3).attr("fill","#FF6B6B").attr("opacity",.8)
+    .on("mouseover",(e,d)=>showTT(e,`<b>${d.anio}</b> · Het: ${d.pct_het}%`))
+    .on("mouseout",hideTT);
+
+  // Axes
+  g.append("g").attr("class","axis").attr("transform",`translate(0,${iH})`)
+    .call(d3.axisBottom(x).tickFormat(d3.format("d")).ticks(8));
+  g.append("g").attr("class","axis").call(d3.axisLeft(y).tickFormat(d=>d+"%"));
+}
+
+function drawBarrasPeriodo(periodos) {
+  const LABELS = {
+    pre_IT:"Pre-IT (<2001)", early_IT:"IT (2001–08)",
+    post_crisis:"Post-2008 (09–15)", reciente:"Reciente (16–25)"
+  };
+  const W = Math.min(window.innerWidth - 160, 700);
+  const H = 260;
+  const margin = {top:20,right:20,bottom:50,left:60};
+  const iW = W - margin.left - margin.right;
+  const iH = H - margin.top - margin.bottom;
+
+  const svg = d3.select("#chart-barras").attr("width",W).attr("height",H);
+  const g = svg.append("g").attr("transform",`translate(${margin.left},${margin.top})`);
+
+  const cats = ["IT consolidado","Post-crisis 2008","Reciente"];
+  const data = periodos.map(p => ({
+    label: LABELS[p.id] || p.label,
+    ort: p.n_refs * p.pct_ortodoxo / 100,
+    het: p.n_refs * p.pct_heterodoxo / 100,
+    total: p.n_refs,
+    papers: p.n_papers
+  }));
+
+  const x = d3.scaleBand().domain(data.map(d=>d.label)).range([0,iW]).padding(.3);
+  const y = d3.scaleLinear().domain([0,d3.max(data,d=>d.total)*1.1]).range([iH,0]);
+
+  g.append("g").attr("class","grid")
+    .call(d3.axisLeft(y).ticks(5).tickSize(-iW).tickFormat(""))
+    .select(".domain").remove();
+
+  // Bars
+  g.selectAll(".bar-ort").data(data).join("rect")
+    .attr("x",d=>x(d.label)).attr("width",x.bandwidth())
+    .attr("y",d=>y(d.total)).attr("height",d=>iH-y(d.total))
+    .attr("fill","#4ECDC4").attr("rx",3)
+    .on("mouseover",(e,d)=>showTT(e,
+      `<b>${d.label}</b><br>Total: ${d.total} refs<br>${d.papers} papers<br>Ort: ${d.ort.toFixed(0)} refs`))
+    .on("mouseout",hideTT);
+
+  // Tiny het bar on top if exists
+  g.selectAll(".bar-het").data(data.filter(d=>d.het>0)).join("rect")
+    .attr("x",d=>x(d.label)).attr("width",x.bandwidth())
+    .attr("y",d=>y(d.het)).attr("height",d=>Math.max(3, iH-y(d.het)))
+    .attr("fill","#FF6B6B").attr("rx",3);
+
+  g.selectAll(".val").data(data).join("text")
+    .attr("x",d=>x(d.label)+x.bandwidth()/2).attr("y",d=>y(d.total)-5)
+    .attr("text-anchor","middle").attr("fill","#cdd9e5").attr("font-size","10px")
+    .text(d=>d.total+" refs");
+
+  g.append("g").attr("class","axis").attr("transform",`translate(0,${iH})`)
+    .call(d3.axisBottom(x)).selectAll("text")
+    .attr("transform","rotate(-12)").attr("text-anchor","end");
+  g.append("g").attr("class","axis").call(d3.axisLeft(y).ticks(5));
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// TAB 3: MINSKY
+// ─────────────────────────────────────────────────────────────────────────────
+function drawMinsky() {
+  const ausentes = [
+    {termino:"MMT / Modern Money Theory", n:0},
+    {termino:"Minsky / Inestabilidad financiera", n:0},
+    {termino:"Kalecki / Demanda efectiva", n:0},
+    {termino:"Marc Lavoie / Post-keynesian", n:1},
+    {termino:"Estancamiento secular", n:0},
+    {termino:"Economía feminista", n:0},
+    {termino:"Financialización", n:0},
+    {termino:"Decrecimiento / Degrowth", n:0},
+    {termino:"Piketty / Desigualdad capital", n:1},
+    {termino:"Economía ecológica / Clima", n:1},
+  ];
+
+  const W = Math.min(window.innerWidth - 160, 700);
+  const H = 30 * ausentes.length + 40;
+  const margin = {top:10,right:120,bottom:20,left:280};
+  const iW = W - margin.left - margin.right;
+  const iH = H - margin.top - margin.bottom;
+
+  const svg = d3.select("#chart-ausentes").attr("width",W).attr("height",H);
+  const g = svg.append("g").attr("transform",`translate(${margin.left},${margin.top})`);
+
+  const x = d3.scaleLinear().domain([0,5]).range([0,iW]);
+  const y = d3.scaleBand().domain(ausentes.map(d=>d.termino)).range([0,iH]).padding(.3);
+
+  ausentes.forEach(d => {
+    const row = g.append("g").attr("transform",`translate(0,${y(d.termino)})`);
+    // Label
+    row.append("text").attr("x",-8).attr("y",y.bandwidth()/2)
+      .attr("dominant-baseline","middle").attr("text-anchor","end")
+      .attr("fill","#cdd9e5").attr("font-size","11px").text(d.termino);
+    // Bar bg
+    row.append("rect").attr("width",iW).attr("height",y.bandwidth())
+      .attr("fill","#161b22").attr("rx",2);
+    // Bar value
+    if (d.n > 0) {
+      row.append("rect").attr("width",x(d.n)).attr("height",y.bandwidth())
+        .attr("fill","#FF6B6B").attr("rx",2).attr("opacity",.7);
+    }
+    // Value
+    row.append("text").attr("x",iW+6).attr("y",y.bandwidth()/2)
+      .attr("dominant-baseline","middle").attr("fill",d.n===0?"#FF6B6B":"#e6edf3")
+      .attr("font-size","11px").attr("font-weight",d.n===0?"700":"400")
+      .text(d.n === 0 ? "AUSENTE" : `${d.n} paper`);
+  });
+
+  // Vocab comparison
+  if (window._periodo_data) {
+    const d = window._periodo_data;
+    const grid = document.getElementById("vocab-grid");
+    grid.style.display = "grid";
+    grid.style.gridTemplateColumns = "1fr 1fr";
+    grid.style.gap = "16px";
+
+    const makeVocabBox = (titulo, terms, color) => {
+      const div = document.createElement("div");
+      div.style.cssText = `background:#0d1117;border:1px solid #1c2433;border-radius:8px;padding:16px;`;
+      div.innerHTML = `<div style="font-size:12px;font-weight:700;color:${color};margin-bottom:10px">${titulo}</div>`;
+      const chips = document.createElement("div");
+      chips.className = "chips";
+      terms.forEach(t => {
+        const chip = document.createElement("span");
+        chip.className = "chip " + (color==="#4ECDC4"?"ort":"het");
+        chip.textContent = t.term + " (" + t.freq + "×)";
+        chips.appendChild(chip);
+      });
+      div.appendChild(chips);
+      return div;
+    };
+
+    grid.appendChild(makeVocabBox("Términos ORTODOXOS en abstracts", d.top_terminos_ortodoxos.slice(0,12), "#4ECDC4"));
+    grid.appendChild(makeVocabBox("Términos HETERODOXOS detectados", d.top_terminos_heterodoxos.length ? d.top_terminos_heterodoxos : [{term:"(ninguno significativo)",freq:0}], "#FF6B6B"));
+  }
+}
+
+</script>
+</body>
+</html>

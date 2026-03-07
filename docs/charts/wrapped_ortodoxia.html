@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Banxico DIBM · Wrapped Bibliométrico</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
@@ -168,17 +169,34 @@ section { min-height:100vh; display:flex; align-items:center;
 /* ── FOOTER ────────────────────────────────────────────────────────────── */
 footer { text-align:center; padding:40px; font-size:11px; color:var(--muted);
          border-top:1px solid var(--border); }
+
+/* ── RESPONSIVE ─────────────────────────────────────────────────────────── */
+@media (max-width: 680px) {
+  nav { padding:10px 16px; gap:12px; flex-wrap:wrap; }
+  nav a { font-size:11px; }
+  section { padding:40px 16px; min-height:auto; padding-bottom:60px; }
+  .cards-2, .cards-3 { grid-template-columns:1fr; }
+  .card { padding:20px; }
+  .card-num { font-size:2.2rem; }
+  .donut-wrap { grid-template-columns:1fr; }
+  #donut-svg { margin:0 auto; display:block; }
+  .rank-bar-wrap { width:80px; }
+  .jour-bar-wrap { width:100px; }
+  .jour-tag { display:none; }
+  .ausencia-list { max-width:100%; }
+  .hero-title .big-num { font-size:clamp(4rem,20vw,8rem); }
+}
 </style>
 </head>
 <body>
 
 <nav>
   <div class="logo">Banxico<span>·Wrapped</span></div>
-  <a onclick="scrollTo('#hero')">Inicio</a>
-  <a onclick="scrollTo('#top-autor')">Autores</a>
-  <a onclick="scrollTo('#journals')">Journals</a>
-  <a onclick="scrollTo('#corrientes')">Corrientes</a>
-  <a onclick="scrollTo('#ausencia')">Lo ausente</a>
+  <a onclick="goTo('#hero')">Inicio</a>
+  <a onclick="goTo('#top-autor')">Autores</a>
+  <a onclick="goTo('#journals')">Journals</a>
+  <a onclick="goTo('#corrientes')">Corrientes</a>
+  <a onclick="goTo('#ausencia')">Lo ausente</a>
   <a href="red_autores.html" style="margin-left:auto;color:var(--ort)">→ Ver red interactiva</a>
 </nav>
 
@@ -284,7 +302,7 @@ footer { text-align:center; padding:40px; font-size:11px; color:var(--muted);
 
 <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 <script>
-function scrollTo(id) {
+function goTo(id) {
   document.querySelector(id).scrollIntoView({behavior:'smooth'});
 }
 

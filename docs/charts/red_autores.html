@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Red Intelectual — Autores Citados por Banxico</title>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
@@ -69,6 +70,13 @@
   .node.dimmed circle { opacity:.15; }
   .node.dimmed text  { opacity:.1; }
   .link.dimmed { opacity:.05; }
+
+  @media (max-width:600px) {
+    #ui { flex-wrap:wrap; padding:10px 12px; gap:8px; }
+    #ui h1 { font-size:13px; }
+    #search { width:120px; }
+    #legend { display:none; }
+  }
 </style>
 </head>
 <body>

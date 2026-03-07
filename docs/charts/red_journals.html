@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Red de Journals — Banxico DIBM</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#0d1117; color:#e6edf3; font-family:'Inter',system-ui,sans-serif; overflow:hidden; }
+
+  #ui {
+    position:absolute; top:0; left:0; right:0; z-index:10;
+    display:flex; align-items:center; gap:16px;
+    padding:14px 20px;
+    background:linear-gradient(180deg,rgba(13,17,23,.98) 70%,transparent);
+  }
+  h1 { font-size:15px; font-weight:600; color:#e6edf3; letter-spacing:.3px; flex:0 0 auto; }
+  .subtitle { font-size:11px; color:#7d8590; flex:0 0 auto; }
+
+  #search {
+    background:#161b22; border:1px solid #30363d; border-radius:6px;
+    color:#e6edf3; padding:6px 12px; font-size:13px; width:180px;
+    outline:none;
+  }
+  #search:focus { border-color:#388bfd; }
+
+  .btn {
+    background:#21262d; border:1px solid #30363d; border-radius:6px;
+    color:#cdd9e5; padding:6px 12px; font-size:12px; cursor:pointer;
+    transition:all .15s;
+  }
+  .btn:hover { background:#30363d; color:#e6edf3; }
+  .btn.active { background:#1f6feb; border-color:#388bfd; color:#fff; }
+
+  #legend {
+    position:absolute; bottom:20px; left:20px; z-index:10;
+    background:rgba(13,17,23,.9); border:1px solid #30363d;
+    border-radius:8px; padding:12px 16px; min-width:200px;
+  }
+  .leg-title { font-size:11px; color:#7d8590; font-weight:600;
+               text-transform:uppercase; letter-spacing:.8px; margin-bottom:8px; }
+  .leg-item { display:flex; align-items:center; gap:8px;
+              font-size:12px; color:#cdd9e5; margin-bottom:5px; cursor:pointer; }
+  .leg-item:hover { color:#fff; }
+  .leg-dot { width:10px; height:10px; border-radius:50%; flex:0 0 10px; }
+
+  #tooltip {
+    position:absolute; pointer-events:none; z-index:20;
+    background:rgba(13,17,23,.97); border:1px solid #30363d;
+    border-radius:8px; padding:12px 16px; font-size:13px;
+    opacity:0; transition:opacity .15s; max-width:240px;
+  }
+  .tt-name  { font-weight:700; font-size:14px; margin-bottom:4px; line-height:1.3; }
+  .tt-sub   { font-size:11px; color:#7d8590; margin-bottom:6px; text-transform:uppercase; letter-spacing:.6px; }
+  .tt-citas { font-size:12px; color:#e6edf3; }
+  .tt-tag   { display:inline-block; border-radius:4px; padding:1px 6px;
+              font-size:10px; font-weight:600; margin-top:4px; }
+
+  #stats {
+    position:absolute; top:60px; right:20px; z-index:10;
+    background:rgba(13,17,23,.9); border:1px solid #30363d;
+    border-radius:8px; padding:12px 16px; text-align:right;
+  }
+  .stat-row { font-size:11px; color:#7d8590; margin-bottom:4px; }
+  .stat-val { font-size:18px; font-weight:700; color:#e6edf3; }
+  .stat-label { font-size:10px; color:#484f58; }
+
+  #info {
+    position:absolute; bottom:20px; right:20px; z-index:10;
+    font-size:11px; color:#484f58; text-align:right;
+  }
+
+  svg { display:block; }
+  .link { stroke-opacity:.3; }
+  .node circle { cursor:pointer; transition:opacity .2s; }
+  .node text { pointer-events:none; fill:#cdd9e5;
+               text-shadow:0 1px 3px #0d1117; }
+  .node.dimmed circle { opacity:.12; }
+  .node.dimmed text  { opacity:.07; }
+  .link.dimmed { opacity:.04; }
+
+  @media (max-width:600px) {
+    #ui { flex-wrap:wrap; padding:10px 12px; gap:8px; }
+    #ui h1 { font-size:13px; }
+    #search { width:120px; }
+    #legend { display:none; }
+    #stats { top:auto; bottom:60px; right:10px; }
+  }
+</style>
+</head>
+<body>
+
+<div id="ui">
+  <div>
+    <h1>Red de Journals · Banxico DIBM</h1>
+    <div class="subtitle">Co-citación de revistas en papers de inflación · 1978–2025</div>
+  </div>
+  <input id="search" type="text" placeholder="Buscar journal…">
+  <button class="btn" id="btn-all">Todos</button>
+  <button class="btn" id="btn-top5">Top 5</button>
+  <button class="btn" id="btn-cluster">Agrupar tipo</button>
+</div>
+
+<div id="stats">
+  <div class="stat-val" id="s-nodes">64</div>
+  <div class="stat-label">journals citados</div>
+  <div style="margin-top:8px">
+    <div class="stat-val" style="color:#4ECDC4">100%</div>
+    <div class="stat-label">ortodoxo / institucional</div>
+  </div>
+  <div style="margin-top:8px">
+    <div class="stat-val" style="color:#FFE66D">49×</div>
+    <div class="stat-label">AER — el más citado</div>
+  </div>
+</div>
+
+<div id="legend">
+  <div class="leg-title">Tipo de publicación</div>
+  <div class="leg-item" data-filter="tier1_generalist"><div class="leg-dot" style="background:#4ECDC4"></div>Top 5 / Tier 1</div>
+  <div class="leg-item" data-filter="macro_monetario"><div class="leg-dot" style="background:#FFE66D"></div>Macro / Monetario</div>
+  <div class="leg-item" data-filter="econometria"><div class="leg-dot" style="background:#A29BFE"></div>Econometría</div>
+  <div class="leg-item" data-filter="finanzas"><div class="leg-dot" style="background:#FF6B6B"></div>Finanzas</div>
+  <div class="leg-item" data-filter="internacional"><div class="leg-dot" style="background:#FD79A8"></div>Internacional</div>
+  <div class="leg-item" data-filter="otros_mainstream"><div class="leg-dot" style="background:#74B9FF"></div>Otros mainstream</div>
+  <div class="leg-item" data-filter="wp_banxico"><div class="leg-dot" style="background:#E17055"></div>WP Banxico</div>
+  <div class="leg-item" data-filter="wp_bc_avanzado"><div class="leg-dot" style="background:#00B894"></div>WP Bancos centrales</div>
+  <div class="leg-item" data-filter="wp_multilateral"><div class="leg-dot" style="background:#FDCB6E"></div>WP Multilaterales</div>
+  <div class="leg-item" data-filter="libro_mainstream"><div class="leg-dot" style="background:#636e72"></div>Libros mainstream</div>
+</div>
+
+<div id="tooltip">
+  <div class="tt-name" id="tt-name"></div>
+  <div class="tt-sub"  id="tt-sub"></div>
+  <div class="tt-citas" id="tt-citas"></div>
+  <div id="tt-tag" class="tt-tag"></div>
+</div>
+
+<div id="info">Scroll para zoom · Arrastrar para mover · Click nodo para resaltar vecinos</div>
+
+<svg id="graph"></svg>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script>
+const W = window.innerWidth, H = window.innerHeight;
+const svg = d3.select("#graph").attr("width", W).attr("height", H);
+
+// Color por subcategoria
+const COLORS = {
+  tier1_generalist: "#4ECDC4",
+  macro_monetario:  "#FFE66D",
+  econometria:      "#A29BFE",
+  finanzas:         "#FF6B6B",
+  internacional:    "#FD79A8",
+  otros_mainstream: "#74B9FF",
+  wp_banxico:       "#E17055",
+  wp_bc_avanzado:   "#00B894",
+  wp_multilateral:  "#FDCB6E",
+  wp_bc_latam:      "#55EFC4",
+  libro_mainstream: "#636e72",
+  cepal:            "#A29BFE",
+};
+
+const LABEL_SUB = {
+  tier1_generalist: "Top 5 / Tier 1",
+  macro_monetario:  "Macro & Monetario",
+  econometria:      "Econometría",
+  finanzas:         "Finanzas",
+  internacional:    "Economía Internacional",
+  otros_mainstream: "Otros mainstream",
+  wp_banxico:       "Working Paper Banxico",
+  wp_bc_avanzado:   "WP Banco Central (avanzado)",
+  wp_multilateral:  "WP Multilateral (FMI/BM/NBER)",
+  wp_bc_latam:      "WP Banco Central (Latam)",
+  libro_mainstream: "Libro mainstream",
+  cepal:            "CEPAL / Estructuralista",
+};
+
+// Posiciones de cluster por subcategoria
+const CLUSTER_POS = {
+  tier1_generalist: [W*.38, H*.35],
+  macro_monetario:  [W*.55, H*.35],
+  econometria:      [W*.72, H*.45],
+  finanzas:         [W*.70, H*.65],
+  internacional:    [W*.55, H*.70],
+  otros_mainstream: [W*.40, H*.65],
+  wp_banxico:       [W*.22, H*.50],
+  wp_bc_avanzado:   [W*.25, H*.30],
+  wp_multilateral:  [W*.25, H*.68],
+  wp_bc_latam:      [W*.15, H*.65],
+  libro_mainstream: [W*.50, H*.50],
+};
+
+let clusterMode = false;
+let activeFilter = null;
+
+const g    = svg.append("g");
+const zoom = d3.zoom().scaleExtent([.15, 5])
+  .on("zoom", e => g.attr("transform", e.transform));
+svg.call(zoom);
+
+const tooltip = document.getElementById("tooltip");
+
+fetch("../data/journals_red.json").then(r => r.json()).then(data => {
+
+  // Asignar colores si no vienen del JSON
+  data.nodes.forEach(d => {
+    d.color = COLORS[d.subcategoria] || "#636e72";
+  });
+
+  const rScale = d3.scaleSqrt()
+    .domain([0, d3.max(data.nodes, d => d.citas)])
+    .range([4, 28]);
+
+  const sim = d3.forceSimulation(data.nodes)
+    .force("link",   d3.forceLink(data.links).id(d => d.id).distance(d => 90 - d.value * 3).strength(.35))
+    .force("charge", d3.forceManyBody().strength(-200))
+    .force("center", d3.forceCenter(W/2, H/2))
+    .force("collide", d3.forceCollide(d => rScale(d.citas) + 10));
+
+  // Links
+  const link = g.append("g").selectAll("line")
+    .data(data.links).join("line")
+    .attr("class", "link")
+    .attr("stroke", "#30363d")
+    .attr("stroke-width", d => Math.sqrt(d.value) * .7);
+
+  // Nodes
+  const node = g.append("g").selectAll("g")
+    .data(data.nodes).join("g")
+    .attr("class", "node")
+    .call(d3.drag()
+      .on("start", (e,d) => { if(!e.active) sim.alphaTarget(.3).restart(); d.fx=d.x; d.fy=d.y; })
+      .on("drag",  (e,d) => { d.fx=e.x; d.fy=e.y; })
+      .on("end",   (e,d) => { if(!e.active) sim.alphaTarget(0); d.fx=null; d.fy=null; }))
+    .on("mouseover", showTooltip)
+    .on("mousemove",  moveTooltip)
+    .on("mouseout",   hideTooltip)
+    .on("click",      clickNode);
+
+  node.append("circle")
+    .attr("r",    d => rScale(d.citas))
+    .attr("fill", d => d.color)
+    .attr("stroke", d => d3.color(d.color).darker(1.2))
+    .attr("stroke-width", 1.5);
+
+  node.append("text")
+    .attr("dy", d => rScale(d.citas) + 12)
+    .attr("text-anchor", "middle")
+    .style("font-size", d => d.citas >= 15 ? "10px" : d.citas >= 8 ? "9px" : "0px")
+    .text(d => {
+      // Abreviaciones para journals largos
+      const abbr = {
+        "American Economic Review": "AER",
+        "Journal of Monetary Economics": "JME",
+        "Econometrica": "Econometrica",
+        "Journal of Political Economy": "JPE",
+        "Quarterly Journal of Economics": "QJE",
+        "Journal of Money, Credit and Banking": "JMCB",
+        "Banco de México WP": "Banxico WP",
+        "Federal Reserve": "Fed WP",
+        "NBER Working Paper": "NBER WP",
+        "Review of Economic Studies": "RES",
+        "Review of Economics and Statistics": "REStat",
+        "Journal of Finance": "JF",
+        "Journal of Econometrics": "J.Econometrics",
+        "Journal of International Economics": "JIE",
+        "American Economic Journal: Macroeconomics": "AEJ:Macro",
+        "Journal of Economic Perspectives": "JEP",
+      };
+      return abbr[d.nombre] || (d.nombre.length > 22 ? d.nombre.slice(0,20)+"…" : d.nombre);
+    });
+
+  sim.on("tick", () => {
+    link.attr("x1",d=>d.source.x).attr("y1",d=>d.source.y)
+        .attr("x2",d=>d.target.x).attr("y2",d=>d.target.y);
+    node.attr("transform",d=>`translate(${d.x},${d.y})`);
+  });
+
+  // ── Tooltip ─────────────────────────────────────────────────────────────────
+  function showTooltip(e, d) {
+    document.getElementById("tt-name").textContent  = d.nombre;
+    document.getElementById("tt-sub").textContent   = LABEL_SUB[d.subcategoria] || d.subcategoria;
+    document.getElementById("tt-citas").textContent = `${d.citas} citas en el corpus`;
+    const tag = document.getElementById("tt-tag");
+    if (d.subcategoria === "tier1_generalist") {
+      tag.textContent = "TOP 5";
+      tag.style.background = "#4ECDC4";
+      tag.style.color = "#0d1117";
+    } else if (d.categoria === "institucional") {
+      tag.textContent = "INSTITUCIONAL";
+      tag.style.background = "#21262d";
+      tag.style.color = "#cdd9e5";
+    } else {
+      tag.textContent = "MAINSTREAM";
+      tag.style.background = "#1f6feb";
+      tag.style.color = "#fff";
+    }
+    tooltip.style.opacity = 1;
+    moveTooltip(e);
+  }
+  function moveTooltip(e) {
+    tooltip.style.left = (e.clientX + 14) + "px";
+    tooltip.style.top  = (e.clientY - 10) + "px";
+  }
+  function hideTooltip() { tooltip.style.opacity = 0; }
+
+  // ── Click: resaltar vecinos ──────────────────────────────────────────────────
+  let selected = null;
+  function clickNode(e, d) {
+    e.stopPropagation();
+    if (selected === d.id) {
+      clearHighlight(); selected = null; return;
+    }
+    selected = d.id;
+    const vecinos = new Set([d.id]);
+    data.links.forEach(l => {
+      if (l.source.id === d.id) vecinos.add(l.target.id);
+      if (l.target.id === d.id) vecinos.add(l.source.id);
+    });
+    node.classed("dimmed", n => !vecinos.has(n.id));
+    link.classed("dimmed", l => !vecinos.has(l.source.id) || !vecinos.has(l.target.id));
+    // Actualizar stats
+    document.getElementById("s-nodes").textContent = vecinos.size - 1 + " vecinos";
+  }
+  svg.on("click", () => {
+    clearHighlight(); selected = null;
+    document.getElementById("s-nodes").textContent = data.nodes.length;
+  });
+  function clearHighlight() {
+    node.classed("dimmed", false);
+    link.classed("dimmed", false);
+  }
+
+  // ── Botón: Top 5 only ──────────────────────────────────────────────────────
+  const TOP5 = new Set(["tier1_generalist"]);
+  document.getElementById("btn-top5").addEventListener("click", function() {
+    this.classList.toggle("active");
+    const onlyTop5 = this.classList.contains("active");
+    node.style("display", d => onlyTop5 && d.subcategoria !== "tier1_generalist" ? "none" : null);
+  });
+
+  // ── Botón: cluster ─────────────────────────────────────────────────────────
+  document.getElementById("btn-cluster").addEventListener("click", function() {
+    clusterMode = !clusterMode;
+    this.classList.toggle("active", clusterMode);
+    if (clusterMode) {
+      sim.force("cluster", alpha => {
+        data.nodes.forEach(d => {
+          const [tx, ty] = CLUSTER_POS[d.subcategoria] || [W/2, H/2];
+          d.vx += (tx - d.x) * alpha * .1;
+          d.vy += (ty - d.y) * alpha * .1;
+        });
+      }).alpha(.5).restart();
+    } else {
+      sim.force("cluster", null).alpha(.3).restart();
+    }
+  });
+
+  // ── Botón: todos ───────────────────────────────────────────────────────────
+  document.getElementById("btn-all").addEventListener("click", () => {
+    node.style("display", null);
+    clearHighlight();
+    document.getElementById("btn-top5").classList.remove("active");
+    document.getElementById("s-nodes").textContent = data.nodes.length;
+    clusterMode = false;
+    document.getElementById("btn-cluster").classList.remove("active");
+    sim.force("cluster", null).alpha(.3).restart();
+  });
+
+  // ── Search ──────────────────────────────────────────────────────────────────
+  document.getElementById("search").addEventListener("input", function() {
+    const q = this.value.toLowerCase().trim();
+    if (!q) { node.style("display", null); return; }
+    node.style("display", d =>
+      d.nombre.toLowerCase().includes(q) || d.subcategoria.toLowerCase().includes(q)
+        ? null : "none");
+  });
+
+  // ── Filter por leyenda ─────────────────────────────────────────────────────
+  document.querySelectorAll(".leg-item").forEach(el => {
+    el.addEventListener("click", () => {
+      const f = el.dataset.filter;
+      activeFilter = activeFilter === f ? null : f;
+      document.querySelectorAll(".leg-item").forEach(x =>
+        x.style.opacity = (!activeFilter || x.dataset.filter===activeFilter) ? 1 : .35);
+      node.classed("dimmed", d => activeFilter && d.subcategoria !== activeFilter);
+      link.classed("dimmed", l =>
+        activeFilter && l.source.subcategoria !== activeFilter && l.target.subcategoria !== activeFilter);
+    });
+  });
+
+});
+</script>
+</body>
+</html>
