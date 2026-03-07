@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Banxico DIBM · Wrapped Bibliométrico</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+:root {
+  --bg:    #070a10;
+  --card:  #0e1420;
+  --border:#1e2738;
+  --text:  #e8edf5;
+  --muted: #5a6478;
+  --ort:   #4ECDC4;
+  --het:   #E17055;
+  --acc:   #c084fc;
+  --gold:  #fbbf24;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { background:var(--bg); color:var(--text);
+       font-family:'Inter',system-ui,sans-serif;
+       min-height:100vh; padding:0; }
+
+/* ── NAV ───────────────────────────────────────────────────────────────── */
+nav {
+  position:sticky; top:0; z-index:100;
+  background:rgba(7,10,16,.9); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+  padding:12px 32px; display:flex; align-items:center; gap:20px;
+}
+nav .logo { font-weight:900; font-size:16px; color:var(--ort); letter-spacing:-.5px; }
+nav .logo span { color:var(--text); }
+nav a { font-size:12px; color:var(--muted); text-decoration:none;
+        transition:color .2s; cursor:pointer; }
+nav a:hover { color:var(--text); }
+
+/* ── SECTIONS ──────────────────────────────────────────────────────────── */
+section { min-height:100vh; display:flex; align-items:center;
+          justify-content:center; padding:60px 32px; }
+
+/* ── HERO ──────────────────────────────────────────────────────────────── */
+#hero {
+  background:radial-gradient(ellipse 80% 60% at 50% 40%,
+             rgba(78,205,196,.08) 0%, transparent 70%);
+  flex-direction:column; text-align:center; gap:24px;
+}
+.hero-tag { font-size:11px; letter-spacing:2px; text-transform:uppercase;
+            color:var(--ort); font-weight:600; }
+.hero-title { font-size:clamp(2.2rem,6vw,5rem); font-weight:900;
+              line-height:1.05; letter-spacing:-2px; }
+.hero-title .big-num { font-size:clamp(5rem,15vw,12rem); display:block;
+                       background:linear-gradient(135deg,#4ECDC4,#c084fc);
+                       -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+                       line-height:1; }
+.hero-sub { font-size:1.1rem; color:var(--muted); max-width:520px; line-height:1.6; }
+.hero-sub strong { color:var(--text); }
+.scroll-hint { font-size:11px; color:var(--muted); margin-top:8px;
+               animation:bounce 2s infinite; }
+@keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(5px)} }
+
+/* ── CARDS GRID ────────────────────────────────────────────────────────── */
+.cards-section { flex-direction:column; gap:24px; }
+.section-label { font-size:11px; letter-spacing:2px; text-transform:uppercase;
+                 color:var(--muted); font-weight:600; width:100%; max-width:900px; }
+.cards { display:grid; gap:16px; width:100%; max-width:900px; }
+.cards-2 { grid-template-columns:1fr 1fr; }
+.cards-3 { grid-template-columns:1fr 1fr 1fr; }
+
+.card {
+  background:var(--card); border:1px solid var(--border);
+  border-radius:16px; padding:28px 32px;
+  transition:transform .2s, border-color .2s;
+}
+.card:hover { transform:translateY(-2px); border-color:#2e3f5a; }
+.card-label { font-size:11px; letter-spacing:1.5px; text-transform:uppercase;
+              color:var(--muted); font-weight:600; margin-bottom:10px; }
+.card-num { font-size:3rem; font-weight:900; letter-spacing:-2px; line-height:1; }
+.card-desc { font-size:13px; color:var(--muted); margin-top:8px; line-height:1.5; }
+.card.accent-teal { border-color:rgba(78,205,196,.3);
+                    background:linear-gradient(135deg,rgba(78,205,196,.08),var(--card)); }
+.card.accent-het  { border-color:rgba(225,112,85,.3);
+                    background:linear-gradient(135deg,rgba(225,112,85,.06),var(--card)); }
+.card.accent-purple { border-color:rgba(192,132,252,.3);
+                    background:linear-gradient(135deg,rgba(192,132,252,.06),var(--card)); }
+.card.accent-gold { border-color:rgba(251,191,36,.3);
+                    background:linear-gradient(135deg,rgba(251,191,36,.06),var(--card)); }
+
+/* ── TOP AUTOR ─────────────────────────────────────────────────────────── */
+#top-autor { flex-direction:column; gap:32px;
+  background:radial-gradient(ellipse 70% 50% at 50% 60%,
+             rgba(192,132,252,.07) 0%, transparent 70%); }
+
+.top-autor-inner { max-width:900px; width:100%; }
+.ranking { display:flex; flex-direction:column; gap:10px; }
+.rank-item {
+  display:flex; align-items:center; gap:16px;
+  background:var(--card); border:1px solid var(--border);
+  border-radius:12px; padding:14px 20px;
+  transition:transform .15s;
+}
+.rank-item:hover { transform:translateX(4px); }
+.rank-item:first-child { border-color:rgba(251,191,36,.4);
+  background:linear-gradient(90deg,rgba(251,191,36,.07),var(--card)); }
+.rank-num { font-size:13px; font-weight:700; color:var(--muted); width:24px; }
+.rank-item:first-child .rank-num { color:var(--gold); }
+.rank-dot { width:12px; height:12px; border-radius:50%; flex:0 0 12px; }
+.rank-name { flex:1; font-weight:600; font-size:14px; }
+.rank-corr { font-size:11px; color:var(--muted); }
+.rank-bar-wrap { width:140px; background:#1e2738; border-radius:4px; height:6px; }
+.rank-bar { height:6px; border-radius:4px; transition:width .8s ease; }
+.rank-citas { font-size:13px; color:var(--muted); width:48px; text-align:right; }
+
+/* ── JOURNALS ──────────────────────────────────────────────────────────── */
+#journals { flex-direction:column; gap:32px; }
+.jour-list { max-width:900px; width:100%; display:flex; flex-direction:column; gap:10px; }
+.jour-item {
+  display:flex; align-items:center; gap:14px;
+  background:var(--card); border:1px solid var(--border);
+  border-radius:10px; padding:12px 18px;
+}
+.jour-tag { font-size:10px; font-weight:700; letter-spacing:.8px;
+            text-transform:uppercase; padding:2px 8px; border-radius:4px; flex:0 0 auto; }
+.jour-tag.tier1   { background:rgba(232,67,147,.2); color:#e84393; }
+.jour-tag.macro   { background:rgba(78,205,196,.15); color:#4ECDC4; }
+.jour-tag.econ    { background:rgba(255,230,109,.15); color:#FFE66D; }
+.jour-tag.inst    { background:rgba(253,121,168,.15); color:#FD79A8; }
+.jour-tag.fin     { background:rgba(162,155,254,.15); color:#A29BFE; }
+.jour-tag.other   { background:rgba(90,100,120,.2); color:#8899aa; }
+.jour-name { flex:1; font-size:13px; font-weight:500; }
+.jour-bar-wrap { width:200px; background:#1e2738; border-radius:4px; height:8px; }
+.jour-bar { height:8px; border-radius:4px; }
+.jour-n { font-size:12px; color:var(--muted); width:32px; text-align:right; }
+
+/* ── CORRIENTES DONUT ──────────────────────────────────────────────────── */
+#corrientes { flex-direction:column; gap:32px;
+  background:radial-gradient(ellipse 60% 50% at 50% 50%,
+             rgba(78,205,196,.05) 0%, transparent 70%); }
+
+.donut-wrap { max-width:900px; width:100%; display:grid;
+              grid-template-columns:260px 1fr; gap:40px; align-items:center; }
+#donut-svg { overflow:visible; }
+.donut-legend { display:flex; flex-direction:column; gap:12px; }
+.dl-item { display:flex; align-items:center; gap:12px; }
+.dl-dot { width:12px; height:12px; border-radius:50%; flex:0 0 12px; }
+.dl-label { font-size:13px; color:var(--text); flex:1; }
+.dl-pct { font-size:13px; font-weight:700; color:var(--muted); }
+
+/* ── AUSENCIA ──────────────────────────────────────────────────────────── */
+#ausencia {
+  flex-direction:column; text-align:center; gap:16px;
+  background:radial-gradient(ellipse 60% 40% at 50% 50%,
+             rgba(225,112,85,.06) 0%, transparent 70%);
+}
+.ausencia-title { font-size:clamp(1.8rem,4vw,3.2rem); font-weight:900;
+                  line-height:1.1; letter-spacing:-1px; }
+.ausencia-title .zero { color:var(--het); font-size:clamp(4rem,10vw,8rem);
+                         display:block; line-height:1; }
+.ausencia-list { display:flex; flex-direction:column; gap:8px;
+                  max-width:520px; margin:0 auto; }
+.ausencia-item { background:var(--card); border:1px solid var(--border);
+                  border-radius:8px; padding:10px 18px; font-size:13px;
+                  color:var(--muted); display:flex; justify-content:space-between; }
+.ausencia-item span { color:var(--het); font-weight:600; }
+
+/* ── FOOTER ────────────────────────────────────────────────────────────── */
+footer { text-align:center; padding:40px; font-size:11px; color:var(--muted);
+         border-top:1px solid var(--border); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Banxico<span>·Wrapped</span></div>
+  <a onclick="scrollTo('#hero')">Inicio</a>
+  <a onclick="scrollTo('#top-autor')">Autores</a>
+  <a onclick="scrollTo('#journals')">Journals</a>
+  <a onclick="scrollTo('#corrientes')">Corrientes</a>
+  <a onclick="scrollTo('#ausencia')">Lo ausente</a>
+  <a href="red_autores.html" style="margin-left:auto;color:var(--ort)">→ Ver red interactiva</a>
+</nav>
+
+<!-- ── HERO ──────────────────────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="hero-tag">Análisis bibliométrico · DIBM Banxico · 1978–2025</div>
+  <h1 class="hero-title">
+    <span class="big-num" id="hero-pct">…</span>
+    de las citas clasificadas<br>son a economía <strong>ortodoxa</strong>
+  </h1>
+  <p class="hero-sub">
+    <strong>1,911 referencias</strong> extraídas de 85 papers del subuniverso inflación.
+    El patrón es casi total: el Banco de México cita exclusivamente dentro del mainstream
+    de la ciencia económica global.
+  </p>
+  <div class="scroll-hint">↓ seguir</div>
+</section>
+
+<!-- ── STATS RÁPIDAS ─────────────────────────────────────────────────────── -->
+<section class="cards-section">
+  <div class="section-label">Números del corpus</div>
+  <div class="cards cards-3">
+    <div class="card accent-teal">
+      <div class="card-label">Referencias totales</div>
+      <div class="card-num" style="color:var(--ort)" id="c-total">–</div>
+      <div class="card-desc">extraídas de 85 papers sobre inflación y política monetaria</div>
+    </div>
+    <div class="card accent-purple">
+      <div class="card-label">Autores únicos citados</div>
+      <div class="card-num" style="color:var(--acc)" id="c-autores">–</div>
+      <div class="card-desc">con 2+ apariciones en el corpus</div>
+    </div>
+    <div class="card accent-gold">
+      <div class="card-label">Rango temporal citado</div>
+      <div class="card-num" style="color:var(--gold);font-size:1.8rem" id="c-rango">–</div>
+      <div class="card-desc">la literatura que referencia el Banxico</div>
+    </div>
+  </div>
+  <div class="cards cards-2">
+    <div class="card accent-teal">
+      <div class="card-label">Citas a journals ortodoxos o instituciones mainstream</div>
+      <div class="card-num" style="color:var(--ort)" id="c-ort">–</div>
+      <div class="card-desc">AER · JPE · QJE · JME · NBER · Fed · BIS · IMF…</div>
+    </div>
+    <div class="card accent-het">
+      <div class="card-label">Citas a pensamiento heterodoxo</div>
+      <div class="card-num" style="color:var(--het)" id="c-het">–</div>
+      <div class="card-desc">JPKE · Cambridge JE · ROPE · Minsky · Lavoie · Kalecki…</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TOP AUTORES ────────────────────────────────────────────────────────── -->
+<section id="top-autor" class="cards-section">
+  <div class="section-label">Top economistas citados</div>
+  <div class="top-autor-inner">
+    <div class="ranking" id="ranking-list"></div>
+  </div>
+</section>
+
+<!-- ── TOP JOURNALS ───────────────────────────────────────────────────────── -->
+<section id="journals" class="cards-section">
+  <div class="section-label">Journals más citados</div>
+  <div class="jour-list" id="jour-list"></div>
+</section>
+
+<!-- ── CORRIENTES ─────────────────────────────────────────────────────────── -->
+<section id="corrientes" class="cards-section">
+  <div class="section-label">Corrientes teóricas citadas</div>
+  <div class="donut-wrap">
+    <svg id="donut-svg" width="260" height="260"></svg>
+    <div class="donut-legend" id="donut-legend"></div>
+  </div>
+</section>
+
+<!-- ── LO AUSENTE ─────────────────────────────────────────────────────────── -->
+<section id="ausencia">
+  <h2 class="ausencia-title">
+    <span class="zero">0</span>
+    citas a pensamiento<br>post-keynesiano
+  </h2>
+  <p style="color:var(--muted);font-size:14px;max-width:460px;line-height:1.6;margin:8px 0 16px">
+    En 85 papers sobre inflación y política monetaria,<br>
+    ninguno cita las siguientes fuentes:
+  </p>
+  <div class="ausencia-list">
+    <div class="ausencia-item">Journal of Post Keynesian Economics <span>0 citas</span></div>
+    <div class="ausencia-item">Cambridge Journal of Economics <span>0 citas</span></div>
+    <div class="ausencia-item">Michał Kalecki <span>0 citas</span></div>
+    <div class="ausencia-item">Hyman Minsky <span>0 citas</span></div>
+    <div class="ausencia-item">Marc Lavoie <span>0 citas</span></div>
+    <div class="ausencia-item">Wynne Godley <span>0 citas</span></div>
+    <div class="ausencia-item">Nicholas Kaldor <span>0 citas</span></div>
+    <div class="ausencia-item">CEPAL / Estructuralismo latinoamericano <span>1 cita</span></div>
+  </div>
+</section>
+
+<footer>
+  Banxico DIBM · Análisis bibliométrico de redes intelectuales · 2025<br>
+  Datos: <a href="https://www.banxico.org.mx/DIBM/" style="color:var(--muted)">banxico.org.mx/DIBM</a>
+  · <a href="red_autores.html" style="color:var(--ort)">Ver red interactiva →</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script>
+function scrollTo(id) {
+  document.querySelector(id).scrollIntoView({behavior:'smooth'});
+}
+
+// ── Animador de números ───────────────────────────────────────────────────────
+function animateNum(el, target, suffix='', decimals=0, duration=1400) {
+  const start = performance.now();
+  const fmt = n => decimals ? n.toFixed(decimals) : Math.round(n).toLocaleString('es-MX');
+  function step(ts) {
+    const p = Math.min((ts - start) / duration, 1);
+    const ease = 1 - Math.pow(1-p, 3);
+    el.textContent = fmt(target * ease) + suffix;
+    if (p < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+// ── Intersection observer para animar al aparecer ─────────────────────────────
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target._animate?.(); });
+}, {threshold:.3});
+
+const COLOR = {
+  new_keynesian:'#4ECDC4', econometria:'#FFE66D', monetarista:'#FF6B6B',
+  nueva_clasica:'#A29BFE', rbc:'#55EFC4', keynesiano_orig:'#FD79A8',
+  heterodoxo:'#E17055', estructuralista:'#00B894', no_clasificado:'#636e72',
+};
+const LABEL = {
+  new_keynesian:'New Keynesian / DSGE', econometria:'Econometría',
+  monetarista:'Monetarista', nueva_clasica:'Nueva Clásica',
+  rbc:'Real Business Cycle', keynesiano_orig:'Keynes original',
+  heterodoxo:'Heterodoxo', estructuralista:'Estructuralista',
+};
+const SUBCAT_TAG = {
+  tier1_generalist:{cls:'tier1', label:'Tier 1'},
+  macro_monetario: {cls:'macro', label:'Macro'},
+  econometria:     {cls:'econ',  label:'Econometría'},
+  wp_banxico:      {cls:'inst',  label:'Banxico'},
+  wp_multilateral: {cls:'inst',  label:'Multilateral'},
+  wp_bc_avanzado:  {cls:'inst',  label:'Banco Central'},
+  finanzas:        {cls:'fin',   label:'Finanzas'},
+  otros_mainstream:{cls:'other', label:'Mainstream'},
+  libro_mainstream:{cls:'other', label:'Libro'},
+};
+
+fetch('../data/orthodoxy_stats.json').then(r => r.json()).then(s => {
+
+  // ── Hero ──────────────────────────────────────────────────────────────────
+  const heroPct = document.getElementById('hero-pct');
+  heroPct._animate = () => animateNum(heroPct, s.pct_ortodoxo_inst, '%', 1);
+  obs.observe(heroPct);
+
+  // ── Stats cards ───────────────────────────────────────────────────────────
+  const cTotal = document.getElementById('c-total');
+  cTotal._animate = () => animateNum(cTotal, s.total_refs);
+  obs.observe(cTotal);
+
+  const cAut = document.getElementById('c-autores');
+  cAut._animate = () => animateNum(cAut, s.n_autores_unicos);
+  obs.observe(cAut);
+
+  document.getElementById('c-rango').textContent =
+    `${s.anio_min_citado}–${s.anio_max_citado}`;
+
+  const cOrt = document.getElementById('c-ort');
+  cOrt._animate = () => animateNum(cOrt, s.n_citas_ortodoxo);
+  obs.observe(cOrt);
+
+  const cHet = document.getElementById('c-het');
+  cHet._animate = () => animateNum(cHet, s.n_citas_heterodoxo);
+  obs.observe(cHet);
+
+  // ── Ranking autores ───────────────────────────────────────────────────────
+  const rankEl = document.getElementById('ranking-list');
+  const maxCitas = s.top_autores[0]?.n_citas || 1;
+  s.top_autores.slice(0,12).forEach((a, i) => {
+    const corr = a.corriente || 'no_clasificado';
+    const pct  = (a.n_citas / maxCitas * 100).toFixed(1);
+    rankEl.innerHTML += `
+      <div class="rank-item">
+        <div class="rank-num">${i+1}</div>
+        <div class="rank-dot" style="background:${COLOR[corr]||'#636e72'}"></div>
+        <div>
+          <div class="rank-name">${a.nombre_canonico}</div>
+          <div class="rank-corr">${LABEL[corr]||corr}</div>
+        </div>
+        <div class="rank-bar-wrap">
+          <div class="rank-bar" style="width:${pct}%;background:${COLOR[corr]||'#636e72'}"></div>
+        </div>
+        <div class="rank-citas">${a.n_citas}×</div>
+      </div>`;
+  });
+
+  // ── Journals ─────────────────────────────────────────────────────────────
+  const jourEl  = document.getElementById('jour-list');
+  const maxJour = s.top_journals[0]?.n_citas || 1;
+  s.top_journals.forEach(j => {
+    const meta = SUBCAT_TAG[j.subcategoria] || {cls:'other', label:j.subcategoria};
+    const pct  = (j.n_citas / maxJour * 100).toFixed(1);
+    const col  = j.subcategoria === 'tier1_generalist' ? '#e84393' :
+                 j.subcategoria === 'macro_monetario'   ? '#4ECDC4' :
+                 j.subcategoria === 'econometria'       ? '#FFE66D' :
+                 j.subcategoria?.startsWith('wp')       ? '#FD79A8' :
+                 j.subcategoria === 'finanzas'          ? '#A29BFE' : '#8899aa';
+    jourEl.innerHTML += `
+      <div class="jour-item">
+        <span class="jour-tag ${meta.cls}">${meta.label}</span>
+        <div class="jour-name">${j.journal_detectado}</div>
+        <div class="jour-bar-wrap">
+          <div class="jour-bar" style="width:${pct}%;background:${col}"></div>
+        </div>
+        <div class="jour-n">${j.n_citas}</div>
+      </div>`;
+  });
+
+  // ── Donut de corrientes ───────────────────────────────────────────────────
+  const corrientes = s.corrientes.filter(c => c.citas > 0);
+  const total = corrientes.reduce((a,b) => a+b.citas, 0);
+  const pie = d3.pie().value(d => d.citas).sort(null);
+  const arc = d3.arc().innerRadius(75).outerRadius(120);
+  const svg = d3.select('#donut-svg');
+  const g   = svg.append('g').attr('transform','translate(130,130)');
+
+  g.selectAll('path')
+    .data(pie(corrientes)).join('path')
+    .attr('d', arc)
+    .attr('fill', d => COLOR[d.data.corriente] || '#636e72')
+    .attr('stroke', '#070a10').attr('stroke-width', 2)
+    .append('title').text(d => `${LABEL[d.data.corriente]||d.data.corriente}: ${d.data.pct}%`);
+
+  // Centro
+  g.append('text').attr('text-anchor','middle').attr('dy','-0.3em')
+    .attr('font-size','22px').attr('font-weight','900').attr('fill','#e8edf5')
+    .text(corrientes[0]?.pct + '%');
+  g.append('text').attr('text-anchor','middle').attr('dy','1.2em')
+    .attr('font-size','10px').attr('fill','#5a6478')
+    .text(LABEL[corrientes[0]?.corriente] || '');
+
+  // Leyenda
+  const legEl = document.getElementById('donut-legend');
+  corrientes.forEach(c => {
+    legEl.innerHTML += `
+      <div class="dl-item">
+        <div class="dl-dot" style="background:${COLOR[c.corriente]||'#636e72'}"></div>
+        <div class="dl-label">${LABEL[c.corriente]||c.corriente}</div>
+        <div class="dl-pct">${c.pct}%</div>
+      </div>`;
+  });
+});
+</script>
+</body>
+</html>

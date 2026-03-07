@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Red Intelectual — Autores Citados por Banxico</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#0d1117; color:#e6edf3; font-family:'Inter',system-ui,sans-serif; overflow:hidden; }
+
+  #ui {
+    position:absolute; top:0; left:0; right:0; z-index:10;
+    display:flex; align-items:center; gap:16px;
+    padding:14px 20px;
+    background:linear-gradient(180deg,rgba(13,17,23,.98) 70%,transparent);
+  }
+  h1 { font-size:15px; font-weight:600; color:#e6edf3; letter-spacing:.3px; flex:0 0 auto; }
+  .subtitle { font-size:11px; color:#7d8590; flex:0 0 auto; }
+
+  #search {
+    background:#161b22; border:1px solid #30363d; border-radius:6px;
+    color:#e6edf3; padding:6px 12px; font-size:13px; width:180px;
+    outline:none;
+  }
+  #search:focus { border-color:#388bfd; }
+
+  .btn {
+    background:#21262d; border:1px solid #30363d; border-radius:6px;
+    color:#cdd9e5; padding:6px 12px; font-size:12px; cursor:pointer;
+    transition:all .15s;
+  }
+  .btn:hover { background:#30363d; color:#e6edf3; }
+  .btn.active { background:#1f6feb; border-color:#388bfd; color:#fff; }
+
+  #legend {
+    position:absolute; bottom:20px; left:20px; z-index:10;
+    background:rgba(13,17,23,.9); border:1px solid #30363d;
+    border-radius:8px; padding:12px 16px;
+  }
+  .leg-title { font-size:11px; color:#7d8590; font-weight:600;
+               text-transform:uppercase; letter-spacing:.8px; margin-bottom:8px; }
+  .leg-item { display:flex; align-items:center; gap:8px;
+              font-size:12px; color:#cdd9e5; margin-bottom:5px; cursor:pointer; }
+  .leg-item:hover { color:#fff; }
+  .leg-dot { width:10px; height:10px; border-radius:50%; flex:0 0 10px; }
+
+  #tooltip {
+    position:absolute; pointer-events:none; z-index:20;
+    background:rgba(13,17,23,.97); border:1px solid #30363d;
+    border-radius:8px; padding:12px 16px; font-size:13px;
+    opacity:0; transition:opacity .15s; max-width:220px;
+  }
+  .tt-name  { font-weight:700; font-size:14px; margin-bottom:4px; }
+  .tt-corr  { font-size:11px; color:#7d8590; margin-bottom:6px; text-transform:uppercase; letter-spacing:.6px; }
+  .tt-citas { font-size:12px; color:#e6edf3; }
+  .tt-tag   { display:inline-block; border-radius:4px; padding:1px 6px;
+              font-size:10px; font-weight:600; margin-top:4px; }
+
+  #info {
+    position:absolute; bottom:20px; right:20px; z-index:10;
+    font-size:11px; color:#484f58; text-align:right;
+  }
+
+  svg { display:block; }
+  .link { stroke-opacity:.35; }
+  .node circle { cursor:pointer; transition:opacity .2s; }
+  .node text { pointer-events:none; font-size:10px; fill:#cdd9e5;
+               text-shadow:0 1px 3px #0d1117; }
+  .node.dimmed circle { opacity:.15; }
+  .node.dimmed text  { opacity:.1; }
+  .link.dimmed { opacity:.05; }
+</style>
+</head>
+<body>
+
+<div id="ui">
+  <div>
+    <h1>Red Intelectual · Banxico DIBM</h1>
+    <div class="subtitle">Autores co-citados en papers de inflación · 1978–2025</div>
+  </div>
+  <input id="search" type="text" placeholder="Buscar autor…">
+  <button class="btn" id="btn-all">Todos</button>
+  <button class="btn" id="btn-canon">Solo canónicos</button>
+  <button class="btn" id="btn-cluster">Agrupar corrientes</button>
+</div>
+
+<div id="legend">
+  <div class="leg-title">Corriente teórica</div>
+  <div class="leg-item" data-filter="new_keynesian"><div class="leg-dot" style="background:#4ECDC4"></div>New Keynesian / DSGE</div>
+  <div class="leg-item" data-filter="econometria"><div class="leg-dot" style="background:#FFE66D"></div>Econometría</div>
+  <div class="leg-item" data-filter="monetarista"><div class="leg-dot" style="background:#FF6B6B"></div>Monetarista</div>
+  <div class="leg-item" data-filter="nueva_clasica"><div class="leg-dot" style="background:#A29BFE"></div>Nueva Clásica</div>
+  <div class="leg-item" data-filter="keynesiano_orig"><div class="leg-dot" style="background:#FD79A8"></div>Keynes original</div>
+  <div class="leg-item" data-filter="heterodoxo"><div class="leg-dot" style="background:#E17055"></div>Heterodoxo</div>
+  <div class="leg-item" data-filter="no_clasificado"><div class="leg-dot" style="background:#636e72"></div>No clasificado</div>
+</div>
+
+<div id="tooltip">
+  <div class="tt-name" id="tt-name"></div>
+  <div class="tt-corr" id="tt-corr"></div>
+  <div class="tt-citas" id="tt-citas"></div>
+  <div id="tt-tag" class="tt-tag"></div>
+</div>
+
+<div id="info">Scroll para zoom · Arrastrar para mover · Click nodo para resaltar vecinos</div>
+
+<svg id="graph"></svg>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script>
+const W = window.innerWidth, H = window.innerHeight;
+const svg = d3.select("#graph").attr("width", W).attr("height", H);
+
+const CLUSTER_POS = {
+  new_keynesian:   [W*.52, H*.42],
+  econometria:     [W*.72, H*.55],
+  monetarista:     [W*.38, H*.28],
+  nueva_clasica:   [W*.28, H*.42],
+  rbc:             [W*.22, H*.58],
+  keynesiano_orig: [W*.55, H*.72],
+  heterodoxo:      [W*.78, H*.28],
+  estructuralista: [W*.18, H*.30],
+  no_clasificado:  [W*.50, H*.55],
+};
+
+let clusterMode = false;
+let activeFilter = null;
+
+const g    = svg.append("g");
+const zoom = d3.zoom().scaleExtent([.2,4])
+  .on("zoom", e => g.attr("transform", e.transform));
+svg.call(zoom);
+
+const tooltip = document.getElementById("tooltip");
+
+fetch("../data/autores_red.json").then(r => r.json()).then(data => {
+
+  const sim = d3.forceSimulation(data.nodes)
+    .force("link",   d3.forceLink(data.links).id(d=>d.id).distance(d => 80 - d.value*4).strength(.4))
+    .force("charge", d3.forceManyBody().strength(-180))
+    .force("center", d3.forceCenter(W/2, H/2))
+    .force("collide", d3.forceCollide(d => rScale(d.citas) + 8));
+
+  const rScale = d3.scaleSqrt().domain([0, d3.max(data.nodes, d=>d.citas)]).range([4, 26]);
+
+  // Links
+  const link = g.append("g").selectAll("line")
+    .data(data.links).join("line")
+    .attr("class","link")
+    .attr("stroke", "#30363d")
+    .attr("stroke-width", d => Math.sqrt(d.value) * .8);
+
+  // Nodes
+  const node = g.append("g").selectAll("g")
+    .data(data.nodes).join("g")
+    .attr("class","node")
+    .call(d3.drag()
+      .on("start", (e,d) => { if(!e.active) sim.alphaTarget(.3).restart(); d.fx=d.x; d.fy=d.y; })
+      .on("drag",  (e,d) => { d.fx=e.x; d.fy=e.y; })
+      .on("end",   (e,d) => { if(!e.active) sim.alphaTarget(0); d.fx=null; d.fy=null; }))
+    .on("mouseover", showTooltip)
+    .on("mousemove",  moveTooltip)
+    .on("mouseout",   hideTooltip)
+    .on("click",      clickNode);
+
+  node.append("circle")
+    .attr("r",    d => rScale(d.citas))
+    .attr("fill", d => d.color)
+    .attr("stroke", d => d3.color(d.color).darker(1))
+    .attr("stroke-width", 1.5);
+
+  node.append("text")
+    .attr("dy", d => rScale(d.citas) + 11)
+    .attr("text-anchor","middle")
+    .text(d => d.citas >= 5 ? d.apellido : "");
+
+  sim.on("tick", () => {
+    link.attr("x1",d=>d.source.x).attr("y1",d=>d.source.y)
+        .attr("x2",d=>d.target.x).attr("y2",d=>d.target.y);
+    node.attr("transform",d=>`translate(${d.x},${d.y})`);
+  });
+
+  // ── Tooltip ───────────────────────────────────────────────────────────────
+  const LABEL = {
+    new_keynesian:"New Keynesian / DSGE", econometria:"Econometría",
+    monetarista:"Monetarista", nueva_clasica:"Nueva Clásica",
+    rbc:"Real Business Cycle", keynesiano_orig:"Keynes original",
+    heterodoxo:"Heterodoxo", estructuralista:"Estructuralista latinoamericano",
+    no_clasificado:"No clasificado"
+  };
+
+  function showTooltip(e, d) {
+    document.getElementById("tt-name").textContent  = d.nombre;
+    document.getElementById("tt-corr").textContent  = LABEL[d.corriente] || d.corriente;
+    document.getElementById("tt-citas").textContent = `${d.citas} citas en el corpus`;
+    const tag = document.getElementById("tt-tag");
+    tag.textContent  = d.corriente === "heterodoxo" ? "HETERODOXO" :
+                       d.corriente === "no_clasificado" ? "" : "MAINSTREAM";
+    tag.style.background = d.corriente === "heterodoxo" ? "#E17055" :
+                           d.corriente === "no_clasificado" ? "transparent" : "#1f6feb";
+    tag.style.color = "#fff";
+    tooltip.style.opacity = 1;
+    moveTooltip(e);
+  }
+  function moveTooltip(e) {
+    tooltip.style.left = (e.clientX + 14) + "px";
+    tooltip.style.top  = (e.clientY - 10) + "px";
+  }
+  function hideTooltip() { tooltip.style.opacity = 0; }
+
+  // ── Click: resaltar vecinos ────────────────────────────────────────────────
+  let selected = null;
+  function clickNode(e, d) {
+    e.stopPropagation();
+    if (selected === d.id) {
+      clearHighlight(); selected = null; return;
+    }
+    selected = d.id;
+    const vecinos = new Set([d.id]);
+    data.links.forEach(l => {
+      if (l.source.id === d.id) vecinos.add(l.target.id);
+      if (l.target.id === d.id) vecinos.add(l.source.id);
+    });
+    node.classed("dimmed", n => !vecinos.has(n.id));
+    link.classed("dimmed", l => !vecinos.has(l.source.id) || !vecinos.has(l.target.id));
+  }
+  svg.on("click", () => { clearHighlight(); selected = null; });
+  function clearHighlight() {
+    node.classed("dimmed", false);
+    link.classed("dimmed", false);
+  }
+
+  // ── Botón: solo canónicos ──────────────────────────────────────────────────
+  document.getElementById("btn-canon").addEventListener("click", function() {
+    this.classList.toggle("active");
+    const onlyCanon = this.classList.contains("active");
+    node.style("display", d => onlyCanon && d.corriente === "no_clasificado" ? "none" : null);
+  });
+
+  // ── Botón: agrupar por corriente ───────────────────────────────────────────
+  document.getElementById("btn-cluster").addEventListener("click", function() {
+    clusterMode = !clusterMode;
+    this.classList.toggle("active", clusterMode);
+    if (clusterMode) {
+      sim.force("cluster", alpha => {
+        data.nodes.forEach(d => {
+          const [tx, ty] = CLUSTER_POS[d.corriente] || [W/2, H/2];
+          d.vx += (tx - d.x) * alpha * .08;
+          d.vy += (ty - d.y) * alpha * .08;
+        });
+      }).alpha(.5).restart();
+    } else {
+      sim.force("cluster", null).alpha(.3).restart();
+    }
+  });
+
+  // ── Botón: todos ───────────────────────────────────────────────────────────
+  document.getElementById("btn-all").addEventListener("click", () => {
+    node.style("display", null);
+    clearHighlight();
+    document.getElementById("btn-canon").classList.remove("active");
+    clusterMode = false;
+    document.getElementById("btn-cluster").classList.remove("active");
+    sim.force("cluster", null).alpha(.3).restart();
+  });
+
+  // ── Search ─────────────────────────────────────────────────────────────────
+  document.getElementById("search").addEventListener("input", function() {
+    const q = this.value.toLowerCase().trim();
+    if (!q) { node.style("display", null); return; }
+    node.style("display", d =>
+      d.apellido.toLowerCase().includes(q) || d.nombre.toLowerCase().includes(q)
+        ? null : "none");
+  });
+
+  // ── Filter por leyenda ─────────────────────────────────────────────────────
+  document.querySelectorAll(".leg-item").forEach(el => {
+    el.addEventListener("click", () => {
+      const f = el.dataset.filter;
+      activeFilter = activeFilter === f ? null : f;
+      document.querySelectorAll(".leg-item").forEach(x =>
+        x.style.opacity = (!activeFilter || x.dataset.filter===activeFilter) ? 1 : .35);
+      node.classed("dimmed", d => activeFilter && d.corriente !== activeFilter);
+      link.classed("dimmed", l =>
+        activeFilter && l.source.corriente !== activeFilter && l.target.corriente !== activeFilter);
+    });
+  });
+
+});
+</script>
+</body>
+</html>

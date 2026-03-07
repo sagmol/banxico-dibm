@@ -1,0 +1,281 @@
+{
+  "total_refs": 1911,
+  "total_clasificadas": 1348,
+  "pct_clasificado": 70.5,
+  "pct_ortodoxo_inst": 99.8,
+  "pct_heterodoxo": 0.2,
+  "n_citas_ortodoxo": 1345,
+  "n_citas_heterodoxo": 3,
+  "n_autores_unicos": 318,
+  "anio_min_citado": 1952,
+  "anio_max_citado": 2025,
+  "autor_top": "Ben Bernanke",
+  "autor_top_citas": 37,
+  "top_journals": [
+    {
+      "journal_detectado": "American Economic Review",
+      "subcategoria": "tier1_generalist",
+      "n_citas": 115
+    },
+    {
+      "journal_detectado": "Journal of Monetary Economics",
+      "subcategoria": "macro_monetario",
+      "n_citas": 84
+    },
+    {
+      "journal_detectado": "Banco de México WP",
+      "subcategoria": "wp_banxico",
+      "n_citas": 79
+    },
+    {
+      "journal_detectado": "Econometrica",
+      "subcategoria": "tier1_generalist",
+      "n_citas": 61
+    },
+    {
+      "journal_detectado": "Quarterly Journal of Economics",
+      "subcategoria": "tier1_generalist",
+      "n_citas": 57
+    },
+    {
+      "journal_detectado": "Journal of Political Economy",
+      "subcategoria": "tier1_generalist",
+      "n_citas": 53
+    },
+    {
+      "journal_detectado": "Federal Reserve",
+      "subcategoria": "wp_bc_avanzado",
+      "n_citas": 47
+    },
+    {
+      "journal_detectado": "Journal of Money, Credit and Banking",
+      "subcategoria": "macro_monetario",
+      "n_citas": 43
+    },
+    {
+      "journal_detectado": "Journal of Econometrics",
+      "subcategoria": "econometria",
+      "n_citas": 38
+    },
+    {
+      "journal_detectado": "Journal of International Economics",
+      "subcategoria": "internacional",
+      "n_citas": 36
+    }
+  ],
+  "top_autores": [
+    {
+      "apellido": "Bernanke",
+      "n_citas": 37,
+      "corriente": "new_keynesian",
+      "nombre_canonico": "Ben Bernanke"
+    },
+    {
+      "apellido": "Christiano",
+      "n_citas": 15,
+      "corriente": "new_keynesian",
+      "nombre_canonico": "Lawrence Christiano"
+    },
+    {
+      "apellido": "Blanchard",
+      "n_citas": 14,
+      "corriente": "new_keynesian",
+      "nombre_canonico": "Olivier Blanchard"
+    },
+    {
+      "apellido": "Calvo",
+      "n_citas": 14,
+      "corriente": "new_keynesian",
+      "nombre_canonico": "Guillermo Calvo"
+    },
+    {
+      "apellido": "Taylor",
+      "n_citas": 12,
+      "corriente": "new_keynesian",
+      "nombre_canonico": "John Taylor"
+    },
+    {
+      "apellido": "Engle",
+      "n_citas": 12,
+      "corriente": "econometria",
+      "nombre_canonico": "Robert Engle"
+    },
+    {
+      "apellido": "Gertler",
+      "n_citas": 12,
+      "corriente": "new_keynesian",
+      "nombre_canonico": "Mark Gertler"
+    },
+    {
+      "apellido": "Hamilton",
+      "n_citas": 12,
+      "corriente": "econometria",
+      "nombre_canonico": "James Hamilton"
+    },
+    {
+      "apellido": "Stock",
+      "n_citas": 11,
+      "corriente": "econometria",
+      "nombre_canonico": "James Stock"
+    },
+    {
+      "apellido": "Sims",
+      "n_citas": 7,
+      "corriente": "econometria",
+      "nombre_canonico": "Christopher Sims"
+    },
+    {
+      "apellido": "Diebold",
+      "n_citas": 7,
+      "corriente": "econometria",
+      "nombre_canonico": "Francis Diebold"
+    },
+    {
+      "apellido": "Galí",
+      "n_citas": 6,
+      "corriente": "new_keynesian",
+      "nombre_canonico": "Jordi Galí"
+    },
+    {
+      "apellido": "Svensson",
+      "n_citas": 6,
+      "corriente": "new_keynesian",
+      "nombre_canonico": "Lars Svensson"
+    },
+    {
+      "apellido": "Lucas",
+      "n_citas": 6,
+      "corriente": "nueva_clasica",
+      "nombre_canonico": "Robert Lucas"
+    },
+    {
+      "apellido": "Clarida",
+      "n_citas": 5,
+      "corriente": "new_keynesian",
+      "nombre_canonico": "Richard Clarida"
+    }
+  ],
+  "corrientes": [
+    {
+      "corriente": "new_keynesian",
+      "citas": 146,
+      "pct": 64.0
+    },
+    {
+      "corriente": "econometria",
+      "citas": 62,
+      "pct": 27.2
+    },
+    {
+      "corriente": "nueva_clasica",
+      "citas": 9,
+      "pct": 3.9
+    },
+    {
+      "corriente": "monetarista",
+      "citas": 7,
+      "pct": 3.1
+    },
+    {
+      "corriente": "heterodoxo",
+      "citas": 3,
+      "pct": 1.3
+    },
+    {
+      "corriente": "rbc",
+      "citas": 1,
+      "pct": 0.4
+    }
+  ],
+  "papers_por_anio": [
+    {
+      "anio": 2004,
+      "n": 1
+    },
+    {
+      "anio": 2005,
+      "n": 1
+    },
+    {
+      "anio": 2006,
+      "n": 6
+    },
+    {
+      "anio": 2007,
+      "n": 6
+    },
+    {
+      "anio": 2008,
+      "n": 7
+    },
+    {
+      "anio": 2009,
+      "n": 6
+    },
+    {
+      "anio": 2010,
+      "n": 9
+    },
+    {
+      "anio": 2011,
+      "n": 3
+    },
+    {
+      "anio": 2012,
+      "n": 5
+    },
+    {
+      "anio": 2013,
+      "n": 5
+    },
+    {
+      "anio": 2014,
+      "n": 5
+    },
+    {
+      "anio": 2015,
+      "n": 5
+    },
+    {
+      "anio": 2016,
+      "n": 6
+    },
+    {
+      "anio": 2017,
+      "n": 9
+    },
+    {
+      "anio": 2018,
+      "n": 10
+    },
+    {
+      "anio": 2019,
+      "n": 7
+    },
+    {
+      "anio": 2020,
+      "n": 5
+    },
+    {
+      "anio": 2021,
+      "n": 6
+    },
+    {
+      "anio": 2022,
+      "n": 2
+    },
+    {
+      "anio": 2023,
+      "n": 10
+    },
+    {
+      "anio": 2024,
+      "n": 6
+    },
+    {
+      "anio": 2025,
+      "n": 6
+    }
+  ],
+  "n_papers_inflacion": 126
+}
