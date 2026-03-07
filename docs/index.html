@@ -196,6 +196,7 @@
   <a href="#temporal">Temporal</a>
   <a href="#temas">Temas JEL</a>
   <a href="#red">Red de coautoría</a>
+  <a href="#clusters">Clusters temáticos</a>
   <div class="spacer"></div>
   <a href="https://github.com/sagmol/banxico-dibm" class="gh-link" target="_blank">
     GitHub ↗
@@ -370,6 +371,60 @@
         <iframe src="charts/autores_centralidad.html" height="720"></iframe>
         <div class="chart-caption">Autores con mayor centralidad de intermediación: quiénes funcionan como puentes entre comunidades.</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECCIÓN: CLUSTERS TEMÁTICOS ───────────────────────── -->
+<section id="clusters">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Clusters temáticos</span>
+      <h2>Mapa intelectual del corpus</h2>
+      <p>Análisis de tópicos mediante NMF sobre 501 abstracts (426 en inglés, 75 en español).
+      Cada documento se asigna al tópico dominante. El mapa 2D usa t-SNE para proyectar
+      la distancia temática entre documentos.</p>
+    </div>
+
+    <div class="findings">
+      <div class="finding-card">
+        <h4>Política monetaria e inflación</h4>
+        <p>Los tópicos T06 y T01 juntos concentran más de 100 documentos — el núcleo duro del mandato institucional.</p>
+      </div>
+      <div class="finding-card accent">
+        <h4>Transferencias y bienestar</h4>
+        <p>55 documentos sobre hogares, transferencias, mujeres y niños. Una agenda social inesperada para un banco central.</p>
+      </div>
+      <div class="finding-card red">
+        <h4>Curva de rendimientos</h4>
+        <p>23 documentos altamente especializados en tasas de interés y estructura temporal — el cluster más técnico y compacto.</p>
+      </div>
+    </div>
+
+    <div class="chart-wrap">
+      <iframe src="charts/clusters_scatter.html" height="660"></iframe>
+      <div class="chart-caption">Mapa 2D del corpus (t-SNE). Cada punto es un documento. El color indica el tópico dominante. Pasa el cursor para ver título y año.</div>
+    </div>
+
+    <div class="chart-wrap">
+      <iframe src="charts/clusters_palabras.html" height="640"></iframe>
+      <div class="chart-caption">Palabras más características de cada tópico según el modelo NMF.</div>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-wrap">
+        <iframe src="charts/clusters_distribucion.html" height="460"></iframe>
+        <div class="chart-caption">Número de documentos por tópico dominante.</div>
+      </div>
+      <div class="chart-wrap">
+        <iframe src="charts/clusters_calor_periodo.html" height="460"></iframe>
+        <div class="chart-caption">Presencia de cada tópico por período histórico (% del total en cada período).</div>
+      </div>
+    </div>
+
+    <div class="chart-wrap">
+      <iframe src="charts/clusters_evolucion.html" height="540"></iframe>
+      <div class="chart-caption">Evolución de tópicos en el tiempo (desde 1995). El quiebre de 2001 marca el inicio del régimen de metas de inflación.</div>
     </div>
   </div>
 </section>
