@@ -1,0 +1,3573 @@
+{
+ "clusters": [
+  {
+   "id": 0,
+   "nombre": "Deuda y riesgo financiero",
+   "color": "#4ECDC4",
+   "count": 40
+  },
+  {
+   "id": 1,
+   "nombre": "Tipo de cambio e inflación",
+   "color": "#FFE66D",
+   "count": 74
+  },
+  {
+   "id": 2,
+   "nombre": "Mercado laboral",
+   "color": "#FF6B6B",
+   "count": 47
+  },
+  {
+   "id": 3,
+   "nombre": "Métodos y pronósticos",
+   "color": "#74B9FF",
+   "count": 56
+  },
+  {
+   "id": 4,
+   "nombre": "Economía regional y manufactura",
+   "color": "#FD79A8",
+   "count": 60
+  },
+  {
+   "id": 5,
+   "nombre": "Precios y competencia",
+   "color": "#A29BFE",
+   "count": 70
+  },
+  {
+   "id": 6,
+   "nombre": "Política monetaria",
+   "color": "#55EFC4",
+   "count": 45
+  },
+  {
+   "id": 7,
+   "nombre": "Tipo de cambio (pass-through)",
+   "color": "#FDCB6E",
+   "count": 31
+  },
+  {
+   "id": 8,
+   "nombre": "Tasas y curva de rendimientos",
+   "color": "#6CB4F5",
+   "count": 23
+  },
+  {
+   "id": 9,
+   "nombre": "Transferencias y bienestar",
+   "color": "#E17055",
+   "count": 55
+  }
+ ],
+ "points": [
+  {
+   "x": -7.125394821166992,
+   "y": 8.6452054977417,
+   "cluster": 0,
+   "title": "The Balance Sheet Channel of Fiscal Policy: Sovereign Exposure an…",
+   "year": 2025
+  },
+  {
+   "x": -10.360108375549316,
+   "y": 8.371747016906738,
+   "cluster": 0,
+   "title": "Identifying Gender Disparities on the Time to Repay Microfinance …",
+   "year": 2023
+  },
+  {
+   "x": -4.730263710021973,
+   "y": 6.894988059997559,
+   "cluster": 0,
+   "title": "Foreign Currency Working Capital Constraints for Imported Inputs …",
+   "year": 2022
+  },
+  {
+   "x": -6.774618625640869,
+   "y": 6.2959065437316895,
+   "cluster": 0,
+   "title": "The COVID-19 Economic Crisis in Mexico through the Lens of a Fina…",
+   "year": 2021
+  },
+  {
+   "x": -7.5539703369140625,
+   "y": 6.752812385559082,
+   "cluster": 0,
+   "title": "Capital Flows to Emerging Economies and Global Risk Aversion duri…",
+   "year": 2021
+  },
+  {
+   "x": -10.034734725952148,
+   "y": 8.128594398498535,
+   "cluster": 0,
+   "title": "Exploring the sources of loan default clustering using survival a…",
+   "year": 2021
+  },
+  {
+   "x": -9.095623970031738,
+   "y": 9.607924461364746,
+   "cluster": 0,
+   "title": "Emerging market capital flows the role of fund manager portfolio …",
+   "year": 2021
+  },
+  {
+   "x": -6.266971111297607,
+   "y": 9.017218589782715,
+   "cluster": 0,
+   "title": "Should monetary policy lean against the wind in a small-open econ…",
+   "year": 2021
+  },
+  {
+   "x": -8.600614547729492,
+   "y": 5.981045246124268,
+   "cluster": 0,
+   "title": "Investment for the Demographic Window in Latin America…",
+   "year": 2019
+  },
+  {
+   "x": -6.374025344848633,
+   "y": 9.039144515991211,
+   "cluster": 0,
+   "title": "Does Monetary Policy in Advanced Economies Have Differentiated Ef…",
+   "year": 2018
+  },
+  {
+   "x": -7.840409278869629,
+   "y": 8.630423545837402,
+   "cluster": 0,
+   "title": "What Determines the Neutral Rate of Interest in an Emerging Econo…",
+   "year": 2018
+  },
+  {
+   "x": -6.7856831550598145,
+   "y": 8.150126457214355,
+   "cluster": 0,
+   "title": "On the Role of Financial Aid in a Default Episode…",
+   "year": 2018
+  },
+  {
+   "x": -7.302131652832031,
+   "y": 6.4109883308410645,
+   "cluster": 0,
+   "title": "Financial openness, policy vs. realized outcomes…",
+   "year": 2018
+  },
+  {
+   "x": -8.506847381591797,
+   "y": 10.45035457611084,
+   "cluster": 0,
+   "title": "Are all types of capital flows driven by the same factors? Eviden…",
+   "year": 2017
+  },
+  {
+   "x": -5.789489269256592,
+   "y": 11.896760940551758,
+   "cluster": 0,
+   "title": "The International Bank Lending Channel of Monetary Policy Rates a…",
+   "year": 2017
+  },
+  {
+   "x": -7.116248607635498,
+   "y": 9.435796737670898,
+   "cluster": 0,
+   "title": "Mortgage Default in an Estimated Model of the U.S. Housing Market…",
+   "year": 2017
+  },
+  {
+   "x": -6.051295280456543,
+   "y": 7.828296184539795,
+   "cluster": 0,
+   "title": "Commodity Price Risk Management and Fiscal Policy in a Sovereign …",
+   "year": 2017
+  },
+  {
+   "x": -7.572299480438232,
+   "y": 10.39177417755127,
+   "cluster": 0,
+   "title": "Portfolio Investment Response to U.S. Monetary Policy Announcemen…",
+   "year": 2017
+  },
+  {
+   "x": -7.016517162322998,
+   "y": 7.2975311279296875,
+   "cluster": 0,
+   "title": "Risky Banks and Macroprudential Policy for Emerging Economies…",
+   "year": 2016
+  },
+  {
+   "x": -8.058237075805664,
+   "y": 6.576345443725586,
+   "cluster": 0,
+   "title": "Sovereign Spreads in the Eurozone: Is Market Discipline Working?…",
+   "year": 2015
+  },
+  {
+   "x": -6.72521448135376,
+   "y": 5.403690338134766,
+   "cluster": 0,
+   "title": "Estimation of a Financial Conditions Index for Mexico…",
+   "year": 2015
+  },
+  {
+   "x": -5.786619186401367,
+   "y": 11.058205604553223,
+   "cluster": 0,
+   "title": "Is Trouble Brewing for EMEs?…",
+   "year": 2015
+  },
+  {
+   "x": -5.987820148468018,
+   "y": 7.913567543029785,
+   "cluster": 0,
+   "title": "Financial Intermediation in a Global Environment…",
+   "year": 2015
+  },
+  {
+   "x": -8.7615385055542,
+   "y": 6.8755645751953125,
+   "cluster": 0,
+   "title": "Valuation of credit default swaps via Bessel bridges…",
+   "year": 2014
+  },
+  {
+   "x": -10.125223159790039,
+   "y": 8.02491283416748,
+   "cluster": 0,
+   "title": "Are Information Disclosure Mandates Effective? Evidence from the …",
+   "year": 2014
+  },
+  {
+   "x": -10.132447242736816,
+   "y": 6.133846282958984,
+   "cluster": 0,
+   "title": "Heading into Trouble: A Comparison of the Latin American Crises a…",
+   "year": 2014
+  },
+  {
+   "x": -6.7856831550598145,
+   "y": 8.150126457214355,
+   "cluster": 0,
+   "title": "Stimulus vs. Austerity vs. Default…",
+   "year": 2014
+  },
+  {
+   "x": -6.9532012939453125,
+   "y": 12.25052261352539,
+   "cluster": 0,
+   "title": "Investigating the Zero Lower Bound on the Nominal Interest Rate U…",
+   "year": 2014
+  },
+  {
+   "x": -4.326210975646973,
+   "y": 6.965936660766602,
+   "cluster": 0,
+   "title": "Re-examining the Role of Financial Constraints in Business Cycles…",
+   "year": 2013
+  },
+  {
+   "x": -6.878367900848389,
+   "y": 7.336586952209473,
+   "cluster": 0,
+   "title": "Default Risk and Economic Activity: A Small Open Economy Model wi…",
+   "year": 2012
+  },
+  {
+   "x": -6.204890251159668,
+   "y": 9.026835441589355,
+   "cluster": 0,
+   "title": "In the Quest of Macroprudential Policy Tools…",
+   "year": 2011
+  },
+  {
+   "x": -6.953148365020752,
+   "y": 7.510314464569092,
+   "cluster": 0,
+   "title": "Policy Response to External Shocks: Lessons from the Crisis…",
+   "year": 2011
+  },
+  {
+   "x": -4.846211910247803,
+   "y": 7.090312957763672,
+   "cluster": 0,
+   "title": "The Number of Equilibria of Smooth Infinite Economies…",
+   "year": 2011
+  },
+  {
+   "x": -6.061581134796143,
+   "y": 6.723124027252197,
+   "cluster": 0,
+   "title": "The Equilibrium Set of Economies with a Continuous Consumption Sp…",
+   "year": 2010
+  },
+  {
+   "x": -8.643357276916504,
+   "y": 10.087688446044922,
+   "cluster": 0,
+   "title": "Optimal Fiscal Policy in a Small Open Economy and the Structure o…",
+   "year": 2007
+  },
+  {
+   "x": -7.321491241455078,
+   "y": 8.205961227416992,
+   "cluster": 0,
+   "title": "Fiscal Policy and Default Risk in Emerging Markets.…",
+   "year": 2007
+  },
+  {
+   "x": -8.06277084350586,
+   "y": 9.65713882446289,
+   "cluster": 0,
+   "title": "Optimal Fiscal Policy in a Small Open Economy with Incomplete Mar…",
+   "year": 2006
+  },
+  {
+   "x": -7.187638282775879,
+   "y": 8.123698234558105,
+   "cluster": 0,
+   "title": "Sovereign Default, Interest Rates and Political Uncertainty in Em…",
+   "year": 2006
+  },
+  {
+   "x": -6.702561855316162,
+   "y": 8.136486053466797,
+   "cluster": 0,
+   "title": "Sovereign Default, Terms of Trade and Interest Rates in Emerging …",
+   "year": 2006
+  },
+  {
+   "x": -9.946484565734863,
+   "y": 5.65119743347168,
+   "cluster": 0,
+   "title": "Concentration Risk in Bank Loan Portfolio's: Measurement, Single …",
+   "year": 1999
+  },
+  {
+   "x": 43.243324279785156,
+   "y": -3.254018783569336,
+   "cluster": 1,
+   "title": "A Statistical Analysis of the Relationship between Headline and C…",
+   "year": 2003
+  },
+  {
+   "x": 44.5291748046875,
+   "y": -3.7169439792633057,
+   "cluster": 1,
+   "title": "The Long-term Relationship between Mexico's GDP as well as its Co…",
+   "year": 2003
+  },
+  {
+   "x": 39.587276458740234,
+   "y": -1.1329412460327148,
+   "cluster": 1,
+   "title": "Explaining and Forecasting Inflation in Emerging Markets: The Mex…",
+   "year": 2003
+  },
+  {
+   "x": 42.79715347290039,
+   "y": -1.49770188331604,
+   "cluster": 1,
+   "title": "Fear of Floating or Fear of Inflation: The Importance of the Exch…",
+   "year": 2003
+  },
+  {
+   "x": 40.03816604614258,
+   "y": -3.0097622871398926,
+   "cluster": 1,
+   "title": "Macroeconomic Synchronization between Mexico and its NAFTA Partne…",
+   "year": 2003
+  },
+  {
+   "x": 44.431846618652344,
+   "y": -2.643965482711792,
+   "cluster": 1,
+   "title": "Mexican Import and Export Function Analysis: 1980-2000.…",
+   "year": 1980
+  },
+  {
+   "x": 43.51904296875,
+   "y": 0.3563016355037689,
+   "cluster": 1,
+   "title": "Analyzing Interest Rates in Mexico with the Monetary Policy Rules…",
+   "year": 2002
+  },
+  {
+   "x": 41.410125732421875,
+   "y": -2.1850738525390625,
+   "cluster": 1,
+   "title": "Private Consumption Dynamics in Mexico. A Cointegration Analysis …",
+   "year": 2002
+  },
+  {
+   "x": 45.773860931396484,
+   "y": -2.2679479122161865,
+   "cluster": 1,
+   "title": "Exchange Rate Behavior in Mexico and the Floating Regime: 1996-20…",
+   "year": 2002
+  },
+  {
+   "x": 42.38477325439453,
+   "y": -0.31370818614959717,
+   "cluster": 1,
+   "title": "Monetary Aggregates, Inflation, and Economic Activity in Mexico.…",
+   "year": 2002
+  },
+  {
+   "x": 44.550785064697266,
+   "y": -4.56814432144165,
+   "cluster": 1,
+   "title": "Trade Integration and Business Cycle Synchronization between Mexi…",
+   "year": 2002
+  },
+  {
+   "x": 46.53589630126953,
+   "y": 0.6279938220977783,
+   "cluster": 1,
+   "title": "Evolution of Credit Card Users Behavioral Scoring in Mexico: A Mi…",
+   "year": 2002
+  },
+  {
+   "x": 46.47087860107422,
+   "y": 0.618584394454956,
+   "cluster": 1,
+   "title": "Capital Sufficiency and Credit Risk in Loan Portfolios.…",
+   "year": 2002
+  },
+  {
+   "x": 41.01177978515625,
+   "y": 1.2482688426971436,
+   "cluster": 1,
+   "title": "What Information Does the Term Structure of Interest Rates in Mex…",
+   "year": 2002
+  },
+  {
+   "x": 45.7879524230957,
+   "y": -2.2852253913879395,
+   "cluster": 1,
+   "title": "Exchange Rate Regime and Corporate Debt Structure: The Mexican Ex…",
+   "year": 2002
+  },
+  {
+   "x": 44.63786697387695,
+   "y": -4.75822114944458,
+   "cluster": 1,
+   "title": "The 1995 Value Added Tax Reform: Inflationary Effect, Incidence, …",
+   "year": 2002
+  },
+  {
+   "x": 42.79715347290039,
+   "y": -1.49770188331604,
+   "cluster": 1,
+   "title": "Regulation of Data Protection and Information Service Providers: …",
+   "year": 2001
+  },
+  {
+   "x": 42.79715347290039,
+   "y": -1.49770188331604,
+   "cluster": 1,
+   "title": "Monetary Aggregates in Mexico: Back to the Classics?.…",
+   "year": 2001
+  },
+  {
+   "x": 43.993350982666016,
+   "y": -1.4334216117858887,
+   "cluster": 1,
+   "title": "Historical Behavior of Real Interest Rates in Mexico: 1951-2001.…",
+   "year": 2001
+  },
+  {
+   "x": 46.2060546875,
+   "y": 0.5538981556892395,
+   "cluster": 1,
+   "title": "Effect of Credit Cycles in Mexico on Household Savings Rates: 198…",
+   "year": 2001
+  },
+  {
+   "x": 42.79715347290039,
+   "y": -1.49770188331604,
+   "cluster": 1,
+   "title": "Considerations on the Conduct of Monetary Policy and the Transmis…",
+   "year": 2001
+  },
+  {
+   "x": 42.2940788269043,
+   "y": -2.7458765506744385,
+   "cluster": 1,
+   "title": "The Importance of Property Rights Protection in Both the Financia…",
+   "year": 2000
+  },
+  {
+   "x": 43.87217330932617,
+   "y": -0.9107838273048401,
+   "cluster": 1,
+   "title": "Inflation Expectations, Country Risk, and Monetary Policy in Mexi…",
+   "year": 2000
+  },
+  {
+   "x": 39.402191162109375,
+   "y": -4.048457145690918,
+   "cluster": 1,
+   "title": "Regional Inequality in Mexico. The Effect of NAFTA and Other Stru…",
+   "year": 2000
+  },
+  {
+   "x": 46.7973518371582,
+   "y": 0.6620596051216125,
+   "cluster": 1,
+   "title": "International Financial Crisis Contagion: The Mexican Case.…",
+   "year": 2000
+  },
+  {
+   "x": 42.79715347290039,
+   "y": -1.49770188331604,
+   "cluster": 1,
+   "title": "The \"Corto\" and its Effect on the Structure of Interest Rates.…",
+   "year": 2000
+  },
+  {
+   "x": 42.79715347290039,
+   "y": -1.49770188331604,
+   "cluster": 1,
+   "title": "Moderate Inflation and Instability in the Inflationary Process.…",
+   "year": 1999
+  },
+  {
+   "x": 41.003570556640625,
+   "y": 1.6831481456756592,
+   "cluster": 1,
+   "title": "Inflation and Business Cycles.…",
+   "year": 1999
+  },
+  {
+   "x": 47.55161666870117,
+   "y": 0.69312584400177,
+   "cluster": 1,
+   "title": "The Asian Financial Crisis: Origin and Developments in 1997 and 1…",
+   "year": 1998
+  },
+  {
+   "x": 42.043235778808594,
+   "y": -2.560384750366211,
+   "cluster": 1,
+   "title": "Considerations on the Practical Implementation of Monetary Policy…",
+   "year": 1998
+  },
+  {
+   "x": 43.43719482421875,
+   "y": -0.46181780099868774,
+   "cluster": 1,
+   "title": "Alternative Inflation Measures.…",
+   "year": 1998
+  },
+  {
+   "x": 42.67502975463867,
+   "y": 1.2558389902114868,
+   "cluster": 1,
+   "title": "International Reserve Accumulation through Option Auctioning: The…",
+   "year": 1998
+  },
+  {
+   "x": 44.67067337036133,
+   "y": -4.861143112182617,
+   "cluster": 1,
+   "title": "Effect of Government-regulated Prices on Inflation.…",
+   "year": 1997
+  },
+  {
+   "x": 47.31613540649414,
+   "y": 0.6900331974029541,
+   "cluster": 1,
+   "title": "Solving a Banking Crisis: The International Experience.…",
+   "year": 1997
+  },
+  {
+   "x": 40.972293853759766,
+   "y": 2.510392904281616,
+   "cluster": 1,
+   "title": "Macroeconomic Relevance of the Real Estate Sector in Mexico.…",
+   "year": 1997
+  },
+  {
+   "x": 43.774696350097656,
+   "y": -2.510410785675049,
+   "cluster": 1,
+   "title": "The Effect of Exchange Market Interventions and the Sterilization…",
+   "year": 1997
+  },
+  {
+   "x": 39.32394027709961,
+   "y": 1.1741328239440918,
+   "cluster": 1,
+   "title": "The Federal Government Financial Rescue of State Governments: A C…",
+   "year": 1997
+  },
+  {
+   "x": 42.79715347290039,
+   "y": -1.49770188331604,
+   "cluster": 1,
+   "title": "Inflation Targets as a Monetary Policy Instrument.…",
+   "year": 1997
+  },
+  {
+   "x": 42.79715347290039,
+   "y": -1.49770188331604,
+   "cluster": 1,
+   "title": "A Statistical Study of the Behavior of the Mexican Peso/US Dollar…",
+   "year": 1997
+  },
+  {
+   "x": 43.014427185058594,
+   "y": -3.8296053409576416,
+   "cluster": 1,
+   "title": "A Cointegration Model to Forecast GDP in Mexico.…",
+   "year": 1995
+  },
+  {
+   "x": 42.79715347290039,
+   "y": -1.49770188331604,
+   "cluster": 1,
+   "title": "The Effect of the Educational Expansion on Employees Income Distr…",
+   "year": 1995
+  },
+  {
+   "x": 42.79715347290039,
+   "y": -1.49770188331604,
+   "cluster": 1,
+   "title": "Exchange Rate Policy Sustainability in Small Economies.…",
+   "year": 1995
+  },
+  {
+   "x": 42.79715347290039,
+   "y": -1.49770188331604,
+   "cluster": 1,
+   "title": "Household Remittances from Abroad.…",
+   "year": 1991
+  },
+  {
+   "x": 39.23746871948242,
+   "y": 2.4331717491149902,
+   "cluster": 1,
+   "title": "Autoregressive Vectors as a Tool for Econometric Analysis.…",
+   "year": 1987
+  },
+  {
+   "x": 39.92913818359375,
+   "y": 1.940144658088684,
+   "cluster": 1,
+   "title": "Seasonally Adjusted Time Series: Application in Industrial Activi…",
+   "year": 1987
+  },
+  {
+   "x": 41.24945068359375,
+   "y": -1.4537113904953003,
+   "cluster": 1,
+   "title": "Analysis of Calendar Effects on the Industrial Production Volume …",
+   "year": 1987
+  },
+  {
+   "x": 40.43822479248047,
+   "y": 1.8580741882324219,
+   "cluster": 1,
+   "title": "Border Crossing Analysis with Generalized Linear Models.…",
+   "year": 1987
+  },
+  {
+   "x": 43.83369827270508,
+   "y": 2.641458511352539,
+   "cluster": 1,
+   "title": "Border Transactions in the North of Mexico.…",
+   "year": 1984
+  },
+  {
+   "x": 42.79715347290039,
+   "y": -1.49770188331604,
+   "cluster": 1,
+   "title": "Macroeconomic Behavior of the Mexican Economy from 1961 to 1981: …",
+   "year": 1983
+  },
+  {
+   "x": 39.38245391845703,
+   "y": -4.071684837341309,
+   "cluster": 1,
+   "title": "Market Structure, Behavior, and Policy of Mexican Private and Mix…",
+   "year": 1982
+  },
+  {
+   "x": 41.6727180480957,
+   "y": 0.12923021614551544,
+   "cluster": 1,
+   "title": "The Inflation Process in Mexico: Theory and Applications of the I…",
+   "year": 1982
+  },
+  {
+   "x": 42.79715347290039,
+   "y": -1.49770188331604,
+   "cluster": 1,
+   "title": "Regional Behavior of Bank Deposits and Credit of Private and Mixe…",
+   "year": 1982
+  },
+  {
+   "x": 42.79715347290039,
+   "y": -1.49770188331604,
+   "cluster": 1,
+   "title": "Regional Distribution of Bank Deposits and Financing of Private a…",
+   "year": 1982
+  },
+  {
+   "x": 43.81597900390625,
+   "y": 1.8273078203201294,
+   "cluster": 1,
+   "title": "Stabilizing and Substituting Assets from a Financial System with …",
+   "year": 1981
+  },
+  {
+   "x": 42.79715347290039,
+   "y": -1.49770188331604,
+   "cluster": 1,
+   "title": "Currency Substitution and Monetary Independence: The Mexican Case…",
+   "year": 1981
+  },
+  {
+   "x": 42.79715347290039,
+   "y": -1.49770188331604,
+   "cluster": 1,
+   "title": "The Credit Market in Mexico.…",
+   "year": 1981
+  },
+  {
+   "x": 42.79715347290039,
+   "y": -1.49770188331604,
+   "cluster": 1,
+   "title": "Dollarization in Mexico: Causes and Consequences.…",
+   "year": 1981
+  },
+  {
+   "x": 47.349613189697266,
+   "y": 0.6878895163536072,
+   "cluster": 1,
+   "title": "Notes on the Development of Bank Revenues and Expenditures: 1966-…",
+   "year": 1981
+  },
+  {
+   "x": 42.79715347290039,
+   "y": -1.49770188331604,
+   "cluster": 1,
+   "title": "National Accounts and Macroeconomic Analysis.…",
+   "year": 1981
+  },
+  {
+   "x": 43.328330993652344,
+   "y": 0.3837856650352478,
+   "cluster": 1,
+   "title": "Income Distribution in Mexico: Volume I.…",
+   "year": 1981
+  },
+  {
+   "x": 42.79715347290039,
+   "y": -1.49770188331604,
+   "cluster": 1,
+   "title": "Income Distribution in Mexico: 1977…",
+   "year": 1981
+  },
+  {
+   "x": 40.316226959228516,
+   "y": -2.137270450592041,
+   "cluster": 1,
+   "title": "Behavior of Mixed Banks Cost Function and Alternatives Regarding …",
+   "year": 1981
+  },
+  {
+   "x": 39.352500915527344,
+   "y": 2.3189332485198975,
+   "cluster": 1,
+   "title": "Analysis of Incoming and Outgoing Tourism in Mexico.…",
+   "year": 1981
+  },
+  {
+   "x": 42.79715347290039,
+   "y": -1.49770188331604,
+   "cluster": 1,
+   "title": "The Demand for Money in Mexico: First Estimates.…",
+   "year": 1980
+  },
+  {
+   "x": 45.27300262451172,
+   "y": -4.64814567565918,
+   "cluster": 1,
+   "title": "Estimating Imports Function for Mexico.…",
+   "year": 1980
+  },
+  {
+   "x": 41.55192565917969,
+   "y": -1.051935076713562,
+   "cluster": 1,
+   "title": "A Financial Model of Short-term Disequilibrium for the Mexican Ec…",
+   "year": 1980
+  },
+  {
+   "x": 42.79715347290039,
+   "y": -1.49770188331604,
+   "cluster": 1,
+   "title": "Illegal Migration to the United States: A New Approach.…",
+   "year": 1980
+  },
+  {
+   "x": 43.800601959228516,
+   "y": 2.1864004135131836,
+   "cluster": 1,
+   "title": "Incoming Tourism Survey: Methodological Report.…",
+   "year": 1980
+  },
+  {
+   "x": 45.83222579956055,
+   "y": -2.284395456314087,
+   "cluster": 1,
+   "title": "Growth and Inflation: Exchange Rate Alternatives for Mexico.…",
+   "year": 1980
+  },
+  {
+   "x": 40.81533432006836,
+   "y": 1.5019006729125977,
+   "cluster": 1,
+   "title": "General Equilibrium Estimates of the Effects of Factor Market Dis…",
+   "year": 1979
+  },
+  {
+   "x": 39.666351318359375,
+   "y": -1.2187420129776,
+   "cluster": 1,
+   "title": "Direct Taxes: Optimal Progressivity.…",
+   "year": 1979
+  },
+  {
+   "x": 41.52839279174805,
+   "y": 0.40998512506484985,
+   "cluster": 1,
+   "title": "Optimal Extraction of Crude Oil and Foreign Debt: The Mexican Cas…",
+   "year": 1979
+  },
+  {
+   "x": 43.61985397338867,
+   "y": 1.4499428272247314,
+   "cluster": 1,
+   "title": "Mexico-United States Foreign Trade: Statistical Comparison Proble…",
+   "year": 1979
+  },
+  {
+   "x": 41.93636703491211,
+   "y": -3.6712841987609863,
+   "cluster": 1,
+   "title": "Financial Structure and Exchange Rate Experience in Mexico: 1954-…",
+   "year": 1978
+  },
+  {
+   "x": 0.6122605800628662,
+   "y": -20.09844970703125,
+   "cluster": 2,
+   "title": "Outsourcing, Labor Regulations and Profit-Sharing: Evidence from …",
+   "year": 2025
+  },
+  {
+   "x": 1.2285914421081543,
+   "y": -20.86680793762207,
+   "cluster": 2,
+   "title": "Outsourcing, Employment and Wages: Evidence from a Policy Reform …",
+   "year": 2024
+  },
+  {
+   "x": 1.4673171043395996,
+   "y": -19.135183334350586,
+   "cluster": 2,
+   "title": "Remote Work and High Proximity Employment in Mexico…",
+   "year": 2024
+  },
+  {
+   "x": 3.2987618446350098,
+   "y": -20.137929916381836,
+   "cluster": 2,
+   "title": "The Real Effects of Credit Supply Shocks During the COVID-19 Pand…",
+   "year": 2024
+  },
+  {
+   "x": -1.759425401687622,
+   "y": -19.890649795532227,
+   "cluster": 2,
+   "title": "Analysis of the initial effects of COVID-19 on jobs affiliated to…",
+   "year": 2024
+  },
+  {
+   "x": 0.37357428669929504,
+   "y": -18.589752197265625,
+   "cluster": 2,
+   "title": "Workers, Workplaces, Sorting, and Wage Dispersion in Mexico…",
+   "year": 2024
+  },
+  {
+   "x": -1.8705462217330933,
+   "y": -19.963247299194336,
+   "cluster": 2,
+   "title": "Differences in the labor market by gender and aggregate income…",
+   "year": 2024
+  },
+  {
+   "x": 3.7208728790283203,
+   "y": -20.101882934570312,
+   "cluster": 2,
+   "title": "Urban Transit Infrastructure: Spatial Mismatch and Labor Market P…",
+   "year": 2023
+  },
+  {
+   "x": 1.317054271697998,
+   "y": -18.514753341674805,
+   "cluster": 2,
+   "title": "Misallocation of Resources, Firm Characteristics, and Structural …",
+   "year": 2023
+  },
+  {
+   "x": 0.13911965489387512,
+   "y": -20.769651412963867,
+   "cluster": 2,
+   "title": "The Impact of the COVID-19 Pandemic on Post-Great Recession Forma…",
+   "year": 2022
+  },
+  {
+   "x": 1.9674776792526245,
+   "y": -20.003145217895508,
+   "cluster": 2,
+   "title": "Imperfect Law Enforcement, Informality, and Organized Crime…",
+   "year": 2022
+  },
+  {
+   "x": 0.8492838740348816,
+   "y": -20.751253128051758,
+   "cluster": 2,
+   "title": "Inequality, Income Dynamics, and Transitions of Mexican Workers…",
+   "year": 2022
+  },
+  {
+   "x": 3.833087205886841,
+   "y": -19.009326934814453,
+   "cluster": 2,
+   "title": "Disentangling the Effects of Large Minimum Wage and VAT Changes o…",
+   "year": 2022
+  },
+  {
+   "x": 3.969902753829956,
+   "y": -20.15057945251465,
+   "cluster": 2,
+   "title": "Internal Migration and Drug Violence in Mexico…",
+   "year": 2022
+  },
+  {
+   "x": 2.236060619354248,
+   "y": -20.567096710205078,
+   "cluster": 2,
+   "title": "City Minimum Wages and Spatial Equilibrium Effects…",
+   "year": 2022
+  },
+  {
+   "x": 4.408107757568359,
+   "y": -18.953947067260742,
+   "cluster": 2,
+   "title": "Effects of Trade and Technology on the Mexican Labor Market…",
+   "year": 2021
+  },
+  {
+   "x": 1.4064797163009644,
+   "y": -21.27229881286621,
+   "cluster": 2,
+   "title": "Informal Labor Markets in Times of Pandemic: Evidence for Latin A…",
+   "year": 2021
+  },
+  {
+   "x": 1.4159142971038818,
+   "y": -20.357410430908203,
+   "cluster": 2,
+   "title": "The Impact of the Capture of Leaders of Criminal Organizations on…",
+   "year": 2021
+  },
+  {
+   "x": 0.4822657108306885,
+   "y": -21.220285415649414,
+   "cluster": 2,
+   "title": "How High (Low) are the Possibilities of Teleworking in Mexico?…",
+   "year": 2021
+  },
+  {
+   "x": 0.4659564793109894,
+   "y": -20.887046813964844,
+   "cluster": 2,
+   "title": "Increasing the Cost of Informal Workers: Evidence from Mexico…",
+   "year": 2020
+  },
+  {
+   "x": 0.7371230721473694,
+   "y": -22.166959762573242,
+   "cluster": 2,
+   "title": "The NAIRU and Informality in the Mexican Labor Market…",
+   "year": 2020
+  },
+  {
+   "x": 2.188929796218872,
+   "y": -21.642101287841797,
+   "cluster": 2,
+   "title": "North-North Migration and Agglomeration in the European Union 15…",
+   "year": 2020
+  },
+  {
+   "x": 0.4662731885910034,
+   "y": -20.12183952331543,
+   "cluster": 2,
+   "title": "Automation Technologies and Employment at Risk: The Case of Mexic…",
+   "year": 2020
+  },
+  {
+   "x": 0.7876641750335693,
+   "y": -21.392234802246094,
+   "cluster": 2,
+   "title": "Minimum Wages in Formal and Informal Sectors: Evidence from an In…",
+   "year": 2019
+  },
+  {
+   "x": 1.3217071294784546,
+   "y": -21.768253326416016,
+   "cluster": 2,
+   "title": "Managing Social Comparison Costs in Organizations…",
+   "year": 2018
+  },
+  {
+   "x": 1.9631065130233765,
+   "y": -22.170684814453125,
+   "cluster": 2,
+   "title": "Informality, Labor Regulation, and the Business Cycle…",
+   "year": 2018
+  },
+  {
+   "x": 1.8657143115997314,
+   "y": -21.621667861938477,
+   "cluster": 2,
+   "title": "Finance and Employment Formalization: Evidence from Mexico's ENIG…",
+   "year": 2018
+  },
+  {
+   "x": 3.0935311317443848,
+   "y": -13.543424606323242,
+   "cluster": 2,
+   "title": "Against All Odds: Job Search during the Great Recession…",
+   "year": 2018
+  },
+  {
+   "x": 4.067678451538086,
+   "y": -19.24416732788086,
+   "cluster": 2,
+   "title": "Labor market consequences of trade openness and competition in fo…",
+   "year": 2017
+  },
+  {
+   "x": -0.8691115975379944,
+   "y": -19.649812698364258,
+   "cluster": 2,
+   "title": "Insurance Against Local Productivity Shocks: Evidence from Commut…",
+   "year": 2016
+  },
+  {
+   "x": 2.970931053161621,
+   "y": -20.493484497070312,
+   "cluster": 2,
+   "title": "Informal Sector Misallocation…",
+   "year": 2016
+  },
+  {
+   "x": 4.205373287200928,
+   "y": -19.991413116455078,
+   "cluster": 2,
+   "title": "Measuring and Understanding Trade in Service Tasks…",
+   "year": 2016
+  },
+  {
+   "x": 0.7876641750335693,
+   "y": -21.392234802246094,
+   "cluster": 2,
+   "title": "Informality and Segmentation in the Mexican Labor Market…",
+   "year": 2015
+  },
+  {
+   "x": -0.36788102984428406,
+   "y": -18.264089584350586,
+   "cluster": 2,
+   "title": "The Blighted Youth: The Impact of Recessions and Policies on Life…",
+   "year": 2015
+  },
+  {
+   "x": 1.0987743139266968,
+   "y": -19.693639755249023,
+   "cluster": 2,
+   "title": "A Model of Wage and Employment Effects of Service Offshoring…",
+   "year": 2015
+  },
+  {
+   "x": -1.5656441450119019,
+   "y": -20.168275833129883,
+   "cluster": 2,
+   "title": "Aggregate Effects of a Universal Social Insurance Fiscal Reform…",
+   "year": 2015
+  },
+  {
+   "x": -0.5366539359092712,
+   "y": -20.585737228393555,
+   "cluster": 2,
+   "title": "Cross-subsidies, and the elasticity of informality to social expe…",
+   "year": 2014
+  },
+  {
+   "x": 1.9319305419921875,
+   "y": -20.664697647094727,
+   "cluster": 2,
+   "title": "The informal sector in contemporary models of the aggregate econo…",
+   "year": 2014
+  },
+  {
+   "x": 1.8489118814468384,
+   "y": -19.642663955688477,
+   "cluster": 2,
+   "title": "Tax Collection, The Informal Sector, and Productivity…",
+   "year": 2013
+  },
+  {
+   "x": 2.6212408542633057,
+   "y": -19.364465713500977,
+   "cluster": 2,
+   "title": "Access to Credit: Awareness and Use of Formal and Informal Credit…",
+   "year": 2013
+  },
+  {
+   "x": 2.6248855590820312,
+   "y": -18.352291107177734,
+   "cluster": 2,
+   "title": "The Relative Utility Hypothesis With and Without Self-reported Re…",
+   "year": 2010
+  },
+  {
+   "x": 2.7217836380004883,
+   "y": -15.033685684204102,
+   "cluster": 2,
+   "title": "Regional comovement in employment over the business cycle in Mexi…",
+   "year": 2010
+  },
+  {
+   "x": 1.4204058647155762,
+   "y": -17.85220718383789,
+   "cluster": 2,
+   "title": "Comovement and cyclical synchronization of employment across Mexi…",
+   "year": 2010
+  },
+  {
+   "x": 1.0641379356384277,
+   "y": -20.209278106689453,
+   "cluster": 2,
+   "title": "Intersectoral Wage Differentials and the Change of the Compositio…",
+   "year": 2008
+  },
+  {
+   "x": 0.3313131630420685,
+   "y": -18.061185836791992,
+   "cluster": 2,
+   "title": "Employment, Hours per Worker and the Business Cycle.…",
+   "year": 2007
+  },
+  {
+   "x": 1.0657825469970703,
+   "y": -20.950891494750977,
+   "cluster": 2,
+   "title": "Changes in the Composition of Employment and Productivity in the …",
+   "year": 2006
+  },
+  {
+   "x": 1.8595045804977417,
+   "y": -20.989686965942383,
+   "cluster": 2,
+   "title": "Wage Rigidities in Mexico: Evidence from the Administrative Recor…",
+   "year": 2004
+  },
+  {
+   "x": -16.62807846069336,
+   "y": 5.4356231689453125,
+   "cluster": 3,
+   "title": "Univariate Measures of Persistence: A Comparative Analysis…",
+   "year": 2024
+  },
+  {
+   "x": -15.387439727783203,
+   "y": 4.806713104248047,
+   "cluster": 3,
+   "title": "Policy Effect Estimation and Visualization in Linear Panel Event-…",
+   "year": 2024
+  },
+  {
+   "x": -16.948200225830078,
+   "y": 2.1591010093688965,
+   "cluster": 3,
+   "title": "Visualization, Identification, and Estimation in the Linear Panel…",
+   "year": 2022
+  },
+  {
+   "x": -14.1896390914917,
+   "y": 4.110318183898926,
+   "cluster": 3,
+   "title": "A Multivariate Analysis of SIEFORE Daily Returns…",
+   "year": 2021
+  },
+  {
+   "x": -18.22452163696289,
+   "y": 4.310004234313965,
+   "cluster": 3,
+   "title": "Asymmetric Volatility Effects in Risk Management: An Empirical An…",
+   "year": 2020
+  },
+  {
+   "x": -13.942811012268066,
+   "y": 5.945893287658691,
+   "cluster": 3,
+   "title": "Covered Interest Parity: A Stochastic Volatility Approach to Esti…",
+   "year": 2020
+  },
+  {
+   "x": -11.787557601928711,
+   "y": -6.613792896270752,
+   "cluster": 3,
+   "title": "Bayesian Comparative Statics…",
+   "year": 2019
+  },
+  {
+   "x": -17.593549728393555,
+   "y": 2.6130504608154297,
+   "cluster": 3,
+   "title": "Nowcasting Mexican GDP using Factor Models and Bridge Equations…",
+   "year": 2018
+  },
+  {
+   "x": -16.781370162963867,
+   "y": 2.812105894088745,
+   "cluster": 3,
+   "title": "Are daily financial data useful for forecasting GDP? Evidence fro…",
+   "year": 2017
+  },
+  {
+   "x": -17.77842140197754,
+   "y": 3.254197359085083,
+   "cluster": 3,
+   "title": "Early Warning Systems with Real-Time Data…",
+   "year": 2017
+  },
+  {
+   "x": -17.753854751586914,
+   "y": 3.7682058811187744,
+   "cluster": 3,
+   "title": "Variance Estimator in Complex Surveys using Linear Regression wit…",
+   "year": 2017
+  },
+  {
+   "x": -16.34339141845703,
+   "y": 2.1750476360321045,
+   "cluster": 3,
+   "title": "Functional Systemic Risk, Complementarities and Early Warnings…",
+   "year": 2016
+  },
+  {
+   "x": -13.974200248718262,
+   "y": 2.7859485149383545,
+   "cluster": 3,
+   "title": "A Functional Approach to Test Trending Volatility…",
+   "year": 2016
+  },
+  {
+   "x": -16.46476173400879,
+   "y": 3.897568941116333,
+   "cluster": 3,
+   "title": "Unit Root Testing in ARMA Models: A Likelihood Ratio Approach…",
+   "year": 2016
+  },
+  {
+   "x": -18.265249252319336,
+   "y": 2.807539463043213,
+   "cluster": 3,
+   "title": "Resampling-ratio estimation in stratified sampling…",
+   "year": 2016
+  },
+  {
+   "x": -15.126191139221191,
+   "y": 3.250549554824829,
+   "cluster": 3,
+   "title": "On the pricing of defaultable bonds and Hitting times of Ito proc…",
+   "year": 2015
+  },
+  {
+   "x": -11.191179275512695,
+   "y": 6.0679097175598145,
+   "cluster": 3,
+   "title": "Estimating Capital Flows to Emerging Market Economies with Hetero…",
+   "year": 2015
+  },
+  {
+   "x": 2.7008817195892334,
+   "y": -16.585378646850586,
+   "cluster": 3,
+   "title": "Labor earnings imputation: An application using labor surveys in …",
+   "year": 2014
+  },
+  {
+   "x": -12.332086563110352,
+   "y": 9.691132545471191,
+   "cluster": 3,
+   "title": "Fiscal Multipliers in a Panel of Countries…",
+   "year": 2014
+  },
+  {
+   "x": -18.448253631591797,
+   "y": 3.2222583293914795,
+   "cluster": 3,
+   "title": "Bounds for the variance, design effect and coefficient of variati…",
+   "year": 2014
+  },
+  {
+   "x": -18.35287094116211,
+   "y": 2.355994701385498,
+   "cluster": 3,
+   "title": "Predictive Inference on Finite Populations Segmented in Planned a…",
+   "year": 2014
+  },
+  {
+   "x": -16.03671646118164,
+   "y": 3.5409016609191895,
+   "cluster": 3,
+   "title": "Semiparametric Copula-Based Stochastic Weather Generator…",
+   "year": 2013
+  },
+  {
+   "x": -14.267496109008789,
+   "y": 2.8961198329925537,
+   "cluster": 3,
+   "title": "Managing Intraday Liquidity: The Mexican Experience…",
+   "year": 2013
+  },
+  {
+   "x": -17.8125,
+   "y": 2.7740366458892822,
+   "cluster": 3,
+   "title": "The Design Effect: Bias and Variance Estimation.…",
+   "year": 2012
+  },
+  {
+   "x": -11.620003700256348,
+   "y": 5.494986057281494,
+   "cluster": 3,
+   "title": "The Mexican Experience in How the Settlement of Large Payments is…",
+   "year": 2012
+  },
+  {
+   "x": -16.50045394897461,
+   "y": 1.33647882938385,
+   "cluster": 3,
+   "title": "Monthly GDP estimates based on the IGAE.…",
+   "year": 2012
+  },
+  {
+   "x": -17.14699935913086,
+   "y": 3.1004881858825684,
+   "cluster": 3,
+   "title": "A Simple Test for Spurious Regressions.…",
+   "year": 2011
+  },
+  {
+   "x": -17.312049865722656,
+   "y": 6.472250461578369,
+   "cluster": 3,
+   "title": "Forecasting Short-Run Inflation Volatility using Futures Prices: …",
+   "year": 2010
+  },
+  {
+   "x": -16.886751174926758,
+   "y": 5.317579746246338,
+   "cluster": 3,
+   "title": "Forecast Revisions of Mexican Inflation and GDP Growth…",
+   "year": 2010
+  },
+  {
+   "x": -16.389677047729492,
+   "y": 7.278497695922852,
+   "cluster": 3,
+   "title": "Spurious Long-Horizon Regression in Econometrics…",
+   "year": 2010
+  },
+  {
+   "x": -17.959339141845703,
+   "y": 3.618253469467163,
+   "cluster": 3,
+   "title": "Forecast Combinations…",
+   "year": 2010
+  },
+  {
+   "x": -17.24032211303711,
+   "y": 6.8498687744140625,
+   "cluster": 3,
+   "title": "Forecasting Inflation in Mexico Using Factor Models: Do Disaggreg…",
+   "year": 2010
+  },
+  {
+   "x": -16.793813705444336,
+   "y": 3.9484384059906006,
+   "cluster": 3,
+   "title": "Bankruptcy Prediction: A Comparison of Some Statistical and Machi…",
+   "year": 2009
+  },
+  {
+   "x": -11.415936470031738,
+   "y": 5.88822078704834,
+   "cluster": 3,
+   "title": "High and Low Frequency Correlations in Global Equity Markets…",
+   "year": 2009
+  },
+  {
+   "x": -17.783050537109375,
+   "y": 2.897225856781006,
+   "cluster": 3,
+   "title": "An Unbiased Estimator of the Variance of Simple Random Sampling U…",
+   "year": 2009
+  },
+  {
+   "x": -1.1576545238494873,
+   "y": 3.6136698722839355,
+   "cluster": 3,
+   "title": "An Alternative Formula to Price American Options…",
+   "year": 2009
+  },
+  {
+   "x": -16.249013900756836,
+   "y": 7.292983531951904,
+   "cluster": 3,
+   "title": "Using Seasonal Models to Forecast Short-Run Inflation in Mexico…",
+   "year": 2009
+  },
+  {
+   "x": -18.756675720214844,
+   "y": 4.269662857055664,
+   "cluster": 3,
+   "title": "Forecasting Exchange Rate Volatility: The Superior Performance of…",
+   "year": 2009
+  },
+  {
+   "x": -12.388144493103027,
+   "y": 4.604310512542725,
+   "cluster": 3,
+   "title": "Stylized Facts of the Mexican Business Cycles…",
+   "year": 2008
+  },
+  {
+   "x": -12.245265007019043,
+   "y": 7.822140693664551,
+   "cluster": 3,
+   "title": "Transparency and Numeric Rules in the Budgeting Process: Theory a…",
+   "year": 2008
+  },
+  {
+   "x": -18.97946548461914,
+   "y": 5.501502990722656,
+   "cluster": 3,
+   "title": "Experts' Macroeconomics Expectations: An Evaluation of Mexican Sh…",
+   "year": 2008
+  },
+  {
+   "x": -13.695371627807617,
+   "y": 2.57667875289917,
+   "cluster": 3,
+   "title": "An Analytical Approach to Merton's Rational Option Pricing Theory…",
+   "year": 2008
+  },
+  {
+   "x": -16.079975128173828,
+   "y": 2.6239755153656006,
+   "cluster": 3,
+   "title": "Analysis of the Performance of Mexican Pension Funds: Evidence fr…",
+   "year": 2008
+  },
+  {
+   "x": -18.243574142456055,
+   "y": 3.495392322540283,
+   "cluster": 3,
+   "title": "Optimality Tests for Multi-Horizon Forecasts…",
+   "year": 2007
+  },
+  {
+   "x": -17.304309844970703,
+   "y": 3.4208056926727295,
+   "cluster": 3,
+   "title": "Multipower Variation Under Market Microstructure Effects…",
+   "year": 2007
+  },
+  {
+   "x": -16.376564025878906,
+   "y": 6.856372833251953,
+   "cluster": 3,
+   "title": "Bias in Federal Reserve Inflation Forecasts: Is the Federal Reser…",
+   "year": 2006
+  },
+  {
+   "x": -17.341632843017578,
+   "y": 3.7964653968811035,
+   "cluster": 3,
+   "title": "Estimating Integrated Volatility Using Absolute High-Frequency Re…",
+   "year": 2006
+  },
+  {
+   "x": -16.816896438598633,
+   "y": 4.843721866607666,
+   "cluster": 3,
+   "title": "Spurious Cointegration: The Engle-Granger Test in the Presence of…",
+   "year": 2006
+  },
+  {
+   "x": -17.13047218322754,
+   "y": 3.418508291244507,
+   "cluster": 3,
+   "title": "Detecting Jumps in High-Frequency Financial Series Using Multipow…",
+   "year": 2006
+  },
+  {
+   "x": -18.448728561401367,
+   "y": 3.220388174057007,
+   "cluster": 3,
+   "title": "Forecast Combination with Entry and Exit of Experts…",
+   "year": 2006
+  },
+  {
+   "x": -17.15816879272461,
+   "y": 6.1113362312316895,
+   "cluster": 3,
+   "title": "Disagreement and Biases in Inflation Expectations…",
+   "year": 2006
+  },
+  {
+   "x": -17.660381317138672,
+   "y": 4.052144527435303,
+   "cluster": 3,
+   "title": "Spurious Regression and Econometric Trends…",
+   "year": 2006
+  },
+  {
+   "x": -18.858224868774414,
+   "y": 4.539890289306641,
+   "cluster": 3,
+   "title": "Volatility Forecasts for the Mexican Peso - U.S. Dollar Exchange …",
+   "year": 2006
+  },
+  {
+   "x": -15.860236167907715,
+   "y": 0.5195302963256836,
+   "cluster": 3,
+   "title": "Analysis of Optimal Bids in the Primary Auction of Mexican Federa…",
+   "year": 2004
+  },
+  {
+   "x": -19.183887481689453,
+   "y": 5.1276445388793945,
+   "cluster": 3,
+   "title": "An Econometric Forecast Model of Private Investment in Mexico.…",
+   "year": 2004
+  },
+  {
+   "x": -11.198128700256348,
+   "y": 5.36715030670166,
+   "cluster": 3,
+   "title": "Some Hypotheses Related to the Mexican 1994-95 Crisis.…",
+   "year": 1996
+  },
+  {
+   "x": 2.909821033477783,
+   "y": -12.55319881439209,
+   "cluster": 4,
+   "title": "Early effects of nearshoring in the manufacturing labor market in…",
+   "year": 2025
+  },
+  {
+   "x": 3.369041681289673,
+   "y": -7.960636138916016,
+   "cluster": 4,
+   "title": "Energy Efficiency and Mitigation of Greenhouse Gas Emissions in M…",
+   "year": 2025
+  },
+  {
+   "x": 3.5561749935150146,
+   "y": -7.636549949645996,
+   "cluster": 4,
+   "title": "Temperature and quarterly economic activity: panel data evidence …",
+   "year": 2025
+  },
+  {
+   "x": 4.653258800506592,
+   "y": -8.879796028137207,
+   "cluster": 4,
+   "title": "Disruptions in Global Supply Chains and Regional Output in Mexico…",
+   "year": 2024
+  },
+  {
+   "x": 3.126645565032959,
+   "y": -8.750140190124512,
+   "cluster": 4,
+   "title": "Heterogeneous recessions and expansions in Mexican regions and se…",
+   "year": 2024
+  },
+  {
+   "x": 1.4590272903442383,
+   "y": -6.9906487464904785,
+   "cluster": 4,
+   "title": "The Macroeconomic Impact of COVID-19 in EMEs…",
+   "year": 2024
+  },
+  {
+   "x": 2.544499397277832,
+   "y": -7.2271857261657715,
+   "cluster": 4,
+   "title": "Growth at Risk and Uncertainty: Evidence from Mexico…",
+   "year": 2023
+  },
+  {
+   "x": 3.3321290016174316,
+   "y": -10.591194152832031,
+   "cluster": 4,
+   "title": "Unconditional Convergence in the Mexican Manufacturing Sector (19…",
+   "year": 2023
+  },
+  {
+   "x": 2.886063814163208,
+   "y": -8.247028350830078,
+   "cluster": 4,
+   "title": "Sentiment Indexes and Economic Activity Indicators in Mexico 2016…",
+   "year": 2022
+  },
+  {
+   "x": 3.697396993637085,
+   "y": -9.006732940673828,
+   "cluster": 4,
+   "title": "The Role of Clusters in the Performance of the Mexican Economy…",
+   "year": 2022
+  },
+  {
+   "x": 5.234041213989258,
+   "y": -7.699138641357422,
+   "cluster": 4,
+   "title": "The effect of tropical cyclones on economic activities: micro lev…",
+   "year": 2021
+  },
+  {
+   "x": -6.505145072937012,
+   "y": 4.763744354248047,
+   "cluster": 4,
+   "title": "Financial Frictions in Mexico: Evidence from the Credit Spread an…",
+   "year": 2021
+  },
+  {
+   "x": 3.60398006439209,
+   "y": -9.955743789672852,
+   "cluster": 4,
+   "title": "Observing the Evolution of the Informal Sector from Space: A Muni…",
+   "year": 2021
+  },
+  {
+   "x": 3.014897346496582,
+   "y": -9.398787498474121,
+   "cluster": 4,
+   "title": "Foreign Direct Investment and Labor Productivity in Regional Manu…",
+   "year": 2021
+  },
+  {
+   "x": -5.411198616027832,
+   "y": -7.797173976898193,
+   "cluster": 4,
+   "title": "Private Banking Credit and Economic Growth in Mexico: A State Lev…",
+   "year": 2020
+  },
+  {
+   "x": 0.6985578536987305,
+   "y": -5.503504276275635,
+   "cluster": 4,
+   "title": "Trade Policy Uncertainty and its Effect on Foreign Direct Investm…",
+   "year": 2020
+  },
+  {
+   "x": 4.213627338409424,
+   "y": -8.651698112487793,
+   "cluster": 4,
+   "title": "The US-Mexico bilateral trade relation through a value added lens…",
+   "year": 2020
+  },
+  {
+   "x": 4.213627338409424,
+   "y": -8.651698112487793,
+   "cluster": 4,
+   "title": "Economic Integration Mexico-United States and Regional Performanc…",
+   "year": 2020
+  },
+  {
+   "x": 6.0002007484436035,
+   "y": -7.154570579528809,
+   "cluster": 4,
+   "title": "Manufacturing Exports Determinants across Mexican States, 2007-20…",
+   "year": 2019
+  },
+  {
+   "x": 1.0585697889328003,
+   "y": -5.671352386474609,
+   "cluster": 4,
+   "title": "Economic Liberalization and External Shocks. The Hypothesis of Co…",
+   "year": 2018
+  },
+  {
+   "x": 2.6567113399505615,
+   "y": -8.168286323547363,
+   "cluster": 4,
+   "title": "Adjustment of the Regional Indicator of Income in Retail Trade…",
+   "year": 2018
+  },
+  {
+   "x": 3.6993508338928223,
+   "y": -8.205958366394043,
+   "cluster": 4,
+   "title": "Measurement of Economic Activity in the Main Beach Tourist Areas …",
+   "year": 2018
+  },
+  {
+   "x": 3.858105421066284,
+   "y": -6.9303297996521,
+   "cluster": 4,
+   "title": "Determinants of FDI Attraction in the Manufacturing Sector in Mex…",
+   "year": 2018
+  },
+  {
+   "x": 2.178088426589966,
+   "y": -7.2565436363220215,
+   "cluster": 4,
+   "title": "The Effect of Uncertainty on Foreign Direct Investment: the Case …",
+   "year": 2018
+  },
+  {
+   "x": 2.8701441287994385,
+   "y": -3.2079641819000244,
+   "cluster": 4,
+   "title": "Labor Heterogeneity and the Pattern of Trade…",
+   "year": 2018
+  },
+  {
+   "x": 3.2661356925964355,
+   "y": -11.894821166992188,
+   "cluster": 4,
+   "title": "Bank Credit Allocation and Sectorial Concentration in Mexico: Som…",
+   "year": 2017
+  },
+  {
+   "x": 3.485240936279297,
+   "y": -8.652952194213867,
+   "cluster": 4,
+   "title": "Equivalence between input-output and value-added economies…",
+   "year": 2017
+  },
+  {
+   "x": 3.9291064739227295,
+   "y": -8.348599433898926,
+   "cluster": 4,
+   "title": "The Regional Input-Output Model: An Application to the Mexican Au…",
+   "year": 2017
+  },
+  {
+   "x": 4.38890266418457,
+   "y": -8.940980911254883,
+   "cluster": 4,
+   "title": "Regional Input-Output Matrices, an Application to Manufacturing E…",
+   "year": 2017
+  },
+  {
+   "x": 3.125821590423584,
+   "y": -7.04071044921875,
+   "cluster": 4,
+   "title": "Justice System Efficiency and Regional Economic Performance in Me…",
+   "year": 2017
+  },
+  {
+   "x": 5.092522621154785,
+   "y": -7.682826042175293,
+   "cluster": 4,
+   "title": "Economic Complexity and Regional Growth Performance, Evidence Fro…",
+   "year": 2016
+  },
+  {
+   "x": 2.327178478240967,
+   "y": -8.567015647888184,
+   "cluster": 4,
+   "title": "The Effect of Natural Gas Shortages on the Mexican Economy…",
+   "year": 2016
+  },
+  {
+   "x": 0.9024880528450012,
+   "y": -8.222006797790527,
+   "cluster": 4,
+   "title": "Patterns of Total Factor Productivity Growth in Mexico: 1991-2011…",
+   "year": 2015
+  },
+  {
+   "x": 3.042358160018921,
+   "y": -10.950210571289062,
+   "cluster": 4,
+   "title": "Key sectors in economic development: a perspective from input-out…",
+   "year": 2015
+  },
+  {
+   "x": 3.9875712394714355,
+   "y": -7.674976348876953,
+   "cluster": 4,
+   "title": "Identification of Regional Clusters in Mexican Manufacturing Indu…",
+   "year": 2015
+  },
+  {
+   "x": 3.389751672744751,
+   "y": -1.6529035568237305,
+   "cluster": 4,
+   "title": "Estimating the Short-Run Effect on Market-Access of the Construct…",
+   "year": 2015
+  },
+  {
+   "x": 1.189290165901184,
+   "y": -9.025128364562988,
+   "cluster": 4,
+   "title": "Explaining the Mexican-American Health Paradox Using Selectivity …",
+   "year": 2015
+  },
+  {
+   "x": 0.5236075520515442,
+   "y": -8.177141189575195,
+   "cluster": 4,
+   "title": "A note on the diffusion of business cycles…",
+   "year": 2015
+  },
+  {
+   "x": 3.801041603088379,
+   "y": -4.797071933746338,
+   "cluster": 4,
+   "title": "Determinants of the Cost of Starting a Business in Mexico…",
+   "year": 2014
+  },
+  {
+   "x": 4.302889823913574,
+   "y": -7.9673357009887695,
+   "cluster": 4,
+   "title": "Generalized Diffusion Indexes of Mexican State and Sectorial Econ…",
+   "year": 2014
+  },
+  {
+   "x": 3.6406800746917725,
+   "y": -4.711441993713379,
+   "cluster": 4,
+   "title": "Railroads and Economic Growth: A Trade Policy Approach…",
+   "year": 2014
+  },
+  {
+   "x": 2.6594865322113037,
+   "y": -11.599515914916992,
+   "cluster": 4,
+   "title": "Mexican Migration to the United States: Underlying Economic Facto…",
+   "year": 2013
+  },
+  {
+   "x": 3.4364147186279297,
+   "y": -12.030952453613281,
+   "cluster": 4,
+   "title": "Production Factors, Productivity Dynamics and Quality Gains as De…",
+   "year": 2013
+  },
+  {
+   "x": 3.8544347286224365,
+   "y": -9.407764434814453,
+   "cluster": 4,
+   "title": "A nonparametric approach to the decomposition of labor productivi…",
+   "year": 2013
+  },
+  {
+   "x": 3.607156276702881,
+   "y": -8.860809326171875,
+   "cluster": 4,
+   "title": "Technical and Structural Efficiency in Mexican Manufacturing: A R…",
+   "year": 2012
+  },
+  {
+   "x": 4.366688251495361,
+   "y": -8.345246315002441,
+   "cluster": 4,
+   "title": "Synchronization between the business cycles of Mexico and the Uni…",
+   "year": 2012
+  },
+  {
+   "x": 0.6409347653388977,
+   "y": -5.34580659866333,
+   "cluster": 4,
+   "title": "How Far Do Shocks Move Across Borders? Examining Volatility Trans…",
+   "year": 2011
+  },
+  {
+   "x": 1.6175897121429443,
+   "y": -5.803411960601807,
+   "cluster": 4,
+   "title": "Stationarity, structural breaks, and economic growth in Mexico: 1…",
+   "year": 2011
+  },
+  {
+   "x": 3.5474374294281006,
+   "y": -13.156744956970215,
+   "cluster": 4,
+   "title": "The Effect of Trade and FDI on Inter-industry Wage Differentials:…",
+   "year": 2011
+  },
+  {
+   "x": 3.3471808433532715,
+   "y": -6.0318756103515625,
+   "cluster": 4,
+   "title": "The Great Leap Forward: The Political Economy of Education in Bra…",
+   "year": 2010
+  },
+  {
+   "x": 2.543902635574341,
+   "y": -3.8327596187591553,
+   "cluster": 4,
+   "title": "Competitiveness and Growth of the Mexican Economy…",
+   "year": 2009
+  },
+  {
+   "x": 0.19504016637802124,
+   "y": -6.6304521560668945,
+   "cluster": 4,
+   "title": "Accounting for Output Fluctuations in Mexico…",
+   "year": 2008
+  },
+  {
+   "x": 4.020641326904297,
+   "y": -3.9273414611816406,
+   "cluster": 4,
+   "title": "Determinants of Mexico's Comparative Advantages and of the Perfor…",
+   "year": 2008
+  },
+  {
+   "x": 4.4234700202941895,
+   "y": -2.113527774810791,
+   "cluster": 4,
+   "title": "Comparative Advantage and the Performance of Mexican Manufacturin…",
+   "year": 2007
+  },
+  {
+   "x": 4.219563961029053,
+   "y": -4.097270965576172,
+   "cluster": 4,
+   "title": "Multifactor Productivity and its Determinants: An Empirical Analy…",
+   "year": 2007
+  },
+  {
+   "x": -0.11286181956529617,
+   "y": -6.102759838104248,
+   "cluster": 4,
+   "title": "The Financial Accelerator from a Business Cycle Accounting Perspe…",
+   "year": 2007
+  },
+  {
+   "x": 3.8668718338012695,
+   "y": -11.908956527709961,
+   "cluster": 4,
+   "title": "Globalization, Regional Wage Differentials and the Stolper-Samuel…",
+   "year": 2004
+  },
+  {
+   "x": 4.281532287597656,
+   "y": -4.888498306274414,
+   "cluster": 4,
+   "title": "Bilateral Trade and Business Cycle Synchronization: Evidence from…",
+   "year": 2004
+  },
+  {
+   "x": 3.3077874183654785,
+   "y": -2.7450621128082275,
+   "cluster": 4,
+   "title": "The Importance of Defining Property Rights in Free Trade Agreemen…",
+   "year": 2004
+  },
+  {
+   "x": 6.666725158691406,
+   "y": -9.565225601196289,
+   "cluster": 4,
+   "title": "Some Issues on the Concentration of Mexico's Financial System.…",
+   "year": 1981
+  },
+  {
+   "x": 5.645722389221191,
+   "y": 3.9296765327453613,
+   "cluster": 5,
+   "title": "The effect of avian influenza outbreaks on table-egg prices: evid…",
+   "year": 2025
+  },
+  {
+   "x": 3.175305128097534,
+   "y": -0.8891624808311462,
+   "cluster": 5,
+   "title": "Do climate policies incentivize firms to commit to setting a GHG …",
+   "year": 2025
+  },
+  {
+   "x": 4.835410118103027,
+   "y": 2.1359055042266846,
+   "cluster": 5,
+   "title": "Windfalls for All? International Elasticities and Dutch Disease i…",
+   "year": 2025
+  },
+  {
+   "x": 3.9397895336151123,
+   "y": 6.023162364959717,
+   "cluster": 5,
+   "title": "Preferences for Renewable Energies and Green Jobs in Mexico City…",
+   "year": 2025
+  },
+  {
+   "x": 4.71670389175415,
+   "y": 8.136012077331543,
+   "cluster": 5,
+   "title": "California Gasoline Demand Elasticity Estimated Using Refinery Ou…",
+   "year": 2025
+  },
+  {
+   "x": 4.383195877075195,
+   "y": 3.255659580230713,
+   "cluster": 5,
+   "title": "Integration of Food Markets in Mexico…",
+   "year": 2025
+  },
+  {
+   "x": 6.438925266265869,
+   "y": 4.561080455780029,
+   "cluster": 5,
+   "title": "Housing Price Gradients in Mexico City During the COVID-19 Pandem…",
+   "year": 2024
+  },
+  {
+   "x": 6.870875358581543,
+   "y": 7.137350082397461,
+   "cluster": 5,
+   "title": "Price Duration Using Daily Online Data: Time- or State-Dependent?…",
+   "year": 2024
+  },
+  {
+   "x": 5.774584770202637,
+   "y": 5.439077377319336,
+   "cluster": 5,
+   "title": "Public Transportation and Consumer Prices: Chain Stores, Street V…",
+   "year": 2024
+  },
+  {
+   "x": 4.851709842681885,
+   "y": 5.0160369873046875,
+   "cluster": 5,
+   "title": "Efficiency and Incidence of Taxation with Free Entry and Love-of-…",
+   "year": 2023
+  },
+  {
+   "x": 5.188913822174072,
+   "y": 5.951922416687012,
+   "cluster": 5,
+   "title": "Grab a Bite? Prices in the food away from home industry during th…",
+   "year": 2023
+  },
+  {
+   "x": 6.065155982971191,
+   "y": 3.947394609451294,
+   "cluster": 5,
+   "title": "Weather Shocks, Prices and Productivity: Evidence from Staples in…",
+   "year": 2023
+  },
+  {
+   "x": 5.632134437561035,
+   "y": 4.655470371246338,
+   "cluster": 5,
+   "title": "Stylized Facts From Prices at Multi-Channel Retailers in Mexico…",
+   "year": 2023
+  },
+  {
+   "x": 4.314226150512695,
+   "y": 0.3203132748603821,
+   "cluster": 5,
+   "title": "Irrigation, Adaptation and Climate Change: Panel Data Evidence fo…",
+   "year": 2023
+  },
+  {
+   "x": 1.1150517463684082,
+   "y": 13.080008506774902,
+   "cluster": 5,
+   "title": "Temperature shocks and their effect on the price of agricultural …",
+   "year": 2023
+  },
+  {
+   "x": 4.85402774810791,
+   "y": 4.595789909362793,
+   "cluster": 5,
+   "title": "Nonlinear Pricing Under Regulation: Comparing Cap Rules and Taxes…",
+   "year": 2022
+  },
+  {
+   "x": 4.851393699645996,
+   "y": 5.825404167175293,
+   "cluster": 5,
+   "title": "Salience and Taxation with Imperfect Competition…",
+   "year": 2022
+  },
+  {
+   "x": 5.411203384399414,
+   "y": 4.847433090209961,
+   "cluster": 5,
+   "title": "Regulation through Reference Prices…",
+   "year": 2022
+  },
+  {
+   "x": 5.3880157470703125,
+   "y": 0.19369933009147644,
+   "cluster": 5,
+   "title": "Trade Liberalization, Consumption Shifting and Pollution: Evidenc…",
+   "year": 2022
+  },
+  {
+   "x": 2.554724931716919,
+   "y": -0.3171693980693817,
+   "cluster": 5,
+   "title": "Revisiting the link between systemic risk and competition based o…",
+   "year": 2021
+  },
+  {
+   "x": 4.793144702911377,
+   "y": -1.1858669519424438,
+   "cluster": 5,
+   "title": "The Impact of Trade Liberalization on the Mexican Automobile Indu…",
+   "year": 2021
+  },
+  {
+   "x": 0.43717658519744873,
+   "y": 3.4936978816986084,
+   "cluster": 5,
+   "title": "Measuring the evolution of competition and the impact of the fina…",
+   "year": 2021
+  },
+  {
+   "x": 8.119771003723145,
+   "y": 3.1121342182159424,
+   "cluster": 5,
+   "title": "The Relationship Between Nominal Wage and Price Flexibility: New …",
+   "year": 2020
+  },
+  {
+   "x": 6.138484477996826,
+   "y": 5.840001583099365,
+   "cluster": 5,
+   "title": "Competition and Coordination in the Mexican Retail Market for Gas…",
+   "year": 2020
+  },
+  {
+   "x": 2.186159133911133,
+   "y": 5.687214374542236,
+   "cluster": 5,
+   "title": "How Relevant are Capital Flows for House Prices in Emerging Econo…",
+   "year": 2019
+  },
+  {
+   "x": 5.287249565124512,
+   "y": 1.349528193473816,
+   "cluster": 5,
+   "title": "Productivity, Markups, and Trade: Evidence from Mexican Manufactu…",
+   "year": 2019
+  },
+  {
+   "x": 6.203814506530762,
+   "y": 0.6372019052505493,
+   "cluster": 5,
+   "title": "Contracts, Firm Dynamics and Aggregate Productivity…",
+   "year": 2019
+  },
+  {
+   "x": 5.62013578414917,
+   "y": 0.6893575191497803,
+   "cluster": 5,
+   "title": "Global Value Chains in Mexico: A Historical Perspective…",
+   "year": 2019
+  },
+  {
+   "x": 5.444849014282227,
+   "y": -0.4672107398509979,
+   "cluster": 5,
+   "title": "The Micro-economics of Export Supply: Firm-Level Evidence from Me…",
+   "year": 2019
+  },
+  {
+   "x": 4.95975399017334,
+   "y": -0.5976740717887878,
+   "cluster": 5,
+   "title": "The Value of Being Socially Responsible. A Primal-Dual Approach…",
+   "year": 2018
+  },
+  {
+   "x": 3.4705371856689453,
+   "y": 5.989543437957764,
+   "cluster": 5,
+   "title": "Do heterogeneous countries respond differently to oil price shock…",
+   "year": 2018
+  },
+  {
+   "x": 5.599610805511475,
+   "y": 6.1098480224609375,
+   "cluster": 5,
+   "title": "The Duration in the Market of New Housing in Mexico…",
+   "year": 2018
+  },
+  {
+   "x": 5.271399974822998,
+   "y": 2.9425251483917236,
+   "cluster": 5,
+   "title": "The Effect of Bank Credit and the Trade Patterns of Colombian Exp…",
+   "year": 2017
+  },
+  {
+   "x": -8.880115509033203,
+   "y": -7.319786071777344,
+   "cluster": 5,
+   "title": "Notes to Understand Migration Policy with International Trade The…",
+   "year": 2017
+  },
+  {
+   "x": 4.9604716300964355,
+   "y": 5.47991418838501,
+   "cluster": 5,
+   "title": "Price Transmission in Food and Non-Food Product Markets: Evidence…",
+   "year": 2016
+  },
+  {
+   "x": 4.092629909515381,
+   "y": 4.408993244171143,
+   "cluster": 5,
+   "title": "Regulatory Entry Barriers, Rent-Shifting and the Home Market Effe…",
+   "year": 2016
+  },
+  {
+   "x": 2.9277102947235107,
+   "y": 0.9958273768424988,
+   "cluster": 5,
+   "title": "The Rewards of Self-Discovery: Learning and Firm Exporter Dynamic…",
+   "year": 2016
+  },
+  {
+   "x": 0.6393392086029053,
+   "y": 3.1823313236236572,
+   "cluster": 5,
+   "title": "Bank Credit and Productivity: Evidence from Mexican Firms…",
+   "year": 2015
+  },
+  {
+   "x": -0.6696525812149048,
+   "y": 3.5080766677856445,
+   "cluster": 5,
+   "title": "On a new class of barrier options…",
+   "year": 2014
+  },
+  {
+   "x": 5.259588241577148,
+   "y": 3.418738603591919,
+   "cluster": 5,
+   "title": "Exporters During the Trade Collapse: The (Surprising) Resiliency …",
+   "year": 2014
+  },
+  {
+   "x": 3.8173723220825195,
+   "y": 3.6057848930358887,
+   "cluster": 5,
+   "title": "Borrowing on the Wrong Credit Card: Evidence from Mexico…",
+   "year": 2014
+  },
+  {
+   "x": -0.27134379744529724,
+   "y": 3.7415003776550293,
+   "cluster": 5,
+   "title": "Consumption of Durable Goods under Ambiguity…",
+   "year": 2014
+  },
+  {
+   "x": -8.872894287109375,
+   "y": -8.925768852233887,
+   "cluster": 5,
+   "title": "Business Literacy and Development: Evidence from a Randomized Con…",
+   "year": 2013
+  },
+  {
+   "x": 4.25345516204834,
+   "y": 4.665328025817871,
+   "cluster": 5,
+   "title": "An Extension of the Sard-Smale Theorem to Domains with an Empty I…",
+   "year": 2013
+  },
+  {
+   "x": 0.03465260937809944,
+   "y": 2.9902939796447754,
+   "cluster": 5,
+   "title": "Quantifying the Value of a Political Connection: The Case of Pres…",
+   "year": 2013
+  },
+  {
+   "x": 3.7505650520324707,
+   "y": 2.6790342330932617,
+   "cluster": 5,
+   "title": "Study on the Competitiveness of the Mexican Sugar Industry…",
+   "year": 2013
+  },
+  {
+   "x": 3.261842727661133,
+   "y": 4.466203212738037,
+   "cluster": 5,
+   "title": "Competitive Environment, Indebtedness and Asset Specificity: Evid…",
+   "year": 2013
+  },
+  {
+   "x": 3.1790812015533447,
+   "y": 6.760055065155029,
+   "cluster": 5,
+   "title": "Bank Competition and Account Penetration: Evidence from Mexico…",
+   "year": 2013
+  },
+  {
+   "x": 0.4563068449497223,
+   "y": 13.987160682678223,
+   "cluster": 5,
+   "title": "An Analysis of the Process of Disinflationary Structural Change: …",
+   "year": 2013
+  },
+  {
+   "x": 8.161665916442871,
+   "y": 3.1014561653137207,
+   "cluster": 5,
+   "title": "Adjustment Strategies in Response to Supply and Demand Shocks: Ev…",
+   "year": 2013
+  },
+  {
+   "x": 5.342911720275879,
+   "y": 1.8554155826568604,
+   "cluster": 5,
+   "title": "The Effect of Trade Liberalization on Manufacturing Price Cost Ma…",
+   "year": 2013
+  },
+  {
+   "x": 2.096082925796509,
+   "y": 4.16583776473999,
+   "cluster": 5,
+   "title": "Financial decisions, market competition and firm performance: Emp…",
+   "year": 2013
+  },
+  {
+   "x": 4.749444007873535,
+   "y": 5.382485389709473,
+   "cluster": 5,
+   "title": "Do Agricultural Contracts Affect Grain Prices? Evidence from Mexi…",
+   "year": 2012
+  },
+  {
+   "x": 6.027807235717773,
+   "y": 5.299851894378662,
+   "cluster": 5,
+   "title": "Weekday with Low Prices: Evidence on Daily Seasonality of Foods, …",
+   "year": 2012
+  },
+  {
+   "x": -0.5155664086341858,
+   "y": 3.1801071166992188,
+   "cluster": 5,
+   "title": "An Empirical Study of the Mexican Banking System's Network and it…",
+   "year": 2012
+  },
+  {
+   "x": 0.11396463960409164,
+   "y": 4.169018268585205,
+   "cluster": 5,
+   "title": "Who is Selling You Chiquilitros of Gasoline? Evidence From a Publ…",
+   "year": 2012
+  },
+  {
+   "x": 6.494974613189697,
+   "y": 6.800341606140137,
+   "cluster": 5,
+   "title": "The Adoption Process of Payment Cards -An Agent- Based Approach…",
+   "year": 2012
+  },
+  {
+   "x": 5.416783809661865,
+   "y": 4.844710350036621,
+   "cluster": 5,
+   "title": "Preference for Variety…",
+   "year": 2011
+  },
+  {
+   "x": 4.306051254272461,
+   "y": 5.194652557373047,
+   "cluster": 5,
+   "title": "Regulation of ATM fees in a model of spatial competition…",
+   "year": 2011
+  },
+  {
+   "x": 4.957540035247803,
+   "y": 1.3531560897827148,
+   "cluster": 5,
+   "title": "Bargaining for Fiscal Control: Tax Federalism in Brazil and Mexic…",
+   "year": 2011
+  },
+  {
+   "x": 5.410018444061279,
+   "y": 4.759446144104004,
+   "cluster": 5,
+   "title": "Price Competition on Network…",
+   "year": 2011
+  },
+  {
+   "x": 2.899604558944702,
+   "y": 4.209329605102539,
+   "cluster": 5,
+   "title": "Variety Aversion and Information Overload: An Experimental Approa…",
+   "year": 2011
+  },
+  {
+   "x": 0.696785032749176,
+   "y": 3.8430721759796143,
+   "cluster": 5,
+   "title": "Banking Sector Performance in Some Latin American Countries: Mark…",
+   "year": 2010
+  },
+  {
+   "x": 3.973865032196045,
+   "y": 6.693098068237305,
+   "cluster": 5,
+   "title": "The Optimal Tax Rule in the Presence of Time Use…",
+   "year": 2010
+  },
+  {
+   "x": 3.5184481143951416,
+   "y": 5.06825590133667,
+   "cluster": 5,
+   "title": "Regular Infinite Economies…",
+   "year": 2010
+  },
+  {
+   "x": 4.892933368682861,
+   "y": 4.37306547164917,
+   "cluster": 5,
+   "title": "Limited Attention and Choice…",
+   "year": 2010
+  },
+  {
+   "x": 3.7506279945373535,
+   "y": 0.7244155406951904,
+   "cluster": 5,
+   "title": "Endowments, Fiscal Federalism, and the Cost of Capital for States…",
+   "year": 2009
+  },
+  {
+   "x": 7.130667686462402,
+   "y": 2.502911329269409,
+   "cluster": 5,
+   "title": "Sources of Over-Costs and Distortions in State-Owned Utilities in…",
+   "year": 2009
+  },
+  {
+   "x": 4.964219570159912,
+   "y": 0.6411079168319702,
+   "cluster": 5,
+   "title": "Translog Cost Functions: An Application for Mexican Manufacturing…",
+   "year": 2007
+  },
+  {
+   "x": 4.638805389404297,
+   "y": 4.373910903930664,
+   "cluster": 5,
+   "title": "Competing or Colluding in a Stochastic Environment…",
+   "year": 2005
+  },
+  {
+   "x": -1.0656237602233887,
+   "y": 16.518159866333008,
+   "cluster": 6,
+   "title": "An estimation of the Phillips curve in Mexico using city-level da…",
+   "year": 2025
+  },
+  {
+   "x": -4.154825210571289,
+   "y": 15.05168628692627,
+   "cluster": 6,
+   "title": "Inflation volatility across advanced and emerging economies durin…",
+   "year": 2025
+  },
+  {
+   "x": -2.565701723098755,
+   "y": 17.590423583984375,
+   "cluster": 6,
+   "title": "Business Cycles when Consumers Learn by Shopping…",
+   "year": 2024
+  },
+  {
+   "x": -3.736293077468872,
+   "y": 17.547407150268555,
+   "cluster": 6,
+   "title": "The Influence of Central Bank's Projections and Economic Narrativ…",
+   "year": 2023
+  },
+  {
+   "x": -2.9818003177642822,
+   "y": 15.541885375976562,
+   "cluster": 6,
+   "title": "Monetary Rules, Financial Stability and Welfare in a non-Ricardia…",
+   "year": 2023
+  },
+  {
+   "x": 0.6162784099578857,
+   "y": 14.398412704467773,
+   "cluster": 6,
+   "title": "Effects of Supply, Demand, and Labor Market Shocks in the Mexican…",
+   "year": 2023
+  },
+  {
+   "x": -3.7579660415649414,
+   "y": 14.249507904052734,
+   "cluster": 6,
+   "title": "The Influence of Global Inflation on Emerging Market Economies' I…",
+   "year": 2022
+  },
+  {
+   "x": -0.2299383282661438,
+   "y": 14.855766296386719,
+   "cluster": 6,
+   "title": "Determinants of Tuition Fees in Private Universities in Mexico 20…",
+   "year": 2022
+  },
+  {
+   "x": -5.076504230499268,
+   "y": 19.315139770507812,
+   "cluster": 6,
+   "title": "On the Drivers of Inflation in Different Monetary Regimes…",
+   "year": 2020
+  },
+  {
+   "x": -6.541567325592041,
+   "y": 20.348173141479492,
+   "cluster": 6,
+   "title": "The limits to robust monetary policy in a small open economy with…",
+   "year": 2020
+  },
+  {
+   "x": -3.8943488597869873,
+   "y": 18.588537216186523,
+   "cluster": 6,
+   "title": "Central Bank Independence and Inflation: An Empirical Analysis…",
+   "year": 2019
+  },
+  {
+   "x": -3.190354585647583,
+   "y": 17.89444923400879,
+   "cluster": 6,
+   "title": "Dynamics of Mexican Inflation: A Wavelet Analysis…",
+   "year": 2019
+  },
+  {
+   "x": -2.9464240074157715,
+   "y": 17.65475082397461,
+   "cluster": 6,
+   "title": "Inflation Dynamics under Fiscal Deficit Regime Switching in Mexic…",
+   "year": 2018
+  },
+  {
+   "x": -4.595217227935791,
+   "y": 18.647720336914062,
+   "cluster": 6,
+   "title": "Fiscal Policy and Inflation: Understanding the Role of Expectatio…",
+   "year": 2018
+  },
+  {
+   "x": -3.813504219055176,
+   "y": 15.939663887023926,
+   "cluster": 6,
+   "title": "Trade-offs between Inflation Targeting and Financial Stability Ob…",
+   "year": 2017
+  },
+  {
+   "x": -5.7909255027771,
+   "y": 19.907825469970703,
+   "cluster": 6,
+   "title": "Explaining Inflation with a Classical Dichotomy Model and Switchi…",
+   "year": 2017
+  },
+  {
+   "x": -4.707151889801025,
+   "y": 14.494603157043457,
+   "cluster": 6,
+   "title": "Tight Money-Tight Credit: Coordination Failure in the Conduct of …",
+   "year": 2017
+  },
+  {
+   "x": -2.2071239948272705,
+   "y": 19.06334114074707,
+   "cluster": 6,
+   "title": "Downward Wage Rigidities in the Mexican Labor Market 1996-2011…",
+   "year": 2016
+  },
+  {
+   "x": -0.9216076731681824,
+   "y": 14.2001371383667,
+   "cluster": 6,
+   "title": "Price-Setting in Mexico and the Real Effects of Monetary Shocks…",
+   "year": 2016
+  },
+  {
+   "x": -15.857868194580078,
+   "y": 8.160818099975586,
+   "cluster": 6,
+   "title": "Changes in Inflation Predictability in Major Latin American Count…",
+   "year": 2016
+  },
+  {
+   "x": -4.198026180267334,
+   "y": 15.250947952270508,
+   "cluster": 6,
+   "title": "How Robust Are SVARs at Measuring Monetary Policy in Small Open E…",
+   "year": 2015
+  },
+  {
+   "x": -2.238271951675415,
+   "y": 16.959917068481445,
+   "cluster": 6,
+   "title": "The Use of Monetary Aggregates as Indicators of the Future Evolut…",
+   "year": 2015
+  },
+  {
+   "x": -3.0022006034851074,
+   "y": 17.262086868286133,
+   "cluster": 6,
+   "title": "Money Demand Estimations in Mexico and of its Stability 1986-2010…",
+   "year": 2015
+  },
+  {
+   "x": -2.3621649742126465,
+   "y": 17.501676559448242,
+   "cluster": 6,
+   "title": "Anchoring of Inflation Expectations in Light of Adverse Supply Sh…",
+   "year": 2014
+  },
+  {
+   "x": -2.390956163406372,
+   "y": 18.72614097595215,
+   "cluster": 6,
+   "title": "Endogenous Wage Indexation and Aggregate Shocks…",
+   "year": 2013
+  },
+  {
+   "x": -1.606703758239746,
+   "y": 15.694855690002441,
+   "cluster": 6,
+   "title": "Testing the Predictive Power of Mexican Consumers' Inflation Expe…",
+   "year": 2012
+  },
+  {
+   "x": -2.4143569469451904,
+   "y": 16.842416763305664,
+   "cluster": 6,
+   "title": "The Evolution of Inflation Expectations in Mexico.…",
+   "year": 2012
+  },
+  {
+   "x": -0.451145201921463,
+   "y": 14.589005470275879,
+   "cluster": 6,
+   "title": "Consumer Price Behavior in Mexico Under Inflation Targeting: A Mi…",
+   "year": 2010
+  },
+  {
+   "x": -1.1916191577911377,
+   "y": 16.492218017578125,
+   "cluster": 6,
+   "title": "Equilibrium yield curves under regime switching…",
+   "year": 2010
+  },
+  {
+   "x": -16.64495849609375,
+   "y": 7.817061424255371,
+   "cluster": 6,
+   "title": "Macroeconomic News, Announcements, and Stock Market Jump Intensit…",
+   "year": 2009
+  },
+  {
+   "x": -1.2411209344863892,
+   "y": 13.95733642578125,
+   "cluster": 6,
+   "title": "A Note on the Predictive Content of PPI over CPI Inflation: The C…",
+   "year": 2009
+  },
+  {
+   "x": -1.2357821464538574,
+   "y": 17.39826202392578,
+   "cluster": 6,
+   "title": "Analysis of the Dynamics of Mexican Inflation Using Wavelets…",
+   "year": 2009
+  },
+  {
+   "x": -2.8804678916931152,
+   "y": 16.63992691040039,
+   "cluster": 6,
+   "title": "Statistical Analysis of Mexican Inflation at Subindex and Item Le…",
+   "year": 2009
+  },
+  {
+   "x": -3.5109169483184814,
+   "y": 17.105520248413086,
+   "cluster": 6,
+   "title": "On the dynamics of inflation persistence around the world…",
+   "year": 2009
+  },
+  {
+   "x": -3.667734384536743,
+   "y": 17.51213264465332,
+   "cluster": 6,
+   "title": "A Note on the Dynamics of Persistence in US Inflation.…",
+   "year": 2008
+  },
+  {
+   "x": -4.358913421630859,
+   "y": 16.835113525390625,
+   "cluster": 6,
+   "title": "International Evidence on Stochastic and Deterministic Monetary N…",
+   "year": 2008
+  },
+  {
+   "x": -4.1607794761657715,
+   "y": 15.038970947265625,
+   "cluster": 6,
+   "title": "The Impact of Trend Inflation in an Open Economy Model…",
+   "year": 2007
+  },
+  {
+   "x": -4.12171745300293,
+   "y": 17.12802505493164,
+   "cluster": 6,
+   "title": "Does Inflation Targeting Affect the Dispersion of Inflation Expec…",
+   "year": 2007
+  },
+  {
+   "x": -2.6024434566497803,
+   "y": 16.022960662841797,
+   "cluster": 6,
+   "title": "Uncertainty about the Persistence of Cost-Push Shocks and the Opt…",
+   "year": 2007
+  },
+  {
+   "x": -6.706731796264648,
+   "y": 13.018013000488281,
+   "cluster": 6,
+   "title": "Recursive Thick Modeling and the Choice of Monetary Policy in Mex…",
+   "year": 2007
+  },
+  {
+   "x": -3.0751450061798096,
+   "y": 17.756515502929688,
+   "cluster": 6,
+   "title": "A Time Series Approach to Test a Change in Inflation Persistence:…",
+   "year": 2007
+  },
+  {
+   "x": -1.66159987449646,
+   "y": 17.309093475341797,
+   "cluster": 6,
+   "title": "Inflation Dynamics in Mexico: A Characterization Using the New Ph…",
+   "year": 2006
+  },
+  {
+   "x": -3.4217896461486816,
+   "y": 17.154226303100586,
+   "cluster": 6,
+   "title": "Inflation Dynamics in Latin America…",
+   "year": 2006
+  },
+  {
+   "x": -5.953622341156006,
+   "y": 20.042720794677734,
+   "cluster": 6,
+   "title": "Structural Changes in the Transmission Mechanism of Monetary Poli…",
+   "year": 2006
+  },
+  {
+   "x": -3.315502882003784,
+   "y": 16.67013168334961,
+   "cluster": 6,
+   "title": "Reducing Inflation Through Inflation Targeting: The Mexican Exper…",
+   "year": 2005
+  },
+  {
+   "x": -10.288874626159668,
+   "y": 21.721500396728516,
+   "cluster": 7,
+   "title": "Information Effects of US Monetary Policy Announcements on Emergi…",
+   "year": 2024
+  },
+  {
+   "x": -6.424620628356934,
+   "y": 20.400264739990234,
+   "cluster": 7,
+   "title": "Optimal Robust Monetary Policy in a Small Open Economy…",
+   "year": 2022
+  },
+  {
+   "x": -9.514219284057617,
+   "y": 22.068687438964844,
+   "cluster": 7,
+   "title": "Forward Guidance in an Advanced Small Open Economy in the Effecti…",
+   "year": 2021
+  },
+  {
+   "x": -11.132950782775879,
+   "y": 23.324127197265625,
+   "cluster": 7,
+   "title": "The Nonlinear Effect of Uncertainty in Portfolio Flows to Mexico…",
+   "year": 2021
+  },
+  {
+   "x": -7.969516277313232,
+   "y": 21.92279052734375,
+   "cluster": 7,
+   "title": "Around-the-Clock USD/MXN Volatility: Macroeconomic Announcement S…",
+   "year": 2021
+  },
+  {
+   "x": -10.90304946899414,
+   "y": 22.312816619873047,
+   "cluster": 7,
+   "title": "A Sentiment-based Risk Indicator for the Mexican Financial Sector…",
+   "year": 2021
+  },
+  {
+   "x": -8.546019554138184,
+   "y": 22.811002731323242,
+   "cluster": 7,
+   "title": "Nonlinear Exchange Rate Pass-Through in Mexico…",
+   "year": 2019
+  },
+  {
+   "x": -9.995392799377441,
+   "y": 23.03870964050293,
+   "cluster": 7,
+   "title": "Uncertainty and Exchange Rate Volatility: the Case of Mexico…",
+   "year": 2019
+  },
+  {
+   "x": -9.434149742126465,
+   "y": 23.042219161987305,
+   "cluster": 7,
+   "title": "Evolution and Characteristics of the Exchange Rate Pass Through t…",
+   "year": 2019
+  },
+  {
+   "x": -9.166247367858887,
+   "y": 24.005130767822266,
+   "cluster": 7,
+   "title": "Firm Export Dynamics and the Exchange Rate A Quantitative Explora…",
+   "year": 2019
+  },
+  {
+   "x": -11.280911445617676,
+   "y": 21.369638442993164,
+   "cluster": 7,
+   "title": "Bank foreign currency funding and currency markets: the case of M…",
+   "year": 2019
+  },
+  {
+   "x": -11.143159866333008,
+   "y": 23.557645797729492,
+   "cluster": 7,
+   "title": "The Impact of Crime and Other Economic Forces on Mexico's Foreign…",
+   "year": 2018
+  },
+  {
+   "x": -9.70734691619873,
+   "y": 22.745994567871094,
+   "cluster": 7,
+   "title": "Prudential Regulation, Currency Mismatches and Exchange Rates in …",
+   "year": 2017
+  },
+  {
+   "x": -6.829385757446289,
+   "y": 20.679302215576172,
+   "cluster": 7,
+   "title": "Identifying Dornbusch's Exchange Rate Overshooting with Structura…",
+   "year": 2017
+  },
+  {
+   "x": -8.784263610839844,
+   "y": 21.73988151550293,
+   "cluster": 7,
+   "title": "Two Models of FX Market Interventions: The Cases of Brazil and Me…",
+   "year": 2016
+  },
+  {
+   "x": -8.744343757629395,
+   "y": 23.265506744384766,
+   "cluster": 7,
+   "title": "Price-Setting and Exchange Rate Pass-Through in the Mexican Econo…",
+   "year": 2016
+  },
+  {
+   "x": -9.239087104797363,
+   "y": 22.34166145324707,
+   "cluster": 7,
+   "title": "Exchange Rate Risk Premium: An Analysis of its Determinants for t…",
+   "year": 2016
+  },
+  {
+   "x": -8.860867500305176,
+   "y": 23.694929122924805,
+   "cluster": 7,
+   "title": "Endogenous Trade, Nontraded Goods and Real Exchange Rate Variatio…",
+   "year": 2015
+  },
+  {
+   "x": -9.476868629455566,
+   "y": 23.859045028686523,
+   "cluster": 7,
+   "title": "On Central Bank Interventions in the Mexican Peso/Dollar Foreign …",
+   "year": 2014
+  },
+  {
+   "x": -9.615894317626953,
+   "y": 21.165979385375977,
+   "cluster": 7,
+   "title": "Interventions and Expected Exchange Rates in Emerging Market Econ…",
+   "year": 2014
+  },
+  {
+   "x": -9.974187850952148,
+   "y": 20.76089859008789,
+   "cluster": 7,
+   "title": "Peso-Dollar Forward Market Analysis: Explaining Arbitrage Opportu…",
+   "year": 2014
+  },
+  {
+   "x": -12.30764102935791,
+   "y": 9.65848445892334,
+   "cluster": 7,
+   "title": "Global Invertibility of Excess Demand Functions…",
+   "year": 2013
+  },
+  {
+   "x": -9.384821891784668,
+   "y": 23.261734008789062,
+   "cluster": 7,
+   "title": "An estimation of the exchange rate pass-through to prices in Mexi…",
+   "year": 2013
+  },
+  {
+   "x": -9.865872383117676,
+   "y": 22.48360824584961,
+   "cluster": 7,
+   "title": "Capital Controls and Exchange Rate Expectations in Emerging Marke…",
+   "year": 2012
+  },
+  {
+   "x": -9.124348640441895,
+   "y": 23.4376163482666,
+   "cluster": 7,
+   "title": "Real Exchange Rate Variations, Nontraded Goods and Disaggregated …",
+   "year": 2012
+  },
+  {
+   "x": -8.846115112304688,
+   "y": 22.71614646911621,
+   "cluster": 7,
+   "title": "Exchange Rate Pass-Through to Prices: Evidence from Mexico.…",
+   "year": 2011
+  },
+  {
+   "x": -8.111821174621582,
+   "y": 22.2742862701416,
+   "cluster": 7,
+   "title": "Time-series Modelling, Stationarity and Bayesian Nonparametric Me…",
+   "year": 2011
+  },
+  {
+   "x": -8.125226974487305,
+   "y": 22.093311309814453,
+   "cluster": 7,
+   "title": "Exchange Rate Market Expectations and Central Bank Policy: The ca…",
+   "year": 2010
+  },
+  {
+   "x": -10.082565307617188,
+   "y": 20.299922943115234,
+   "cluster": 7,
+   "title": "A Note on the Volatilities of the Interest Rate and the Exchange …",
+   "year": 2009
+  },
+  {
+   "x": -9.121108055114746,
+   "y": 22.526451110839844,
+   "cluster": 7,
+   "title": "Market Expectations Implicit in Derivative Prices: Applications t…",
+   "year": 2004
+  },
+  {
+   "x": -10.281238555908203,
+   "y": 22.337799072265625,
+   "cluster": 7,
+   "title": "Mexico's Monetary Policy Framework Under a Floating Exchange Rate…",
+   "year": 1999
+  },
+  {
+   "x": -15.44674015045166,
+   "y": 15.35107707977295,
+   "cluster": 8,
+   "title": "Comparison of Inflation Expectations from Surveys and Markets Acr…",
+   "year": 2025
+  },
+  {
+   "x": -13.849279403686523,
+   "y": 14.553357124328613,
+   "cluster": 8,
+   "title": "The Loan Puzzle in Mexico…",
+   "year": 2024
+  },
+  {
+   "x": -11.843267440795898,
+   "y": 14.49579906463623,
+   "cluster": 8,
+   "title": "The Stock Market Effects of Committing and Setting GHG Targets: E…",
+   "year": 2023
+  },
+  {
+   "x": -14.520500183105469,
+   "y": 15.315030097961426,
+   "cluster": 8,
+   "title": "The Three Intelligible Factors of the Yield Curve in Mexico…",
+   "year": 2023
+  },
+  {
+   "x": -13.749700546264648,
+   "y": 15.447738647460938,
+   "cluster": 8,
+   "title": "Effects of the Extraordinary Measures Implemented by Banco de Méx…",
+   "year": 2023
+  },
+  {
+   "x": -14.31319808959961,
+   "y": 14.129656791687012,
+   "cluster": 8,
+   "title": "The Yield Curve as a Predictor of Economic Activity in Mexico: Th…",
+   "year": 2021
+  },
+  {
+   "x": -14.000747680664062,
+   "y": 15.071369171142578,
+   "cluster": 8,
+   "title": "Term Premium Dynamics and its Determinants: The Mexican Case…",
+   "year": 2020
+  },
+  {
+   "x": -12.686081886291504,
+   "y": 14.031807899475098,
+   "cluster": 8,
+   "title": "Measuring the cost of U.S. housing policy…",
+   "year": 2019
+  },
+  {
+   "x": -6.743928909301758,
+   "y": 12.965705871582031,
+   "cluster": 8,
+   "title": "On the Costs of Deflation: A Consumption-Based Approach…",
+   "year": 2018
+  },
+  {
+   "x": -15.840038299560547,
+   "y": 13.309904098510742,
+   "cluster": 8,
+   "title": "TIIE-28 Swaps as Risk-Adjusted Forecasts of Monetary Policy in Me…",
+   "year": 2018
+  },
+  {
+   "x": -15.603299140930176,
+   "y": 13.430355072021484,
+   "cluster": 8,
+   "title": "Currency Mismatch in the Banking Sector in Latin America and the …",
+   "year": 2017
+  },
+  {
+   "x": -14.857852935791016,
+   "y": 15.519540786743164,
+   "cluster": 8,
+   "title": "Break-Even-Inflation's Decomposition in Mexico…",
+   "year": 2016
+  },
+  {
+   "x": -12.56307601928711,
+   "y": 13.896141052246094,
+   "cluster": 8,
+   "title": "Bancarizing with Credit Cards: Experimental Evidence on Interest …",
+   "year": 2015
+  },
+  {
+   "x": -14.978364944458008,
+   "y": 14.630258560180664,
+   "cluster": 8,
+   "title": "Forecasting the Term Structure of Interest Rates in Mexico Using …",
+   "year": 2013
+  },
+  {
+   "x": -13.974504470825195,
+   "y": 14.591362953186035,
+   "cluster": 8,
+   "title": "The Dynamic Effects of Information on Political Corruption: Theor…",
+   "year": 2012
+  },
+  {
+   "x": -14.287925720214844,
+   "y": 14.823347091674805,
+   "cluster": 8,
+   "title": "On the Term Structure of Interest Rates of the Mexican Government…",
+   "year": 2011
+  },
+  {
+   "x": -15.390008926391602,
+   "y": 14.106924057006836,
+   "cluster": 8,
+   "title": "Stocks, Bonds and the Investment Horizon: A Spatial Dominance App…",
+   "year": 2011
+  },
+  {
+   "x": -15.604267120361328,
+   "y": 13.792136192321777,
+   "cluster": 8,
+   "title": "The Factor-Spline-GARCH Model for High and Low Frequency Correlat…",
+   "year": 2009
+  },
+  {
+   "x": -14.606283187866211,
+   "y": 14.22807788848877,
+   "cluster": 8,
+   "title": "The Yield Curve and its Relation with Economic Activity: The Mexi…",
+   "year": 2008
+  },
+  {
+   "x": -14.540999412536621,
+   "y": 15.213520050048828,
+   "cluster": 8,
+   "title": "A Macroeconomic Model of the Term Structure of Interest Rates in …",
+   "year": 2008
+  },
+  {
+   "x": -14.60494613647461,
+   "y": 14.861316680908203,
+   "cluster": 8,
+   "title": "An Affine Model of the Term Structure of Interest Rates in Mexico…",
+   "year": 2008
+  },
+  {
+   "x": 6.378494739532471,
+   "y": -6.905101299285889,
+   "cluster": 8,
+   "title": "A Note on Mexico and U.S. Manufacturing Industries' Long-term Rel…",
+   "year": 2008
+  },
+  {
+   "x": -14.60494613647461,
+   "y": 14.861316680908203,
+   "cluster": 8,
+   "title": "An Empirical Analysis of the Mexican Term Structure of Interest R…",
+   "year": 2008
+  },
+  {
+   "x": -11.235243797302246,
+   "y": -7.085414886474609,
+   "cluster": 9,
+   "title": "Better or worse job accessibility? Understanding changes in spati…",
+   "year": 2025
+  },
+  {
+   "x": -9.221478462219238,
+   "y": -10.414198875427246,
+   "cluster": 9,
+   "title": "Expenditure Responses to Adverse Health Shocks: Evidence from a P…",
+   "year": 2025
+  },
+  {
+   "x": -7.39190149307251,
+   "y": -7.654662609100342,
+   "cluster": 9,
+   "title": "Impact of Atmospheric Pollution on Reported Cases of Acute Respir…",
+   "year": 2024
+  },
+  {
+   "x": -11.918584823608398,
+   "y": -7.027770042419434,
+   "cluster": 9,
+   "title": "Random Discounted Expected Utility…",
+   "year": 2024
+  },
+  {
+   "x": -2.6750893592834473,
+   "y": -19.380996704101562,
+   "cluster": 9,
+   "title": "Attached once, attached forever: The persistent effects of concer…",
+   "year": 2024
+  },
+  {
+   "x": -11.259257316589355,
+   "y": -10.644364356994629,
+   "cluster": 9,
+   "title": "Designing the Menu of Licenses for Foster Care…",
+   "year": 2023
+  },
+  {
+   "x": -11.324840545654297,
+   "y": -11.620455741882324,
+   "cluster": 9,
+   "title": "COVID-19, Crises and Women's Control of Resources: Evidence from …",
+   "year": 2023
+  },
+  {
+   "x": -10.168179512023926,
+   "y": -9.798768997192383,
+   "cluster": 9,
+   "title": "House Prices and the Distribution of Wealth Around the Great Rece…",
+   "year": 2023
+  },
+  {
+   "x": -11.091055870056152,
+   "y": -12.607959747314453,
+   "cluster": 9,
+   "title": "Foster Care: A Dynamic Matching Approach…",
+   "year": 2023
+  },
+  {
+   "x": -11.157509803771973,
+   "y": -10.021659851074219,
+   "cluster": 9,
+   "title": "An Approach for Housing Wealth Estimation: The Mexican Case…",
+   "year": 2022
+  },
+  {
+   "x": -11.81290054321289,
+   "y": -11.742904663085938,
+   "cluster": 9,
+   "title": "Intra-household Resource Shares under Poverty Transfers: Evidence…",
+   "year": 2022
+  },
+  {
+   "x": -11.602503776550293,
+   "y": -12.3495454788208,
+   "cluster": 9,
+   "title": "The Effect of Paying Parents to Adopt: Evidence from Minnesota's …",
+   "year": 2022
+  },
+  {
+   "x": -8.835304260253906,
+   "y": -7.779784679412842,
+   "cluster": 9,
+   "title": "Tariffs and Macroeconomic Dynamics…",
+   "year": 2021
+  },
+  {
+   "x": -9.944585800170898,
+   "y": -11.122076988220215,
+   "cluster": 9,
+   "title": "Effects of Unanticipated Income Shocks on Consumption in Mexico, …",
+   "year": 2021
+  },
+  {
+   "x": -11.319803237915039,
+   "y": -12.231800079345703,
+   "cluster": 9,
+   "title": "Evaluating the Effects of the Home Affordable Modification Progra…",
+   "year": 2021
+  },
+  {
+   "x": -9.620506286621094,
+   "y": -7.9212164878845215,
+   "cluster": 9,
+   "title": "Do Bankruptcy Protection Levels Affect Households' Demand for Sto…",
+   "year": 2021
+  },
+  {
+   "x": -9.592484474182129,
+   "y": -12.398866653442383,
+   "cluster": 9,
+   "title": "The Role of Credit on the Evolution of Wealth Inequality in the U…",
+   "year": 2020
+  },
+  {
+   "x": -10.092613220214844,
+   "y": -9.591963768005371,
+   "cluster": 9,
+   "title": "Shared-Appreciation Mortgages and Uninsurable Idiosyncratic Shock…",
+   "year": 2020
+  },
+  {
+   "x": -7.102657794952393,
+   "y": -10.871797561645508,
+   "cluster": 9,
+   "title": "The Efficacy of Hiring Credits in Distressed Areas…",
+   "year": 2020
+  },
+  {
+   "x": -11.967840194702148,
+   "y": -8.799236297607422,
+   "cluster": 9,
+   "title": "Many-to-one Matching: Externalities and Stability…",
+   "year": 2020
+  },
+  {
+   "x": -13.359151840209961,
+   "y": -11.719884872436523,
+   "cluster": 9,
+   "title": "Forecast Comparison of the Term Structure of Interest Rates of Me…",
+   "year": 2020
+  },
+  {
+   "x": -12.043664932250977,
+   "y": -11.95518684387207,
+   "cluster": 9,
+   "title": "Women's Empowerment: Aggregate Effects on Savings and Wealth…",
+   "year": 2019
+  },
+  {
+   "x": -6.255654811859131,
+   "y": -9.282465934753418,
+   "cluster": 9,
+   "title": "Social Accounting Matrices for the Regiones of Mexico…",
+   "year": 2019
+  },
+  {
+   "x": -7.577539920806885,
+   "y": -5.621330261230469,
+   "cluster": 9,
+   "title": "Fear of taxes…",
+   "year": 2019
+  },
+  {
+   "x": -9.757434844970703,
+   "y": -12.96087646484375,
+   "cluster": 9,
+   "title": "Labour Force Participation and the Business Cycle in Mexico…",
+   "year": 2019
+  },
+  {
+   "x": -10.280250549316406,
+   "y": -8.965582847595215,
+   "cluster": 9,
+   "title": "Incomplete Information and Costly Signaling in College Admissions…",
+   "year": 2018
+  },
+  {
+   "x": -11.725921630859375,
+   "y": -9.93852710723877,
+   "cluster": 9,
+   "title": "Logging Concessions, Certification & Protected Areas in the Peruv…",
+   "year": 2018
+  },
+  {
+   "x": -10.266547203063965,
+   "y": -9.245174407958984,
+   "cluster": 9,
+   "title": "Stability of Equilibrium Outcomes under Deferred Acceptance: Acyc…",
+   "year": 2018
+  },
+  {
+   "x": -12.376941680908203,
+   "y": -11.653580665588379,
+   "cluster": 9,
+   "title": "Ethnic and Racial Disparities in Saving Behavior…",
+   "year": 2018
+  },
+  {
+   "x": -10.979072570800781,
+   "y": -11.522505760192871,
+   "cluster": 9,
+   "title": "You, Me and the Mean: a Semiparametric Approach to the Redistribu…",
+   "year": 2016
+  },
+  {
+   "x": -11.768571853637695,
+   "y": -10.97929859161377,
+   "cluster": 9,
+   "title": "Income Instability and Fiscal Progression…",
+   "year": 2016
+  },
+  {
+   "x": -8.527732849121094,
+   "y": -5.202327251434326,
+   "cluster": 9,
+   "title": "Distributional Policy Effects with Many Treatment Outcomes…",
+   "year": 2016
+  },
+  {
+   "x": -9.883553504943848,
+   "y": -8.829297065734863,
+   "cluster": 9,
+   "title": "The Impact of Food Price Shocks on Consumption and Nutritional Pa…",
+   "year": 2015
+  },
+  {
+   "x": -11.159975051879883,
+   "y": -7.371047019958496,
+   "cluster": 9,
+   "title": "The Perils of Peer Punishment: Evidence from a Common Pool Resour…",
+   "year": 2015
+  },
+  {
+   "x": -11.81290054321289,
+   "y": -11.742904663085938,
+   "cluster": 9,
+   "title": "The Effect of a Transfer Program for the Elderly in Mexico City o…",
+   "year": 2015
+  },
+  {
+   "x": -12.14937686920166,
+   "y": -10.261151313781738,
+   "cluster": 9,
+   "title": "The Impact of a One Laptop per Child Program on Learning: Evidenc…",
+   "year": 2014
+  },
+  {
+   "x": -10.622536659240723,
+   "y": -11.983769416809082,
+   "cluster": 9,
+   "title": "The Effects of a Non-Contributory Pension Program on Labor Force …",
+   "year": 2014
+  },
+  {
+   "x": -8.922051429748535,
+   "y": -12.152905464172363,
+   "cluster": 9,
+   "title": "Can Matching Frictions Explain the Increase in Mexican Unemployme…",
+   "year": 2014
+  },
+  {
+   "x": -10.424731254577637,
+   "y": -11.901490211486816,
+   "cluster": 9,
+   "title": "The Effects of Child Care Provision in Mexico…",
+   "year": 2014
+  },
+  {
+   "x": -12.081831932067871,
+   "y": -8.097538948059082,
+   "cluster": 9,
+   "title": "Peer Effects Identified Through Social Networks: Evidence from Ur…",
+   "year": 2014
+  },
+  {
+   "x": -11.534037590026855,
+   "y": -11.558056831359863,
+   "cluster": 9,
+   "title": "Old-Age Government Transfers and the Crowding Out of Private Gift…",
+   "year": 2013
+  },
+  {
+   "x": -12.273588180541992,
+   "y": -10.8432035446167,
+   "cluster": 9,
+   "title": "Nurture vs. Nurture: Endogenous Parental and Peer Effects and the…",
+   "year": 2013
+  },
+  {
+   "x": -7.382545471191406,
+   "y": -7.788443088531494,
+   "cluster": 9,
+   "title": "Security of Property as a Public Good: Institutions, Socio-Politi…",
+   "year": 2012
+  },
+  {
+   "x": -12.148809432983398,
+   "y": -11.0107421875,
+   "cluster": 9,
+   "title": "The Effect of Publicly Provided Health Insurance on Academic Perf…",
+   "year": 2012
+  },
+  {
+   "x": -6.317687034606934,
+   "y": -9.411391258239746,
+   "cluster": 9,
+   "title": "An Evaluation of the 1997 Fiscal Decentralization Reform in Mexic…",
+   "year": 2011
+  },
+  {
+   "x": -12.311027526855469,
+   "y": -7.596762180328369,
+   "cluster": 9,
+   "title": "The returns to education in Mexico…",
+   "year": 2011
+  },
+  {
+   "x": -11.079111099243164,
+   "y": -10.0941743850708,
+   "cluster": 9,
+   "title": "Strategic Spending in Voting Competitions with Social Networks…",
+   "year": 2010
+  },
+  {
+   "x": -10.576458930969238,
+   "y": -11.595890998840332,
+   "cluster": 9,
+   "title": "Remittances, Schooling, and Child Labor in Mexico…",
+   "year": 2010
+  },
+  {
+   "x": -11.21838092803955,
+   "y": -11.11190414428711,
+   "cluster": 9,
+   "title": "Families as Roommates: Changes in U.S. Household Size from 1850 t…",
+   "year": 2010
+  },
+  {
+   "x": -11.342811584472656,
+   "y": -9.722335815429688,
+   "cluster": 9,
+   "title": "Explaining Taxes at the Upper Tail of the Income Distribution: Th…",
+   "year": 2009
+  },
+  {
+   "x": -12.399431228637695,
+   "y": -8.552800178527832,
+   "cluster": 9,
+   "title": "The evolution of fuzzy multidimensional poverty in Mexico, 1994-2…",
+   "year": 2009
+  },
+  {
+   "x": -6.440507888793945,
+   "y": -8.152318954467773,
+   "cluster": 9,
+   "title": "The Three Stages of Central Bank Autonomy in Mexico.…",
+   "year": 2007
+  },
+  {
+   "x": -6.751842975616455,
+   "y": -8.768548011779785,
+   "cluster": 9,
+   "title": "Factor Shares From Household Survey Data…",
+   "year": 2005
+  },
+  {
+   "x": -9.433266639709473,
+   "y": 10.235442161560059,
+   "cluster": 9,
+   "title": "Banks, Liquidity Crises and Economic Growth…",
+   "year": 2005
+  },
+  {
+   "x": -5.890330791473389,
+   "y": -8.732492446899414,
+   "cluster": 9,
+   "title": "Wealth Financial Intermediation and Growth…",
+   "year": 2005
+  }
+ ]
+}

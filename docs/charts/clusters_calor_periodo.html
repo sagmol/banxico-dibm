@@ -39,6 +39,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // Colorbar
         upd['coloraxis.colorbar.tickfont.color'] = '#7d8590';
         upd['coloraxis.colorbar.title.font.color'] = '#9aadba';
+        // Fix overlap: mover eje X abajo y ampliar margen superior
+        upd['margin.t'] = 140;
+        upd['xaxis.side'] = 'bottom';
+        upd['xaxis.tickfont.size'] = 10;
+        upd['xaxis.tickangle'] = -20;
         Plotly.relayout(div, upd);
       } catch(e) {}
     });
