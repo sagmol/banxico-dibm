@@ -10,16 +10,16 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --azul-oscuro:  #023047;
-      --azul-medio:   #219ebc;
-      --azul-claro:   #8ecae6;
-      --amarillo:     #ffb703;
-      --naranja:      #fb8500;
-      --rojo:         #e63946;
-      --gris-bg:      #f8f9fa;
-      --gris-borde:   #dee2e6;
-      --texto:        #212529;
-      --texto-suave:  #6c757d;
+      --azul-oscuro:  #0986a1;  /* era #023047 – ahora visible en dark y light */
+      --azul-medio:   #4ECDC4;  /* teal Fase 2 */
+      --azul-claro:   #74B9FF;  /* light blue Fase 2 */
+      --amarillo:     #FFE66D;  /* bright yellow Fase 2 */
+      --naranja:      #FD79A8;  /* pink-orange */
+      --rojo:         #FF6B6B;  /* soft red */
+      --gris-bg:      #111720;  /* dark section bg */
+      --gris-borde:   #1e2738;  /* dark border */
+      --texto:        #e6edf3;  /* light text principal */
+      --texto-suave:  #7d8590;  /* muted text */
     }
 
     html { scroll-behavior: smooth; }
@@ -28,109 +28,118 @@
       font-family: "Source Sans 3", sans-serif;
       font-weight: 300;
       color: var(--texto);
-      background: #fff;
+      background: #0d1117;
       line-height: 1.7;
     }
 
     /* ── NAV ─────────────────────────────────────────────── */
     nav {
       position: sticky; top: 0; z-index: 100;
-      background: var(--azul-oscuro);
+      background: rgba(13,17,23,.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #1e2738;
       padding: 0 2rem;
       display: flex; align-items: center; gap: 2rem;
       height: 52px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.4);
     }
     nav .brand {
       font-family: "Playfair Display", serif;
-      font-size: 1rem; color: #fff; font-weight: 600;
+      font-size: 1rem; color: #4ECDC4; font-weight: 600;
       white-space: nowrap;
     }
     nav a {
-      color: rgba(255,255,255,0.75); text-decoration: none;
+      color: #7d8590; text-decoration: none;
       font-size: 0.85rem; font-weight: 400;
       transition: color .2s;
       white-space: nowrap;
     }
-    nav a:hover { color: var(--amarillo); }
+    nav a:hover { color: #e6edf3; }
     nav .spacer { flex: 1; }
     nav .gh-link {
       display: flex; align-items: center; gap: .4rem;
-      background: rgba(255,255,255,0.1);
+      background: rgba(78,205,196,0.12);
+      border: 1px solid rgba(78,205,196,0.3);
       padding: .3rem .8rem; border-radius: 4px;
-      font-size: .8rem;
+      font-size: .8rem; color: #4ECDC4;
     }
 
     /* ── HERO ────────────────────────────────────────────── */
     .hero {
-      background: linear-gradient(135deg, var(--azul-oscuro) 0%, #034e6e 100%);
-      color: #fff;
+      background: radial-gradient(ellipse 80% 60% at 50% 40%,
+                  rgba(78,205,196,.08) 0%, transparent 70%),
+                  linear-gradient(180deg, #070a10 0%, #0d1117 100%);
+      color: #e6edf3;
       padding: 5rem 2rem 4rem;
       text-align: center;
+      border-bottom: 1px solid #1e2738;
     }
     .hero h1 {
       font-family: "Playfair Display", serif;
       font-size: clamp(1.8rem, 4vw, 3rem);
       line-height: 1.2; margin-bottom: 1rem;
+      color: #e6edf3;
     }
-    .hero h1 span { color: var(--amarillo); }
+    .hero h1 span { color: #4ECDC4; }
     .hero p {
       max-width: 680px; margin: 0 auto 2rem;
-      font-size: 1.05rem; opacity: .85; font-weight: 300;
+      font-size: 1.05rem; color: #7d8590; font-weight: 300;
     }
     .hero-stats {
       display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;
       margin-top: 2.5rem;
     }
     .stat-box {
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.2);
+      background: #161b22;
+      border: 1px solid #1e2738;
       border-radius: 8px; padding: 1rem 1.5rem;
       min-width: 130px;
     }
     .stat-box .num {
       font-family: "Playfair Display", serif;
       font-size: 2rem; font-weight: 600;
-      color: var(--amarillo); display: block;
+      color: #4ECDC4; display: block;
     }
-    .stat-box .lbl { font-size: .8rem; opacity: .8; }
+    .stat-box .lbl { font-size: .8rem; color: #7d8590; }
 
     /* ── LAYOUT ──────────────────────────────────────────── */
     .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
 
-    section { padding: 4rem 0; }
-    section:nth-child(even) { background: var(--gris-bg); }
+    section { padding: 4rem 0; border-bottom: 1px solid #1e2738; }
+    section:nth-child(even) { background: #111720; }
 
     .section-header { margin-bottom: 2.5rem; }
     .section-tag {
       display: inline-block;
       font-size: .7rem; font-weight: 600; letter-spacing: .1em;
       text-transform: uppercase; color: var(--azul-medio);
-      margin-bottom: .4rem;
+      background: rgba(78,205,196,.1); border-radius: 4px;
+      padding: 2px 8px; margin-bottom: .6rem;
     }
     .section-header h2 {
       font-family: "Playfair Display", serif;
       font-size: clamp(1.4rem, 2.5vw, 1.9rem);
-      color: var(--azul-oscuro); margin-bottom: .5rem;
+      color: #e6edf3; margin-bottom: .5rem;
     }
     .section-header p { color: var(--texto-suave); max-width: 680px; }
 
     /* ── CHART IFRAME ────────────────────────────────────── */
     .chart-wrap {
-      border: 1px solid var(--gris-borde);
+      border: 1px solid #1e2738;
       border-radius: 8px; overflow: hidden;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.25);
       margin-bottom: 2rem;
-      background: #fff;
+      background: #0d1117;
     }
     .chart-wrap iframe {
       width: 100%; border: none; display: block;
+      background: #0d1117;
     }
     .chart-caption {
       padding: .6rem 1rem;
-      font-size: .78rem; color: var(--texto-suave);
-      border-top: 1px solid var(--gris-borde);
-      background: var(--gris-bg);
+      font-size: .78rem; color: #7d8590;
+      border-top: 1px solid #1e2738;
+      background: #0d1117;
     }
 
     /* Charts en grid 2 columnas */
@@ -147,16 +156,16 @@
       gap: 1.2rem; margin-bottom: 2.5rem;
     }
     .finding-card {
-      background: #fff; border-left: 4px solid var(--azul-medio);
+      background: #161b22; border-left: 4px solid var(--azul-medio);
       border-radius: 0 6px 6px 0;
       padding: 1rem 1.2rem;
-      box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+      border: 1px solid #1e2738; border-left: 4px solid var(--azul-medio);
     }
     .finding-card.accent { border-left-color: var(--amarillo); }
     .finding-card.red    { border-left-color: var(--rojo); }
     .finding-card h4 {
       font-family: "Playfair Display", serif;
-      font-size: 1rem; color: var(--azul-oscuro);
+      font-size: 1rem; color: #e6edf3;
       margin-bottom: .3rem;
     }
     .finding-card p { font-size: .88rem; color: var(--texto-suave); }
@@ -169,19 +178,21 @@
     }
     .periodo-card {
       border-radius: 8px; padding: 1.2rem;
-      color: #fff;
+      background: #161b22; border: 1px solid #1e2738;
+      color: #e6edf3;
     }
-    .periodo-card.p1 { background: var(--azul-claro); color: var(--azul-oscuro); }
-    .periodo-card.p2 { background: var(--azul-medio); }
-    .periodo-card.p3 { background: var(--azul-oscuro); }
-    .periodo-card.p4 { background: var(--amarillo); color: var(--azul-oscuro); }
-    .periodo-card .años { font-size: .8rem; opacity: .8; margin-bottom: .2rem; }
+    .periodo-card.p1 { border-left: 3px solid var(--azul-claro); }
+    .periodo-card.p2 { border-left: 3px solid var(--azul-medio); }
+    .periodo-card.p3 { border-left: 3px solid #4ECDC4; }
+    .periodo-card.p4 { border-left: 3px solid var(--amarillo); }
+    .periodo-card .años { font-size: .8rem; opacity: .7; margin-bottom: .2rem; }
     .periodo-card h4 { font-family: "Playfair Display", serif; font-size: 1rem; margin-bottom: .3rem; }
-    .periodo-card .docs { font-size: 1.5rem; font-weight: 600; }
+    .periodo-card .docs { font-size: 1.5rem; font-weight: 600; color: #4ECDC4; }
 
     /* ── FOOTER ──────────────────────────────────────────── */
     footer {
-      background: var(--azul-oscuro); color: rgba(255,255,255,0.6);
+      background: #070a10; color: rgba(255,255,255,0.4);
+      border-top: 1px solid #1e2738;
       text-align: center; padding: 2rem;
       font-size: .82rem;
     }
