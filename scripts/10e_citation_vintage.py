@@ -143,14 +143,34 @@ for nombre, (a, b) in PERIODOS.items():
         "post10":  {"n": n_reciente, "pct": round(n_reciente/total*100, 1)},
     })
 
+# ── Top journals en citas post-2010 del período reciente ─────────────────────
+# Para visualizar autocitación: Banxico WP aparece como 2do journal más citado
+rec_post10 = valid_p[
+    (valid_p["periodo"] == "reciente") & (valid_p["anio_citado"] > 2010)
+].copy()
+
+BANXICO_JOURNALS = {"banco de méxico wp", "banxico wp", "banco de mexico wp"}
+top_journals_raw = rec_post10["journal_detectado"].dropna().value_counts().head(15)
+top_journals_post10 = []
+for journal, n in top_journals_raw.items():
+    pct = round(n / len(rec_post10) * 100, 1)
+    es_banxico = any(b in journal.lower() for b in BANXICO_JOURNALS)
+    top_journals_post10.append({
+        "journal":    journal,
+        "n":          int(n),
+        "pct":        pct,
+        "autocita":   es_banxico,
+    })
+
 # ── Output ────────────────────────────────────────────────────────────────────
 out = {
-    "overall":           overall,
-    "por_periodo":       por_periodo,
-    "por_anio_paper":    por_anio_paper,
-    "canon_quinquenal":  canon,
-    "clasicos_dsge_pct": clasicos,
-    "eras_por_periodo":  eras_por_periodo,
+    "overall":              overall,
+    "por_periodo":          por_periodo,
+    "por_anio_paper":       por_anio_paper,
+    "canon_quinquenal":     canon,
+    "clasicos_dsge_pct":    clasicos,
+    "eras_por_periodo":     eras_por_periodo,
+    "top_journals_post10":  top_journals_post10,
 }
 outpath = BASE / "docs/data/citation_vintage.json"
 json.dump(out, open(outpath, "w", encoding="utf-8"), ensure_ascii=False, indent=2)

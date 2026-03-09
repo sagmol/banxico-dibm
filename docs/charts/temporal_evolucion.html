@@ -363,6 +363,15 @@
     <div id="eras-leyenda" style="display:flex;gap:20px;margin-top:12px;flex-wrap:wrap"></div>
   </div>
 
+  <div class="chart-wrap" style="margin-top:32px">
+    <div class="chart-title">¿A qué journals cita el Banxico en su literatura reciente (post-2010)?</div>
+    <div style="font-size:11px;color:#7d8590;margin-bottom:12px">
+      Top 15 journals en referencias post-2010 del período reciente (2016–25) · n=459 con journal identificado.
+      <span style="color:#FD79A8;font-weight:600">Banxico WP = autocitación</span> — el 2do más citado.
+    </div>
+    <svg id="chart-vintage-journals" class="chart"></svg>
+  </div>
+
 </div>
 
 <!-- ═══════════════ TAB 6: PORTADORES DEL TOOLKIT ═══════════════ -->
@@ -1358,6 +1367,72 @@ function drawVintage() {
         ${era.label}
       </div>`;
     });
+
+    // ── Chart: top journals post-2010 en período reciente ────────────────────
+    if (!top_journals_post10 || top_journals_post10.length === 0) return;
+
+    const JW = Math.min(window.innerWidth - 160, 860);
+    const JH = top_journals_post10.length * 28 + 50;
+    const jm = { top: 10, right: 80, bottom: 30, left: 200 };
+    const jiW = JW - jm.left - jm.right;
+    const jiH = JH - jm.top - jm.bottom;
+
+    const jsvg = d3.select("#chart-vintage-journals").attr("width", JW).attr("height", JH);
+    const jg   = jsvg.append("g").attr("transform", `translate(${jm.left},${jm.top})`);
+
+    const jx = d3.scaleLinear()
+      .domain([0, d3.max(top_journals_post10, d => d.pct) * 1.15])
+      .range([0, jiW]);
+
+    const jy = d3.scaleBand()
+      .domain(top_journals_post10.map(d => d.journal))
+      .range([0, jiH]).padding(0.22);
+
+    // Grid vertical
+    jg.append("g").attr("class", "grid")
+      .call(d3.axisBottom(jx).ticks(5).tickSize(jiH).tickFormat(""))
+      .attr("transform", "translate(0,0)")
+      .select(".domain").remove();
+
+    // Barras
+    jg.selectAll(".jbar").data(top_journals_post10).join("rect")
+      .attr("class", "jbar")
+      .attr("x", 0)
+      .attr("y", d => jy(d.journal))
+      .attr("width", d => jx(d.pct))
+      .attr("height", jy.bandwidth())
+      .attr("fill", d => d.autocita ? "#FD79A8" : "#4ECDC4")
+      .attr("opacity", 0.85)
+      .attr("rx", 3)
+      .on("mouseover", (e, d) => showTT(e,
+        `<b>${d.journal}</b><br>${d.n} citas · <b>${d.pct}%</b>${d.autocita ? "<br>⚠ Autocitación Banxico" : ""}`))
+      .on("mouseout", hideTT);
+
+    // Etiquetas de valor
+    jg.selectAll(".jlbl").data(top_journals_post10).join("text")
+      .attr("class", "jlbl")
+      .attr("x", d => jx(d.pct) + 5)
+      .attr("y", d => jy(d.journal) + jy.bandwidth() / 2 + 4)
+      .attr("fill", d => d.autocita ? "#FD79A8" : "#7d8590")
+      .attr("font-size", "11px")
+      .attr("font-weight", d => d.autocita ? "700" : "400")
+      .text(d => d.pct + "%" + (d.autocita ? " ← autocita" : ""));
+
+    // Eje Y (nombres de journals)
+    jg.append("g").attr("class", "axis")
+      .call(d3.axisLeft(jy).tickSize(0).tickPadding(8))
+      .select(".domain").remove();
+
+    // Colorear etiqueta Banxico
+    jg.selectAll(".axis text")
+      .style("fill", d => (top_journals_post10.find(j => j.journal === d) || {}).autocita
+        ? "#FD79A8" : "#cdd9e5")
+      .style("font-weight", d => (top_journals_post10.find(j => j.journal === d) || {}).autocita
+        ? "700" : "400");
+
+    // Eje X
+    jg.append("g").attr("class", "axis").attr("transform", `translate(0,${jiH})`)
+      .call(d3.axisBottom(jx).ticks(5).tickFormat(d => d + "%"));
 
   });
 }

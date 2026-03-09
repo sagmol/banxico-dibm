@@ -531,5 +531,97 @@
         "pct": 51.7
       }
     }
+  ],
+  "top_journals_post10": [
+    {
+      "journal": "American Economic Review",
+      "n": 39,
+      "pct": 6.1,
+      "autocita": false
+    },
+    {
+      "journal": "Banco de México WP",
+      "n": 33,
+      "pct": 5.1,
+      "autocita": true
+    },
+    {
+      "journal": "Journal of Monetary Economics",
+      "n": 30,
+      "pct": 4.7,
+      "autocita": false
+    },
+    {
+      "journal": "Federal Reserve",
+      "n": 20,
+      "pct": 3.1,
+      "autocita": false
+    },
+    {
+      "journal": "Journal of International Economics",
+      "n": 19,
+      "pct": 3.0,
+      "autocita": false
+    },
+    {
+      "journal": "Journal of Political Economy",
+      "n": 16,
+      "pct": 2.5,
+      "autocita": false
+    },
+    {
+      "journal": "AEJ: Macroeconomics",
+      "n": 15,
+      "pct": 2.3,
+      "autocita": false
+    },
+    {
+      "journal": "Economica",
+      "n": 14,
+      "pct": 2.2,
+      "autocita": false
+    },
+    {
+      "journal": "Journal of Money, Credit and Banking",
+      "n": 13,
+      "pct": 2.0,
+      "autocita": false
+    },
+    {
+      "journal": "Quarterly Journal of Economics",
+      "n": 13,
+      "pct": 2.0,
+      "autocita": false
+    },
+    {
+      "journal": "International Journal of Central Banking",
+      "n": 12,
+      "pct": 1.9,
+      "autocita": false
+    },
+    {
+      "journal": "NBER Working Paper",
+      "n": 12,
+      "pct": 1.9,
+      "autocita": false
+    },
+    {
+      "journal": "Journal of Macroeconomics",
+      "n": 12,
+      "pct": 1.9,
+      "autocita": false
+    },
+    {
+      "journal": "IMF Working Paper",
+      "n": 11,
+      "pct": 1.7,
+      "autocita": false
+    },
+    {
+      "journal": "Review of Economics and Statistics",
+      "n": 10,
+      "pct": 1.6,
+      "autocita": false
+    }
   ]
 }
