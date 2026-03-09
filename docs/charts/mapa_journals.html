@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Geografía del conocimiento citado — Banxico DIBM</title>
 <script src="https://d3js.org/d3.v7.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson.min.js"></script>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: #0d1117; color: #e6edf3; font-family: 'Inter', system-ui, sans-serif; }
@@ -113,7 +112,7 @@
   }
   #tt b { color: #4ECDC4; }
 
-  .land { fill: #161b22; stroke: #21262d; stroke-width: .5; }
+  .land { fill: #1c2333; stroke: #30363d; stroke-width: .4; }
   .sphere { fill: #0d1117; }
   .graticule { fill: none; stroke: #1e2738; stroke-width: .3; }
 
@@ -180,8 +179,8 @@
 </div>
 
 <script>
-const DATA_URL = "../data/journals_geo.json";
-const WORLD_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
+const DATA_URL  = "../data/journals_geo.json";
+const WORLD_URL = "../data/world.geojson";
 
 const tt = document.getElementById("tt");
 function showTT(e, html) {
@@ -266,11 +265,10 @@ Promise.all([
     .attr("class", "graticule")
     .attr("d", path);
 
-  // Países (base)
-  const countries = topojson.feature(world, world.objects.countries);
+  // Países (base) — GeoJSON directo, sin topojson
   svg.append("g")
     .selectAll(".land")
-    .data(countries.features)
+    .data(world.features)
     .join("path")
     .attr("class", "land")
     .attr("d", path);
