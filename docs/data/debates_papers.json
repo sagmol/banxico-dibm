@@ -11,21 +11,8 @@
   },
   "dinero_endog": {
     "label": "Dinero endógeno (Kaldor, Moore, Lavoie)",
-    "n": 1,
-    "papers": [
-      {
-        "clave": "2018-18",
-        "anio": 2018,
-        "titulo": "Fiscal Policy and Inflation: Understanding the Role of Expectations in Mexico",
-        "autores": [
-          "López-Martín Bernabé",
-          "Ramírez de Aguilar Alberto",
-          "Sámano Daniel"
-        ],
-        "snippet": "…kov model where inflation is determined by government deficits financed through <mark>money creation</mark> and by expectations dynamics. The baseline model, proposed by Sargent et al. (2…",
-        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{FEEDEC34-FD3A-9F1A-17DF-A8E2D20EEFAE}.pdf"
-      }
-    ]
+    "n": 0,
+    "papers": []
   },
   "postkeyn": {
     "label": "Post-keynesian (como framework)",
@@ -43,31 +30,9 @@
     "papers": []
   },
   "prebisch": {
-    "label": "Prebisch / CEPAL / estructuralismo latinoam.",
-    "n": 2,
-    "papers": [
-      {
-        "clave": "2006-01",
-        "anio": 2006,
-        "titulo": "Sovereign Default, Terms of Trade and Interest Rates in Emerging Markets",
-        "autores": [
-          "Cuadra Gabriel",
-          "Sapriza Horacio"
-        ],
-        "snippet": "Emerging economies tend to experience larger fluctuations in their <mark>terms of trade</mark>, countercyclical interest rates and more default episodes than developed countr…",
-        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{2426947A-D772-E109-C1D1-722EB39B6BAC}.pdf"
-      },
-      {
-        "clave": "2022-20",
-        "anio": 2022,
-        "titulo": "Foreign Currency Working Capital Constraints for Imported Inputs and Compositional Effects in Intermediate Goods",
-        "autores": [
-          "Sámano Daniel"
-        ],
-        "snippet": "…he working capital. In particular, after a domestic positive productivity shock <mark>terms of trade</mark> rise and the working capital cost exhibits a sudden increase followed by a prol…",
-        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{32EEAEC9-680A-D366-6C35-120A3DD5584D}.pdf"
-      }
-    ]
+    "label": "Centro-periferia / Heterogeneidad estructural (CEPAL)",
+    "n": 0,
+    "papers": []
   },
   "infl_struct": {
     "label": "Inflación estructural / conflicto distributivo",
