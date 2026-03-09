@@ -1,0 +1,6913 @@
+{
+  "meta": {
+    "total_autores_min2papers": 184,
+    "autores_con_nk": 54,
+    "autores_dsge_especifico": 12,
+    "pct_autores_con_nk": 29.3,
+    "total_nk_papers": 113,
+    "pct_top5_concentracion": 33.6,
+    "concepto_dominante_dist": {
+      "inflation_targeting": 11,
+      "dsge": 7,
+      "new_keynesian": 3,
+      "inflation_exp": 18,
+      "calvo": 2,
+      "bayesian": 5,
+      "rational_exp": 1,
+      "financial_frictions": 3,
+      "phillips_curve": 2,
+      "output_gap": 2
+    }
+  },
+  "top_nk": [
+    {
+      "autor_id": 814,
+      "nombre": "Ramos Francia Manuel",
+      "total_papers": 31,
+      "n_nk": 14,
+      "pct_nk": 45.2,
+      "nk_score": 15,
+      "primer_nk": 2005,
+      "top_conceptos": [
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 7
+        },
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 4
+        },
+        {
+          "key": "dsge",
+          "label": "DSGE",
+          "n": 2
+        },
+        {
+          "key": "new_keynesian",
+          "label": "New Keynesian",
+          "n": 1
+        },
+        {
+          "key": "phillips_curve",
+          "label": "Phillips curve",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2004,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2005,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2006,
+          "n_papers": 2,
+          "n_nk": 1
+        },
+        {
+          "anio": 2007,
+          "n_papers": 3,
+          "n_nk": 2
+        },
+        {
+          "anio": 2008,
+          "n_papers": 7,
+          "n_nk": 2
+        },
+        {
+          "anio": 2009,
+          "n_papers": 4,
+          "n_nk": 2
+        },
+        {
+          "anio": 2011,
+          "n_papers": 2,
+          "n_nk": 2
+        },
+        {
+          "anio": 2014,
+          "n_papers": 3,
+          "n_nk": 1
+        },
+        {
+          "anio": 2015,
+          "n_papers": 3,
+          "n_nk": 1
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2018,
+          "n_papers": 4,
+          "n_nk": 2
+        }
+      ]
+    },
+    {
+      "autor_id": 603,
+      "nombre": "Capistrán Carlos",
+      "total_papers": 16,
+      "n_nk": 7,
+      "pct_nk": 43.8,
+      "nk_score": 8,
+      "primer_nk": 2006,
+      "top_conceptos": [
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 4
+        },
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 3
+        },
+        {
+          "key": "new_keynesian",
+          "label": "New Keynesian",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2006,
+          "n_papers": 4,
+          "n_nk": 2
+        },
+        {
+          "anio": 2007,
+          "n_papers": 2,
+          "n_nk": 1
+        },
+        {
+          "anio": 2008,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2009,
+          "n_papers": 4,
+          "n_nk": 1
+        },
+        {
+          "anio": 2010,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2011,
+          "n_papers": 2,
+          "n_nk": 2
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 635,
+      "nombre": "Cuadra Gabriel",
+      "total_papers": 12,
+      "n_nk": 7,
+      "pct_nk": 58.3,
+      "nk_score": 7,
+      "primer_nk": 2007,
+      "top_conceptos": [
+        {
+          "key": "dsge",
+          "label": "DSGE",
+          "n": 5
+        },
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        },
+        {
+          "key": "new_keynesian",
+          "label": "New Keynesian",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2006,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2007,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2008,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2011,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2014,
+          "n_papers": 3,
+          "n_nk": 2
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2021,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 836,
+      "nombre": "Roldán-Peña Jessica",
+      "total_papers": 8,
+      "n_nk": 5,
+      "pct_nk": 62.5,
+      "nk_score": 7,
+      "primer_nk": 2012,
+      "top_conceptos": [
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 2
+        },
+        {
+          "key": "financial_frictions",
+          "label": "Fin. frictions",
+          "n": 2
+        },
+        {
+          "key": "new_keynesian",
+          "label": "New Keynesian",
+          "n": 1
+        },
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        },
+        {
+          "key": "dsge",
+          "label": "DSGE",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2017,
+          "n_papers": 3,
+          "n_nk": 2
+        },
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 891,
+      "nombre": "Torres García Alberto",
+      "total_papers": 11,
+      "n_nk": 5,
+      "pct_nk": 45.5,
+      "nk_score": 5,
+      "primer_nk": 2002,
+      "top_conceptos": [
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 3
+        },
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        },
+        {
+          "key": "phillips_curve",
+          "label": "Phillips curve",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2000,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2001,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2002,
+          "n_papers": 2,
+          "n_nk": 1
+        },
+        {
+          "anio": 2003,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2005,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2006,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2008,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 776,
+      "nombre": "Nuguer Victoria",
+      "total_papers": 4,
+      "n_nk": 4,
+      "pct_nk": 100.0,
+      "nk_score": 5,
+      "primer_nk": 2015,
+      "top_conceptos": [
+        {
+          "key": "dsge",
+          "label": "DSGE",
+          "n": 3
+        },
+        {
+          "key": "new_keynesian",
+          "label": "New Keynesian",
+          "n": 1
+        },
+        {
+          "key": "bayesian",
+          "label": "Bayesian",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2017,
+          "n_papers": 2,
+          "n_nk": 2
+        }
+      ]
+    },
+    {
+      "autor_id": 564,
+      "nombre": "André Marine Charlotte",
+      "total_papers": 3,
+      "n_nk": 3,
+      "pct_nk": 100.0,
+      "nk_score": 5,
+      "primer_nk": 2020,
+      "top_conceptos": [
+        {
+          "key": "new_keynesian",
+          "label": "New Keynesian",
+          "n": 2
+        },
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        },
+        {
+          "key": "output_gap",
+          "label": "Output gap",
+          "n": 1
+        },
+        {
+          "key": "rational_exp",
+          "label": "Rational exp.",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2021,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 664,
+      "nombre": "Garcés Díaz Daniel",
+      "total_papers": 8,
+      "n_nk": 4,
+      "pct_nk": 50.0,
+      "nk_score": 4,
+      "primer_nk": 2003,
+      "top_conceptos": [
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 3
+        },
+        {
+          "key": "phillips_curve",
+          "label": "Phillips curve",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 1999,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2002,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2003,
+          "n_papers": 2,
+          "n_nk": 1
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 669,
+      "nombre": "García-Verdú Santiago",
+      "total_papers": 12,
+      "n_nk": 4,
+      "pct_nk": 33.3,
+      "nk_score": 4,
+      "primer_nk": 2011,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 2
+        },
+        {
+          "key": "dsge",
+          "label": "DSGE",
+          "n": 1
+        },
+        {
+          "key": "output_gap",
+          "label": "Output gap",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2010,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2011,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2014,
+          "n_papers": 3,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2018,
+          "n_papers": 4,
+          "n_nk": 2
+        }
+      ]
+    },
+    {
+      "autor_id": 848,
+      "nombre": "Sámano Daniel",
+      "total_papers": 9,
+      "n_nk": 4,
+      "pct_nk": 44.4,
+      "nk_score": 4,
+      "primer_nk": 2011,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 3
+        },
+        {
+          "key": "taylor_rule",
+          "label": "Taylor rule",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2009,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2011,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2014,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2016,
+          "n_papers": 2,
+          "n_nk": 1
+        },
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2019,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 609,
+      "nombre": "Carrillo Julio A.",
+      "total_papers": 8,
+      "n_nk": 3,
+      "pct_nk": 37.5,
+      "nk_score": 4,
+      "primer_nk": 2013,
+      "top_conceptos": [
+        {
+          "key": "new_keynesian",
+          "label": "New Keynesian",
+          "n": 2
+        },
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        },
+        {
+          "key": "dsge",
+          "label": "DSGE",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2014,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2021,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2025,
+          "n_papers": 1,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 775,
+      "nombre": "Noriega Antonio E.",
+      "total_papers": 11,
+      "n_nk": 3,
+      "pct_nk": 27.3,
+      "nk_score": 3,
+      "primer_nk": 2007,
+      "top_conceptos": [
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 3
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2006,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2007,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2008,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2009,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2010,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2011,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 2,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 552,
+      "nombre": "Aguilar-Argaez Ana María",
+      "total_papers": 5,
+      "n_nk": 2,
+      "pct_nk": 40.0,
+      "nk_score": 3,
+      "primer_nk": 2014,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 2
+        },
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2014,
+          "n_papers": 2,
+          "n_nk": 1
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2020,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 651,
+      "nombre": "Elizondo Rocío",
+      "total_papers": 10,
+      "n_nk": 2,
+      "pct_nk": 20.0,
+      "nk_score": 3,
+      "primer_nk": 2016,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 2
+        },
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2008,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2009,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2025,
+          "n_papers": 1,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 671,
+      "nombre": "Gaytán González Alejandro",
+      "total_papers": 4,
+      "n_nk": 1,
+      "pct_nk": 25.0,
+      "nk_score": 3,
+      "primer_nk": 2006,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        },
+        {
+          "key": "output_gap",
+          "label": "Output gap",
+          "n": 1
+        },
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 1998,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2005,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2006,
+          "n_papers": 1,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 683,
+      "nombre": "González García Jesús R.",
+      "total_papers": 3,
+      "n_nk": 1,
+      "pct_nk": 33.3,
+      "nk_score": 3,
+      "primer_nk": 2006,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        },
+        {
+          "key": "output_gap",
+          "label": "Output gap",
+          "n": 1
+        },
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2002,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2006,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2007,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 1217,
+      "nombre": "Ángelo Gutiérrez-Daza",
+      "total_papers": 2,
+      "n_nk": 1,
+      "pct_nk": 50.0,
+      "nk_score": 3,
+      "primer_nk": 2024,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        },
+        {
+          "key": "new_keynesian",
+          "label": "New Keynesian",
+          "n": 1
+        },
+        {
+          "key": "phillips_curve",
+          "label": "Phillips curve",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2024,
+          "n_papers": 2,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 567,
+      "nombre": "Antón Sarabia Arturo",
+      "total_papers": 3,
+      "n_nk": 2,
+      "pct_nk": 66.7,
+      "nk_score": 2,
+      "primer_nk": 2007,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        },
+        {
+          "key": "financial_frictions",
+          "label": "Fin. frictions",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2007,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2008,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 631,
+      "nombre": "Cortés Espada Josué Fernando",
+      "total_papers": 9,
+      "n_nk": 2,
+      "pct_nk": 22.2,
+      "nk_score": 2,
+      "primer_nk": 2008,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 2
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2006,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2007,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2008,
+          "n_papers": 3,
+          "n_nk": 2
+        },
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2019,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 702,
+      "nombre": "Hernández Vega Marco A.",
+      "total_papers": 11,
+      "n_nk": 2,
+      "pct_nk": 18.2,
+      "nk_score": 2,
+      "primer_nk": 2012,
+      "top_conceptos": [
+        {
+          "key": "dsge",
+          "label": "DSGE",
+          "n": 1
+        },
+        {
+          "key": "calvo",
+          "label": "Calvo/sticky",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2018,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2019,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2021,
+          "n_papers": 2,
+          "n_nk": 1
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2025,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    }
+  ],
+  "todos": [
+    {
+      "autor_id": 814,
+      "nombre": "Ramos Francia Manuel",
+      "total_papers": 31,
+      "n_nk": 14,
+      "pct_nk": 45.2,
+      "nk_score": 15,
+      "primer_nk": 2005,
+      "top_conceptos": [
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 7
+        },
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 4
+        },
+        {
+          "key": "dsge",
+          "label": "DSGE",
+          "n": 2
+        },
+        {
+          "key": "new_keynesian",
+          "label": "New Keynesian",
+          "n": 1
+        },
+        {
+          "key": "phillips_curve",
+          "label": "Phillips curve",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2004,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2005,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2006,
+          "n_papers": 2,
+          "n_nk": 1
+        },
+        {
+          "anio": 2007,
+          "n_papers": 3,
+          "n_nk": 2
+        },
+        {
+          "anio": 2008,
+          "n_papers": 7,
+          "n_nk": 2
+        },
+        {
+          "anio": 2009,
+          "n_papers": 4,
+          "n_nk": 2
+        },
+        {
+          "anio": 2011,
+          "n_papers": 2,
+          "n_nk": 2
+        },
+        {
+          "anio": 2014,
+          "n_papers": 3,
+          "n_nk": 1
+        },
+        {
+          "anio": 2015,
+          "n_papers": 3,
+          "n_nk": 1
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2018,
+          "n_papers": 4,
+          "n_nk": 2
+        }
+      ]
+    },
+    {
+      "autor_id": 603,
+      "nombre": "Capistrán Carlos",
+      "total_papers": 16,
+      "n_nk": 7,
+      "pct_nk": 43.8,
+      "nk_score": 8,
+      "primer_nk": 2006,
+      "top_conceptos": [
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 4
+        },
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 3
+        },
+        {
+          "key": "new_keynesian",
+          "label": "New Keynesian",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2006,
+          "n_papers": 4,
+          "n_nk": 2
+        },
+        {
+          "anio": 2007,
+          "n_papers": 2,
+          "n_nk": 1
+        },
+        {
+          "anio": 2008,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2009,
+          "n_papers": 4,
+          "n_nk": 1
+        },
+        {
+          "anio": 2010,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2011,
+          "n_papers": 2,
+          "n_nk": 2
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 635,
+      "nombre": "Cuadra Gabriel",
+      "total_papers": 12,
+      "n_nk": 7,
+      "pct_nk": 58.3,
+      "nk_score": 7,
+      "primer_nk": 2007,
+      "top_conceptos": [
+        {
+          "key": "dsge",
+          "label": "DSGE",
+          "n": 5
+        },
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        },
+        {
+          "key": "new_keynesian",
+          "label": "New Keynesian",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2006,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2007,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2008,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2011,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2014,
+          "n_papers": 3,
+          "n_nk": 2
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2021,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 836,
+      "nombre": "Roldán-Peña Jessica",
+      "total_papers": 8,
+      "n_nk": 5,
+      "pct_nk": 62.5,
+      "nk_score": 7,
+      "primer_nk": 2012,
+      "top_conceptos": [
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 2
+        },
+        {
+          "key": "financial_frictions",
+          "label": "Fin. frictions",
+          "n": 2
+        },
+        {
+          "key": "new_keynesian",
+          "label": "New Keynesian",
+          "n": 1
+        },
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        },
+        {
+          "key": "dsge",
+          "label": "DSGE",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2017,
+          "n_papers": 3,
+          "n_nk": 2
+        },
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 891,
+      "nombre": "Torres García Alberto",
+      "total_papers": 11,
+      "n_nk": 5,
+      "pct_nk": 45.5,
+      "nk_score": 5,
+      "primer_nk": 2002,
+      "top_conceptos": [
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 3
+        },
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        },
+        {
+          "key": "phillips_curve",
+          "label": "Phillips curve",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2000,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2001,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2002,
+          "n_papers": 2,
+          "n_nk": 1
+        },
+        {
+          "anio": 2003,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2005,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2006,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2008,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 776,
+      "nombre": "Nuguer Victoria",
+      "total_papers": 4,
+      "n_nk": 4,
+      "pct_nk": 100.0,
+      "nk_score": 5,
+      "primer_nk": 2015,
+      "top_conceptos": [
+        {
+          "key": "dsge",
+          "label": "DSGE",
+          "n": 3
+        },
+        {
+          "key": "new_keynesian",
+          "label": "New Keynesian",
+          "n": 1
+        },
+        {
+          "key": "bayesian",
+          "label": "Bayesian",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2017,
+          "n_papers": 2,
+          "n_nk": 2
+        }
+      ]
+    },
+    {
+      "autor_id": 564,
+      "nombre": "André Marine Charlotte",
+      "total_papers": 3,
+      "n_nk": 3,
+      "pct_nk": 100.0,
+      "nk_score": 5,
+      "primer_nk": 2020,
+      "top_conceptos": [
+        {
+          "key": "new_keynesian",
+          "label": "New Keynesian",
+          "n": 2
+        },
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        },
+        {
+          "key": "output_gap",
+          "label": "Output gap",
+          "n": 1
+        },
+        {
+          "key": "rational_exp",
+          "label": "Rational exp.",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2021,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 664,
+      "nombre": "Garcés Díaz Daniel",
+      "total_papers": 8,
+      "n_nk": 4,
+      "pct_nk": 50.0,
+      "nk_score": 4,
+      "primer_nk": 2003,
+      "top_conceptos": [
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 3
+        },
+        {
+          "key": "phillips_curve",
+          "label": "Phillips curve",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 1999,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2002,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2003,
+          "n_papers": 2,
+          "n_nk": 1
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 669,
+      "nombre": "García-Verdú Santiago",
+      "total_papers": 12,
+      "n_nk": 4,
+      "pct_nk": 33.3,
+      "nk_score": 4,
+      "primer_nk": 2011,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 2
+        },
+        {
+          "key": "dsge",
+          "label": "DSGE",
+          "n": 1
+        },
+        {
+          "key": "output_gap",
+          "label": "Output gap",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2010,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2011,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2014,
+          "n_papers": 3,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2018,
+          "n_papers": 4,
+          "n_nk": 2
+        }
+      ]
+    },
+    {
+      "autor_id": 848,
+      "nombre": "Sámano Daniel",
+      "total_papers": 9,
+      "n_nk": 4,
+      "pct_nk": 44.4,
+      "nk_score": 4,
+      "primer_nk": 2011,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 3
+        },
+        {
+          "key": "taylor_rule",
+          "label": "Taylor rule",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2009,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2011,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2014,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2016,
+          "n_papers": 2,
+          "n_nk": 1
+        },
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2019,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 609,
+      "nombre": "Carrillo Julio A.",
+      "total_papers": 8,
+      "n_nk": 3,
+      "pct_nk": 37.5,
+      "nk_score": 4,
+      "primer_nk": 2013,
+      "top_conceptos": [
+        {
+          "key": "new_keynesian",
+          "label": "New Keynesian",
+          "n": 2
+        },
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        },
+        {
+          "key": "dsge",
+          "label": "DSGE",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2014,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2021,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2025,
+          "n_papers": 1,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 775,
+      "nombre": "Noriega Antonio E.",
+      "total_papers": 11,
+      "n_nk": 3,
+      "pct_nk": 27.3,
+      "nk_score": 3,
+      "primer_nk": 2007,
+      "top_conceptos": [
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 3
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2006,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2007,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2008,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2009,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2010,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2011,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 2,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 552,
+      "nombre": "Aguilar-Argaez Ana María",
+      "total_papers": 5,
+      "n_nk": 2,
+      "pct_nk": 40.0,
+      "nk_score": 3,
+      "primer_nk": 2014,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 2
+        },
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2014,
+          "n_papers": 2,
+          "n_nk": 1
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2020,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 651,
+      "nombre": "Elizondo Rocío",
+      "total_papers": 10,
+      "n_nk": 2,
+      "pct_nk": 20.0,
+      "nk_score": 3,
+      "primer_nk": 2016,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 2
+        },
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2008,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2009,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2025,
+          "n_papers": 1,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 671,
+      "nombre": "Gaytán González Alejandro",
+      "total_papers": 4,
+      "n_nk": 1,
+      "pct_nk": 25.0,
+      "nk_score": 3,
+      "primer_nk": 2006,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        },
+        {
+          "key": "output_gap",
+          "label": "Output gap",
+          "n": 1
+        },
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 1998,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2005,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2006,
+          "n_papers": 1,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 683,
+      "nombre": "González García Jesús R.",
+      "total_papers": 3,
+      "n_nk": 1,
+      "pct_nk": 33.3,
+      "nk_score": 3,
+      "primer_nk": 2006,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        },
+        {
+          "key": "output_gap",
+          "label": "Output gap",
+          "n": 1
+        },
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2002,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2006,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2007,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 1217,
+      "nombre": "Ángelo Gutiérrez-Daza",
+      "total_papers": 2,
+      "n_nk": 1,
+      "pct_nk": 50.0,
+      "nk_score": 3,
+      "primer_nk": 2024,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        },
+        {
+          "key": "new_keynesian",
+          "label": "New Keynesian",
+          "n": 1
+        },
+        {
+          "key": "phillips_curve",
+          "label": "Phillips curve",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2024,
+          "n_papers": 2,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 567,
+      "nombre": "Antón Sarabia Arturo",
+      "total_papers": 3,
+      "n_nk": 2,
+      "pct_nk": 66.7,
+      "nk_score": 2,
+      "primer_nk": 2007,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        },
+        {
+          "key": "financial_frictions",
+          "label": "Fin. frictions",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2007,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2008,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 631,
+      "nombre": "Cortés Espada Josué Fernando",
+      "total_papers": 9,
+      "n_nk": 2,
+      "pct_nk": 22.2,
+      "nk_score": 2,
+      "primer_nk": 2008,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 2
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2006,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2007,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2008,
+          "n_papers": 3,
+          "n_nk": 2
+        },
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2019,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 702,
+      "nombre": "Hernández Vega Marco A.",
+      "total_papers": 11,
+      "n_nk": 2,
+      "pct_nk": 18.2,
+      "nk_score": 2,
+      "primer_nk": 2012,
+      "top_conceptos": [
+        {
+          "key": "dsge",
+          "label": "DSGE",
+          "n": 1
+        },
+        {
+          "key": "calvo",
+          "label": "Calvo/sticky",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2018,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2019,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2021,
+          "n_papers": 2,
+          "n_nk": 1
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2025,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 715,
+      "nombre": "Kochen Federico",
+      "total_papers": 3,
+      "n_nk": 2,
+      "pct_nk": 66.7,
+      "nk_score": 2,
+      "primer_nk": 2016,
+      "top_conceptos": [
+        {
+          "key": "calvo",
+          "label": "Calvo/sticky",
+          "n": 1
+        },
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2016,
+          "n_papers": 3,
+          "n_nk": 2
+        }
+      ]
+    },
+    {
+      "autor_id": 731,
+      "nombre": "López-Martín Bernabé",
+      "total_papers": 6,
+      "n_nk": 2,
+      "pct_nk": 33.3,
+      "nk_score": 2,
+      "primer_nk": 2017,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        },
+        {
+          "key": "dsge",
+          "label": "DSGE",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2019,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 749,
+      "nombre": "Martínez-Ovando Juan Carlos",
+      "total_papers": 4,
+      "n_nk": 2,
+      "pct_nk": 50.0,
+      "nk_score": 2,
+      "primer_nk": 2011,
+      "top_conceptos": [
+        {
+          "key": "bayesian",
+          "label": "Bayesian",
+          "n": 2
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2011,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2014,
+          "n_papers": 2,
+          "n_nk": 1
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 654,
+      "nombre": "Fernandez-Corugedo Emilio",
+      "total_papers": 2,
+      "n_nk": 1,
+      "pct_nk": 50.0,
+      "nk_score": 2,
+      "primer_nk": 2007,
+      "top_conceptos": [
+        {
+          "key": "new_keynesian",
+          "label": "New Keynesian",
+          "n": 1
+        },
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2007,
+          "n_papers": 2,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 874,
+      "nombre": "Solórzano Diego",
+      "total_papers": 4,
+      "n_nk": 1,
+      "pct_nk": 25.0,
+      "nk_score": 2,
+      "primer_nk": 2020,
+      "top_conceptos": [
+        {
+          "key": "calvo",
+          "label": "Calvo/sticky",
+          "n": 1
+        },
+        {
+          "key": "new_keynesian",
+          "label": "New Keynesian",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2023,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 582,
+      "nombre": "Bazdresch Santiago",
+      "total_papers": 5,
+      "n_nk": 1,
+      "pct_nk": 20.0,
+      "nk_score": 1,
+      "primer_nk": 2023,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 1999,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2000,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2002,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 613,
+      "nombre": "Castellanos Pascacio Sara Gabriela",
+      "total_papers": 6,
+      "n_nk": 1,
+      "pct_nk": 16.7,
+      "nk_score": 1,
+      "primer_nk": 2002,
+      "top_conceptos": [
+        {
+          "key": "rational_exp",
+          "label": "Rational exp.",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2000,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2002,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2004,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 621,
+      "nombre": "Chiquiar Daniel",
+      "total_papers": 21,
+      "n_nk": 1,
+      "pct_nk": 4.8,
+      "nk_score": 1,
+      "primer_nk": 2007,
+      "top_conceptos": [
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2004,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2007,
+          "n_papers": 2,
+          "n_nk": 1
+        },
+        {
+          "anio": 2008,
+          "n_papers": 3,
+          "n_nk": 0
+        },
+        {
+          "anio": 2009,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2010,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2017,
+          "n_papers": 4,
+          "n_nk": 0
+        },
+        {
+          "anio": 2019,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 623,
+      "nombre": "Colunga L. Fernando",
+      "total_papers": 3,
+      "n_nk": 1,
+      "pct_nk": 33.3,
+      "nk_score": 1,
+      "primer_nk": 2023,
+      "top_conceptos": [
+        {
+          "key": "bayesian",
+          "label": "Bayesian",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2024,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 624,
+      "nombre": "Cóndor Richard",
+      "total_papers": 4,
+      "n_nk": 1,
+      "pct_nk": 25.0,
+      "nk_score": 1,
+      "primer_nk": 2023,
+      "top_conceptos": [
+        {
+          "key": "financial_frictions",
+          "label": "Fin. frictions",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2019,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2021,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 685,
+      "nombre": "González Méndez Héctor E.",
+      "total_papers": 7,
+      "n_nk": 1,
+      "pct_nk": 14.3,
+      "nk_score": 1,
+      "primer_nk": 1978,
+      "top_conceptos": [
+        {
+          "key": "bayesian",
+          "label": "Bayesian",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 1978,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 1980,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 1981,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 1982,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 703,
+      "nombre": "Ibarra-Ramírez Raúl",
+      "total_papers": 11,
+      "n_nk": 1,
+      "pct_nk": 9.1,
+      "nk_score": 1,
+      "primer_nk": 2011,
+      "top_conceptos": [
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2010,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2011,
+          "n_papers": 3,
+          "n_nk": 1
+        },
+        {
+          "anio": 2017,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2019,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2021,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 710,
+      "nombre": "Juárez González Laura",
+      "total_papers": 4,
+      "n_nk": 1,
+      "pct_nk": 25.0,
+      "nk_score": 1,
+      "primer_nk": 2015,
+      "top_conceptos": [
+        {
+          "key": "financial_frictions",
+          "label": "Fin. frictions",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2014,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 722,
+      "nombre": "Leal-Ordoñez Julio C.",
+      "total_papers": 8,
+      "n_nk": 1,
+      "pct_nk": 12.5,
+      "nk_score": 1,
+      "primer_nk": 2017,
+      "top_conceptos": [
+        {
+          "key": "dsge",
+          "label": "DSGE",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2014,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2017,
+          "n_papers": 2,
+          "n_nk": 1
+        },
+        {
+          "anio": 2019,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 723,
+      "nombre": "Leal Vizcaíno René",
+      "total_papers": 4,
+      "n_nk": 1,
+      "pct_nk": 25.0,
+      "nk_score": 1,
+      "primer_nk": 2019,
+      "top_conceptos": [
+        {
+          "key": "bayesian",
+          "label": "Bayesian",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2019,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 724,
+      "nombre": "Lelo de Larrea Alejandra",
+      "total_papers": 2,
+      "n_nk": 1,
+      "pct_nk": 50.0,
+      "nk_score": 1,
+      "primer_nk": 2023,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 732,
+      "nombre": "López Moctezuma Gabriel",
+      "total_papers": 2,
+      "n_nk": 1,
+      "pct_nk": 50.0,
+      "nk_score": 1,
+      "primer_nk": 2008,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2008,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2010,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 745,
+      "nombre": "Martínez André",
+      "total_papers": 5,
+      "n_nk": 1,
+      "pct_nk": 20.0,
+      "nk_score": 1,
+      "primer_nk": 2017,
+      "top_conceptos": [
+        {
+          "key": "dsge",
+          "label": "DSGE",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2009,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2010,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2011,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 757,
+      "nombre": "Messmacher Linartas Miguel",
+      "total_papers": 3,
+      "n_nk": 1,
+      "pct_nk": 33.3,
+      "nk_score": 1,
+      "primer_nk": 2003,
+      "top_conceptos": [
+        {
+          "key": "phillips_curve",
+          "label": "Phillips curve",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2000,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2003,
+          "n_papers": 2,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 771,
+      "nombre": "Murillo Garza José Antonio",
+      "total_papers": 4,
+      "n_nk": 1,
+      "pct_nk": 25.0,
+      "nk_score": 1,
+      "primer_nk": 2012,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 1995,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1998,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2012,
+          "n_papers": 2,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 780,
+      "nombre": "María José Orraca",
+      "total_papers": 4,
+      "n_nk": 1,
+      "pct_nk": 25.0,
+      "nk_score": 1,
+      "primer_nk": 2022,
+      "top_conceptos": [
+        {
+          "key": "output_gap",
+          "label": "Output gap",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2024,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2025,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 784,
+      "nombre": "Oviedo Moguel Rodolfo",
+      "total_papers": 3,
+      "n_nk": 1,
+      "pct_nk": 33.3,
+      "nk_score": 1,
+      "primer_nk": 2023,
+      "top_conceptos": [
+        {
+          "key": "financial_frictions",
+          "label": "Fin. frictions",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2024,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 811,
+      "nombre": "Quiroga Miroslava",
+      "total_papers": 3,
+      "n_nk": 1,
+      "pct_nk": 33.3,
+      "nk_score": 1,
+      "primer_nk": 2025,
+      "top_conceptos": [
+        {
+          "key": "dsge",
+          "label": "DSGE",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2017,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2025,
+          "n_papers": 1,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 812,
+      "nombre": "Ramírez Claudia",
+      "total_papers": 5,
+      "n_nk": 1,
+      "pct_nk": 20.0,
+      "nk_score": 1,
+      "primer_nk": 2014,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2014,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2019,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 833,
+      "nombre": "Rodríguez-Pérez Cid Alonso",
+      "total_papers": 5,
+      "n_nk": 1,
+      "pct_nk": 20.0,
+      "nk_score": 1,
+      "primer_nk": 2015,
+      "top_conceptos": [
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2011,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 2,
+          "n_nk": 1
+        },
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 853,
+      "nombre": "Sánchez-Martínez Manuel",
+      "total_papers": 2,
+      "n_nk": 1,
+      "pct_nk": 50.0,
+      "nk_score": 1,
+      "primer_nk": 2018,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2018,
+          "n_papers": 2,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 854,
+      "nombre": "Sánchez-Romeu Paula",
+      "total_papers": 2,
+      "n_nk": 1,
+      "pct_nk": 50.0,
+      "nk_score": 1,
+      "primer_nk": 2012,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 860,
+      "nombre": "Sapriza Horacio",
+      "total_papers": 4,
+      "n_nk": 1,
+      "pct_nk": 25.0,
+      "nk_score": 1,
+      "primer_nk": 2007,
+      "top_conceptos": [
+        {
+          "key": "dsge",
+          "label": "DSGE",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2006,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2007,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2024,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 887,
+      "nombre": "Timmermann Allan",
+      "total_papers": 3,
+      "n_nk": 1,
+      "pct_nk": 33.3,
+      "nk_score": 1,
+      "primer_nk": 2006,
+      "top_conceptos": [
+        {
+          "key": "inflation_exp",
+          "label": "Inflation expectations",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2006,
+          "n_papers": 2,
+          "n_nk": 1
+        },
+        {
+          "anio": 2010,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 888,
+      "nombre": "Tobal Martín",
+      "total_papers": 8,
+      "n_nk": 1,
+      "pct_nk": 12.5,
+      "nk_score": 1,
+      "primer_nk": 2016,
+      "top_conceptos": [
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2016,
+          "n_papers": 3,
+          "n_nk": 1
+        },
+        {
+          "anio": 2017,
+          "n_papers": 3,
+          "n_nk": 0
+        },
+        {
+          "anio": 2019,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 889,
+      "nombre": "Torre Cepeda Leonardo E.",
+      "total_papers": 10,
+      "n_nk": 1,
+      "pct_nk": 10.0,
+      "nk_score": 1,
+      "primer_nk": 2023,
+      "top_conceptos": [
+        {
+          "key": "bayesian",
+          "label": "Bayesian",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2014,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2017,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2020,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2022,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2024,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 917,
+      "nombre": "Yslas Renato",
+      "total_papers": 2,
+      "n_nk": 1,
+      "pct_nk": 50.0,
+      "nk_score": 1,
+      "primer_nk": 2016,
+      "top_conceptos": [
+        {
+          "key": "inflation_targeting",
+          "label": "Inflation targeting",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2016,
+          "n_papers": 2,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 941,
+      "nombre": "Lorenzo Aldeco Leo",
+      "total_papers": 4,
+      "n_nk": 1,
+      "pct_nk": 25.0,
+      "nk_score": 1,
+      "primer_nk": 2025,
+      "top_conceptos": [
+        {
+          "key": "phillips_curve",
+          "label": "Phillips curve",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2025,
+          "n_papers": 2,
+          "n_nk": 1
+        }
+      ]
+    },
+    {
+      "autor_id": 949,
+      "nombre": "Lenin Arango-Castillo",
+      "total_papers": 4,
+      "n_nk": 1,
+      "pct_nk": 25.0,
+      "nk_score": 1,
+      "primer_nk": 2022,
+      "top_conceptos": [
+        {
+          "key": "output_gap",
+          "label": "Output gap",
+          "n": 1
+        }
+      ],
+      "evolucion": [
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 1
+        },
+        {
+          "anio": 2024,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2025,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 548,
+      "nombre": "Abarca Gustavo",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2010,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 556,
+      "nombre": "Alba Carlos",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2021,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 557,
+      "nombre": "Alcaraz Carlo",
+      "total_papers": 8,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2006,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2008,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2010,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 558,
+      "nombre": "Alexandrova-Kabadjova Biliana",
+      "total_papers": 4,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2012,
+          "n_papers": 3,
+          "n_nk": 0
+        },
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 560,
+      "nombre": "Altimir Oscar",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1981,
+          "n_papers": 3,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 561,
+      "nombre": "Alvarado Jorge",
+      "total_papers": 5,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2017,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2019,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 562,
+      "nombre": "Amoroso Nicolás",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2008,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 568,
+      "nombre": "Aportela Rodríguez Fernando",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2001,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2002,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 572,
+      "nombre": "Arnaud Enrique",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1981,
+          "n_papers": 3,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 575,
+      "nombre": "Backal Daniel",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1997,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1998,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 579,
+      "nombre": "Bátiz-Zuk Enrique",
+      "total_papers": 4,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2021,
+          "n_papers": 3,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 583,
+      "nombre": "Benavides Guillermo",
+      "total_papers": 7,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2006,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2009,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2010,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 584,
+      "nombre": "Bergsman Joel",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1981,
+          "n_papers": 3,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 585,
+      "nombre": "Bernal Verdugo Lorenzo E.",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2007,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 593,
+      "nombre": "Bush Georgia",
+      "total_papers": 4,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2019,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2021,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 594,
+      "nombre": "Cabral Torres René",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2019,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 597,
+      "nombre": "Calderón Gabriela",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2014,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 601,
+      "nombre": "Campos-Ortiz Francisco",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 602,
+      "nombre": "Cañón Salazar Carlos Iván",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2016,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2021,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 608,
+      "nombre": "Carriles Rubio Jorge",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1979,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1991,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 610,
+      "nombre": "Carstens Carstens Agustín",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1996,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1997,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1999,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 612,
+      "nombre": "Casco José L.",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 614,
+      "nombre": "Cebreros Alfonso",
+      "total_papers": 7,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2019,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2020,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 616,
+      "nombre": "Cervantes Jesús",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1981,
+          "n_papers": 3,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 617,
+      "nombre": "Chapa Cantú Joana C.",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2019,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 619,
+      "nombre": "Chávez Juan Carlos",
+      "total_papers": 5,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 627,
+      "nombre": "Benjamín Contreras-Astiazarán",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2025,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 628,
+      "nombre": "Contreras Juan",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2014,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 630,
+      "nombre": "Córdoba José",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1979,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 633,
+      "nombre": "Covarrubias Enrique",
+      "total_papers": 6,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2010,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2011,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2013,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 639,
+      "nombre": "Dal Borgo Mariela",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2021,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 643,
+      "nombre": "Delajara Marcelo",
+      "total_papers": 4,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2010,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2012,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 645,
+      "nombre": "Del Villar Rafael",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1997,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1998,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2001,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 646,
+      "nombre": "de Melo Gioia",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2014,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 648,
+      "nombre": "Díez-Canedo Juan",
+      "total_papers": 5,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1980,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1981,
+          "n_papers": 4,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 652,
+      "nombre": "Engle Robert F.",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2009,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 653,
+      "nombre": "Fernández Bujanda León",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 657,
+      "nombre": "Flores Segovia Miguel A.",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 658,
+      "nombre": "Fonseca Felipe J.",
+      "total_papers": 5,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2018,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 663,
+      "nombre": "Gamboa González Rafael",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1997,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 666,
+      "nombre": "García Ana Laura",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2021,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 667,
+      "nombre": "Garcia-Medina Cecilia",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2016,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 668,
+      "nombre": "García Verdú Rodrigo",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2004,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2005,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2006,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 673,
+      "nombre": "Gibson William",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1981,
+          "n_papers": 3,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 680,
+      "nombre": "Gómez Octavio",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1981,
+          "n_papers": 3,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 684,
+      "nombre": "Eva González",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 686,
+      "nombre": "Graf Noriega Juan Pablo",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1995,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1996,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 689,
+      "nombre": "Guerra de Luna Alfonso",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1997,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2001,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 690,
+      "nombre": "Guerrero Santiago",
+      "total_papers": 8,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2012,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2014,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2016,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 691,
+      "nombre": "Guerrero Víctor M.",
+      "total_papers": 13,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1980,
+          "n_papers": 3,
+          "n_nk": 0
+        },
+        {
+          "anio": 1981,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 1982,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1983,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 1984,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1987,
+          "n_papers": 3,
+          "n_nk": 0
+        },
+        {
+          "anio": 1988,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 695,
+      "nombre": "Heffner-Rodríguez Aldo",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2020,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 696,
+      "nombre": "Hernández del Valle Gerardo",
+      "total_papers": 6,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2014,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 697,
+      "nombre": "Hernández Juan R.",
+      "total_papers": 5,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2014,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2021,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 698,
+      "nombre": "Hernández Manuel A.",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2011,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 704,
+      "nombre": "Ize Alain",
+      "total_papers": 9,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1978,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1979,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1980,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 1981,
+          "n_papers": 3,
+          "n_nk": 0
+        },
+        {
+          "anio": 1982,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1983,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 711,
+      "nombre": "Juárez-Torres Miriam",
+      "total_papers": 12,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2016,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2019,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2021,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2025,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 713,
+      "nombre": "Kaiser Karen",
+      "total_papers": 5,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2010,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2011,
+          "n_papers": 3,
+          "n_nk": 0
+        },
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 720,
+      "nombre": "Lara Sánchez José Luis",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2021,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 725,
+      "nombre": "Lever Guzmán Carlos",
+      "total_papers": 4,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2010,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2011,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2014,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 726,
+      "nombre": "Leyva Gustavo",
+      "total_papers": 4,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2018,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2021,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 729,
+      "nombre": "Llamosas-Rosas Irving",
+      "total_papers": 8,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2018,
+          "n_papers": 3,
+          "n_nk": 0
+        },
+        {
+          "anio": 2021,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2025,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 733,
+      "nombre": "López Noria Gabriela",
+      "total_papers": 6,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2011,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2019,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2021,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 734,
+      "nombre": "López Ornelas Luis Fernando",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2021,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 737,
+      "nombre": "Lusting Nora",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1981,
+          "n_papers": 3,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 738,
+      "nombre": "Mac Donald Diana E.",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 740,
+      "nombre": "Maldonado Víctor",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1981,
+          "n_papers": 3,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 744,
+      "nombre": "Márquez Diez-Canedo Javier",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1999,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2002,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 751,
+      "nombre": "Martínez Trigueros Lorenza",
+      "total_papers": 6,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1995,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1998,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2000,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2001,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2002,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2004,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 753,
+      "nombre": "Mateos Hanel Calixto",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1997,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1998,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 766,
+      "nombre": "Morales-Ramos Eduardo",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2009,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2011,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 769,
+      "nombre": "Mosqueda Chávez Marco Tulio",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2019,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 772,
+      "nombre": "Musacchio Aldo",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2009,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2010,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 773,
+      "nombre": "Naranjo González Mauricio",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1995,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1996,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 774,
+      "nombre": "Negrin José Luis",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2000,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2001,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2002,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 781,
+      "nombre": "Ortiz Martínez Guillermo",
+      "total_papers": 9,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1978,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1979,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 1980,
+          "n_papers": 4,
+          "n_nk": 0
+        },
+        {
+          "anio": 1981,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 782,
+      "nombre": "Osuna Gómez Daniel",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2021,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 787,
+      "nombre": "Padilla Alberto",
+      "total_papers": 6,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2009,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2014,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 788,
+      "nombre": "Padilla Pablo",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2008,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2009,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 796,
+      "nombre": "Pérez-Cervantes Fernando",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2014,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 797,
+      "nombre": "Pérez López Elguézabal Alejandro",
+      "total_papers": 6,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1990,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1995,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1996,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1999,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2002,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2004,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 798,
+      "nombre": "Pérez Pérez Jorge",
+      "total_papers": 11,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2019,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2022,
+          "n_papers": 3,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 3,
+          "n_nk": 0
+        },
+        {
+          "anio": 2025,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 807,
+      "nombre": "Puggioni Daniela",
+      "total_papers": 4,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2019,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 808,
+      "nombre": "Puigvert Jonathan",
+      "total_papers": 4,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2019,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2021,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 816,
+      "nombre": "Ranciere Romain",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2005,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 817,
+      "nombre": "Rangel González Erick",
+      "total_papers": 11,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2014,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2018,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2019,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2021,
+          "n_papers": 3,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2025,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 818,
+      "nombre": "Rangel José Gonzalo",
+      "total_papers": 5,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2009,
+          "n_papers": 3,
+          "n_nk": 0
+        },
+        {
+          "anio": 2010,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 820,
+      "nombre": "Reyes Heroles Jesús",
+      "total_papers": 5,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1981,
+          "n_papers": 5,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 823,
+      "nombre": "Reynoso del Valle Alejandro",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1995,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1997,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 827,
+      "nombre": "Rizzo Sócrates",
+      "total_papers": 4,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1979,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1981,
+          "n_papers": 3,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 828,
+      "nombre": "Roa Mónica",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2017,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 829,
+      "nombre": "Rodríguez Arnulfo",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2007,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2008,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 830,
+      "nombre": "Rodriguez Maria Jose",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2019,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 832,
+      "nombre": "Rodríguez Pedro N.",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2007,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2008,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 834,
+      "nombre": "Rodríguez-Zamora Carolina",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2010,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2011,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 845,
+      "nombre": "Salcedo Alejandrina",
+      "total_papers": 12,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2010,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2020,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2022,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 846,
+      "nombre": "Salgado Alfredo",
+      "total_papers": 4,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 847,
+      "nombre": "Salgado Banda Héctor",
+      "total_papers": 4,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2005,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2007,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2008,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 852,
+      "nombre": "Sánchez García Oscar",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1999,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2001,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 855,
+      "nombre": "Sánchez Valadez Manuel",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2013,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 863,
+      "nombre": "Schwabe Rainer",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2011,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 864,
+      "nombre": "Schwartz Rosenthal Moisés",
+      "total_papers": 5,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1997,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1998,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1999,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2000,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 867,
+      "nombre": "Seira Enrique",
+      "total_papers": 4,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2014,
+          "n_papers": 3,
+          "n_nk": 0
+        },
+        {
+          "anio": 2015,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 869,
+      "nombre": "Sidaoui José Julián",
+      "total_papers": 5,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1979,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1980,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1981,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1982,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2009,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 870,
+      "nombre": "Sines Richard H.",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1979,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1980,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 872,
+      "nombre": "Solís Leopoldo",
+      "total_papers": 5,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1978,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1979,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1980,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 1981,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 873,
+      "nombre": "Solís-Robleda Francisco",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2012,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2013,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 882,
+      "nombre": "Taylor Lance",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1981,
+          "n_papers": 3,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 897,
+      "nombre": "Urrutia Carlos",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2018,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2021,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 899,
+      "nombre": "Vargas Aguayo Alberto",
+      "total_papers": 4,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1980,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1981,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1984,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1991,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 900,
+      "nombre": "Vaughan Daniel",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2013,
+          "n_papers": 3,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 905,
+      "nombre": "Ventosa-Santaulària Daniel",
+      "total_papers": 4,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2006,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2010,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2011,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 906,
+      "nombre": "Vera y Ferrer Gabriel",
+      "total_papers": 12,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1980,
+          "n_papers": 4,
+          "n_nk": 0
+        },
+        {
+          "anio": 1981,
+          "n_papers": 5,
+          "n_nk": 0
+        },
+        {
+          "anio": 1984,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1991,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1995,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 914,
+      "nombre": "Werner Wainfeld Alejandro",
+      "total_papers": 13,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1997,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 1998,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 1999,
+          "n_papers": 3,
+          "n_nk": 0
+        },
+        {
+          "anio": 2000,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2001,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2002,
+          "n_papers": 3,
+          "n_nk": 0
+        },
+        {
+          "anio": 2003,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 918,
+      "nombre": "Ysusi Carla",
+      "total_papers": 6,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2006,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2007,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2009,
+          "n_papers": 2,
+          "n_nk": 0
+        },
+        {
+          "anio": 2010,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 922,
+      "nombre": "Zazueta Borboa Francisco",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 923,
+      "nombre": "Zazueta César",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1981,
+          "n_papers": 3,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 927,
+      "nombre": "Díaz de León Carrillo Alejandro",
+      "total_papers": 5,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1997,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2000,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2001,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2003,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2004,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 929,
+      "nombre": "Gómez Zaldívar Manuel de Jesús",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2016,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2017,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 931,
+      "nombre": "Salas Martín del Campo Javier",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1980,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1982,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1983,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 932,
+      "nombre": "Brenda Samaniego",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2020,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 933,
+      "nombre": "Zedillo Ponce de León Ernesto",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 1978,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 1979,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 935,
+      "nombre": "Kroft Kory",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 936,
+      "nombre": "Laliberté Jean-William",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 937,
+      "nombre": "Notowidigdo Matthew J.",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 946,
+      "nombre": "Calderón Cerbón Mariana",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2022,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 951,
+      "nombre": "Miguel A. Mascarúa Lara",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2022,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 954,
+      "nombre": "Arellano Gonzalez Jesus",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2023,
+          "n_papers": 3,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 955,
+      "nombre": "Alex Rivadeneira",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2023,
+          "n_papers": 1,
+          "n_nk": 0
+        },
+        {
+          "anio": 2024,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 1172,
+      "nombre": "Héctor M. Núñez",
+      "total_papers": 3,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2025,
+          "n_papers": 3,
+          "n_nk": 0
+        }
+      ]
+    },
+    {
+      "autor_id": 1176,
+      "nombre": "Jesús Arellano-González",
+      "total_papers": 2,
+      "n_nk": 0,
+      "pct_nk": 0.0,
+      "nk_score": 0,
+      "primer_nk": null,
+      "top_conceptos": [],
+      "evolucion": [
+        {
+          "anio": 2025,
+          "n_papers": 2,
+          "n_nk": 0
+        }
+      ]
+    }
+  ]
+}

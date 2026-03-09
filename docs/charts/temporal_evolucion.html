@@ -150,6 +150,9 @@
   <div class="tab active" data-tab="vocabulario">Vocabulario NLP</div>
   <div class="tab" data-tab="citas">Citas por período</div>
   <div class="tab" data-tab="minsky">Minsky & lo ausente</div>
+  <div class="tab" data-tab="conceptos">Conceptos NK-DSGE ★</div>
+  <div class="tab" data-tab="vintage">Vintage de citas</div>
+  <div class="tab" data-tab="autores">Portadores del toolkit</div>
 </div>
 
 <div id="tooltip-t"></div>
@@ -275,11 +278,87 @@
 
 </div>
 
+<!-- ═══════════════ TAB 4: CONCEPTOS NK-DSGE ═══════════════ -->
+<div class="section" id="tab-conceptos" style="display:none">
+
+  <div class="section-title">Adopción del toolkit NK-DSGE en abstracts</div>
+  <div class="section-sub">
+    ¿Cuándo llegó cada pieza del toolkit New Keynesian al Banxico? Frecuencia anual de conceptos
+    clave en los 562 abstracts del corpus (1978–2025). Líneas suavizadas con promedio ponderado ±1 año.
+    Haz clic en la leyenda para mostrar/ocultar conceptos.
+  </div>
+
+  <div class="insight-cards" id="cards-conceptos"></div>
+
+  <div class="chart-wrap">
+    <div class="chart-title">% de papers por año que usan cada concepto NK-DSGE (2000–2025)</div>
+    <div id="legend-conceptos" class="legend-inline" style="flex-wrap:wrap; margin-bottom:20px; cursor:pointer;"></div>
+    <svg id="chart-conceptos" class="chart"></svg>
+    <div style="font-size:10px; color:#484f58; margin-top:8px;">
+      Nota: porcentajes bajos reflejan que la mayoría de los 562 papers DIBM no son sobre política monetaria.
+      En el subuniverso inflación (~100 papers), las frecuencias son ~5–6× más altas.
+    </div>
+  </div>
+
+  <div class="chart-wrap" style="margin-top:24px;">
+    <div class="chart-title">Primera aparición y penetración total de cada concepto</div>
+    <svg id="chart-conceptos-bar" class="chart"></svg>
+  </div>
+
+</div>
+
+<!-- ═══════════════ TAB 5: VINTAGE DE CITAS ═══════════════ -->
+<div class="section" id="tab-vintage" style="display:none">
+
+  <div class="section-title">Vintage de citas: ¿el Banxico cita trabajo cada vez más viejo?</div>
+  <div class="section-sub">
+    Edad mediana de las obras citadas (año del paper citante − año de publicación de la referencia).
+    Corpus: 1,879 referencias con año identificado, 85 papers de inflación (2001–2025).
+  </div>
+
+  <div class="insight-cards" id="cards-vintage"></div>
+
+  <div class="chart-wrap">
+    <div class="chart-title">Edad mediana de las referencias · por año del paper citante</div>
+    <svg id="chart-vintage-line" class="chart"></svg>
+  </div>
+
+  <div class="chart-wrap" style="margin-top:24px">
+    <div class="chart-title">¿Qué décadas concentran las citas? — distribución del "canon" bibliográfico</div>
+    <svg id="chart-vintage-canon" class="chart"></svg>
+  </div>
+
+</div>
+
+<!-- ═══════════════ TAB 6: PORTADORES DEL TOOLKIT ═══════════════ -->
+<div class="section" id="tab-autores" style="display:none">
+
+  <div class="section-title">¿Quién lleva el toolkit NK-DSGE al Banxico?</div>
+  <div class="section-sub">
+    Cruce de vocabulario NK-DSGE en abstracts con autoría. Autores con ≥2 papers en el corpus.
+    El "NK score" suma todos los hits de conceptos NK en sus abstracts — mide intensidad, no solo presencia.
+  </div>
+
+  <div class="insight-cards" id="cards-autores"></div>
+
+  <div class="chart-wrap">
+    <div class="chart-title">Top autores por intensidad NK-DSGE (nk_score = sum de conceptos en abstracts)</div>
+    <svg id="chart-autores-bar" class="chart"></svg>
+  </div>
+
+  <div class="chart-wrap" style="margin-top:24px">
+    <div class="chart-title">Concentración vs. productividad — cada autor: total papers vs % NK</div>
+    <div style="font-size:10px;color:#484f58;margin-bottom:8px">Tamaño del círculo = nk_score · Solo autores con ≥1 paper NK</div>
+    <svg id="chart-autores-scatter" class="chart"></svg>
+  </div>
+
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 <script>
 
 // ── Tabs ──────────────────────────────────────────────────────────────────────
-const TAB_IDS = ["vocabulario", "citas", "minsky"];
+const TAB_IDS = ["vocabulario", "citas", "minsky", "conceptos", "vintage", "autores"];
 function showTab(id) {
   TAB_IDS.forEach(t => {
     const el = document.getElementById("tab-" + t);
@@ -287,8 +366,11 @@ function showTab(id) {
   });
   document.querySelectorAll(".tab").forEach(t =>
     t.classList.toggle("active", t.dataset.tab === id));
-  if (id === "citas" && !window._citasDrawn) { drawCitas(); window._citasDrawn = true; }
-  if (id === "minsky" && !window._minskyDrawn) { drawMinsky(); window._minskyDrawn = true; }
+  if (id === "citas"     && !window._citasDrawn)     { drawCitas();      window._citasDrawn = true; }
+  if (id === "minsky"    && !window._minskyDrawn)    { drawMinsky();     window._minskyDrawn = true; }
+  if (id === "conceptos" && !window._conceptosDrawn) { drawConceptos();  window._conceptosDrawn = true; }
+  if (id === "vintage"   && !window._vintageDrawn)   { drawVintage();    window._vintageDrawn   = true; }
+  if (id === "autores"   && !window._autoresDrawn)   { drawAutores();    window._autoresDrawn   = true; }
 }
 document.querySelectorAll(".tab").forEach(tab => {
   tab.addEventListener("click", function() { showTab(this.dataset.tab); });
@@ -634,6 +716,544 @@ function drawMinsky() {
     grid.appendChild(makeVocabBox("Términos ORTODOXOS en abstracts", d.top_terminos_ortodoxos.slice(0,12), "#4ECDC4"));
     grid.appendChild(makeVocabBox("Términos HETERODOXOS detectados", d.top_terminos_heterodoxos.length ? d.top_terminos_heterodoxos : [{term:"(ninguno significativo)",freq:0}], "#FF6B6B"));
   }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// TAB 4: CONCEPTOS NK-DSGE
+// ─────────────────────────────────────────────────────────────────────────────
+function drawConceptos() {
+  fetch("../data/nlp_conceptos_anio.json").then(r => r.json()).then(data => {
+    const conceptKeys = Object.keys(data.meta.conceptos);
+    const colors      = data.meta.colores;
+    const labels      = data.meta.conceptos;
+    const stats       = data.stats;
+    const porAnio     = data.por_anio.filter(d => d.anio >= 2000 && d.n_papers >= 3);
+
+    // ── Cards ────────────────────────────────────────────────────────────────
+    const cardData = [
+      { val: "2006", lbl: "Primer concepto NK:<br>Inflation expectations", color: colors["inflation_exp"] },
+      { val: "2007", lbl: "DSGE aparece en<br>abstracts Banxico", color: colors["dsge"] },
+      { val: "2012", lbl: "Calvo en abstracts<br>(ya citado desde 2003)", color: colors["calvo"] },
+      { val: "2007", lbl: "Financial frictions:<br>primeras menciones", color: colors["financial_frictions"] },
+    ];
+    const cardsEl = document.getElementById("cards-conceptos");
+    cardData.forEach(c => {
+      cardsEl.innerHTML += `
+        <div class="insight-card">
+          <div class="val" style="color:${c.color}">${c.val}</div>
+          <div class="lbl">${c.lbl}</div>
+        </div>`;
+    });
+
+    // ── Estado visible de cada línea ─────────────────────────────────────────
+    const visible = {};
+    conceptKeys.forEach(k => visible[k] = true);
+
+    // ── Multi-line chart ─────────────────────────────────────────────────────
+    const W = Math.min(window.innerWidth - 160, 900);
+    const H = 380;
+    const margin = { top: 24, right: 24, bottom: 44, left: 46 };
+    const iW = W - margin.left - margin.right;
+    const iH = H - margin.top - margin.bottom;
+
+    const svg = d3.select("#chart-conceptos").attr("width", W).attr("height", H);
+    const g   = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+    // Defs para área suavizada debajo de inflation_exp
+    const defs = svg.append("defs");
+    const gradIE = defs.append("linearGradient").attr("id","grad-ie").attr("x1",0).attr("x2",0).attr("y1",0).attr("y2",1);
+    gradIE.append("stop").attr("offset","0%").attr("stop-color",colors["inflation_exp"]).attr("stop-opacity",.15);
+    gradIE.append("stop").attr("offset","100%").attr("stop-color",colors["inflation_exp"]).attr("stop-opacity",0);
+
+    const x = d3.scaleLinear().domain([2000, 2025]).range([0, iW]);
+
+    // Y domain: max del smoothed value + margen
+    const allSmooth = porAnio.flatMap(d => conceptKeys.map(k => d.smooth[k] || 0));
+    const yMax = Math.max(d3.max(allSmooth) * 1.2, 5);
+    const y = d3.scaleLinear().domain([0, yMax]).range([iH, 0]);
+
+    // Grid
+    g.append("g").attr("class","grid")
+      .call(d3.axisLeft(y).ticks(5).tickSize(-iW).tickFormat(""))
+      .select(".domain").remove();
+
+    // Período bands
+    const periodos = [
+      { a:2000, b:2000, label:"Pre-IT", color:"#7d8590" },
+      { a:2001, b:2008, label:"IT consolidado", color:"#4ECDC4" },
+      { a:2009, b:2015, label:"Post-2008", color:"#FFE66D" },
+      { a:2016, b:2025, label:"Reciente", color:"#A29BFE" },
+    ];
+    periodos.forEach(p => {
+      const x1 = x(p.a), x2 = x(Math.min(p.b + 1, 2025));
+      g.append("rect").attr("class","periodo-band")
+        .attr("x",x1).attr("y",0).attr("width",x2-x1).attr("height",iH)
+        .attr("fill",p.color);
+      g.append("text").attr("class","periodo-label")
+        .attr("x",x1+(x2-x1)/2).attr("y",-7)
+        .attr("text-anchor","middle").text(p.label);
+    });
+
+    // Línea vertical 2001 (IT)
+    g.append("line")
+      .attr("x1",x(2001)).attr("x2",x(2001)).attr("y1",0).attr("y2",iH)
+      .attr("stroke","#4ECDC4").attr("stroke-width",1).attr("stroke-dasharray","4,3").attr("opacity",.5);
+
+    // Línea vertical 2009 (post-crisis)
+    g.append("line")
+      .attr("x1",x(2009)).attr("x2",x(2009)).attr("y1",0).attr("y2",iH)
+      .attr("stroke","#FFE66D").attr("stroke-width",1).attr("stroke-dasharray","4,3").attr("opacity",.4);
+    g.append("text").attr("x",x(2009)+4).attr("y",iH-6)
+      .attr("fill","#FFE66D").attr("font-size","9px").text("Crisis →");
+
+    // Área suave bajo inflation_exp (highlight)
+    const areaLine = d3.area()
+      .defined(d => d.smooth["inflation_exp"] != null)
+      .x(d => x(d.anio))
+      .y0(iH)
+      .y1(d => y(d.smooth["inflation_exp"] || 0))
+      .curve(d3.curveMonotoneX);
+    const areaPath = g.append("path")
+      .datum(porAnio)
+      .attr("fill","url(#grad-ie)")
+      .attr("d", areaLine)
+      .attr("id","area-inflation_exp");
+
+    // Líneas por concepto
+    const lineGen = key => d3.line()
+      .defined(d => d.smooth[key] != null)
+      .x(d => x(d.anio))
+      .y(d => y(d.smooth[key] || 0))
+      .curve(d3.curveMonotoneX);
+
+    const paths = {};
+    conceptKeys.forEach(key => {
+      paths[key] = g.append("path")
+        .datum(porAnio)
+        .attr("fill","none")
+        .attr("stroke", colors[key])
+        .attr("stroke-width", key === "inflation_exp" || key === "dsge" ? 2.5 : 1.8)
+        .attr("stroke-dasharray", key === "financial_frictions" ? "5,3" : "none")
+        .attr("opacity", .9)
+        .attr("class", "concept-line")
+        .attr("id", "line-" + key)
+        .attr("d", lineGen(key));
+    });
+
+    // Dots (raw %, solo donde > 0)
+    const dotGroups = {};
+    conceptKeys.forEach(key => {
+      dotGroups[key] = g.selectAll(".dot-" + key)
+        .data(porAnio.filter(d => d.pct[key] > 0))
+        .join("circle")
+        .attr("cx", d => x(d.anio))
+        .attr("cy", d => y(d.pct[key]))
+        .attr("r", 3.5)
+        .attr("fill", colors[key])
+        .attr("opacity", .7)
+        .attr("class", "concept-dot")
+        .attr("id", "dots-" + key);
+    });
+
+    // Overlay para tooltip bisector
+    const bisect = d3.bisector(d => d.anio).left;
+    const focus = g.append("g").attr("opacity", 0);
+    focus.append("line").attr("class","focus-line")
+      .attr("y1",0).attr("y2",iH)
+      .attr("stroke","#30363d").attr("stroke-width",1).attr("stroke-dasharray","3,2");
+
+    svg.append("rect")
+      .attr("width", iW).attr("height", iH)
+      .attr("transform", `translate(${margin.left},${margin.top})`)
+      .attr("fill","none").attr("pointer-events","all")
+      .on("mousemove", function(event) {
+        const [mx] = d3.pointer(event, this);
+        const anio = Math.round(x.invert(mx));
+        const idx  = bisect(porAnio, anio, 1);
+        const d    = porAnio[Math.min(idx, porAnio.length-1)];
+        if (!d) return;
+        focus.attr("opacity",1)
+          .select(".focus-line").attr("x1",x(d.anio)).attr("x2",x(d.anio));
+
+        const activeKeys = conceptKeys.filter(k => visible[k] && (d.smooth[k] || 0) > 0);
+        const rows = activeKeys
+          .sort((a,b) => (d.smooth[b]||0) - (d.smooth[a]||0))
+          .map(k => `<span style="color:${colors[k]}">●</span> ${labels[k]}: <b>${(d.smooth[k]||0).toFixed(1)}%</b>`)
+          .join("<br>");
+        showTT(event, `<b>${d.anio}</b> · ${d.n_papers} papers<br>${rows || "(sin datos)"}`);
+      })
+      .on("mouseleave", () => { focus.attr("opacity",0); hideTT(); });
+
+    // Axes
+    g.append("g").attr("class","axis").attr("transform",`translate(0,${iH})`)
+      .call(d3.axisBottom(x).tickFormat(d3.format("d")).ticks(10));
+    g.append("g").attr("class","axis").call(d3.axisLeft(y).ticks(5).tickFormat(d => d+"%"));
+
+    // ── Leyenda interactiva ───────────────────────────────────────────────────
+    const legendEl = document.getElementById("legend-conceptos");
+    conceptKeys.forEach(key => {
+      const item = document.createElement("div");
+      item.className = "leg-item-i";
+      item.id = "leg-" + key;
+      item.style.cursor = "pointer";
+      item.style.userSelect = "none";
+      item.innerHTML = `
+        <div class="leg-line" style="background:${colors[key]};
+          ${key==="financial_frictions"?"border-top:2px dashed "+colors[key]+";background:none;":""}
+        "></div>
+        <span style="color:${colors[key]}">${labels[key]}</span>`;
+      item.addEventListener("click", () => {
+        visible[key] = !visible[key];
+        const op = visible[key] ? 1 : 0;
+        d3.select("#line-" + key).attr("opacity", op);
+        d3.select("#dots-" + key).attr("opacity", visible[key] ? .7 : 0);
+        if (key === "inflation_exp") d3.select("#area-inflation_exp").attr("opacity", op);
+        item.style.opacity = visible[key] ? 1 : 0.3;
+      });
+      legendEl.appendChild(item);
+    });
+
+    // ── Barchart de penetración total ─────────────────────────────────────────
+    const barData = conceptKeys
+      .map(k => ({ key: k, label: labels[k], color: colors[k],
+                   pct: stats[k].pct_corpus, primer: stats[k].primer_anio,
+                   total: stats[k].total_papers }))
+      .sort((a,b) => b.pct - a.pct);
+
+    const BW = Math.min(window.innerWidth - 160, 860);
+    const BH = 260;
+    const bm = { top:14, right:120, bottom:30, left:190 };
+    const biW = BW - bm.left - bm.right;
+    const biH = BH - bm.top - bm.bottom;
+
+    const bsvg = d3.select("#chart-conceptos-bar").attr("width",BW).attr("height",BH);
+    const bg   = bsvg.append("g").attr("transform",`translate(${bm.left},${bm.top})`);
+
+    const bx = d3.scaleLinear().domain([0, d3.max(barData, d=>d.pct)*1.15]).range([0,biW]);
+    const by = d3.scaleBand().domain(barData.map(d=>d.label)).range([0,biH]).padding(.3);
+
+    bg.append("g").attr("class","grid")
+      .call(d3.axisTop(bx).ticks(5).tickSize(-biH).tickFormat(""))
+      .select(".domain").remove();
+
+    barData.forEach(d => {
+      const row = bg.append("g").attr("transform",`translate(0,${by(d.label)})`);
+      row.append("text").attr("x",-8).attr("y",by.bandwidth()/2)
+        .attr("dominant-baseline","middle").attr("text-anchor","end")
+        .attr("fill","#cdd9e5").attr("font-size","11px").text(d.label);
+      // Background bar
+      row.append("rect").attr("width",biW).attr("height",by.bandwidth())
+        .attr("fill","#161b22").attr("rx",2);
+      // Value bar
+      row.append("rect")
+        .attr("width", Math.max(bx(d.pct), 2)).attr("height",by.bandwidth())
+        .attr("fill",d.color).attr("rx",2).attr("opacity",.8);
+      // Label: valor + primer año
+      row.append("text").attr("x",biW+8).attr("y",by.bandwidth()/2)
+        .attr("dominant-baseline","middle").attr("fill","#7d8590").attr("font-size","10px")
+        .text(`${d.total} papers · desde ${d.primer || "—"}`);
+    });
+
+    bg.append("g").attr("class","axis")
+      .call(d3.axisTop(bx).ticks(5).tickFormat(d=>d+"%"));
+    bg.append("g").attr("class","axis").attr("transform",`translate(0,${biH})`)
+      .call(d3.axisBottom(bx).ticks(0));
+  });
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// TAB 5: VINTAGE DE CITAS
+// ─────────────────────────────────────────────────────────────────────────────
+function drawVintage() {
+  fetch("../data/citation_vintage.json").then(r => r.json()).then(data => {
+    const { overall, por_periodo, por_anio_paper, canon_quinquenal, clasicos_dsge_pct } = data;
+
+    // ── Cards ────────────────────────────────────────────────────────────────
+    const cardsEl = document.getElementById("cards-vintage");
+    const cardsData = [
+      { val: overall.median_age + " años", lbl: "Edad mediana global<br>de las referencias", color: "#4ECDC4" },
+      { val: Math.round(overall.anio_citado_median), lbl: "Año citado mediano<br>(canon central)", color: "#FFE66D" },
+      { val: por_periodo.find(p=>p.periodo==="early_IT")?.median_age + " años",
+        lbl: "Edad mediana<br>IT consolidado (01–08)", color: "#4ECDC4" },
+      { val: por_periodo.find(p=>p.periodo==="reciente")?.median_age + " años",
+        lbl: "Edad mediana<br>período reciente (16–25)", color: "#A29BFE" },
+    ];
+    cardsData.forEach(c => {
+      cardsEl.innerHTML += `<div class="insight-card">
+        <div class="val" style="color:${c.color}">${c.val}</div>
+        <div class="lbl">${c.lbl}</div>
+      </div>`;
+    });
+
+    // ── Line chart: edad mediana por año ─────────────────────────────────────
+    const W = Math.min(window.innerWidth - 160, 900);
+    const H = 300;
+    const m = { top:24, right:24, bottom:40, left:46 };
+    const iW = W-m.left-m.right, iH = H-m.top-m.bottom;
+
+    const svg = d3.select("#chart-vintage-line").attr("width",W).attr("height",H);
+    const g   = svg.append("g").attr("transform",`translate(${m.left},${m.top})`);
+
+    const anios = por_anio_paper.filter(d => d.n_refs >= 5);
+    const x = d3.scaleLinear().domain(d3.extent(anios, d=>d.anio)).range([0,iW]);
+    const y = d3.scaleLinear().domain([0, d3.max(anios, d=>d.p75)*1.1]).range([iH,0]);
+
+    // Grid
+    g.append("g").attr("class","grid")
+      .call(d3.axisLeft(y).ticks(5).tickSize(-iW).tickFormat(""))
+      .select(".domain").remove();
+
+    // Período bands
+    [
+      {a:2001,b:2008,c:"#4ECDC4",l:"IT consolidado"},
+      {a:2009,b:2015,c:"#FFE66D",l:"Post-2008"},
+      {a:2016,b:2025,c:"#A29BFE",l:"Reciente"},
+    ].forEach(p => {
+      const x1=x(p.a), x2=x(Math.min(p.b+1,2025));
+      g.append("rect").attr("class","periodo-band").attr("x",x1).attr("y",0)
+        .attr("width",x2-x1).attr("height",iH).attr("fill",p.c);
+      g.append("text").attr("class","periodo-label").attr("x",x1+(x2-x1)/2).attr("y",-7)
+        .attr("text-anchor","middle").text(p.l);
+    });
+
+    // IQR band (p25–p75)
+    const area = d3.area().x(d=>x(d.anio)).y0(d=>y(d.p25)).y1(d=>y(d.p75)).curve(d3.curveMonotoneX);
+    const defs = svg.append("defs");
+    const grad = defs.append("linearGradient").attr("id","grad-vintage").attr("x1",0).attr("x2",0).attr("y1",0).attr("y2",1);
+    grad.append("stop").attr("offset","0%").attr("stop-color","#4ECDC4").attr("stop-opacity",.2);
+    grad.append("stop").attr("offset","100%").attr("stop-color","#4ECDC4").attr("stop-opacity",.05);
+    g.append("path").datum(anios).attr("fill","url(#grad-vintage)").attr("d",area);
+
+    // Línea mediana
+    const line = d3.line().x(d=>x(d.anio)).y(d=>y(d.median_age)).curve(d3.curveMonotoneX);
+    g.append("path").datum(anios).attr("fill","none").attr("stroke","#4ECDC4")
+      .attr("stroke-width",2.5).attr("d",line);
+
+    // Dots
+    g.selectAll(".dot-v").data(anios).join("circle")
+      .attr("cx",d=>x(d.anio)).attr("cy",d=>y(d.median_age)).attr("r",4)
+      .attr("fill","#4ECDC4").attr("opacity",.85)
+      .on("mouseover",(e,d)=>showTT(e,
+        `<b>${d.anio}</b><br>Mediana: <b>${d.median_age} años</b><br>P25–P75: ${d.p25}–${d.p75} años<br>Año citado mediano: ${Math.round(d.anio_citado_median)}<br>Refs: ${d.n_refs}`))
+      .on("mouseout",hideTT);
+
+    // Leyenda IQR
+    g.append("text").attr("x",iW-2).attr("y",y(overall.p75)-4)
+      .attr("fill","#7d8590").attr("font-size","9px").attr("text-anchor","end").text("IQR (P25–P75)");
+
+    g.append("g").attr("class","axis").attr("transform",`translate(0,${iH})`)
+      .call(d3.axisBottom(x).tickFormat(d3.format("d")).ticks(8));
+    g.append("g").attr("class","axis").call(d3.axisLeft(y).ticks(5).tickFormat(d=>d+" a"));
+
+    // ── Canon histogram ───────────────────────────────────────────────────────
+    const BW = Math.min(window.innerWidth - 160, 900);
+    const BH = 240;
+    const bm = { top:20, right:24, bottom:44, left:60 };
+    const biW = BW-bm.left-bm.right, biH = BH-bm.top-bm.bottom;
+
+    const bsvg = d3.select("#chart-vintage-canon").attr("width",BW).attr("height",BH);
+    const bg   = bsvg.append("g").attr("transform",`translate(${bm.left},${bm.top})`);
+
+    // Filtrar décadas con datos
+    const canon = canon_quinquenal.filter(d => d.decada >= 1970 && d.decada <= 2025);
+    const bx = d3.scaleBand().domain(canon.map(d=>d.decada)).range([0,biW]).padding(.15);
+    const by = d3.scaleLinear().domain([0, d3.max(canon,d=>d.pct)*1.1]).range([biH,0]);
+
+    bg.append("g").attr("class","grid")
+      .call(d3.axisLeft(by).ticks(4).tickSize(-biW).tickFormat(""))
+      .select(".domain").remove();
+
+    // Highlight "clásicos DSGE" 1995-2010
+    bg.append("rect")
+      .attr("x",bx(1995)).attr("y",0)
+      .attr("width",(bx(2010)||biW)-bx(1995)+bx.bandwidth())
+      .attr("height",biH)
+      .attr("fill","#FFE66D").attr("opacity",.07);
+    bg.append("text").attr("x",(bx(1995)+(bx(2010)||biW)+bx.bandwidth())/2)
+      .attr("y",10).attr("fill","#FFE66D").attr("font-size","9px")
+      .attr("text-anchor","middle").text("Canon DSGE (1995–2010)");
+
+    bg.selectAll(".bar-c").data(canon).join("rect")
+      .attr("x",d=>bx(d.decada)).attr("width",bx.bandwidth())
+      .attr("y",d=>by(d.pct)).attr("height",d=>biH-by(d.pct))
+      .attr("fill",d => d.decada>=1995&&d.decada<=2010 ? "#FFE66D" : "#4ECDC4")
+      .attr("rx",2).attr("opacity",.8)
+      .on("mouseover",(e,d)=>showTT(e,`<b>${d.decada}–${d.decada+4}</b><br>${d.pct}% de las citas (n=${d.n})`))
+      .on("mouseout",hideTT);
+
+    bg.selectAll(".lbl-c").data(canon.filter(d=>d.pct>=2)).join("text")
+      .attr("x",d=>bx(d.decada)+bx.bandwidth()/2).attr("y",d=>by(d.pct)-4)
+      .attr("text-anchor","middle").attr("fill","#cdd9e5").attr("font-size","9px")
+      .text(d=>d.pct+"%");
+
+    bg.append("g").attr("class","axis").attr("transform",`translate(0,${biH})`)
+      .call(d3.axisBottom(bx).tickFormat(d=>d+"s"));
+    bg.append("g").attr("class","axis").call(d3.axisLeft(by).ticks(4).tickFormat(d=>d+"%"));
+
+    // Período stats debajo
+    const statsDiv = document.querySelector("#tab-vintage .chart-wrap:last-child");
+    const table = document.createElement("div");
+    table.style.cssText = "display:flex;gap:16px;flex-wrap:wrap;margin-top:20px;";
+    por_periodo.forEach(p => {
+      const cl = clasicos_dsge_pct[p.periodo];
+      table.innerHTML += `<div style="flex:1;min-width:180px;background:#161b22;border:1px solid #21262d;border-radius:8px;padding:14px;">
+        <div style="font-size:11px;font-weight:700;color:${p.color};text-transform:uppercase;margin-bottom:8px">${p.label}</div>
+        <div style="font-size:22px;font-weight:800;color:${p.color}">${p.median_age} años</div>
+        <div style="font-size:11px;color:#7d8590;margin-top:4px">edad mediana de citas</div>
+        <div style="font-size:18px;font-weight:700;color:#FFE66D;margin-top:10px">${cl.pct}%</div>
+        <div style="font-size:11px;color:#7d8590">citas al canon DSGE 1995–2010</div>
+      </div>`;
+    });
+    statsDiv.appendChild(table);
+  });
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// TAB 6: PORTADORES DEL TOOLKIT
+// ─────────────────────────────────────────────────────────────────────────────
+function drawAutores() {
+  fetch("../data/author_dsge.json").then(r => r.json()).then(data => {
+    const { meta, top_nk } = data;
+
+    // ── Cards ────────────────────────────────────────────────────────────────
+    const cardsEl = document.getElementById("cards-autores");
+    [
+      { val: meta.autores_con_nk,              lbl: `de ${meta.total_autores_min2papers} autores<br>usan vocabulario NK`, color:"#4ECDC4" },
+      { val: meta.pct_autores_con_nk + "%",    lbl: "del total de autores<br>con ≥2 papers", color:"#FFE66D" },
+      { val: meta.autores_dsge_especifico,     lbl: "autores con DSGE<br>explícito en abstract", color:"#FF6B6B" },
+      { val: meta.pct_top5_concentracion + "%",lbl: "top-5 autores concentran<br>los papers NK-DSGE", color:"#A29BFE" },
+    ].forEach(c => {
+      cardsEl.innerHTML += `<div class="insight-card">
+        <div class="val" style="color:${c.color}">${c.val}</div>
+        <div class="lbl">${c.lbl}</div>
+      </div>`;
+    });
+
+    // ── Paleta de conceptos (heredada) ───────────────────────────────────────
+    const CONCEPT_COLORS = {
+      dsge:"#FF6B6B", inflation_exp:"#4ECDC4", taylor_rule:"#FFE66D",
+      calvo:"#FD79A8", new_keynesian:"#74B9FF", output_gap:"#A29BFE",
+      financial_frictions:"#55EFC4", rational_exp:"#FDCB6E",
+      phillips_curve:"#E17055", bayesian:"#6CB4F5", inflation_targeting:"#FF9F43",
+    };
+
+    // ── Bar chart horizontal ─────────────────────────────────────────────────
+    const top15 = top_nk.slice(0, 15);
+    const BW = Math.min(window.innerWidth - 160, 900);
+    const BH = top15.length * 38 + 60;
+    const bm = { top:14, right:130, bottom:30, left:200 };
+    const biW = BW-bm.left-bm.right, biH = BH-bm.top-bm.bottom;
+
+    const bsvg = d3.select("#chart-autores-bar").attr("width",BW).attr("height",BH);
+    const bg   = bsvg.append("g").attr("transform",`translate(${bm.left},${bm.top})`);
+
+    const bx = d3.scaleLinear().domain([0, d3.max(top15,d=>d.nk_score)*1.15]).range([0,biW]);
+    const by = d3.scaleBand().domain(top15.map(d=>d.nombre)).range([0,biH]).padding(.25);
+
+    bg.append("g").attr("class","grid")
+      .call(d3.axisTop(bx).ticks(5).tickSize(-biH).tickFormat(""))
+      .select(".domain").remove();
+
+    top15.forEach(d => {
+      const topColor = d.top_conceptos.length > 0
+        ? (CONCEPT_COLORS[d.top_conceptos[0].key] || "#4ECDC4")
+        : "#4ECDC4";
+      const row = bg.append("g").attr("transform",`translate(0,${by(d.nombre)})`);
+
+      // Nombre autor
+      row.append("text").attr("x",-8).attr("y",by.bandwidth()/2)
+        .attr("dominant-baseline","middle").attr("text-anchor","end")
+        .attr("fill","#cdd9e5").attr("font-size","11px").text(d.nombre);
+
+      // Background bar
+      row.append("rect").attr("width",biW).attr("height",by.bandwidth())
+        .attr("fill","#161b22").attr("rx",2);
+
+      // nk_score bar
+      row.append("rect")
+        .attr("width", bx(d.nk_score)).attr("height",by.bandwidth())
+        .attr("fill",topColor).attr("rx",2).attr("opacity",.75)
+        .on("mouseover",(e)=>showTT(e,
+          `<b>${d.nombre}</b><br>Total papers: ${d.total_papers}<br>Papers NK: ${d.n_nk} (${d.pct_nk}%)<br>NK score: ${d.nk_score}<br>Primer NK: ${d.primer_nk||"—"}<br>Top conceptos: ${d.top_conceptos.slice(0,3).map(c=>c.label).join(" · ")}`))
+        .on("mouseout",hideTT);
+
+      // Total papers (barra gris punteada)
+      const totalWidth = bx(d.total_papers * 0.6); // escala visual
+      row.append("rect")
+        .attr("x",bx(d.nk_score)+2).attr("width",Math.max(0,totalWidth-bx(d.nk_score)))
+        .attr("height",by.bandwidth()).attr("fill","#1e2738").attr("rx",2);
+
+      // Etiqueta derecha: nk/total + año
+      row.append("text").attr("x",biW+6).attr("y",by.bandwidth()/2)
+        .attr("dominant-baseline","middle").attr("fill","#7d8590").attr("font-size","10px")
+        .text(`${d.n_nk}/${d.total_papers} · desde ${d.primer_nk||"—"}`);
+
+      // Chips de conceptos (pequeños)
+      d.top_conceptos.slice(0,3).forEach((c,i) => {
+        const cc = CONCEPT_COLORS[c.key] || "#4ECDC4";
+        row.append("rect")
+          .attr("x",3+i*8).attr("y",by.bandwidth()-4).attr("width",6).attr("height",3)
+          .attr("fill",cc).attr("rx",1).attr("opacity",.8);
+      });
+    });
+
+    bg.append("g").attr("class","axis")
+      .call(d3.axisTop(bx).ticks(5).tickFormat(d=>"score "+d));
+
+    // ── Scatter: total papers vs %NK ─────────────────────────────────────────
+    const nk_autores = data.todos.filter(d => d.n_nk > 0);
+    const SW = Math.min(window.innerWidth - 160, 700);
+    const SH = 320;
+    const sm = { top:20, right:24, bottom:48, left:60 };
+    const siW = SW-sm.left-sm.right, siH = SH-sm.top-sm.bottom;
+
+    const ssvg = d3.select("#chart-autores-scatter").attr("width",SW).attr("height",SH);
+    const sg   = ssvg.append("g").attr("transform",`translate(${sm.left},${sm.top})`);
+
+    const sx = d3.scaleLinear().domain([0, d3.max(nk_autores,d=>d.total_papers)*1.1]).range([0,siW]);
+    const sy = d3.scaleLinear().domain([0,105]).range([siH,0]);
+    const sr = d3.scaleSqrt().domain([0, d3.max(nk_autores,d=>d.nk_score)]).range([4,22]);
+
+    sg.append("g").attr("class","grid")
+      .call(d3.axisLeft(sy).ticks(5).tickSize(-siW).tickFormat(""))
+      .select(".domain").remove();
+
+    // Línea 100% NK
+    sg.append("line").attr("x1",0).attr("x2",siW).attr("y1",sy(100)).attr("y2",sy(100))
+      .attr("stroke","#7d8590").attr("stroke-width",.8).attr("stroke-dasharray","4,3");
+    sg.append("text").attr("x",2).attr("y",sy(100)-4)
+      .attr("fill","#484f58").attr("font-size","9px").text("100% NK");
+
+    sg.selectAll(".bubble").data(nk_autores).join("circle")
+      .attr("cx",d=>sx(d.total_papers)).attr("cy",d=>sy(d.pct_nk))
+      .attr("r",d=>sr(d.nk_score))
+      .attr("fill",d => {
+        const topKey = d.top_conceptos.length > 0 ? d.top_conceptos[0].key : "";
+        return CONCEPT_COLORS[topKey] || "#4ECDC4";
+      })
+      .attr("opacity",.65).attr("stroke","#0d1117").attr("stroke-width",1)
+      .on("mouseover",(e,d)=>showTT(e,
+        `<b>${d.nombre}</b><br>${d.total_papers} papers · ${d.pct_nk}% NK<br>Score: ${d.nk_score}`))
+      .on("mouseout",hideTT);
+
+    // Labels para top autores NK
+    top_nk.slice(0,8).forEach(d => {
+      sg.append("text").attr("x",sx(d.total_papers)+sr(d.nk_score)+3).attr("y",sy(d.pct_nk)+4)
+        .attr("fill","#cdd9e5").attr("font-size","9px")
+        .text(d.nombre.split(" ").slice(-1)[0]);
+    });
+
+    sg.append("g").attr("class","axis").attr("transform",`translate(0,${siH})`)
+      .call(d3.axisBottom(sx).ticks(8).tickFormat(d=>d+" papers"));
+    sg.append("g").attr("class","axis").call(d3.axisLeft(sy).ticks(5).tickFormat(d=>d+"%"));
+
+    sg.append("text").attr("x",siW/2).attr("y",siH+38)
+      .attr("text-anchor","middle").attr("fill","#7d8590").attr("font-size","10px")
+      .text("Total papers en corpus DIBM");
+    sg.append("text").attr("transform","rotate(-90)").attr("x",-siH/2).attr("y",-42)
+      .attr("text-anchor","middle").attr("fill","#7d8590").attr("font-size","10px")
+      .text("% papers con vocabulario NK");
+  });
 }
 
 </script>

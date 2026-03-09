@@ -1,0 +1,1402 @@
+{
+  "meta": {
+    "total_papers": 562,
+    "conceptos": {
+      "dsge": "DSGE",
+      "inflation_exp": "Inflation expectations",
+      "taylor_rule": "Taylor rule",
+      "calvo": "Calvo / sticky prices",
+      "new_keynesian": "New Keynesian",
+      "output_gap": "Output gap",
+      "financial_frictions": "Financial frictions",
+      "rational_exp": "Rational expectations",
+      "phillips_curve": "Phillips curve",
+      "bayesian": "Bayesian",
+      "inflation_targeting": "Inflation targeting"
+    },
+    "colores": {
+      "dsge": "#FF6B6B",
+      "inflation_exp": "#4ECDC4",
+      "taylor_rule": "#FFE66D",
+      "calvo": "#FD79A8",
+      "new_keynesian": "#74B9FF",
+      "output_gap": "#A29BFE",
+      "financial_frictions": "#55EFC4",
+      "rational_exp": "#FDCB6E",
+      "phillips_curve": "#E17055",
+      "bayesian": "#6CB4F5",
+      "inflation_targeting": "#FF9F43"
+    }
+  },
+  "stats": {
+    "dsge": {
+      "label": "DSGE",
+      "color": "#FF6B6B",
+      "total_papers": 13,
+      "pct_corpus": 2.3,
+      "primer_anio": 2007
+    },
+    "inflation_exp": {
+      "label": "Inflation expectations",
+      "color": "#4ECDC4",
+      "total_papers": 17,
+      "pct_corpus": 3.0,
+      "primer_anio": 2006
+    },
+    "taylor_rule": {
+      "label": "Taylor rule",
+      "color": "#FFE66D",
+      "total_papers": 1,
+      "pct_corpus": 0.2,
+      "primer_anio": 2011
+    },
+    "calvo": {
+      "label": "Calvo / sticky prices",
+      "color": "#FD79A8",
+      "total_papers": 3,
+      "pct_corpus": 0.5,
+      "primer_anio": 2012
+    },
+    "new_keynesian": {
+      "label": "New Keynesian",
+      "color": "#74B9FF",
+      "total_papers": 9,
+      "pct_corpus": 1.6,
+      "primer_anio": 2007
+    },
+    "output_gap": {
+      "label": "Output gap",
+      "color": "#A29BFE",
+      "total_papers": 5,
+      "pct_corpus": 0.9,
+      "primer_anio": 2006
+    },
+    "financial_frictions": {
+      "label": "Financial frictions",
+      "color": "#55EFC4",
+      "total_papers": 6,
+      "pct_corpus": 1.1,
+      "primer_anio": 2007
+    },
+    "rational_exp": {
+      "label": "Rational expectations",
+      "color": "#FDCB6E",
+      "total_papers": 3,
+      "pct_corpus": 0.5,
+      "primer_anio": 1984
+    },
+    "phillips_curve": {
+      "label": "Phillips curve",
+      "color": "#E17055",
+      "total_papers": 4,
+      "pct_corpus": 0.7,
+      "primer_anio": 2003
+    },
+    "bayesian": {
+      "label": "Bayesian",
+      "color": "#6CB4F5",
+      "total_papers": 8,
+      "pct_corpus": 1.4,
+      "primer_anio": 1978
+    },
+    "inflation_targeting": {
+      "label": "Inflation targeting",
+      "color": "#FF9F43",
+      "total_papers": 17,
+      "pct_corpus": 3.0,
+      "primer_anio": 2002
+    }
+  },
+  "por_anio": [
+    {
+      "anio": 1978,
+      "n_papers": 4,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 25.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 7.1,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 1979,
+      "n_papers": 10,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 3.3,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 1980,
+      "n_papers": 16,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 1981,
+      "n_papers": 16,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 1982,
+      "n_papers": 8,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 1983,
+      "n_papers": 3,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 6.7,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 1984,
+      "n_papers": 4,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 25.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 12.5,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 1985,
+      "n_papers": 1,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 20.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 1987,
+      "n_papers": 4,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 1988,
+      "n_papers": 1,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 1990,
+      "n_papers": 1,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 1991,
+      "n_papers": 1,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 1995,
+      "n_papers": 9,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 1996,
+      "n_papers": 5,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 1997,
+      "n_papers": 9,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 1998,
+      "n_papers": 7,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 1999,
+      "n_papers": 7,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 2000,
+      "n_papers": 8,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 2001,
+      "n_papers": 8,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 3.6,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 3.6
+      }
+    },
+    {
+      "anio": 2002,
+      "n_papers": 12,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 8.3,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 8.3
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 4.0,
+        "phillips_curve": 4.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 4.0
+      }
+    },
+    {
+      "anio": 2003,
+      "n_papers": 5,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 20.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 4.2,
+        "phillips_curve": 4.2,
+        "bayesian": 0.0,
+        "inflation_targeting": 4.2
+      }
+    },
+    {
+      "anio": 2004,
+      "n_papers": 7,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 5.9,
+        "bayesian": 0.0,
+        "inflation_targeting": 5.9
+      }
+    },
+    {
+      "anio": 2005,
+      "n_papers": 5,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 20.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 7.4,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 3.7,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 3.7,
+        "bayesian": 0.0,
+        "inflation_targeting": 11.1
+      }
+    },
+    {
+      "anio": 2006,
+      "n_papers": 15,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 13.3,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 6.7,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 6.7,
+        "bayesian": 0.0,
+        "inflation_targeting": 13.3
+      },
+      "smooth": {
+        "dsge": 2.9,
+        "inflation_exp": 8.6,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 2.9,
+        "output_gap": 2.9,
+        "financial_frictions": 2.9,
+        "rational_exp": 0.0,
+        "phillips_curve": 2.9,
+        "bayesian": 0.0,
+        "inflation_targeting": 17.1
+      }
+    },
+    {
+      "anio": 2007,
+      "n_papers": 15,
+      "pct": {
+        "dsge": 6.7,
+        "inflation_exp": 6.7,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 6.7,
+        "output_gap": 0.0,
+        "financial_frictions": 6.7,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 20.0
+      },
+      "smooth": {
+        "dsge": 4.5,
+        "inflation_exp": 13.3,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 2.2,
+        "output_gap": 2.2,
+        "financial_frictions": 2.2,
+        "rational_exp": 0.0,
+        "phillips_curve": 2.2,
+        "bayesian": 0.0,
+        "inflation_targeting": 11.1
+      }
+    },
+    {
+      "anio": 2008,
+      "n_papers": 15,
+      "pct": {
+        "dsge": 6.7,
+        "inflation_exp": 20.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 4.2,
+        "inflation_exp": 8.3,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 2.1,
+        "output_gap": 0.0,
+        "financial_frictions": 2.1,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 2.1,
+        "inflation_targeting": 10.4
+      }
+    },
+    {
+      "anio": 2009,
+      "n_papers": 18,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 5.6,
+        "inflation_targeting": 11.1
+      },
+      "smooth": {
+        "dsge": 1.9,
+        "inflation_exp": 5.7,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 1.9,
+        "inflation_targeting": 3.8
+      }
+    },
+    {
+      "anio": 2010,
+      "n_papers": 20,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 1.8,
+        "calvo": 0.0,
+        "new_keynesian": 1.8,
+        "output_gap": 1.8,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 3.6,
+        "inflation_targeting": 5.4
+      }
+    },
+    {
+      "anio": 2011,
+      "n_papers": 18,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 5.6,
+        "calvo": 0.0,
+        "new_keynesian": 5.6,
+        "output_gap": 5.6,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 5.6,
+        "inflation_targeting": 5.6
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 3.6,
+        "taylor_rule": 1.8,
+        "calvo": 1.8,
+        "new_keynesian": 1.8,
+        "output_gap": 1.8,
+        "financial_frictions": 1.8,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 1.8,
+        "inflation_targeting": 1.8
+      }
+    },
+    {
+      "anio": 2012,
+      "n_papers": 18,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 11.1,
+        "taylor_rule": 0.0,
+        "calvo": 5.6,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 5.6,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 3.3,
+        "inflation_exp": 3.3,
+        "taylor_rule": 1.7,
+        "calvo": 1.7,
+        "new_keynesian": 3.4,
+        "output_gap": 1.7,
+        "financial_frictions": 3.4,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 1.7,
+        "inflation_targeting": 1.7
+      }
+    },
+    {
+      "anio": 2013,
+      "n_papers": 24,
+      "pct": {
+        "dsge": 8.3,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 4.2,
+        "output_gap": 0.0,
+        "financial_frictions": 4.2,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 4.3,
+        "inflation_exp": 4.3,
+        "taylor_rule": 0.0,
+        "calvo": 1.5,
+        "new_keynesian": 1.5,
+        "output_gap": 0.0,
+        "financial_frictions": 2.9,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 1.4,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 2014,
+      "n_papers": 27,
+      "pct": {
+        "dsge": 3.7,
+        "inflation_exp": 3.7,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 3.7,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 5.3,
+        "inflation_exp": 1.3,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 1.3,
+        "output_gap": 0.0,
+        "financial_frictions": 2.6,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 1.3,
+        "inflation_targeting": 1.3
+      }
+    },
+    {
+      "anio": 2015,
+      "n_papers": 25,
+      "pct": {
+        "dsge": 4.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 4.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 4.0
+      },
+      "smooth": {
+        "dsge": 4.0,
+        "inflation_exp": 4.0,
+        "taylor_rule": 0.0,
+        "calvo": 1.3,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 1.3,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 1.3,
+        "inflation_targeting": 5.3
+      }
+    },
+    {
+      "anio": 2016,
+      "n_papers": 23,
+      "pct": {
+        "dsge": 4.3,
+        "inflation_exp": 8.7,
+        "taylor_rule": 0.0,
+        "calvo": 4.3,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 13.0
+      },
+      "smooth": {
+        "dsge": 5.7,
+        "inflation_exp": 2.9,
+        "taylor_rule": 0.0,
+        "calvo": 1.4,
+        "new_keynesian": 1.4,
+        "output_gap": 0.0,
+        "financial_frictions": 1.4,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 1.4,
+        "inflation_targeting": 8.6
+      }
+    },
+    {
+      "anio": 2017,
+      "n_papers": 22,
+      "pct": {
+        "dsge": 9.1,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 4.5,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 4.5,
+        "inflation_targeting": 9.1
+      },
+      "smooth": {
+        "dsge": 5.5,
+        "inflation_exp": 5.6,
+        "taylor_rule": 0.0,
+        "calvo": 1.4,
+        "new_keynesian": 1.4,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 1.4,
+        "inflation_targeting": 6.9
+      }
+    },
+    {
+      "anio": 2018,
+      "n_papers": 27,
+      "pct": {
+        "dsge": 3.7,
+        "inflation_exp": 7.4,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 4.3,
+        "inflation_exp": 2.9,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 1.4,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 2.9,
+        "inflation_targeting": 2.9
+      }
+    },
+    {
+      "anio": 2019,
+      "n_papers": 21,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 4.8,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 1.5,
+        "inflation_exp": 2.9,
+        "taylor_rule": 0.0,
+        "calvo": 1.5,
+        "new_keynesian": 2.9,
+        "output_gap": 1.5,
+        "financial_frictions": 0.0,
+        "rational_exp": 1.5,
+        "phillips_curve": 0.0,
+        "bayesian": 1.5,
+        "inflation_targeting": 1.5
+      }
+    },
+    {
+      "anio": 2020,
+      "n_papers": 20,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 5.0,
+        "new_keynesian": 10.0,
+        "output_gap": 5.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 5.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 5.0
+      },
+      "smooth": {
+        "dsge": 3.0,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 1.5,
+        "new_keynesian": 4.5,
+        "output_gap": 1.5,
+        "financial_frictions": 1.5,
+        "rational_exp": 1.5,
+        "phillips_curve": 0.0,
+        "bayesian": 1.5,
+        "inflation_targeting": 1.5
+      }
+    },
+    {
+      "anio": 2021,
+      "n_papers": 26,
+      "pct": {
+        "dsge": 7.7,
+        "inflation_exp": 0.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 3.8,
+        "output_gap": 0.0,
+        "financial_frictions": 3.8,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 3.0,
+        "inflation_exp": 1.5,
+        "taylor_rule": 0.0,
+        "calvo": 1.5,
+        "new_keynesian": 4.5,
+        "output_gap": 3.0,
+        "financial_frictions": 1.5,
+        "rational_exp": 1.5,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 1.5
+      }
+    },
+    {
+      "anio": 2022,
+      "n_papers": 20,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 5.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 5.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 3.0,
+        "inflation_exp": 3.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 3.0,
+        "output_gap": 3.0,
+        "financial_frictions": 3.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 3.0,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 2023,
+      "n_papers": 21,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 4.8,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 4.8,
+        "output_gap": 4.8,
+        "financial_frictions": 4.8,
+        "rational_exp": 0.0,
+        "phillips_curve": 0.0,
+        "bayesian": 9.5,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 0.0,
+        "inflation_exp": 4.9,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 3.3,
+        "output_gap": 3.3,
+        "financial_frictions": 1.7,
+        "rational_exp": 0.0,
+        "phillips_curve": 1.6,
+        "bayesian": 3.3,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 2024,
+      "n_papers": 20,
+      "pct": {
+        "dsge": 0.0,
+        "inflation_exp": 5.0,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 5.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 5.0,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 1.7,
+        "inflation_exp": 5.3,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 3.5,
+        "output_gap": 1.8,
+        "financial_frictions": 1.8,
+        "rational_exp": 0.0,
+        "phillips_curve": 3.5,
+        "bayesian": 3.5,
+        "inflation_targeting": 0.0
+      }
+    },
+    {
+      "anio": 2025,
+      "n_papers": 16,
+      "pct": {
+        "dsge": 6.2,
+        "inflation_exp": 6.2,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 0.0,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 6.2,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      },
+      "smooth": {
+        "dsge": 2.8,
+        "inflation_exp": 5.5,
+        "taylor_rule": 0.0,
+        "calvo": 0.0,
+        "new_keynesian": 2.8,
+        "output_gap": 0.0,
+        "financial_frictions": 0.0,
+        "rational_exp": 0.0,
+        "phillips_curve": 5.5,
+        "bayesian": 0.0,
+        "inflation_targeting": 0.0
+      }
+    }
+  ]
+}

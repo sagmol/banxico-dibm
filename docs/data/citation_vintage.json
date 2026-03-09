@@ -1,0 +1,479 @@
+{
+  "overall": {
+    "n_refs": 1879,
+    "median_age": 9.0,
+    "mean_age": 12.2,
+    "p25": 4.0,
+    "p75": 17.0,
+    "anio_citado_median": 2007.0
+  },
+  "por_periodo": [
+    {
+      "periodo": "early_IT",
+      "label": "IT consolidado (2001–08)",
+      "color": "#4ECDC4",
+      "n_refs": 196,
+      "n_papers": 12,
+      "median_age": 6.0,
+      "mean_age": 8.0,
+      "p25": 2.8,
+      "p75": 11.0,
+      "anio_citado_median": 1999.0,
+      "dist_edad": [
+        {
+          "bin": 0,
+          "n": 94
+        },
+        {
+          "bin": 5,
+          "n": 52
+        },
+        {
+          "bin": 10,
+          "n": 23
+        },
+        {
+          "bin": 15,
+          "n": 13
+        },
+        {
+          "bin": 20,
+          "n": 6
+        },
+        {
+          "bin": 25,
+          "n": 3
+        },
+        {
+          "bin": 30,
+          "n": 2
+        },
+        {
+          "bin": 40,
+          "n": 3
+        }
+      ]
+    },
+    {
+      "periodo": "post_crisis",
+      "label": "Post-crisis (2009–15)",
+      "color": "#FFE66D",
+      "n_refs": 440,
+      "n_papers": 21,
+      "median_age": 9.0,
+      "mean_age": 11.7,
+      "p25": 3.0,
+      "p75": 16.0,
+      "anio_citado_median": 2002.0,
+      "dist_edad": [
+        {
+          "bin": 0,
+          "n": 156
+        },
+        {
+          "bin": 5,
+          "n": 103
+        },
+        {
+          "bin": 10,
+          "n": 69
+        },
+        {
+          "bin": 15,
+          "n": 36
+        },
+        {
+          "bin": 20,
+          "n": 24
+        },
+        {
+          "bin": 25,
+          "n": 22
+        },
+        {
+          "bin": 30,
+          "n": 8
+        },
+        {
+          "bin": 35,
+          "n": 12
+        },
+        {
+          "bin": 40,
+          "n": 2
+        },
+        {
+          "bin": 45,
+          "n": 1
+        },
+        {
+          "bin": 50,
+          "n": 2
+        },
+        {
+          "bin": 55,
+          "n": 5
+        }
+      ]
+    },
+    {
+      "periodo": "reciente",
+      "label": "Reciente (2016–25)",
+      "color": "#A29BFE",
+      "n_refs": 1243,
+      "n_papers": 52,
+      "median_age": 9.0,
+      "mean_age": 13.0,
+      "p25": 5.0,
+      "p75": 18.0,
+      "anio_citado_median": 2011.0,
+      "dist_edad": [
+        {
+          "bin": 0,
+          "n": 363
+        },
+        {
+          "bin": 5,
+          "n": 304
+        },
+        {
+          "bin": 10,
+          "n": 185
+        },
+        {
+          "bin": 15,
+          "n": 150
+        },
+        {
+          "bin": 20,
+          "n": 81
+        },
+        {
+          "bin": 25,
+          "n": 58
+        },
+        {
+          "bin": 30,
+          "n": 34
+        },
+        {
+          "bin": 35,
+          "n": 27
+        },
+        {
+          "bin": 40,
+          "n": 13
+        },
+        {
+          "bin": 45,
+          "n": 7
+        },
+        {
+          "bin": 50,
+          "n": 7
+        },
+        {
+          "bin": 55,
+          "n": 7
+        },
+        {
+          "bin": 60,
+          "n": 5
+        },
+        {
+          "bin": 65,
+          "n": 2
+        }
+      ]
+    }
+  ],
+  "por_anio_paper": [
+    {
+      "anio": 2004,
+      "n_refs": 65,
+      "median_age": 7.0,
+      "mean_age": 8.8,
+      "p25": 3.0,
+      "p75": 12.0,
+      "anio_citado_median": 1997.0
+    },
+    {
+      "anio": 2005,
+      "n_refs": 12,
+      "median_age": 9.0,
+      "mean_age": 12.2,
+      "p25": 6.0,
+      "p75": 13.0,
+      "anio_citado_median": 1996.0
+    },
+    {
+      "anio": 2006,
+      "n_refs": 61,
+      "median_age": 5.0,
+      "mean_age": 6.6,
+      "p25": 2.0,
+      "p75": 9.0,
+      "anio_citado_median": 2001.0
+    },
+    {
+      "anio": 2007,
+      "n_refs": 31,
+      "median_age": 5.0,
+      "mean_age": 7.8,
+      "p25": 2.0,
+      "p75": 11.0,
+      "anio_citado_median": 2002.0
+    },
+    {
+      "anio": 2008,
+      "n_refs": 27,
+      "median_age": 3.0,
+      "mean_age": 7.9,
+      "p25": 2.0,
+      "p75": 9.5,
+      "anio_citado_median": 2005.0
+    },
+    {
+      "anio": 2009,
+      "n_refs": 67,
+      "median_age": 9.0,
+      "mean_age": 10.1,
+      "p25": 3.0,
+      "p75": 14.0,
+      "anio_citado_median": 2000.0
+    },
+    {
+      "anio": 2010,
+      "n_refs": 160,
+      "median_age": 9.0,
+      "mean_age": 11.8,
+      "p25": 5.0,
+      "p75": 17.0,
+      "anio_citado_median": 2001.0
+    },
+    {
+      "anio": 2011,
+      "n_refs": 32,
+      "median_age": 2.0,
+      "mean_age": 3.8,
+      "p25": 1.0,
+      "p75": 5.2,
+      "anio_citado_median": 2009.0
+    },
+    {
+      "anio": 2012,
+      "n_refs": 62,
+      "median_age": 11.0,
+      "mean_age": 12.3,
+      "p25": 4.0,
+      "p75": 16.8,
+      "anio_citado_median": 2001.0
+    },
+    {
+      "anio": 2013,
+      "n_refs": 41,
+      "median_age": 8.0,
+      "mean_age": 11.5,
+      "p25": 5.0,
+      "p75": 13.0,
+      "anio_citado_median": 2005.0
+    },
+    {
+      "anio": 2014,
+      "n_refs": 38,
+      "median_age": 11.0,
+      "mean_age": 14.4,
+      "p25": 2.2,
+      "p75": 26.8,
+      "anio_citado_median": 2003.0
+    },
+    {
+      "anio": 2015,
+      "n_refs": 40,
+      "median_age": 9.5,
+      "mean_age": 16.8,
+      "p25": 5.0,
+      "p75": 19.5,
+      "anio_citado_median": 2005.5
+    },
+    {
+      "anio": 2016,
+      "n_refs": 51,
+      "median_age": 6.0,
+      "mean_age": 8.5,
+      "p25": 3.0,
+      "p75": 9.0,
+      "anio_citado_median": 2010.0
+    },
+    {
+      "anio": 2017,
+      "n_refs": 208,
+      "median_age": 8.0,
+      "mean_age": 11.4,
+      "p25": 5.0,
+      "p75": 17.0,
+      "anio_citado_median": 2009.0
+    },
+    {
+      "anio": 2018,
+      "n_refs": 124,
+      "median_age": 8.0,
+      "mean_age": 10.3,
+      "p25": 3.0,
+      "p75": 15.0,
+      "anio_citado_median": 2010.0
+    },
+    {
+      "anio": 2019,
+      "n_refs": 77,
+      "median_age": 9.0,
+      "mean_age": 11.3,
+      "p25": 5.0,
+      "p75": 17.0,
+      "anio_citado_median": 2010.0
+    },
+    {
+      "anio": 2020,
+      "n_refs": 85,
+      "median_age": 19.0,
+      "mean_age": 21.8,
+      "p25": 11.0,
+      "p75": 28.0,
+      "anio_citado_median": 2001.0
+    },
+    {
+      "anio": 2021,
+      "n_refs": 89,
+      "median_age": 9.0,
+      "mean_age": 13.1,
+      "p25": 4.0,
+      "p75": 20.0,
+      "anio_citado_median": 2012.0
+    },
+    {
+      "anio": 2022,
+      "n_refs": 63,
+      "median_age": 8.0,
+      "mean_age": 9.6,
+      "p25": 4.0,
+      "p75": 13.5,
+      "anio_citado_median": 2014.0
+    },
+    {
+      "anio": 2023,
+      "n_refs": 144,
+      "median_age": 8.0,
+      "mean_age": 10.9,
+      "p25": 4.0,
+      "p75": 15.0,
+      "anio_citado_median": 2015.0
+    },
+    {
+      "anio": 2024,
+      "n_refs": 200,
+      "median_age": 10.0,
+      "mean_age": 14.2,
+      "p25": 5.0,
+      "p75": 19.0,
+      "anio_citado_median": 2014.0
+    },
+    {
+      "anio": 2025,
+      "n_refs": 202,
+      "median_age": 11.0,
+      "mean_age": 16.0,
+      "p25": 6.2,
+      "p75": 21.0,
+      "anio_citado_median": 2014.0
+    }
+  ],
+  "canon_quinquenal": [
+    {
+      "decada": 1960,
+      "n": 6,
+      "pct": 0.3
+    },
+    {
+      "decada": 1965,
+      "n": 14,
+      "pct": 0.7
+    },
+    {
+      "decada": 1970,
+      "n": 9,
+      "pct": 0.5
+    },
+    {
+      "decada": 1975,
+      "n": 24,
+      "pct": 1.3
+    },
+    {
+      "decada": 1980,
+      "n": 49,
+      "pct": 2.6
+    },
+    {
+      "decada": 1985,
+      "n": 79,
+      "pct": 4.2
+    },
+    {
+      "decada": 1990,
+      "n": 105,
+      "pct": 5.6
+    },
+    {
+      "decada": 1995,
+      "n": 207,
+      "pct": 11.0
+    },
+    {
+      "decada": 2000,
+      "n": 269,
+      "pct": 14.3
+    },
+    {
+      "decada": 2005,
+      "n": 353,
+      "pct": 18.8
+    },
+    {
+      "decada": 2010,
+      "n": 340,
+      "pct": 18.1
+    },
+    {
+      "decada": 2015,
+      "n": 272,
+      "pct": 14.5
+    },
+    {
+      "decada": 2020,
+      "n": 138,
+      "pct": 7.3
+    },
+    {
+      "decada": 2025,
+      "n": 1,
+      "pct": 0.1
+    }
+  ],
+  "clasicos_dsge_pct": {
+    "early_IT": {
+      "n": 150,
+      "pct": 76.5,
+      "total": 196
+    },
+    "post_crisis": {
+      "n": 304,
+      "pct": 69.1,
+      "total": 440
+    },
+    "reciente": {
+      "n": 448,
+      "pct": 36.0,
+      "total": 1243
+    }
+  }
+}
