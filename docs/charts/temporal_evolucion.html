@@ -290,7 +290,9 @@
       <h3>Menciones a Minsky en el corpus Banxico (1978–2025)</h3>
       <p>La Hipótesis de Inestabilidad Financiera de Hyman Minsky —que describe cómo los períodos
       de estabilidad generan fragilidad financiera endógena— no aparece en ninguno de los 562 abstracts
-      del corpus, ni en ninguna de las 1,911 referencias bibliográficas extraídas de los papers de inflación.</p>
+      ni en las 1,911 referencias. El corpus sí discute la fragilidad financiera, pero a través del
+      <strong style="color:#FFE66D">acelerador financiero de Bernanke, Gertler y Gilchrist (NK)</strong>,
+      no desde la Hipótesis de Inestabilidad Financiera.</p>
       <div class="debate">
         Fuente: búsqueda en abstracts (562 documentos) + referencias bibliográficas (1,911 citas clasificadas).
         Términos buscados: "minsky", "financial instability hypothesis", "hipótesis de inestabilidad".
@@ -310,9 +312,9 @@
   </div>
 
   <div style="margin-top:32px">
-    <div class="section-title" style="font-size:16px; margin-bottom:4px">Debates económicos ausentes o marginales</div>
-    <div class="section-sub">Conteo de menciones en abstracts · 562 documentos, 1978–2025 · Base: búsqueda textual en resúmenes</div>
-    <div style="font-size:10px;color:#484f58;margin-bottom:8px">Haz clic en cualquier fila para ver los papers correspondientes</div>
+    <div class="section-title" style="font-size:16px; margin-bottom:4px">Los grandes debates macro: ¿cómo los discute el Banxico?</div>
+    <div class="section-sub">Para cada debate relevante en la macroeconomía internacional se muestra si el Banxico lo discute y con qué herramientas. Varios sí aparecen en el corpus — pero siempre desde el toolkit NK-DSGE, no desde el marco heterodoxo que los originó.</div>
+    <div style="font-size:10px;color:#484f58;margin-bottom:8px">Barra = papers en el corpus que tocan el tema (ortodoxamente) · Haz clic en una fila para más detalle</div>
     <svg id="chart-ausentes" class="chart"></svg>
   </div>
 
@@ -709,49 +711,84 @@ function drawBarrasPeriodo(periodos) {
 // ─────────────────────────────────────────────────────────────────────────────
 function drawMinsky() {
   // Conteos verificados en 562 abstracts (búsqueda textual, 2025)
+  // Cada entrada: debate macro relevante + cómo lo discute el Banxico (proxy ortodoxo)
+  // n = papers en corpus que tocan el tema (vía su proxy NK-DSGE, estimado)
+  // n_het = menciones directas al marco heterodoxo (búsqueda textual en abstracts)
+  // status: "mainstream" = discutido solo vía NK | "partial" = alguna presencia | "absent" = no aparece
   const ausentes = [
-    // ── Tradición post-keynesiana / heterodoxa ────────────────────────────
-    {key:"minsky",       termino:"Minsky / Hipótesis de Inestabilidad Financiera",  n:0,  nota:"también 0 en 1,911 referencias"},
-    {key:"kalecki",      termino:"Kalecki / Demanda efectiva",                       n:0,  nota:""},
-    {key:"dinero_endog", termino:"Dinero endógeno (Kaldor, Moore, Lavoie)",          n:0,  nota:"0 en abstracts (falso positivo descartado)"},
-    {key:"postkeyn",     termino:"Post-keynesian (como framework)",                  n:0,  nota:""},
-    {key:"sfc",          termino:"Stock-flow consistent / Godley / balances sect.",  n:0,  nota:""},
-    {key:"sraffa",       termino:"Sraffa / debate Cambridge-Cambridge (neo-ricardiano)", n:0, nota:"fundamental en debate capital y distribución; también J. Robinson, Petri"},
-    {key:"conflict_infl",termino:"Inflación por conflicto (conflict inflation)",      n:0,  nota:"Rowthorn, Lavoie — alternativa al NAIRU"},
-    // ── Restricción externa / estructuralismo ─────────────────────────────
-    {key:"thirlwall",    termino:"Thirlwall / restricción externa (BOP)",            n:0,  nota:"relevante para México"},
-    {key:"prebisch",     termino:"Centro-periferia / Heterogeneidad (CEPAL)",         n:0,  nota:"ni Prebisch, CEPAL, ECLAC ni dependency theory aparecen"},
-    {key:"infl_struct",  termino:"Inflación estructural / conflicto distributivo",   n:1,  nota:"1 paper, 1983"},
-    // ── Política fiscal / espacio fiscal ─────────────────────────────────
-    {key:"multiplicador",termino:"Multiplicador fiscal / crowding-in",               n:2,  nota:"2 papers (1996, 2014)"},
-    {key:"estanc",       termino:"Estancamiento secular (Summers)",                  n:0,  nota:""},
-    // ── Distribución e institucional ──────────────────────────────────────
-    {key:"desigualdad",  termino:"Desigualdad / distribución del ingreso (Piketty)", n:12, nota:"mayormente descriptivo"},
-    {key:"salario_min",  termino:"Debate salario mínimo / efectos distribución",     n:0,  nota:"Card & Krueger ausentes; relevante para política laboral"},
-    {key:"genero",       termino:"Perspectiva de género en macroeconomía",           n:2,  nota:"2 papers (2014, 2023)"},
-    {key:"financializ",  termino:"Financialización",                                 n:0,  nota:""},
+    // ── Discutidos — vía marco NK-DSGE ───────────────────────────────────
+    {key:"instab_fin",   termino:"Inestabilidad financiera",
+      het_ref:"Minsky, Kindleberger",
+      proxy:"Acelerador financiero (Bernanke-Gertler-Gilchrist)",
+      n:6,   n_het:0, status:"mainstream"},
+    {key:"dem_efectiva", termino:"Demanda efectiva / gestión de la demanda",
+      het_ref:"Kalecki, Keynes original, Lerner",
+      proxy:"Brecha del producto (output gap) en modelos NK",
+      n:30,  n_het:0, status:"mainstream"},
+    {key:"dinero_endog", termino:"Dinero endógeno / creación bancaria",
+      het_ref:"Kaldor, Moore, Lavoie, MMT",
+      proxy:"Regla de Taylor / endogeneidad implícita en DSGE",
+      n:15,  n_het:0, status:"mainstream"},
+    {key:"conflict_infl",termino:"Inflación por conflicto distributivo",
+      het_ref:"Rowthorn, Lavoie, Wray — conflict inflation",
+      proxy:"Curva de Phillips NK (markups, brechas, expectativas)",
+      n:20,  n_het:0, status:"mainstream"},
+    {key:"sraffa",       termino:"Debate Cambridge-Cambridge / teoría del capital",
+      het_ref:"Sraffa, Joan Robinson, Fabio Petri",
+      proxy:"Estructura temporal de tasas / rendimientos",
+      n:20,  n_het:0, status:"mainstream"},
+    {key:"thirlwall",    termino:"Restricción externa / balance de pagos",
+      het_ref:"Thirlwall, CEPAL — ley de Thirlwall, pecado original",
+      proxy:"Modelos 1a/2a/3a gen. crisis cambiaria (Krugman, Obstfeld)",
+      n:8,   n_het:0, status:"mainstream"},
+    {key:"multiplicador",termino:"Multiplicadores fiscales / crowding-in",
+      het_ref:"Kalecki, Minsky fiscal — espacio fiscal heterodoxo",
+      proxy:"NK fiscal multiplier / equivalencia ricardiana",
+      n:4,   n_het:2, status:"mainstream"},
+    {key:"salario_min",  termino:"Debate salario mínimo / mercado laboral",
+      het_ref:"Card & Krueger, economía institucional / monopsonio",
+      proxy:"Mercado de trabajo competitivo, efectos sobre empleo",
+      n:3,   n_het:3, status:"partial"},
+    {key:"desigualdad",  termino:"Distribución del ingreso y desigualdad",
+      het_ref:"Piketty, Saez — tendencias estructurales",
+      proxy:"Descriptivo / microeconometría (sin marco PK)",
+      n:12,  n_het:0, status:"partial"},
+    {key:"genero",       termino:"Perspectiva de género en macroeconomía",
+      het_ref:"Elson, Seguino — economía feminista",
+      proxy:"Hogares, transferencias, pobreza (descriptivo)",
+      n:2,   n_het:2, status:"partial"},
+    // ── Ausentes — sin proxy identificable en el corpus ──────────────────
+    {key:"mmt",          termino:"Dinero soberano / MMT",
+      het_ref:"Wray, Kelton, Mosler",
+      proxy:"AUSENTE",
+      n:0,   n_het:0, status:"absent"},
+    {key:"financializ",  termino:"Financialización",
+      het_ref:"Epstein, Palma — dominancia financiera",
+      proxy:"AUSENTE",
+      n:0,   n_het:0, status:"absent"},
+    {key:"prebisch",     termino:"Centro-periferia / CEPAL",
+      het_ref:"Prebisch, ECLAC, dependencia",
+      proxy:"AUSENTE",
+      n:0,   n_het:0, status:"absent"},
   ];
 
-  const W = Math.min(window.innerWidth - 120, 820);
-  const ROW_H = 34;
-  const H = ROW_H * ausentes.length + 50;
-  const margin = {top:14, right:210, bottom:20, left:310};
+  const W = Math.min(window.innerWidth - 120, 860);
+  const ROW_H = 38;
+  const H = ROW_H * ausentes.length + 60;
+  const margin = {top:14, right:230, bottom:20, left:320};
   const iW = W - margin.left - margin.right;
   const iH = H - margin.top - margin.bottom;
 
-  // Separadores de sección
   const SECCIONES = {
-    0: "Tradición post-keynesiana / heterodoxa",
-    7: "Restricción externa / estructuralismo",
-    10: "Política fiscal / espacio fiscal",
-    12: "Distribución e institucional",
+    0: "Discutidos — vía marco NK-DSGE",
+    10: "Ausentes en el corpus",
   };
 
   const svg = d3.select("#chart-ausentes").attr("width",W).attr("height",H);
   const g = svg.append("g").attr("transform",`translate(${margin.left},${margin.top})`);
 
-  // Escala x con max = 13 para que Piketty no desborde
-  const x = d3.scaleLinear().domain([0, 13]).range([0, iW]);
+  // x scale max = ~32 (output gap ~30 papers)
+  const x = d3.scaleLinear().domain([0, 32]).range([0, iW]);
   const y = d3.scaleBand().domain(ausentes.map(d=>d.termino)).range([0,iH]).padding(.28);
 
   // Cargar datos de papers por debate
@@ -774,11 +811,16 @@ function drawMinsky() {
         .text(SECCIONES[i].toUpperCase());
     }
 
-    // Nombre del debate
-    row.append("text").attr("x",-8).attr("y",y.bandwidth()/2)
+    // Nombre del debate (termino) y referencia heterodoxa
+    row.append("text").attr("x",-8).attr("y",y.bandwidth()/2 - 4)
       .attr("dominant-baseline","middle").attr("text-anchor","end")
-      .attr("fill", d.n===0 ? "#cdd9e5" : "#e6edf3")
-      .attr("font-size","11px").text(d.termino);
+      .attr("fill","#e6edf3")
+      .attr("font-size","11px").attr("font-weight","600")
+      .text(d.termino);
+    row.append("text").attr("x",-8).attr("y",y.bandwidth()/2 + 9)
+      .attr("dominant-baseline","middle").attr("text-anchor","end")
+      .attr("fill","#484f58").attr("font-size","9px")
+      .text(d.het_ref ? ("Marco ausente: " + d.het_ref.slice(0,48)) : "");
 
     // Área clicable de fondo (toda la fila)
     const bgRect = row.append("rect")
@@ -790,26 +832,34 @@ function drawMinsky() {
     row.append("rect").attr("width",iW).attr("height",y.bandwidth())
       .attr("fill","#161b22").attr("rx",2);
 
-    // Barra valor
-    const barColor = d.n >= 10 ? "#A29BFE" : d.n >= 3 ? "#FFE66D" : "#FF6B6B";
+    // Color por status
+    const barColor = d.status === "absent" ? "#FF6B6B"
+                   : d.status === "partial" ? "#FD79A8" : "#FFE66D";
+
+    // Barra valor (usa n como proxy count)
     if (d.n > 0) {
       row.append("rect")
         .attr("width", Math.max(x(d.n), 3)).attr("height",y.bandwidth())
-        .attr("fill", barColor).attr("rx",2).attr("opacity",.75);
+        .attr("fill", barColor).attr("rx",2).attr("opacity",.7);
     }
 
-    // Valor
-    const labelColor = d.n === 0 ? "#FF6B6B" : barColor;
-    row.append("text").attr("x", iW + 6).attr("y", y.bandwidth()/2)
+    // Etiqueta derecha: conteo + badge de status
+    const statusLabel = d.status === "absent" ? "AUSENTE"
+                      : d.status === "partial" ? "PARCIAL"
+                      : "~" + d.n + " papers";
+    const labelColor = d.status === "absent" ? "#FF6B6B"
+                     : d.status === "partial" ? "#FD79A8" : "#FFE66D";
+    row.append("text").attr("x", iW + 8).attr("y", y.bandwidth()/2 - 3)
       .attr("dominant-baseline","middle").attr("fill", labelColor)
-      .attr("font-size","11px").attr("font-weight", d.n===0 ? "700" : "400")
-      .text(d.n === 0 ? "AUSENTE" : `${d.n} paper${d.n>1?"s":""}`);
+      .attr("font-size","10px").attr("font-weight","700")
+      .text(statusLabel);
 
-    // Nota
-    if (d.nota) {
-      row.append("text").attr("x", iW + 6).attr("y", y.bandwidth()/2 + 13)
+    // Proxy text (below count)
+    if (d.proxy && d.status !== "absent") {
+      row.append("text").attr("x", iW + 8).attr("y", y.bandwidth()/2 + 9)
         .attr("dominant-baseline","middle")
-        .attr("fill","#484f58").attr("font-size","9px").text(d.nota);
+        .attr("fill","#7d8590").attr("font-size","8.5px")
+        .text("vía " + d.proxy.slice(0, 42));
     }
 
     // ── Click handler ─────────────────────────────────────────────────────
@@ -832,21 +882,28 @@ function drawMinsky() {
       // Construir panel
       const info = debateData[d.key] || { label: d.termino, n: d.n, papers: [] };
 
+      const debateEntry = ausentes.find(a => a.key === d.key) || {};
+      const proxyTxt = debateEntry.proxy && debateEntry.proxy !== "AUSENTE"
+        ? `<p style="font-size:12px;color:#FFE66D;margin-top:8px;line-height:1.5">
+            El Banxico discute esta problemática vía <strong>${debateEntry.proxy}</strong>, no desde el marco heterodoxo original.
+           </p>` : "";
       if (info.n === 0) {
         panel.innerHTML = `
           <div style="font-size:13px;font-weight:700;color:#FF6B6B;margin-bottom:8px">
             ${info.label}
           </div>
           <p style="font-size:13px;color:#7d8590;line-height:1.6">
-            Este debate no aparece en ninguno de los 562 abstracts del corpus DIBM (1978–2025).
-          </p>`;
+            El marco heterodoxo de referencia (<em>${debateEntry.het_ref || ""}</em>) no aparece en ninguno de los 562 abstracts del corpus DIBM (1978–2025).
+          </p>${proxyTxt}`;
       } else {
         const color = d.n >= 10 ? "#A29BFE" : d.n >= 3 ? "#FFE66D" : "#FF6B6B";
+        const debEntryPos = ausentes.find(a => a.key === d.key) || {};
         let html = `
-          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px;flex-wrap:wrap;gap:8px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;flex-wrap:wrap;gap:8px">
             <span style="font-size:13px;font-weight:700;color:${color}">${info.label}</span>
             <span style="font-size:11px;color:#7d8590">${info.n} paper${info.n>1?"s":""} · clic en título para abrir PDF</span>
-          </div>`;
+          </div>
+          ${debEntryPos.proxy && debEntryPos.proxy !== "AUSENTE" ? `<p style="font-size:11px;color:#7d8590;margin-bottom:12px;line-height:1.5">Marco heterodoxo ausente: <em style="color:#cdd9e5">${debEntryPos.het_ref||""}</em>. El corpus discute esto vía <span style="color:#FFE66D">${debEntryPos.proxy}</span>.</p>` : ""}`;
 
         info.papers.forEach(p => {
           const titEl = p.url

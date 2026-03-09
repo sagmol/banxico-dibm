@@ -2,7 +2,9 @@
   "minsky": {
     "label": "Minsky / Hipótesis de Inestabilidad Financiera",
     "n": 0,
-    "papers": []
+    "papers": [],
+    "het_ref": "Minsky, Kindleberger",
+    "proxy": "Acelerador financiero NK"
   },
   "kalecki": {
     "label": "Kalecki / Demanda efectiva",
@@ -12,7 +14,9 @@
   "dinero_endog": {
     "label": "Dinero endógeno (Kaldor, Moore, Lavoie)",
     "n": 0,
-    "papers": []
+    "papers": [],
+    "het_ref": "Kaldor, Moore, Lavoie, MMT",
+    "proxy": "Regla de Taylor / endogeneidad DSGE"
   },
   "postkeyn": {
     "label": "Post-keynesian (como framework)",
@@ -27,12 +31,16 @@
   "thirlwall": {
     "label": "Thirlwall / restricción externa (BOP)",
     "n": 0,
-    "papers": []
+    "papers": [],
+    "het_ref": "Thirlwall, CEPAL — ley de Thirlwall",
+    "proxy": "Modelos crisis cambiaria 1a/2a/3a gen."
   },
   "prebisch": {
     "label": "Centro-periferia / Heterogeneidad estructural (CEPAL)",
     "n": 0,
-    "papers": []
+    "papers": [],
+    "het_ref": "Prebisch, ECLAC, dependencia",
+    "proxy": "AUSENTE"
   },
   "infl_struct": {
     "label": "Inflación estructural / conflicto distributivo",
@@ -77,7 +85,9 @@
         "snippet": "We estimate <mark>fiscal multiplier</mark>s in a panel of countries using dynamic panel techniques and quarterly data for…",
         "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{98C2B193-277B-9FB3-EC58-1C0294BFB1BE}.pdf"
       }
-    ]
+    ],
+    "het_ref": "Kalecki, Minsky fiscal",
+    "proxy": "NK fiscal multiplier / equiv. ricardiana"
   },
   "estanc": {
     "label": "Estancamiento secular (Summers)",
@@ -216,7 +226,9 @@
         "snippet": "…levels, reduced public goods provision, increased agricultural employment, and <mark>inequality</mark>. Concertaje also limited mobility, although its effect on immigrants is milder,…",
         "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{06CFB3B2-91BF-B71A-33E3-4A301088B8D6}.pdf"
       }
-    ]
+    ],
+    "het_ref": "Piketty, Saez — tendencias estructurales",
+    "proxy": "Descriptivo / microeconometría (sin marco PK)"
   },
   "genero": {
     "label": "Perspectiva de género en macroeconomía",
@@ -245,26 +257,57 @@
         "snippet": "…efault rates that gradually reduced afterward. Our study identified a potential <mark>gender gap</mark> that has been understudied in the literature. En este documento se investiga có…",
         "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{060A76F7-FD34-729C-6498-B5A09ABACC97}.pdf"
       }
-    ]
+    ],
+    "het_ref": "Elson, Seguino — economía feminista",
+    "proxy": "Hogares, transferencias (descriptivo)"
   },
   "financializ": {
     "label": "Financialización",
     "n": 0,
-    "papers": []
+    "papers": [],
+    "het_ref": "Epstein, Palma — dominancia financiera",
+    "proxy": "AUSENTE"
   },
   "sraffa": {
     "label": "Sraffa / Debate Cambridge-Cambridge (neo-ricardiano)",
     "n": 0,
-    "papers": []
+    "papers": [],
+    "het_ref": "Sraffa, Joan Robinson, Fabio Petri",
+    "proxy": "Estructura temporal de tasas"
   },
   "conflict_infl": {
     "label": "Inflación por conflicto (conflict inflation)",
     "n": 0,
-    "papers": []
+    "papers": [],
+    "het_ref": "Rowthorn, Lavoie — conflict inflation",
+    "proxy": "Curva de Phillips NK"
   },
   "salario_min": {
     "label": "Debate salario mínimo / efectos distribución",
     "n": 0,
-    "papers": []
+    "papers": [],
+    "het_ref": "Card & Krueger, economía institucional / monopsonio",
+    "proxy": "Mercado de trabajo competitivo, efectos sobre empleo"
+  },
+  "instab_fin": {
+    "label": "Inestabilidad financiera",
+    "n": 0,
+    "papers": [],
+    "het_ref": "Minsky, Kindleberger",
+    "proxy": "Acelerador financiero (Bernanke-Gertler-Gilchrist)"
+  },
+  "dem_efectiva": {
+    "label": "Demanda efectiva / gestión de la demanda",
+    "n": 0,
+    "papers": [],
+    "het_ref": "Kalecki, Keynes original, Lerner",
+    "proxy": "Brecha del producto (output gap) en modelos NK"
+  },
+  "mmt": {
+    "label": "Dinero soberano / MMT",
+    "n": 0,
+    "papers": [],
+    "het_ref": "Wray, Kelton, Mosler",
+    "proxy": "AUSENTE"
   }
 }
