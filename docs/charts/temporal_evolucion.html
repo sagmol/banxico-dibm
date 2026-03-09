@@ -257,28 +257,39 @@
 
   <div class="section-title">Lo que no está: la hipótesis del silencio</div>
   <div class="section-sub">
-    Después de la crisis de 2008, muchos bancos centrales del mundo "rehabilitaron" a Hyman Minsky.
-    La Fed, el BoE y el BIS comenzaron a citar la Hipótesis de Inestabilidad Financiera.
-    El Banxico no lo hizo.
+    Ausencias bibliográficas en los 562 abstracts del corpus completo (1978–2025)
+    y en las 1,911 referencias extraídas del subuniverso inflación (85 papers, 2001–2025).
+    Los debates listados no son marginales en la literatura internacional — simplemente no existen en el pensamiento publicado del Banxico.
   </div>
 
   <div class="minsky-box">
     <div class="minsky-zero">0</div>
     <div class="minsky-text">
-      <h3>Citas a Minsky en el corpus Banxico (1978–2025)</h3>
-      <p>A pesar de que la crisis de 2008 validó empíricamente muchas de las predicciones de la
-      Hipótesis de Inestabilidad Financiera (HIF), el Banco de México no incorporó a Minsky
-      ni en sus working papers de inflación, ni en sus modelos DSGE.</p>
+      <h3>Menciones a Minsky en el corpus Banxico (1978–2025)</h3>
+      <p>La Hipótesis de Inestabilidad Financiera de Hyman Minsky —que describe cómo los períodos
+      de estabilidad generan fragilidad financiera endógena— no aparece en ninguno de los 562 abstracts
+      del corpus, ni en ninguna de las 1,911 referencias bibliográficas extraídas de los papers de inflación.</p>
       <div class="debate">
-        Comparar con: Fed NY (Minsky en 12 WPs post-2008), BoE (Financial Stability Reports),
-        BIS Quarterly Review (ciclos financieros Minsky-Kindleberger).
+        Fuente: búsqueda en abstracts (562 documentos) + referencias bibliográficas (1,911 citas clasificadas).
+        Términos buscados: "minsky", "financial instability hypothesis", "hipótesis de inestabilidad".
       </div>
     </div>
   </div>
 
+  <div style="margin-top:24px; padding:20px 24px; background:#0d1117; border:1px solid #1e2738; border-radius:10px;">
+    <div style="font-size:13px; font-weight:700; color:#FFE66D; margin-bottom:8px;">Paradoja Keynes</div>
+    <p style="font-size:13px; color:#7d8590; line-height:1.6; max-width:620px;">
+      El corpus contiene <strong style="color:#e6edf3">9 papers que mencionan "New Keynesian"</strong> —
+      el modelo DSGE con fricciones nominales. Sin embargo, contiene
+      <strong style="color:#FF6B6B">1 solo paper que usa "Keynes" en sentido original</strong>
+      (keynesiano-estructuralista, 1983 — publicado antes del inflation targeting).
+      El "Keynes" del Banxico no es Keynes: es una etiqueta para el marco NK-DSGE.
+    </p>
+  </div>
+
   <div style="margin-top:32px">
-    <div class="section-title" style="font-size:16px; margin-bottom:8px">Debates económicos ausentes del corpus</div>
-    <div class="section-sub">Términos con cero o presencia marginal (≤1 paper) en 563 documentos, 1978–2025</div>
+    <div class="section-title" style="font-size:16px; margin-bottom:4px">Debates económicos ausentes o marginales</div>
+    <div class="section-sub">Conteo de menciones en abstracts · 562 documentos, 1978–2025 · Base: búsqueda textual en resúmenes</div>
     <svg id="chart-ausentes" class="chart"></svg>
   </div>
 
@@ -654,50 +665,94 @@ function drawBarrasPeriodo(periodos) {
 // TAB 3: MINSKY
 // ─────────────────────────────────────────────────────────────────────────────
 function drawMinsky() {
+  // Conteos verificados en 562 abstracts (búsqueda textual, 2025)
+  // n = número de papers que contienen el término en su abstract
   const ausentes = [
-    {termino:"MMT / Modern Money Theory", n:0},
-    {termino:"Minsky / Inestabilidad financiera", n:0},
-    {termino:"Kalecki / Demanda efectiva", n:0},
-    {termino:"Marc Lavoie / Post-keynesian", n:1},
-    {termino:"Estancamiento secular", n:0},
-    {termino:"Economía feminista", n:0},
-    {termino:"Financialización", n:0},
-    {termino:"Decrecimiento / Degrowth", n:0},
-    {termino:"Piketty / Desigualdad capital", n:1},
-    {termino:"Economía ecológica / Clima", n:1},
+    // ── Tradición post-keynesiana / heterodoxa ────────────────────────────
+    {termino:"Minsky / Hipótesis de Inestabilidad Financiera",  n:0,  nota:"también 0 en 1,911 referencias"},
+    {termino:"Kalecki / Demanda efectiva",                       n:0,  nota:""},
+    {termino:"Dinero endógeno (Kaldor, Moore, Lavoie)",          n:1,  nota:"1 paper, 2018"},
+    {termino:"Post-keynesian (como framework)",                  n:0,  nota:""},
+    {termino:"Stock-flow consistent / Godley / balances sect.",  n:0,  nota:""},
+    // ── Restricción externa / estructuralismo ─────────────────────────────
+    {termino:"Thirlwall / restricción externa (BOP)",            n:0,  nota:"relevante para México"},
+    {termino:"Prebisch / CEPAL / estructuralismo latinoam.",     n:2,  nota:"2 papers (2006, 2022)"},
+    {termino:"Inflación estructural / conflicto distributivo",   n:1,  nota:"1 paper, 1983"},
+    // ── Política fiscal / espacio fiscal ─────────────────────────────────
+    {termino:"Multiplicador fiscal / crowding-in",               n:2,  nota:"2 papers (1996, 2014)"},
+    {termino:"Estancamiento secular (Summers)",                  n:0,  nota:""},
+    // ── Distribución e institucional ──────────────────────────────────────
+    {termino:"Desigualdad / distribución del ingreso (Piketty)", n:12, nota:"mayormente descriptivo"},
+    {termino:"Perspectiva de género en macroeconomía",           n:2,  nota:"2 papers (2014, 2023)"},
+    {termino:"Financialización",                                 n:0,  nota:""},
   ];
 
-  const W = Math.min(window.innerWidth - 160, 700);
-  const H = 30 * ausentes.length + 40;
-  const margin = {top:10,right:120,bottom:20,left:280};
+  const W = Math.min(window.innerWidth - 120, 820);
+  const ROW_H = 34;
+  const H = ROW_H * ausentes.length + 50;
+  const margin = {top:14, right:210, bottom:20, left:310};
   const iW = W - margin.left - margin.right;
   const iH = H - margin.top - margin.bottom;
+
+  // Separadores de sección
+  const SECCIONES = {
+    0: "Tradición post-keynesiana / heterodoxa",
+    5: "Restricción externa / estructuralismo",
+    8: "Política fiscal / espacio fiscal",
+    10: "Distribución e institucional",
+  };
 
   const svg = d3.select("#chart-ausentes").attr("width",W).attr("height",H);
   const g = svg.append("g").attr("transform",`translate(${margin.left},${margin.top})`);
 
-  const x = d3.scaleLinear().domain([0,5]).range([0,iW]);
-  const y = d3.scaleBand().domain(ausentes.map(d=>d.termino)).range([0,iH]).padding(.3);
+  // Escala x con max = 13 para que Piketty no desborde
+  const x = d3.scaleLinear().domain([0, 13]).range([0, iW]);
+  const y = d3.scaleBand().domain(ausentes.map(d=>d.termino)).range([0,iH]).padding(.28);
 
-  ausentes.forEach(d => {
+  ausentes.forEach((d, i) => {
     const row = g.append("g").attr("transform",`translate(0,${y(d.termino)})`);
-    // Label
+
+    // Etiqueta de sección (cada grupo)
+    if (SECCIONES[i] !== undefined) {
+      row.append("text").attr("x", -margin.left + 4).attr("y", -6)
+        .attr("fill","#484f58").attr("font-size","9px").attr("font-weight","600")
+        .attr("text-transform","uppercase").attr("letter-spacing","0.6px")
+        .text(SECCIONES[i].toUpperCase());
+    }
+
+    // Nombre del debate
     row.append("text").attr("x",-8).attr("y",y.bandwidth()/2)
       .attr("dominant-baseline","middle").attr("text-anchor","end")
-      .attr("fill","#cdd9e5").attr("font-size","11px").text(d.termino);
-    // Bar bg
+      .attr("fill", d.n===0 ? "#cdd9e5" : "#e6edf3")
+      .attr("font-size","11px").text(d.termino);
+
+    // Barra fondo
     row.append("rect").attr("width",iW).attr("height",y.bandwidth())
       .attr("fill","#161b22").attr("rx",2);
-    // Bar value
+
+    // Barra valor
     if (d.n > 0) {
-      row.append("rect").attr("width",x(d.n)).attr("height",y.bandwidth())
-        .attr("fill","#FF6B6B").attr("rx",2).attr("opacity",.7);
+      const col = d.n >= 10 ? "#A29BFE" : d.n >= 3 ? "#FFE66D" : "#FF6B6B";
+      row.append("rect")
+        .attr("width", Math.max(x(d.n), 3)).attr("height",y.bandwidth())
+        .attr("fill", col).attr("rx",2).attr("opacity",.75);
     }
-    // Value
-    row.append("text").attr("x",iW+6).attr("y",y.bandwidth()/2)
-      .attr("dominant-baseline","middle").attr("fill",d.n===0?"#FF6B6B":"#e6edf3")
-      .attr("font-size","11px").attr("font-weight",d.n===0?"700":"400")
-      .text(d.n === 0 ? "AUSENTE" : `${d.n} paper`);
+
+    // Valor numérico
+    const label = d.n === 0 ? "AUSENTE" : `${d.n} paper${d.n>1?"s":""}`;
+    const labelColor = d.n === 0 ? "#FF6B6B" : d.n >= 10 ? "#A29BFE" : d.n >= 3 ? "#FFE66D" : "#FF6B6B";
+    row.append("text").attr("x", iW + 6).attr("y", y.bandwidth()/2)
+      .attr("dominant-baseline","middle")
+      .attr("fill", labelColor)
+      .attr("font-size","11px").attr("font-weight", d.n===0 ? "700" : "400")
+      .text(label);
+
+    // Nota contextual
+    if (d.nota) {
+      row.append("text").attr("x", iW + 6).attr("y", y.bandwidth()/2 + 13)
+        .attr("dominant-baseline","middle")
+        .attr("fill","#484f58").attr("font-size","9px").text(d.nota);
+    }
   });
 
   // Vocab comparison
