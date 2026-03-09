@@ -185,10 +185,22 @@ footer { text-align:center; padding:40px; font-size:11px; color:var(--muted);
   .jour-tag { display:none; }
   .ausencia-list { max-width:100%; }
   .hero-title .big-num { font-size:clamp(4rem,20vw,8rem); }
+  .chart-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+  svg.chart { min-width:480px; }
 }
+  .back-btn {
+    position:fixed; top:14px; left:14px; z-index:9999;
+    background:rgba(13,17,23,.92); border:1px solid #30363d;
+    color:#4ECDC4; padding:6px 14px; border-radius:6px;
+    font-size:11px; font-weight:600; text-decoration:none;
+    letter-spacing:.3px; backdrop-filter:blur(4px);
+    transition:border-color .2s;
+  }
+  .back-btn:hover { border-color:#4ECDC4; }
 </style>
 </head>
 <body>
+<a href="../index.html" class="back-btn">← Inicio</a>
 
 <nav>
   <div class="logo">Banxico<span>·Wrapped</span></div>
