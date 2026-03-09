@@ -147,10 +147,33 @@
     transition:border-color .2s;
   }
   .back-btn:hover { border-color:#4ECDC4; }
+
+  .chart-nav {
+    position:fixed; top:14px; left:14px; z-index:9999;
+    display:flex; align-items:center; gap:6px;
+  }
+  .chart-nav a {
+    background:rgba(13,17,23,.92); border:1px solid #30363d;
+    color:#4ECDC4; padding:6px 12px; border-radius:6px;
+    font-size:11px; font-weight:600; text-decoration:none;
+    letter-spacing:.3px; backdrop-filter:blur(4px);
+    transition:border-color .2s; white-space:nowrap;
+    font-family:'Inter',system-ui,sans-serif;
+  }
+  .chart-nav a:hover { border-color:#4ECDC4; color:#e6edf3; }
+  .chart-nav .nav-sep {
+    color:#30363d; font-size:14px; line-height:1;
+    font-family:monospace;
+  }
+
 </style>
 </head>
 <body>
-<a href="../index.html" class="back-btn">← Inicio</a>
+<div class="chart-nav">
+  <a href="../index.html">← Inicio</a>
+  <a href="wrapped_ortodoxia.html">‹ Resumen Wrapped</a>
+  <a href="red_coautoria.html">Red Coautoría ›</a>
+</div>
 
 <div class="header">
   <h1>Banxico DIBM · <span>Evolución Temporal</span></h1>
@@ -159,7 +182,6 @@
 
 <div class="tabs">
   <div class="tab active" data-tab="vocabulario">Vocabulario NLP</div>
-  <div class="tab" data-tab="citas">Citas por período</div>
   <div class="tab" data-tab="minsky">Minsky & lo ausente</div>
   <div class="tab" data-tab="conceptos">Conceptos NK-DSGE ★</div>
   <div class="tab" data-tab="vintage">Vintage de citas</div>
@@ -402,7 +424,7 @@
 <script>
 
 // ── Tabs ──────────────────────────────────────────────────────────────────────
-const TAB_IDS = ["vocabulario", "citas", "minsky", "conceptos", "vintage", "autores"];
+const TAB_IDS = ["vocabulario", "minsky", "conceptos", "vintage", "autores"];
 function showTab(id) {
   TAB_IDS.forEach(t => {
     const el = document.getElementById("tab-" + t);
@@ -410,7 +432,6 @@ function showTab(id) {
   });
   document.querySelectorAll(".tab").forEach(t =>
     t.classList.toggle("active", t.dataset.tab === id));
-  if (id === "citas"     && !window._citasDrawn)     { drawCitas();      window._citasDrawn = true; }
   if (id === "minsky"    && !window._minskyDrawn)    { drawMinsky();     window._minskyDrawn = true; }
   if (id === "conceptos" && !window._conceptosDrawn) { drawConceptos();  window._conceptosDrawn = true; }
   if (id === "vintage"   && !window._vintageDrawn)   { drawVintage();    window._vintageDrawn   = true; }
@@ -695,6 +716,8 @@ function drawMinsky() {
     {key:"dinero_endog", termino:"Dinero endógeno (Kaldor, Moore, Lavoie)",          n:0,  nota:"0 en abstracts (falso positivo descartado)"},
     {key:"postkeyn",     termino:"Post-keynesian (como framework)",                  n:0,  nota:""},
     {key:"sfc",          termino:"Stock-flow consistent / Godley / balances sect.",  n:0,  nota:""},
+    {key:"sraffa",       termino:"Sraffa / debate Cambridge-Cambridge (neo-ricardiano)", n:0, nota:"fundamental en debate capital y distribución; también J. Robinson, Petri"},
+    {key:"conflict_infl",termino:"Inflación por conflicto (conflict inflation)",      n:0,  nota:"Rowthorn, Lavoie — alternativa al NAIRU"},
     // ── Restricción externa / estructuralismo ─────────────────────────────
     {key:"thirlwall",    termino:"Thirlwall / restricción externa (BOP)",            n:0,  nota:"relevante para México"},
     {key:"prebisch",     termino:"Centro-periferia / Heterogeneidad (CEPAL)",         n:0,  nota:"ni Prebisch, CEPAL, ECLAC ni dependency theory aparecen"},
@@ -704,6 +727,7 @@ function drawMinsky() {
     {key:"estanc",       termino:"Estancamiento secular (Summers)",                  n:0,  nota:""},
     // ── Distribución e institucional ──────────────────────────────────────
     {key:"desigualdad",  termino:"Desigualdad / distribución del ingreso (Piketty)", n:12, nota:"mayormente descriptivo"},
+    {key:"salario_min",  termino:"Debate salario mínimo / efectos distribución",     n:0,  nota:"Card & Krueger ausentes; relevante para política laboral"},
     {key:"genero",       termino:"Perspectiva de género en macroeconomía",           n:2,  nota:"2 papers (2014, 2023)"},
     {key:"financializ",  termino:"Financialización",                                 n:0,  nota:""},
   ];
@@ -718,9 +742,9 @@ function drawMinsky() {
   // Separadores de sección
   const SECCIONES = {
     0: "Tradición post-keynesiana / heterodoxa",
-    5: "Restricción externa / estructuralismo",
-    8: "Política fiscal / espacio fiscal",
-    10: "Distribución e institucional",
+    7: "Restricción externa / estructuralismo",
+    10: "Política fiscal / espacio fiscal",
+    12: "Distribución e institucional",
   };
 
   const svg = d3.select("#chart-ausentes").attr("width",W).attr("height",H);
@@ -882,7 +906,8 @@ function drawMinsky() {
     };
 
     grid.appendChild(makeVocabBox("Términos ORTODOXOS en abstracts", d.top_terminos_ortodoxos.slice(0,12), "#4ECDC4"));
-    grid.appendChild(makeVocabBox("Términos HETERODOXOS detectados", d.top_terminos_heterodoxos.length ? d.top_terminos_heterodoxos : [{term:"(ninguno significativo)",freq:0}], "#FF6B6B"));
+    const heterodoxFiltered = d.top_terminos_heterodoxos.filter(t => t.term !== "distribution");
+    grid.appendChild(makeVocabBox("Términos HETERODOXOS detectados", heterodoxFiltered.length ? heterodoxFiltered : [{term:"(ninguno significativo)",freq:0}], "#FF6B6B"));
   }
 }
 

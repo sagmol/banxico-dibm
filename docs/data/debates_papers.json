@@ -251,5 +251,20 @@
     "label": "Financialización",
     "n": 0,
     "papers": []
+  },
+  "sraffa": {
+    "label": "Sraffa / Debate Cambridge-Cambridge (neo-ricardiano)",
+    "n": 0,
+    "papers": []
+  },
+  "conflict_infl": {
+    "label": "Inflación por conflicto (conflict inflation)",
+    "n": 0,
+    "papers": []
+  },
+  "salario_min": {
+    "label": "Debate salario mínimo / efectos distribución",
+    "n": 0,
+    "papers": []
   }
 }

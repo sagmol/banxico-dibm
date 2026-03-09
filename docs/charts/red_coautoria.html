@@ -129,10 +129,33 @@
     transition:border-color .2s;
   }
   .back-btn:hover { border-color:#4ECDC4; }
+
+  .chart-nav {
+    position:fixed; top:14px; left:14px; z-index:9999;
+    display:flex; align-items:center; gap:6px;
+  }
+  .chart-nav a {
+    background:rgba(13,17,23,.92); border:1px solid #30363d;
+    color:#4ECDC4; padding:6px 12px; border-radius:6px;
+    font-size:11px; font-weight:600; text-decoration:none;
+    letter-spacing:.3px; backdrop-filter:blur(4px);
+    transition:border-color .2s; white-space:nowrap;
+    font-family:'Inter',system-ui,sans-serif;
+  }
+  .chart-nav a:hover { border-color:#4ECDC4; color:#e6edf3; }
+  .chart-nav .nav-sep {
+    color:#30363d; font-size:14px; line-height:1;
+    font-family:monospace;
+  }
+
 </style>
 </head>
 <body>
-<a href="../index.html" class="back-btn">← Inicio</a>
+<div class="chart-nav">
+  <a href="../index.html">← Inicio</a>
+  <a href="temporal_evolucion.html">‹ Evolución Temporal</a>
+  <a href="red_autores.html">Red Autores ›</a>
+</div>
 
 <div id="loading">
   <div class="spinner"></div>
@@ -470,9 +493,9 @@ function renderGraph(allNodes, allLinks, nComm) {
     .attr('text-anchor','middle')
     .style('display', d => d.n_papers > 3 ? null : 'none')
     .text(d => {
-      // Show last surname token of the name
+      // Show surname(s): all tokens except the last (first name) in "Lastname Firstname" format
       const parts = d.nombre.split(/[\s,]+/).filter(Boolean);
-      return parts.length > 1 ? parts[parts.length-1] : parts[0] || d.nombre;
+      return parts.length > 1 ? parts.slice(0, -1).join(' ') : parts[0] || d.nombre;
     });
 
   sim.on('tick', () => {
