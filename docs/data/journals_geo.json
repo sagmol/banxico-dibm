@@ -1,0 +1,286 @@
+{
+  "total_refs": 1348,
+  "refs_mapeadas": 1308,
+  "pct_mapeadas": 97.0,
+  "por_pais": [
+    {
+      "cc": "US",
+      "pais": "United States",
+      "region": "USA",
+      "color": "#4ECDC4",
+      "n": 936,
+      "pct": 71.6,
+      "lat": 37.09,
+      "lng": -95.71,
+      "journals": [
+        {
+          "journal": "American Economic Review",
+          "n": 115
+        },
+        {
+          "journal": "Journal of Monetary Economics",
+          "n": 84
+        },
+        {
+          "journal": "Econometrica",
+          "n": 61
+        },
+        {
+          "journal": "Quarterly Journal of Economics",
+          "n": 57
+        },
+        {
+          "journal": "Journal of Political Economy",
+          "n": 53
+        },
+        {
+          "journal": "Federal Reserve",
+          "n": 47
+        },
+        {
+          "journal": "Journal of Money, Credit and Banking",
+          "n": 43
+        },
+        {
+          "journal": "Journal of Econometrics",
+          "n": 38
+        },
+        {
+          "journal": "Journal of International Economics",
+          "n": 36
+        },
+        {
+          "journal": "Journal of Business & Economic Statistics",
+          "n": 30
+        }
+      ]
+    },
+    {
+      "cc": "GB",
+      "pais": "United Kingdom",
+      "region": "UK",
+      "color": "#74B9FF",
+      "n": 186,
+      "pct": 14.2,
+      "lat": 55.38,
+      "lng": -3.44,
+      "journals": [
+        {
+          "journal": "Economica",
+          "n": 35
+        },
+        {
+          "journal": "Economic Journal",
+          "n": 24
+        },
+        {
+          "journal": "Review of Economic Studies",
+          "n": 23
+        },
+        {
+          "journal": "Economics Letters",
+          "n": 23
+        },
+        {
+          "journal": "Journal of Applied Econometrics",
+          "n": 21
+        },
+        {
+          "journal": "Economic Policy",
+          "n": 19
+        },
+        {
+          "journal": "Bank of England",
+          "n": 17
+        },
+        {
+          "journal": "Libro (Oxford University Press)",
+          "n": 10
+        },
+        {
+          "journal": "Oxford Bulletin of Economics and Statistics",
+          "n": 8
+        },
+        {
+          "journal": "Libro (Cambridge University Press)",
+          "n": 6
+        }
+      ]
+    },
+    {
+      "cc": "MX",
+      "pais": "Mexico",
+      "region": "LATAM",
+      "color": "#FD79A8",
+      "n": 99,
+      "pct": 7.6,
+      "lat": 23.63,
+      "lng": -102.55,
+      "journals": [
+        {
+          "journal": "Banco de México WP",
+          "n": 79
+        },
+        {
+          "journal": "Monetaria (CEMLA)",
+          "n": 11
+        },
+        {
+          "journal": "El Trimestre Económico",
+          "n": 9
+        }
+      ]
+    },
+    {
+      "cc": "DE",
+      "pais": "Germany",
+      "region": "EU",
+      "color": "#A29BFE",
+      "n": 40,
+      "pct": 3.1,
+      "lat": 51.17,
+      "lng": 10.45,
+      "journals": [
+        {
+          "journal": "ECB Working Paper",
+          "n": 26
+        },
+        {
+          "journal": "Journal of the European Economic Association",
+          "n": 9
+        },
+        {
+          "journal": "Libro (Springer)",
+          "n": 5
+        }
+      ]
+    },
+    {
+      "cc": "BE",
+      "pais": "Belgium",
+      "region": "EU",
+      "color": "#A29BFE",
+      "n": 16,
+      "pct": 1.2,
+      "lat": 50.5,
+      "lng": 4.47,
+      "journals": [
+        {
+          "journal": "European Economic Review",
+          "n": 16
+        }
+      ]
+    },
+    {
+      "cc": "CA",
+      "pais": "Canada",
+      "region": "Canada",
+      "color": "#55EFC4",
+      "n": 15,
+      "pct": 1.1,
+      "lat": 56.13,
+      "lng": -106.35,
+      "journals": [
+        {
+          "journal": "Bank of Canada",
+          "n": 15
+        }
+      ]
+    },
+    {
+      "cc": "CH",
+      "pais": "Switzerland",
+      "region": "INTL",
+      "color": "#FFE66D",
+      "n": 9,
+      "pct": 0.7,
+      "lat": 46.82,
+      "lng": 8.23,
+      "journals": [
+        {
+          "journal": "BIS Working Paper",
+          "n": 9
+        }
+      ]
+    },
+    {
+      "cc": "NL",
+      "pais": "Netherlands",
+      "region": "EU",
+      "color": "#A29BFE",
+      "n": 6,
+      "pct": 0.5,
+      "lat": 52.13,
+      "lng": 5.29,
+      "journals": [
+        {
+          "journal": "Libro (North-Holland)",
+          "n": 6
+        }
+      ]
+    },
+    {
+      "cc": "SE",
+      "pais": "Sweden",
+      "region": "EU",
+      "color": "#A29BFE",
+      "n": 1,
+      "pct": 0.1,
+      "lat": 60.13,
+      "lng": 18.64,
+      "journals": [
+        {
+          "journal": "Scandinavian Journal of Economics",
+          "n": 1
+        }
+      ]
+    }
+  ],
+  "por_region": [
+    {
+      "region": "USA",
+      "n": 889,
+      "pct": 68.0,
+      "color": "#4ECDC4"
+    },
+    {
+      "region": "UK",
+      "n": 186,
+      "pct": 14.2,
+      "color": "#74B9FF"
+    },
+    {
+      "region": "LATAM",
+      "n": 99,
+      "pct": 7.6,
+      "color": "#FD79A8"
+    },
+    {
+      "region": "EU",
+      "n": 63,
+      "pct": 4.8,
+      "color": "#A29BFE"
+    },
+    {
+      "region": "INTL",
+      "n": 56,
+      "pct": 4.3,
+      "color": "#FFE66D"
+    },
+    {
+      "region": "Canada",
+      "n": 15,
+      "pct": 1.1,
+      "color": "#55EFC4"
+    }
+  ],
+  "region_colors": {
+    "USA": "#4ECDC4",
+    "UK": "#74B9FF",
+    "EU": "#A29BFE",
+    "INTL": "#FFE66D",
+    "LATAM": "#FD79A8",
+    "Canada": "#55EFC4",
+    "Other": "#7d8590"
+  }
+}

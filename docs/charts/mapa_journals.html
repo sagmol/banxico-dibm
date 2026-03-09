@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geografía del conocimiento citado — Banxico DIBM</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0d1117; color: #e6edf3; font-family: 'Inter', system-ui, sans-serif; }
+
+  .back-btn {
+    position: fixed; top: 14px; left: 14px; z-index: 9999;
+    background: rgba(13,17,23,.92); border: 1px solid #30363d;
+    color: #4ECDC4; padding: 6px 14px; border-radius: 6px;
+    font-size: 11px; font-weight: 600; text-decoration: none;
+    letter-spacing: .3px; backdrop-filter: blur(4px);
+    transition: border-color .2s;
+  }
+  .back-btn:hover { border-color: #4ECDC4; }
+
+  .page-header {
+    padding: 56px 48px 24px;
+    border-bottom: 1px solid #1e2738;
+  }
+  .page-header h1 {
+    font-size: 22px; font-weight: 800; color: #e6edf3; margin-bottom: 8px;
+  }
+  .page-header p {
+    font-size: 13px; color: #7d8590; max-width: 700px; line-height: 1.6;
+  }
+
+  .finding-banner {
+    margin: 28px 48px;
+    background: #111720; border: 1px solid #1e2738; border-radius: 12px;
+    padding: 20px 28px; display: flex; gap: 32px; flex-wrap: wrap;
+    align-items: center;
+  }
+  .stat-big { text-align: center; }
+  .stat-big .val { font-size: 36px; font-weight: 900; line-height: 1; }
+  .stat-big .lbl { font-size: 11px; color: #7d8590; margin-top: 4px; line-height: 1.4; }
+
+  .main-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 0;
+    padding: 0 48px 48px;
+  }
+  @media (max-width: 900px) {
+    .main-layout { grid-template-columns: 1fr; padding: 0 16px 32px; }
+    .page-header, .finding-banner { padding-left: 16px; padding-right: 16px; }
+    .finding-banner { margin-left: 16px; margin-right: 16px; }
+  }
+
+  .map-container { position: relative; }
+  .map-title {
+    font-size: 12px; color: #7d8590; text-transform: uppercase;
+    letter-spacing: .6px; margin: 24px 0 8px;
+  }
+  #world-map { width: 100%; display: block; }
+
+  .sidebar { padding: 24px 0 0 32px; }
+  .sidebar-section-title {
+    font-size: 11px; color: #7d8590; text-transform: uppercase;
+    letter-spacing: .6px; margin-bottom: 14px;
+  }
+
+  /* Barras región */
+  .region-bars { margin-bottom: 28px; }
+  .region-row {
+    display: flex; align-items: center; gap: 8px;
+    margin-bottom: 8px; cursor: pointer; border-radius: 4px;
+    padding: 3px 4px; transition: background .15s;
+  }
+  .region-row:hover { background: rgba(255,255,255,.04); }
+  .region-dot { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+  .region-name { font-size: 12px; color: #cdd9e5; flex: 1; }
+  .region-bar-wrap { width: 100px; background: #1e2738; border-radius: 3px; height: 8px; }
+  .region-bar-fill { height: 8px; border-radius: 3px; }
+  .region-pct { font-size: 11px; color: #7d8590; width: 36px; text-align: right; }
+
+  /* Panel detalle país */
+  #detail-panel {
+    background: #111720; border: 1px solid #1e2738; border-radius: 10px;
+    padding: 16px; display: none; margin-bottom: 20px;
+  }
+  #detail-panel h3 { font-size: 13px; font-weight: 700; margin-bottom: 10px; }
+  #detail-panel .jlist { list-style: none; }
+  #detail-panel .jlist li {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 5px 0; border-bottom: 1px solid #1e2738; font-size: 11px;
+    color: #cdd9e5;
+  }
+  #detail-panel .jlist li:last-child { border-bottom: none; }
+  #detail-panel .jlist .jn { color: #7d8590; font-weight: 600; }
+
+  /* Leyenda de regiones en mapa */
+  .map-legend {
+    position: absolute; bottom: 12px; left: 8px;
+    background: rgba(13,17,23,.88); border: 1px solid #1e2738;
+    border-radius: 8px; padding: 10px 14px; backdrop-filter: blur(4px);
+  }
+  .map-legend-title { font-size: 9px; color: #7d8590; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 6px; }
+  .map-legend-row { display: flex; align-items: center; gap: 5px; margin-bottom: 4px; font-size: 10px; color: #cdd9e5; }
+  .map-legend-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+  /* Tooltip */
+  #tt {
+    position: fixed; background: rgba(13,17,23,.96); border: 1px solid #30363d;
+    border-radius: 8px; padding: 10px 14px; font-size: 12px; pointer-events: none;
+    opacity: 0; transition: opacity .15s; z-index: 999; max-width: 260px; line-height: 1.6;
+  }
+  #tt b { color: #4ECDC4; }
+
+  .land { fill: #161b22; stroke: #21262d; stroke-width: .5; }
+  .sphere { fill: #0d1117; }
+  .graticule { fill: none; stroke: #1e2738; stroke-width: .3; }
+
+  .bubble {
+    cursor: pointer;
+    transition: opacity .2s;
+  }
+  .bubble:hover { opacity: 1 !important; }
+  .bubble.selected { stroke-width: 2px !important; }
+
+  .bubble-label {
+    pointer-events: none; font-size: 9px; font-weight: 700;
+    text-anchor: middle; dominant-baseline: middle; fill: #0d1117;
+  }
+
+  .note {
+    font-size: 11px; color: #484f58; margin: 16px 48px 0;
+    line-height: 1.6; padding-bottom: 8px;
+  }
+  @media (max-width: 900px) { .note { margin: 12px 16px 0; } }
+</style>
+</head>
+<body>
+
+<a href="../index.html" class="back-btn">← Inicio</a>
+<div id="tt"></div>
+
+<div class="page-header">
+  <h1>Geografía del conocimiento citado</h1>
+  <p>¿De dónde provienen los journals y working papers que cita el Banxico DIBM?
+  1,308 referencias con origen geográfico identificado (97% de las 1,348 con journal detectado).</p>
+</div>
+
+<div class="finding-banner" id="banner"></div>
+
+<div class="main-layout">
+  <div class="map-container">
+    <div class="map-title">Origen de las referencias · tamaño = n° de citas</div>
+    <svg id="world-map"></svg>
+    <div class="map-legend" id="map-legend"></div>
+  </div>
+
+  <div class="sidebar">
+    <div class="sidebar-section-title">Por región</div>
+    <div class="region-bars" id="region-bars"></div>
+
+    <div id="detail-panel">
+      <h3 id="detail-title"></h3>
+      <ul class="jlist" id="detail-journals"></ul>
+    </div>
+
+    <div class="sidebar-section-title" style="margin-top:8px">Nota metodológica</div>
+    <p style="font-size:11px;color:#7d8590;line-height:1.6">
+      País asignado según la institución académica o sociedad que publica el journal,
+      no el país del editor comercial. El IMF, World Bank y BIS se clasifican como
+      organizaciones internacionales (sede Washington DC / Basilea). Banxico WP = México.
+    </p>
+  </div>
+</div>
+
+<div class="note">
+  Fuente: 85 papers de inflación (JEL E3x/E5x), período 2001–2025, 1,911 referencias totales.
+  Solo se muestran referencias con journal identificado por el extractor OCR.
+</div>
+
+<script>
+const DATA_URL = "../data/journals_geo.json";
+const WORLD_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
+
+const tt = document.getElementById("tt");
+function showTT(e, html) {
+  tt.innerHTML = html;
+  tt.style.opacity = 1;
+  tt.style.left = (e.clientX + 14) + "px";
+  tt.style.top  = (e.clientY - 10) + "px";
+}
+function hideTT() { tt.style.opacity = 0; }
+
+Promise.all([
+  fetch(DATA_URL).then(r => r.json()),
+  fetch(WORLD_URL).then(r => r.json()),
+]).then(([data, world]) => {
+  const { por_pais, por_region, region_colors, total_refs, refs_mapeadas, pct_mapeadas } = data;
+
+  // ── Banner de hallazgos ────────────────────────────────────────────────────
+  const usa = por_region.find(r => r.region === "USA");
+  const latam = por_region.find(r => r.region === "LATAM");
+  const uk = por_region.find(r => r.region === "UK");
+  const intl = por_region.find(r => r.region === "INTL");
+  const bannerEl = document.getElementById("banner");
+  [
+    { val: usa.pct + "%",   lbl: "de las citas a journals<br>estadounidenses",            color: "#4ECDC4" },
+    { val: uk.pct + "%",    lbl: "a journals británicos",                                   color: "#74B9FF" },
+    { val: (intl.pct) + "%",lbl: "a org. internacionales<br>(FMI, BM, BIS)",               color: "#FFE66D" },
+    { val: latam.pct + "%", lbl: "a journals latinoamericanos<br>(Banxico WP, CEMLA, TE)",  color: "#FD79A8" },
+  ].forEach(s => {
+    bannerEl.innerHTML += `<div class="stat-big">
+      <div class="val" style="color:${s.color}">${s.val}</div>
+      <div class="lbl">${s.lbl}</div>
+    </div>`;
+  });
+
+  // ── Barras de región ───────────────────────────────────────────────────────
+  const barsEl = document.getElementById("region-bars");
+  const maxPct = d3.max(por_region, d => d.pct);
+  por_region.forEach(r => {
+    const row = document.createElement("div");
+    row.className = "region-row";
+    row.innerHTML = `
+      <div class="region-dot" style="background:${r.color}"></div>
+      <div class="region-name">${r.region}</div>
+      <div class="region-bar-wrap">
+        <div class="region-bar-fill" style="background:${r.color};width:${r.pct/maxPct*100}%"></div>
+      </div>
+      <div class="region-pct">${r.pct}%</div>`;
+    barsEl.appendChild(row);
+  });
+
+  // ── Leyenda del mapa ───────────────────────────────────────────────────────
+  const legEl = document.getElementById("map-legend");
+  legEl.innerHTML = `<div class="map-legend-title">Región</div>`;
+  por_region.forEach(r => {
+    legEl.innerHTML += `<div class="map-legend-row">
+      <div class="map-legend-dot" style="background:${r.color}"></div>
+      ${r.region}
+    </div>`;
+  });
+
+  // ── Mapa D3 ───────────────────────────────────────────────────────────────
+  const container = document.getElementById("world-map").parentElement;
+  const W = container.clientWidth || 800;
+  const H = Math.round(W * 0.5);
+  const svg = d3.select("#world-map").attr("width", W).attr("height", H);
+
+  const projection = d3.geoNaturalEarth1()
+    .scale(W / 6.5)
+    .translate([W / 2, H / 2]);
+
+  const path = d3.geoPath().projection(projection);
+
+  // Esfera / fondo
+  svg.append("path")
+    .datum({ type: "Sphere" })
+    .attr("class", "sphere")
+    .attr("d", path);
+
+  // Graticule
+  svg.append("path")
+    .datum(d3.geoGraticule()())
+    .attr("class", "graticule")
+    .attr("d", path);
+
+  // Países (base)
+  const countries = topojson.feature(world, world.objects.countries);
+  svg.append("g")
+    .selectAll(".land")
+    .data(countries.features)
+    .join("path")
+    .attr("class", "land")
+    .attr("d", path);
+
+  // Escala de burbujas
+  const rScale = d3.scaleSqrt()
+    .domain([0, d3.max(por_pais, d => d.n)])
+    .range([4, 52]);
+
+  // Ordenar: países más pequeños arriba (se pintan encima de los grandes)
+  const paisesSorted = [...por_pais].sort((a, b) => b.n - a.n);
+
+  // Burbujas
+  let selected = null;
+  const bubbles = svg.append("g").attr("class", "bubbles");
+
+  paisesSorted.forEach(p => {
+    const [lat, lng] = [p.lat, p.lng];
+    const coords = projection([lng, lat]);
+    if (!coords) return;
+    const [cx, cy] = coords;
+    const r = rScale(p.n);
+
+    const g = bubbles.append("g")
+      .attr("class", "bubble")
+      .attr("transform", `translate(${cx},${cy})`);
+
+    g.append("circle")
+      .attr("r", r)
+      .attr("fill", p.color)
+      .attr("stroke", "#0d1117")
+      .attr("stroke-width", 1)
+      .attr("opacity", 0.82);
+
+    // Etiqueta CC dentro del círculo si es grande
+    if (r > 16) {
+      g.append("text")
+        .attr("class", "bubble-label")
+        .text(p.cc);
+    }
+
+    g.on("mouseover", (e) => {
+      showTT(e, `<b>${p.pais}</b><br>
+        ${p.n} referencias (${p.pct}%)<br>
+        <span style="color:${p.color}">${p.region}</span><br>
+        <span style="color:#7d8590;font-size:10px">Click para ver journals</span>`);
+    })
+    .on("mouseout", hideTT)
+    .on("click", () => {
+      hideTT();
+      // Deselect all
+      bubbles.selectAll("circle")
+        .attr("opacity", 0.82)
+        .attr("stroke-width", 1)
+        .attr("stroke", "#0d1117");
+      // Select this
+      if (selected === p.cc) {
+        selected = null;
+        document.getElementById("detail-panel").style.display = "none";
+        return;
+      }
+      selected = p.cc;
+      g.select("circle")
+        .attr("opacity", 1)
+        .attr("stroke-width", 2.5)
+        .attr("stroke", "#e6edf3");
+
+      // Panel detalle
+      const panel = document.getElementById("detail-panel");
+      const titleEl = document.getElementById("detail-title");
+      const jlistEl = document.getElementById("detail-journals");
+      titleEl.textContent = `${p.pais} — ${p.n} refs (${p.pct}%)`;
+      titleEl.style.color = p.color;
+      jlistEl.innerHTML = "";
+      p.journals.forEach(j => {
+        jlistEl.innerHTML += `<li>
+          <span>${j.journal}</span>
+          <span class="jn">${j.n}</span>
+        </li>`;
+      });
+      panel.style.display = "block";
+      panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    });
+  });
+
+  // Resize handler
+  window.addEventListener("resize", () => {
+    const newW = container.clientWidth;
+    const newH = Math.round(newW * 0.5);
+    svg.attr("width", newW).attr("height", newH);
+    projection.scale(newW / 6.5).translate([newW / 2, newH / 2]);
+    svg.selectAll(".sphere,.graticule,.land").attr("d", path);
+    // Recalcular posiciones de burbujas
+    bubbles.selectAll("g.bubble").each(function(d, i) {
+      const p = paisesSorted[i];
+      if (!p) return;
+      const coords = projection([p.lng, p.lat]);
+      if (!coords) return;
+      d3.select(this).attr("transform", `translate(${coords[0]},${coords[1]})`);
+    });
+  });
+});
+</script>
+</body>
+</html>
