@@ -353,6 +353,16 @@
     <svg id="chart-vintage-canon" class="chart"></svg>
   </div>
 
+  <div class="chart-wrap" style="margin-top:32px">
+    <div class="chart-title">¿A qué era de literatura cita el Banxico? — desglose por período</div>
+    <div style="font-size:11px;color:#7d8590;margin-bottom:12px">
+      Cada barra = 100% de las referencias con año identificado del período.
+      El canon DSGE-NK se canonizó tan rápido que en el período reciente su peso se diluye frente a la literatura post-2010 — que también es mainstream.
+    </div>
+    <svg id="chart-vintage-eras" class="chart"></svg>
+    <div id="eras-leyenda" style="display:flex;gap:20px;margin-top:12px;flex-wrap:wrap"></div>
+  </div>
+
 </div>
 
 <!-- ═══════════════ TAB 6: PORTADORES DEL TOOLKIT ═══════════════ -->
@@ -1115,7 +1125,7 @@ function drawConceptos() {
 // ─────────────────────────────────────────────────────────────────────────────
 function drawVintage() {
   fetch("../data/citation_vintage.json").then(r => r.json()).then(data => {
-    const { overall, por_periodo, por_anio_paper, canon_quinquenal, clasicos_dsge_pct } = data;
+    const { overall, por_periodo, por_anio_paper, canon_quinquenal, clasicos_dsge_pct, eras_por_periodo } = data;
 
     // ── Cards ────────────────────────────────────────────────────────────────
     const cardsEl = document.getElementById("cards-vintage");
@@ -1254,6 +1264,101 @@ function drawVintage() {
       </div>`;
     });
     statsDiv.appendChild(table);
+
+    // ── Gráfico apilado: 3 eras por período ──────────────────────────────────
+    if (!eras_por_periodo || eras_por_periodo.length === 0) return;
+
+    const ERAS = [
+      { key: "pre95",  label: "Pre-1995",        color: "#7d8590" },
+      { key: "dsge",   label: "Era NK-DSGE (1995–2010)", color: "#4ECDC4" },
+      { key: "post10", label: "Literatura post-2010",    color: "#FFE66D" },
+    ];
+
+    const EW = Math.min(window.innerWidth - 160, 760);
+    const EH = 280;
+    const em = { top: 20, right: 24, bottom: 48, left: 52 };
+    const eiW = EW - em.left - em.right;
+    const eiH = EH - em.top - em.bottom;
+
+    const esvg = d3.select("#chart-vintage-eras").attr("width", EW).attr("height", EH);
+    const eg   = esvg.append("g").attr("transform", `translate(${em.left},${em.top})`);
+
+    // Escala X por período
+    const ex = d3.scaleBand()
+      .domain(eras_por_periodo.map(d => d.label))
+      .range([0, eiW]).padding(0.3);
+
+    // Escala Y fija 0–100
+    const ey = d3.scaleLinear().domain([0, 100]).range([eiH, 0]);
+
+    // Grid horizontal
+    eg.append("g").attr("class", "grid")
+      .call(d3.axisLeft(ey).ticks(5).tickSize(-eiW).tickFormat(""))
+      .select(".domain").remove();
+
+    // Eje 100% line
+    eg.append("line").attr("x1",0).attr("x2",eiW).attr("y1",0).attr("y2",0)
+      .attr("stroke","#30363d").attr("stroke-width",1);
+
+    // Barras apiladas
+    eras_por_periodo.forEach(periodo => {
+      let yOffset = 100; // empezamos desde arriba (100%) y bajamos
+      ERAS.forEach(era => {
+        const pct = periodo[era.key].pct;
+        const barH = eiH - ey(pct); // altura en px
+        const yTop = ey(yOffset);
+        yOffset -= pct;
+
+        const bar = eg.append("rect")
+          .attr("x", ex(periodo.label))
+          .attr("y", yTop)
+          .attr("width", ex.bandwidth())
+          .attr("height", barH)
+          .attr("fill", era.color)
+          .attr("opacity", 0.88)
+          .attr("rx", era.key === "post10" ? 3 : 0);
+
+        // Etiqueta dentro de la barra si hay espacio
+        if (pct >= 8) {
+          eg.append("text")
+            .attr("x", ex(periodo.label) + ex.bandwidth() / 2)
+            .attr("y", yTop + barH / 2 + 4)
+            .attr("text-anchor", "middle")
+            .attr("fill", era.key === "pre95" ? "#adb5bd" : "#0d1117")
+            .attr("font-size", "13px")
+            .attr("font-weight", "700")
+            .text(pct + "%");
+        }
+
+        // Tooltip
+        bar.on("mouseover", (e) => showTT(e,
+          `<b>${periodo.label}</b><br>${era.label}<br><b>${pct}%</b> de ${periodo.total} referencias`))
+          .on("mouseout", hideTT);
+      });
+
+      // Etiqueta del eje X con n de refs
+      eg.append("text")
+        .attr("x", ex(periodo.label) + ex.bandwidth() / 2)
+        .attr("y", eiH + 32)
+        .attr("text-anchor", "middle")
+        .attr("fill", "#7d8590").attr("font-size", "10px")
+        .text(`n=${periodo.total} refs`);
+    });
+
+    eg.append("g").attr("class", "axis").attr("transform", `translate(0,${eiH})`)
+      .call(d3.axisBottom(ex));
+    eg.append("g").attr("class", "axis")
+      .call(d3.axisLeft(ey).ticks(5).tickFormat(d => d + "%"));
+
+    // Leyenda
+    const leyEl = document.getElementById("eras-leyenda");
+    ERAS.forEach(era => {
+      leyEl.innerHTML += `<div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#cdd9e5">
+        <span style="width:14px;height:14px;background:${era.color};border-radius:3px;display:inline-block;opacity:.88"></span>
+        ${era.label}
+      </div>`;
+    });
+
   });
 }
 

@@ -475,5 +475,61 @@
       "pct": 36.0,
       "total": 1243
     }
-  }
+  },
+  "eras_por_periodo": [
+    {
+      "periodo": "early_IT",
+      "label": "IT consolidado (2001–08)",
+      "color": "#4ECDC4",
+      "total": 196,
+      "pre95": {
+        "n": 46,
+        "pct": 23.5
+      },
+      "dsge": {
+        "n": 150,
+        "pct": 76.5
+      },
+      "post10": {
+        "n": 0,
+        "pct": 0.0
+      }
+    },
+    {
+      "periodo": "post_crisis",
+      "label": "Post-crisis (2009–15)",
+      "color": "#FFE66D",
+      "total": 440,
+      "pre95": {
+        "n": 101,
+        "pct": 23.0
+      },
+      "dsge": {
+        "n": 304,
+        "pct": 69.1
+      },
+      "post10": {
+        "n": 35,
+        "pct": 8.0
+      }
+    },
+    {
+      "periodo": "reciente",
+      "label": "Reciente (2016–25)",
+      "color": "#A29BFE",
+      "total": 1243,
+      "pre95": {
+        "n": 152,
+        "pct": 12.2
+      },
+      "dsge": {
+        "n": 448,
+        "pct": 36.0
+      },
+      "post10": {
+        "n": 643,
+        "pct": 51.7
+      }
+    }
+  ]
 }

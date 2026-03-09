@@ -121,13 +121,36 @@ for nombre, (a, b) in PERIODOS.items():
     pct = round(n_clasicos / len(sub) * 100, 1) if len(sub) > 0 else 0
     clasicos[nombre] = {"n": n_clasicos, "pct": pct, "total": int(len(sub))}
 
+# ── Desglose 3 eras por período (para gráfico apilado) ───────────────────────
+# Era 1: pre-1995 (antes del paradigma NK-DSGE)
+# Era 2: 1995-2010 (era fundacional NK-DSGE)
+# Era 3: post-2010 (literatura reciente)
+eras_por_periodo = []
+for nombre, (a, b) in PERIODOS.items():
+    sub = valid_p[valid_p["periodo"] == nombre]
+    if len(sub) == 0: continue
+    total = len(sub)
+    n_pre95    = int((sub["anio_citado"] < 1995).sum())
+    n_dsge     = int(((sub["anio_citado"] >= 1995) & (sub["anio_citado"] <= 2010)).sum())
+    n_reciente = int((sub["anio_citado"] > 2010).sum())
+    eras_por_periodo.append({
+        "periodo": nombre,
+        "label":   PERIODO_LABELS[nombre],
+        "color":   PERIODO_COLORS[nombre],
+        "total":   total,
+        "pre95":   {"n": n_pre95,    "pct": round(n_pre95/total*100, 1)},
+        "dsge":    {"n": n_dsge,     "pct": round(n_dsge/total*100, 1)},
+        "post10":  {"n": n_reciente, "pct": round(n_reciente/total*100, 1)},
+    })
+
 # ── Output ────────────────────────────────────────────────────────────────────
 out = {
-    "overall":         overall,
-    "por_periodo":     por_periodo,
-    "por_anio_paper":  por_anio_paper,
-    "canon_quinquenal": canon,
+    "overall":           overall,
+    "por_periodo":       por_periodo,
+    "por_anio_paper":    por_anio_paper,
+    "canon_quinquenal":  canon,
     "clasicos_dsge_pct": clasicos,
+    "eras_por_periodo":  eras_por_periodo,
 }
 outpath = BASE / "docs/data/citation_vintage.json"
 json.dump(out, open(outpath, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
