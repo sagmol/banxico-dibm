@@ -1,0 +1,290 @@
+{
+  "minsky": {
+    "label": "Minsky / Hipótesis de Inestabilidad Financiera",
+    "n": 0,
+    "papers": []
+  },
+  "kalecki": {
+    "label": "Kalecki / Demanda efectiva",
+    "n": 0,
+    "papers": []
+  },
+  "dinero_endog": {
+    "label": "Dinero endógeno (Kaldor, Moore, Lavoie)",
+    "n": 1,
+    "papers": [
+      {
+        "clave": "2018-18",
+        "anio": 2018,
+        "titulo": "Fiscal Policy and Inflation: Understanding the Role of Expectations in Mexico",
+        "autores": [
+          "López-Martín Bernabé",
+          "Ramírez de Aguilar Alberto",
+          "Sámano Daniel"
+        ],
+        "snippet": "…kov model where inflation is determined by government deficits financed through <mark>money creation</mark> and by expectations dynamics. The baseline model, proposed by Sargent et al. (2…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{FEEDEC34-FD3A-9F1A-17DF-A8E2D20EEFAE}.pdf"
+      }
+    ]
+  },
+  "postkeyn": {
+    "label": "Post-keynesian (como framework)",
+    "n": 0,
+    "papers": []
+  },
+  "sfc": {
+    "label": "Stock-flow consistent / Godley / balances sect.",
+    "n": 0,
+    "papers": []
+  },
+  "thirlwall": {
+    "label": "Thirlwall / restricción externa (BOP)",
+    "n": 0,
+    "papers": []
+  },
+  "prebisch": {
+    "label": "Prebisch / CEPAL / estructuralismo latinoam.",
+    "n": 2,
+    "papers": [
+      {
+        "clave": "2006-01",
+        "anio": 2006,
+        "titulo": "Sovereign Default, Terms of Trade and Interest Rates in Emerging Markets",
+        "autores": [
+          "Cuadra Gabriel",
+          "Sapriza Horacio"
+        ],
+        "snippet": "Emerging economies tend to experience larger fluctuations in their <mark>terms of trade</mark>, countercyclical interest rates and more default episodes than developed countr…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{2426947A-D772-E109-C1D1-722EB39B6BAC}.pdf"
+      },
+      {
+        "clave": "2022-20",
+        "anio": 2022,
+        "titulo": "Foreign Currency Working Capital Constraints for Imported Inputs and Compositional Effects in Intermediate Goods",
+        "autores": [
+          "Sámano Daniel"
+        ],
+        "snippet": "…he working capital. In particular, after a domestic positive productivity shock <mark>terms of trade</mark> rise and the working capital cost exhibits a sudden increase followed by a prol…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{32EEAEC9-680A-D366-6C35-120A3DD5584D}.pdf"
+      }
+    ]
+  },
+  "infl_struct": {
+    "label": "Inflación estructural / conflicto distributivo",
+    "n": 1,
+    "papers": [
+      {
+        "clave": "1983-53",
+        "anio": 1983,
+        "titulo": "Macroeconomic Behavior of the Mexican Economy from 1961 to 1981: Alternative Specifications and Hypothesis Testing.",
+        "autores": [
+          "Ize Alain",
+          "Salas Martín del Campo Javier"
+        ],
+        "snippet": "…proceso productivo, dentro de dos corrientes; clásica monetarista y keynesiano-e<mark>structuralist</mark>a.",
+        "url": null
+      }
+    ]
+  },
+  "multiplicador": {
+    "label": "Multiplicador fiscal / crowding-in",
+    "n": 2,
+    "papers": [
+      {
+        "clave": "1996-01",
+        "anio": 1996,
+        "titulo": "Some Hypotheses Related to the Mexican 1994-95 Crisis.",
+        "autores": [
+          "Gil Díaz Francisco",
+          "Carstens Carstens Agustín"
+        ],
+        "snippet": "…central bank credit, misleading and unequal information, politically motivated <mark>fiscal stimulus</mark>, insufficient domestic savings, and what is known in the literature as the \"ove…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{71FC66A3-0CFF-4948-C75C-4B1D445A819E}.PDF"
+      },
+      {
+        "clave": "2014-15",
+        "anio": 2014,
+        "titulo": "Fiscal Multipliers in a Panel of Countries",
+        "autores": [
+          "Contreras Juan",
+          "Battelle Holly"
+        ],
+        "snippet": "We estimate <mark>fiscal multiplier</mark>s in a panel of countries using dynamic panel techniques and quarterly data for…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{98C2B193-277B-9FB3-EC58-1C0294BFB1BE}.pdf"
+      }
+    ]
+  },
+  "estanc": {
+    "label": "Estancamiento secular (Summers)",
+    "n": 0,
+    "papers": []
+  },
+  "desigualdad": {
+    "label": "Desigualdad / distribución del ingreso (Piketty)",
+    "n": 12,
+    "papers": [
+      {
+        "clave": "1998-06",
+        "anio": 1998,
+        "titulo": "The Effect of Inflation on Income Distribution.",
+        "autores": [
+          "Martínez Trigueros Lorenza"
+        ],
+        "snippet": "Este artículo analiza empíricamente el efecto de la inflación en la <mark>desigualdad</mark> económica, tanto a nivel internacional como para el caso de México.",
+        "url": null
+      },
+      {
+        "clave": "2000-04",
+        "anio": 2000,
+        "titulo": "Regional Inequality in Mexico. The Effect of NAFTA and Other Structural Reforms.",
+        "autores": [
+          "Messmacher Linartas Miguel"
+        ],
+        "snippet": "…o de Libre Comercio de América del Norte (TLCAN) han llevado a un aumento en la <mark>desigualdad</mark> regional en México.",
+        "url": null
+      },
+      {
+        "clave": "2010-18",
+        "anio": 2010,
+        "titulo": "The Great Leap Forward: The Political Economy of Education in Brazil, 1889-1930",
+        "autores": [
+          "Martínez André",
+          "Viarengo Martina",
+          "Musacchio Aldo"
+        ],
+        "snippet": "Recent research links the <mark>inequality</mark> across countries and regions to colonial institutions. This paper argues that t…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{D4428D24-1233-BB56-FE1B-E157D26B9FDD}.pdf"
+      },
+      {
+        "clave": "2014-05",
+        "anio": 2014,
+        "titulo": "Peer Effects Identified Through Social Networks: Evidence from Uruguayan Schools",
+        "autores": [
+          "de Melo Gioia"
+        ],
+        "snippet": "…en función del barrio de residencia, los efectos de pares pueden amplificar las <mark>desigualdad</mark>es educativas.",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{221B913F-CB7A-945B-D5E8-47B3C30687ED}.pdf"
+      },
+      {
+        "clave": "2015-04",
+        "anio": 2015,
+        "titulo": "Aggregate Effects of a Universal Social Insurance Fiscal Reform",
+        "autores": [
+          "Antón Arturo",
+          "Leal-Ordoñez Julio C."
+        ],
+        "snippet": "…mployees increase relative to the earnings of formal employees, which decreases <mark>inequality</mark>. However, the reform could affect some groups in the population, given the regr…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{55B3CEFB-3C58-D0E8-B0B2-1B91AEB910EC}.pdf"
+      },
+      {
+        "clave": "2018-02",
+        "anio": 2018,
+        "titulo": "Ethnic and Racial Disparities in Saving Behavior",
+        "autores": [
+          "Dal Borgo Mariela"
+        ],
+        "snippet": "…and education explain most of the active saving gaps. This implies that wealth <mark>inequality</mark> is not attributable to differences in the distributions of active saving rates…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{C6DA7FDC-C774-D061-0894-CAA06CCC2E31}.pdf"
+      },
+      {
+        "clave": "2019-21",
+        "anio": 2019,
+        "titulo": "Women's Empowerment: Aggregate Effects on Savings and Wealth",
+        "autores": [
+          "San Vicente Portes Luis",
+          "Atal Vidya",
+          "Juárez-Torres Miriam"
+        ],
+        "snippet": "…g consumption and, in turn, this higher level of savings tends to reduce wealth <mark>inequality</mark>. Also, regardless of income, women's preferences increase food intake in househ…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{40021822-8750-F0E7-D568-EC29735771C0}.pdf"
+      },
+      {
+        "clave": "2020-01",
+        "anio": 2020,
+        "titulo": "Forecast Comparison of the Term Structure of Interest Rates of Mexico for Different Specifications of the Affine Model",
+        "autores": [
+          "Lelo de Larrea Alejandra"
+        ],
+        "snippet": "…g consumption and, in turn, this higher level of savings tends to reduce wealth <mark>inequality</mark>. Also, regardless of income, women's preferences increase food intake in househ…",
+        "url": null
+      },
+      {
+        "clave": "2022-14",
+        "anio": 2022,
+        "titulo": "Inequality, Income Dynamics, and Transitions of Mexican Workers",
+        "autores": [
+          "Puggioni Daniela",
+          "Calderón Mariana",
+          "Cebreros Alfonso",
+          "Fernández León"
+        ],
+        "snippet": "…is latter source of information is inadequate to fully capture the evolution of <mark>inequality</mark> and the properties of earnings changes. We also study the impact of transitions…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{A8247DAD-AE6B-D225-1914-2A8B9300516F}.pdf"
+      },
+      {
+        "clave": "2022-03",
+        "anio": 2022,
+        "titulo": "Intra-household Resource Shares under Poverty Transfers: Evidence from Ecuador",
+        "autores": [
+          "Casco José L."
+        ],
+        "snippet": "…y los niños. Utilizando datos de Ecuador, se encuentra que existen importantes <mark>desigualdad</mark>es intrafamiliares, pero que las transferencias inducen una redistribución de re…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{49F106BD-B934-43D0-FB52-4CAA54704F5C}.pdf"
+      },
+      {
+        "clave": "2023-12",
+        "anio": 2023,
+        "titulo": "COVID-19, Crises and Women's Control of Resources: Evidence from Mexico",
+        "autores": [
+          "Casco José L."
+        ],
+        "snippet": "…e results of this paper highlight the heterogeneous behavior of intra-household <mark>inequality</mark> and women's bargaining power over the business cycle. It also suggests that the…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{506F26BA-8832-3D1D-9E86-70B65E737672}.pdf"
+      },
+      {
+        "clave": "2024-01",
+        "anio": 2024,
+        "titulo": "Attached once, attached forever: The persistent effects of concertaje in Ecuador",
+        "autores": [
+          "Alex Rivadeneira"
+        ],
+        "snippet": "…levels, reduced public goods provision, increased agricultural employment, and <mark>inequality</mark>. Concertaje also limited mobility, although its effect on immigrants is milder,…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{06CFB3B2-91BF-B71A-33E3-4A301088B8D6}.pdf"
+      }
+    ]
+  },
+  "genero": {
+    "label": "Perspectiva de género en macroeconomía",
+    "n": 2,
+    "papers": [
+      {
+        "clave": "2014-04",
+        "anio": 2014,
+        "titulo": "Predictive Inference on Finite Populations Segmented in Planned and Unplanned Domains",
+        "autores": [
+          "Martínez-Ovando Juan Carlos",
+          "Olivares-Guzmán Sergio I.",
+          "Roldán-Rodríguez Adriana"
+        ],
+        "snippet": "…, we develop a simulation exercise and evaluate the uncertainty surrounding the <mark>gender wage</mark> gap in Mexico. En este trabajo, desarrollamos un nuevo método basado en modelos…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{A75ED2FE-EE73-1BBC-7132-0EB14EA91D3D}.pdf"
+      },
+      {
+        "clave": "2023-07",
+        "anio": 2023,
+        "titulo": "Identifying Gender Disparities on the Time to Repay Microfinance Group Loans: Evidence from Mexico",
+        "autores": [
+          "Bátiz-Zuk Enrique",
+          "González-Holden Alexa"
+        ],
+        "snippet": "…efault rates that gradually reduced afterward. Our study identified a potential <mark>gender gap</mark> that has been understudied in the literature. En este documento se investiga có…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{060A76F7-FD34-729C-6498-B5A09ABACC97}.pdf"
+      }
+    ]
+  },
+  "financializ": {
+    "label": "Financialización",
+    "n": 0,
+    "papers": []
+  }
+}
