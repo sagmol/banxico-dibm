@@ -880,46 +880,27 @@ function drawMinsky() {
       bgRect.attr("fill","rgba(78,205,196,.06)");
 
       // Construir panel
-      const info = debateData[d.key] || { label: d.termino, n: d.n, papers: [] };
+      const info = debateData[d.key] || { label: d.termino, n: d.n, papers: [], proxy_papers: [] };
 
       const debateEntry = ausentes.find(a => a.key === d.key) || {};
-      const proxyTxt = debateEntry.proxy && debateEntry.proxy !== "AUSENTE"
-        ? `<p style="font-size:12px;color:#FFE66D;margin-top:8px;line-height:1.5">
-            El Banxico discute esta problemática vía <strong>${debateEntry.proxy}</strong>, no desde el marco heterodoxo original.
-           </p>` : "";
-      if (info.n === 0) {
-        panel.innerHTML = `
-          <div style="font-size:13px;font-weight:700;color:#FF6B6B;margin-bottom:8px">
-            ${info.label}
-          </div>
-          <p style="font-size:13px;color:#7d8590;line-height:1.6">
-            El marco heterodoxo de referencia (<em>${debateEntry.het_ref || ""}</em>) no aparece en ninguno de los 562 abstracts del corpus DIBM (1978–2025).
-          </p>${proxyTxt}`;
-      } else {
-        const color = d.n >= 10 ? "#A29BFE" : d.n >= 3 ? "#FFE66D" : "#FF6B6B";
-        const debEntryPos = ausentes.find(a => a.key === d.key) || {};
-        let html = `
-          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;flex-wrap:wrap;gap:8px">
-            <span style="font-size:13px;font-weight:700;color:${color}">${info.label}</span>
-            <span style="font-size:11px;color:#7d8590">${info.n} paper${info.n>1?"s":""} · clic en título para abrir PDF</span>
-          </div>
-          ${debEntryPos.proxy && debEntryPos.proxy !== "AUSENTE" ? `<p style="font-size:11px;color:#7d8590;margin-bottom:12px;line-height:1.5">Marco heterodoxo ausente: <em style="color:#cdd9e5">${debEntryPos.het_ref||""}</em>. El corpus discute esto vía <span style="color:#FFE66D">${debEntryPos.proxy}</span>.</p>` : ""}`;
+      const hasProxy    = debateEntry.proxy && debateEntry.proxy !== "AUSENTE";
+      const proxyPapers = info.proxy_papers || [];
 
-        info.papers.forEach(p => {
+      // Helper: renders an ordered list of papers
+      function buildPaperListHTML(papersArr, accentColor) {
+        let h = "";
+        papersArr.forEach(p => {
           const titEl = p.url
             ? `<a href="${p.url}" target="_blank" style="color:#74B9FF;font-weight:600;text-decoration:none;font-size:12px" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">${p.titulo}</a>`
             : `<span style="color:#cdd9e5;font-weight:600;font-size:12px">${p.titulo}</span>`;
-
-          const autoresStr = p.autores.slice(0,3).join(", ") + (p.autores.length > 3 ? " et al." : "");
-
+          const autoresStr = (p.autores || []).slice(0,3).join(", ") + ((p.autores||[]).length > 3 ? " et al." : "");
           const snippetHtml = p.snippet
             ? `<div style="font-size:11px;color:#7d8590;margin-top:5px;line-height:1.5;background:#161b22;border-radius:4px;padding:6px 10px">${p.snippet}</div>`
             : "";
-
-          html += `
+          h += `
             <div style="border-top:1px solid #1e2738;padding:12px 0">
               <div style="display:flex;gap:10px;align-items:flex-start">
-                <span style="font-size:12px;font-weight:700;color:${color};min-width:38px;padding-top:1px">${p.anio}</span>
+                <span style="font-size:12px;font-weight:700;color:${accentColor};min-width:38px;padding-top:1px">${p.anio}</span>
                 <div style="flex:1">
                   ${titEl}
                   <div style="font-size:11px;color:#7d8590;margin-top:3px">${autoresStr}</div>
@@ -928,6 +909,48 @@ function drawMinsky() {
               </div>
             </div>`;
         });
+        return h;
+      }
+
+      // Section header for proxy papers
+      function proxySection(proxyLabel, papersArr) {
+        if (!papersArr || papersArr.length === 0) return "";
+        return `
+          <div style="margin-top:16px;padding-top:12px;border-top:2px solid #1e2738">
+            <div style="font-size:11px;font-weight:700;color:#FFE66D;margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em">
+              Papers del corpus — vía ${proxyLabel} (${papersArr.length})
+            </div>
+            <p style="font-size:11px;color:#7d8590;margin-bottom:8px;line-height:1.5">
+              El corpus no aborda este debate desde el marco heterodoxo, pero los siguientes papers lo discuten a través del proxy ortodoxo.
+            </p>
+            ${buildPaperListHTML(papersArr, "#FFE66D")}
+          </div>`;
+      }
+
+      if (info.n === 0) {
+        const proxyTxt = hasProxy
+          ? `<p style="font-size:12px;color:#FFE66D;margin-top:8px;line-height:1.5">
+              El Banxico discute esta problemática vía <strong>${debateEntry.proxy}</strong>, no desde el marco heterodoxo original.
+             </p>` : "";
+        panel.innerHTML = `
+          <div style="font-size:13px;font-weight:700;color:#FF6B6B;margin-bottom:8px">
+            ${info.label}
+          </div>
+          <p style="font-size:13px;color:#7d8590;line-height:1.6">
+            El marco heterodoxo de referencia (<em>${debateEntry.het_ref || ""}</em>) no aparece en ninguno de los 562 abstracts del corpus DIBM (1978–2025).
+          </p>${proxyTxt}${proxySection(debateEntry.proxy || "proxy NK", proxyPapers)}`;
+      } else {
+        const color = d.n >= 10 ? "#A29BFE" : d.n >= 3 ? "#FFE66D" : "#FF6B6B";
+        const debEntryPos = ausentes.find(a => a.key === d.key) || {};
+        let html = `
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;flex-wrap:wrap;gap:8px">
+            <span style="font-size:13px;font-weight:700;color:${color}">${info.label}</span>
+            <span style="font-size:11px;color:#7d8590">${info.n} paper${info.n>1?"s":""} — clic en título para abrir PDF</span>
+          </div>
+          ${debEntryPos.proxy && debEntryPos.proxy !== "AUSENTE" ? `<p style="font-size:11px;color:#7d8590;margin-bottom:12px;line-height:1.5">Marco heterodoxo ausente: <em style="color:#cdd9e5">${debEntryPos.het_ref||""}</em>. El corpus discute esto vía <span style="color:#FFE66D">${debEntryPos.proxy}</span>.</p>` : ""}`;
+
+        html += buildPaperListHTML(info.papers, color);
+        html += proxySection(debEntryPos.proxy || "proxy NK", proxyPapers);
         panel.innerHTML = html;
       }
 

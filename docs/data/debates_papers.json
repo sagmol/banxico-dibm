@@ -16,7 +16,29 @@
     "n": 0,
     "papers": [],
     "het_ref": "Kaldor, Moore, Lavoie, MMT",
-    "proxy": "Regla de Taylor / endogeneidad DSGE"
+    "proxy": "Regla de Taylor / endogeneidad DSGE",
+    "proxy_papers": [
+      {
+        "clave": "2002-11",
+        "anio": 2002,
+        "titulo": "Analyzing Interest Rates in Mexico with the Monetary Policy Rules Methodology.",
+        "autores": [
+          "Torres García Alberto"
+        ],
+        "snippet": "Analyzing Interest Rates in Mexico with the <mark>Monetary Policy Rule</mark>s Methodology.",
+        "url": null
+      },
+      {
+        "clave": "2011-17",
+        "anio": 2011,
+        "titulo": "In the Quest of Macroprudential Policy Tools",
+        "autores": [
+          "Sámano Daniel"
+        ],
+        "snippet": "…namely, a capital adequacy ratio rule in combination with a <mark>Taylor rule</mark> may provide a better macroeconomic outcome than a Taylor ru…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{0B176CCE-94A5-E031-6FD1-F645382991A3}.pdf"
+      }
+    ]
   },
   "postkeyn": {
     "label": "Post-keynesian (como framework)",
@@ -33,7 +55,53 @@
     "n": 0,
     "papers": [],
     "het_ref": "Thirlwall, CEPAL — ley de Thirlwall",
-    "proxy": "Modelos crisis cambiaria 1a/2a/3a gen."
+    "proxy": "Modelos crisis cambiaria 1a/2a/3a gen.",
+    "proxy_papers": [
+      {
+        "clave": "2014-17",
+        "anio": 2014,
+        "titulo": "Heading into Trouble: A Comparison of the Latin American Crises and the Euro Area's Current Crisis",
+        "autores": [
+          "Ramos Francia Manuel",
+          "Aguilar-Argaez Ana María",
+          "García-Verdú Santiago",
+          "Cuadra Gabriel"
+        ],
+        "snippet": "…ief conditional on the reduction of both the fiscal and the <mark>current account deficit</mark>s to zero as a commitment signal.",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{91749083-7CEC-5E84-3A85-B1105078353A}.pdf"
+      },
+      {
+        "clave": "2017-18",
+        "anio": 2017,
+        "titulo": "Are all types of capital flows driven by the same factors? Evidence from Mexico",
+        "autores": [
+          "Ibarra-Ramírez Raúl",
+          "Téllez León Elizabeth"
+        ],
+        "snippet": "… on each component of the financial account for the Mexican <mark>Balance of Payments</mark> at the highest degree of disaggregation, including investme…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{52282EFF-5C37-6642-DB8F-F17CF8EF3501}.pdf"
+      },
+      {
+        "clave": "2017-02",
+        "anio": 2017,
+        "titulo": "Portfolio Investment Response to U.S. Monetary Policy Announcements: An Event Study Analysis Using High Frequency Data from Mexico",
+        "autores": [
+          "Hernández Vega Marco A."
+        ],
+        "snippet": "…. A novel dataset on daily debt and equity flows, that maps <mark>Balance of Payments</mark> data quite well, allows this paper to provide a better insi…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{09E05D6A-D1AD-840D-04AE-6636A4CC8E08}.pdf"
+      },
+      {
+        "clave": "2018-04",
+        "anio": 2018,
+        "titulo": "Financial openness, policy vs. realized outcomes",
+        "autores": [
+          "Bush Georgia"
+        ],
+        "snippet": "This paper examines how the 1990s <mark>capital account</mark> liberalization policy trend affected international capital …",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{E6211554-F65D-A00A-BF0C-D54CCF10B58B}.pdf"
+      }
+    ]
   },
   "prebisch": {
     "label": "Centro-periferia / Heterogeneidad estructural (CEPAL)",
@@ -273,35 +341,1045 @@
     "n": 0,
     "papers": [],
     "het_ref": "Sraffa, Joan Robinson, Fabio Petri",
-    "proxy": "Estructura temporal de tasas"
+    "proxy": "Estructura temporal de tasas",
+    "proxy_papers": [
+      {
+        "clave": "1995-08",
+        "anio": 1995,
+        "titulo": "Rational Expectations Theory on the Term Structure of Interest Rates and the Value of the Option to Postpone Investment.",
+        "autores": [
+          "Sod Hoffs Gabriel"
+        ],
+        "snippet": "Rational Expectations Theory on the <mark>Term Structure</mark> of Interest Rates and the Value of the Option to Postpone I…",
+        "url": null
+      },
+      {
+        "clave": "2002-03",
+        "anio": 2002,
+        "titulo": "What Information Does the Term Structure of Interest Rates in Mexico Reveal About Futures Spot Rates?.",
+        "autores": [
+          "Castellanos Pascacio Sara Gabriela",
+          "Camero Eduardo"
+        ],
+        "snippet": "What Information Does the <mark>Term Structure</mark> of Interest Rates in Mexico Reveal About Futures Spot Rates…",
+        "url": null
+      },
+      {
+        "clave": "2008-09",
+        "anio": 2008,
+        "titulo": "An Affine Model of the Term Structure of Interest Rates in Mexico",
+        "autores": [
+          "Cortés Espada Josué Fernando",
+          "Ramos Francia Manuel"
+        ],
+        "snippet": "…mate an affine model that characterizes the dynamics of the <mark>term structure</mark> of interest rates in Mexico. Moreover, we provide empirical…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{CE85CA0E-7153-9526-7D70-A284BCF4CCD8}.pdf"
+      },
+      {
+        "clave": "2008-15",
+        "anio": 2008,
+        "titulo": "The Yield Curve and its Relation with Economic Activity: The Mexican Case.",
+        "autores": [
+          "Reyna Cerecero Mario",
+          "Salazar Cavazos Diana",
+          "Salgado Banda Héctor"
+        ],
+        "snippet": "…ignificant number of papers that show that the slope of the <mark>yield curve</mark> has a certain ability to forecast real economic activity an…",
+        "url": null
+      },
+      {
+        "clave": "2008-10",
+        "anio": 2008,
+        "titulo": "A Macroeconomic Model of the Term Structure of Interest Rates in Mexico.",
+        "autores": [
+          "Cortés Espada Josué Fernando",
+          "Ramos Francia Manuel"
+        ],
+        "snippet": "…p a model that combines a no-arbitrage specification of the <mark>term structure</mark> with a macroeconomic model of a small open economy. We find…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{84B3C8E5-5628-D7A4-6E90-B14935AF971D}.pdf"
+      },
+      {
+        "clave": "2008-07",
+        "anio": 2008,
+        "titulo": "An Empirical Analysis of the Mexican Term Structure of Interest Rates.",
+        "autores": [
+          "Cortés Espada Josué Fernando",
+          "Ramos Francia Manuel",
+          "Torres García Alberto"
+        ],
+        "snippet": "…the common factors that have influenced the behavior of the <mark>yield curve</mark>. We find that term-premia in government bonds appear to be …",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{75174744-AD9A-5560-2CAF-9470DD5385A4}.pdf"
+      },
+      {
+        "clave": "2010-08",
+        "anio": 2010,
+        "titulo": "Equilibrium yield curves under regime switching",
+        "autores": [
+          "García-Verdú Santiago"
+        ],
+        "snippet": "Equilibrium <mark>yield curve</mark>s under regime switching",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{A526F639-94D4-0752-058E-D75330EA1039}.pdf"
+      },
+      {
+        "clave": "2011-18",
+        "anio": 2011,
+        "titulo": "On the Term Structure of Interest Rates of the Mexican Government.",
+        "autores": [
+          "García-Verdú Santiago"
+        ],
+        "snippet": "This paper, first, reviews briefly the literature on the <mark>term structure</mark> of interest rates, citing some of the most important studie…",
+        "url": null
+      },
+      {
+        "clave": "2013-03",
+        "anio": 2013,
+        "titulo": "Forecasting the Term Structure of Interest Rates in Mexico Using an Affine Model",
+        "autores": [
+          "Elizondo Rocío"
+        ],
+        "snippet": "…ion of no arbitrage enables improvements in forecasting the <mark>term structure</mark> of interest rates in Mexico. The three factors of the yield…",
+        "url": null
+      },
+      {
+        "clave": "2016-22",
+        "anio": 2016,
+        "titulo": "Break-Even-Inflation's Decomposition in Mexico",
+        "autores": [
+          "Aguilar-Argaez Ana María",
+          "Elizondo Rocío",
+          "Roldán-Peña Jessica"
+        ],
+        "snippet": "…ary risk premium, which are estimated by means of an affine <mark>term structure</mark> model of interest rates. The results show that the gradual …",
+        "url": null
+      },
+      {
+        "clave": "2020-18",
+        "anio": 2020,
+        "titulo": "Term Premium Dynamics and its Determinants: The Mexican Case",
+        "autores": [
+          "Aguilar-Argaez Ana María",
+          "Diego-Fernández Forseck María",
+          "Elizondo Rocío",
+          "Roldán-Peña Jessica"
+        ],
+        "snippet": "We estimate the <mark>term premium</mark> implicit in 10-year Mexican government bonds from 2004 to 2…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{11F86B0B-E404-9E0B-4115-F596040A9D05}.pdf"
+      },
+      {
+        "clave": "2020-01",
+        "anio": 2020,
+        "titulo": "Forecast Comparison of the Term Structure of Interest Rates of Mexico for Different Specifications of the Affine Model",
+        "autores": [
+          "Lelo de Larrea Alejandra"
+        ],
+        "snippet": "…n and no arbitrage conditions are estimated for the Mexican <mark>Term Structure</mark> of Interest Rates, contrasting their empirical properties a…",
+        "url": null
+      },
+      {
+        "clave": "2021-07",
+        "anio": 2021,
+        "titulo": "The Yield Curve as a Predictor of Economic Activity in Mexico: The Role of the Term Premium",
+        "autores": [
+          "Ibarra-Ramírez Raúl"
+        ],
+        "snippet": "…hether there exists a relationship between the slope of the <mark>yield curve</mark> and future economic activity in Mexico for the period 2004-…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{659B78B1-8C51-8CC4-BFB3-2AD1B3FE9E6B}.pdf"
+      },
+      {
+        "clave": "2023-13",
+        "anio": 2023,
+        "titulo": "The Three Intelligible Factors of the Yield Curve in Mexico",
+        "autores": [
+          "Elizondo Rocío"
+        ],
+        "snippet": "… estimates for México the three intelligible factors of the <mark>yield curve</mark> considered in Lengwiler and Lenz (2010), for the period 200…",
+        "url": null
+      },
+      {
+        "clave": "2023-03",
+        "anio": 2023,
+        "titulo": "Effects of the Extraordinary Measures Implemented by Banco de México during the COVID-19 Pandemic on Financial Conditions",
+        "autores": [
+          "Alba Carlos",
+          "Cuadra Gabriel",
+          "Ibarra Raúl"
+        ],
+        "snippet": "…remium, the 10-year government bond yield, the slope of the <mark>yield curve</mark>, the long and short-term <mark>yield spread</mark>s between Mexico and U…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{8BED375A-B4B2-A80E-5CDE-C59B9B3E96F5}.pdf"
+      }
+    ]
   },
   "conflict_infl": {
     "label": "Inflación por conflicto (conflict inflation)",
     "n": 0,
     "papers": [],
     "het_ref": "Rowthorn, Lavoie — conflict inflation",
-    "proxy": "Curva de Phillips NK"
+    "proxy": "Curva de Phillips NK",
+    "proxy_papers": [
+      {
+        "clave": "2000-06",
+        "anio": 2000,
+        "titulo": "Inflation Expectations, Country Risk, and Monetary Policy in Mexico.",
+        "autores": [
+          "Schwartz Rosenthal Moisés",
+          "Torres García Alberto"
+        ],
+        "snippet": "<mark>Inflation Expectations</mark>, Country Risk, and Monetary Policy in Mexico.",
+        "url": null
+      },
+      {
+        "clave": "2003-03",
+        "anio": 2003,
+        "titulo": "Explaining and Forecasting Inflation in Emerging Markets: The Mexican Case.",
+        "autores": [
+          "Bailliu Jeannine",
+          "Kruger Mark",
+          "Messmacher Linartas Miguel",
+          "Garcés Díaz Daniel"
+        ],
+        "snippet": "…983-2001. Estos modelos son el margen sobre costo marginal (<mark>markup</mark>), la curva de Phillips clásica aumentada con tipo de cambio…",
+        "url": null
+      },
+      {
+        "clave": "2006-15",
+        "anio": 2006,
+        "titulo": "Inflation Dynamics in Mexico: A Characterization Using the New Phillips Curve.",
+        "autores": [
+          "Ramos Francia Manuel",
+          "Torres García Alberto"
+        ],
+        "snippet": "…tion in the Mexican economy from 1992 to 2006 using the New <mark>Phillips curve</mark> framework. The purpose is to identify key structural charac…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{2F779A17-41A7-9CA8-64C5-73DC5C89A915}.pdf"
+      },
+      {
+        "clave": "2006-07",
+        "anio": 2006,
+        "titulo": "Disagreement and Biases in Inflation Expectations",
+        "autores": [
+          "Timmermann Allan",
+          "Capistrán Carlos"
+        ],
+        "snippet": "Recent empirical work documents substantial disagreement in <mark>inflation expectations</mark> obtained from survey data. Furthermore, the extent of such …",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{AD69963E-BB8D-5F96-39F2-5E188DBE12C3}.pdf"
+      },
+      {
+        "clave": "2006-06",
+        "anio": 2006,
+        "titulo": "Structural Changes in the Transmission Mechanism of Monetary Policy in Mexico: A Non-linear VAR Approach",
+        "autores": [
+          "Gaytán González Alejandro",
+          "González García Jesús R."
+        ],
+        "snippet": "…effects on the process of price formation, the formation of <mark>inflation expectations</mark> and the nominal interest rate; c) also, there have been str…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{3A97C646-D306-A482-1543-79CC88BF65C1}.pdf"
+      },
+      {
+        "clave": "2007-11",
+        "anio": 2007,
+        "titulo": "Does Inflation Targeting Affect the Dispersion of Inflation Expectations?",
+        "autores": [
+          "Capistrán Carlos",
+          "Ramos Francia Manuel"
+        ],
+        "snippet": "… the last 16 years. We find that the dispersion of long-run <mark>inflation expectations</mark> is lower in targeting regimes after controlling for country…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{F13DF580-CEB2-9EAD-D604-C4EB69267FB9}.pdf"
+      },
+      {
+        "clave": "2008-09",
+        "anio": 2008,
+        "titulo": "An Affine Model of the Term Structure of Interest Rates in Mexico",
+        "autores": [
+          "Cortés Espada Josué Fernando",
+          "Ramos Francia Manuel"
+        ],
+        "snippet": "… the yield curve are associated with movements in long-term <mark>inflation expectations</mark>, while movements in the slope of the curve are associated w…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{CE85CA0E-7153-9526-7D70-A284BCF4CCD8}.pdf"
+      },
+      {
+        "clave": "2008-07",
+        "anio": 2008,
+        "titulo": "An Empirical Analysis of the Mexican Term Structure of Interest Rates.",
+        "autores": [
+          "Cortés Espada Josué Fernando",
+          "Ramos Francia Manuel",
+          "Torres García Alberto"
+        ],
+        "snippet": "… factor is positively correlated with measures of long-term <mark>inflation expectations</mark> and that the slope factor is negatively correlated with the…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{75174744-AD9A-5560-2CAF-9470DD5385A4}.pdf"
+      },
+      {
+        "clave": "2010-09",
+        "anio": 2010,
+        "titulo": "Consumer Price Behavior in Mexico Under Inflation Targeting: A Microdata Approach",
+        "autores": [
+          "Ysusi Carla"
+        ],
+        "snippet": "…e Index microdata set to characterize the rigidities of the <mark>price setting</mark> process in the different sectors of the Mexican economy. Th…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{7558CB81-0547-7CE6-A45A-C7886D85ADD2}.pdf"
+      },
+      {
+        "clave": "2012-13",
+        "anio": 2012,
+        "titulo": "Testing the Predictive Power of Mexican Consumers' Inflation Expectations",
+        "autores": [
+          "Murillo Garza José Antonio",
+          "Sánchez-Romeu Paula"
+        ],
+        "snippet": "This paper introduces an indicator of consumers' <mark>inflation expectations</mark> based on data from the National Consumer Confidence Survey …",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{58AB8995-2089-2B80-1417-F5CE4AEAE6FD}.pdf"
+      },
+      {
+        "clave": "2012-06",
+        "anio": 2012,
+        "titulo": "The Evolution of Inflation Expectations in Mexico.",
+        "autores": [
+          "García-Verdú Santiago"
+        ],
+        "snippet": "…der an event-study framework the respond of upside risks of <mark>inflation expectations</mark> to the approval of the Income Law is analyzed. The results …",
+        "url": null
+      },
+      {
+        "clave": "2013-13",
+        "anio": 2013,
+        "titulo": "Production Factors, Productivity Dynamics and Quality Gains as Determinants of Healthcare Spending Growth in U.S. Hospitals",
+        "autores": [
+          "Contreras Juan",
+          "Patel Elena",
+          "Tristao Ignez"
+        ],
+        "snippet": "…y) contributed 25 %. We find increasing returns to scale, a <mark>markup</mark> of between 15% and 36% and a much larger productivity dispe…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{FBC4BC37-22F5-7A5B-AF90-E4DA6D064518}.pdf"
+      },
+      {
+        "clave": "2013-19",
+        "anio": 2013,
+        "titulo": "Endogenous Wage Indexation and Aggregate Shocks",
+        "autores": [
+          "Carrillo Julio A.",
+          "Peersman Gert",
+          "Wauters Joris"
+        ],
+        "snippet": "…ver, most DSGE models assume fixed indexation parameters in <mark>wage setting</mark>, which might not be structural in the sense of Lucas (1976)…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{F773D8EC-94B8-DB41-40DA-5080157CBA0D}.pdf"
+      },
+      {
+        "clave": "2014-20",
+        "anio": 2014,
+        "titulo": "Anchoring of Inflation Expectations in Light of Adverse Supply Shocks",
+        "autores": [
+          "Aguilar-Argaez Ana María",
+          "Cuadra Gabriel",
+          "Ramírez Claudia",
+          "Sámano Daniel"
+        ],
+        "snippet": "…n, it shows empirical evidence in favor of the anchoring of <mark>inflation expectations</mark>, particularly those for the medium and long term, being rec…",
+        "url": null
+      },
+      {
+        "clave": "2016-13",
+        "anio": 2016,
+        "titulo": "Price-Setting and Exchange Rate Pass-Through in the Mexican Economy: Evidence from CPI Micro Data",
+        "autores": [
+          "Kochen Federico",
+          "Sámano Daniel"
+        ],
+        "snippet": "…cial attention as it allows us to evaluate the anchoring of <mark>inflation expectations</mark> in the Mexican economy. To address this issue, in this pape…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{D03AD593-5FDF-AB9D-A240-D30918611135}.pdf"
+      },
+      {
+        "clave": "2018-18",
+        "anio": 2018,
+        "titulo": "Fiscal Policy and Inflation: Understanding the Role of Expectations in Mexico",
+        "autores": [
+          "López-Martín Bernabé",
+          "Ramírez de Aguilar Alberto",
+          "Sámano Daniel"
+        ],
+        "snippet": "…ansitory shocks to fiscal deficits, and the de-anchoring of <mark>inflation expectations</mark>. The estimated sequence of monetized deficits provides an a…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{FEEDEC34-FD3A-9F1A-17DF-A8E2D20EEFAE}.pdf"
+      },
+      {
+        "clave": "2018-21",
+        "anio": 2018,
+        "titulo": "Inflation Dynamics under Fiscal Deficit Regime Switching in Mexico",
+        "autores": [
+          "Ramos Francia Manuel",
+          "García-Verdú Santiago",
+          "Sánchez-Martínez Manuel"
+        ],
+        "snippet": "We explore the dynamics of inflation, <mark>inflation expectations</mark>, and seigniorage-financed fiscal deficits in Mexico. To do …",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{76B320EC-AE79-2072-8CA6-6CAB169222BE}.pdf"
+      },
+      {
+        "clave": "2019-14",
+        "anio": 2019,
+        "titulo": "Productivity, Markups, and Trade: Evidence from Mexican Manufacturing Industries",
+        "autores": [
+          "Puggioni Daniela"
+        ],
+        "snippet": "…stimate production function coefficients, obtain firm-level <mark>markup</mark> estimates, and evaluate the impact of the trade liberalizat…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{DA1655D7-174B-F56C-C47B-A69EC11751AD}.pdf"
+      },
+      {
+        "clave": "2020-15",
+        "anio": 2020,
+        "titulo": "Competition and Coordination in the Mexican Retail Market for Gasoline",
+        "autores": [
+          "Contreras Astiazarán Benjamín",
+          "Leal Vizcaíno René",
+          "Mosqueda Jordán",
+          "Salcedo Alejandrina"
+        ],
+        "snippet": "… in the form of a higher density of stations, implies lower <mark>markup</mark>s and lower prices; and (3) more competition implies faster …",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{C3F5360B-39DC-6710-05F3-BC8042F81E7E}.pdf"
+      },
+      {
+        "clave": "2022-17",
+        "anio": 2022,
+        "titulo": "Optimal Robust Monetary Policy in a Small Open Economy",
+        "autores": [
+          "André Marine Charlotte",
+          "Medina Espidio Sebastián"
+        ],
+        "snippet": "…low exchange rate pass-through. The importance of anchoring <mark>inflation expectations</mark> is highlighted.",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{A5D08446-3A02-F3E2-8D50-64289BE06A94}.pdf"
+      }
+    ]
   },
   "salario_min": {
     "label": "Debate salario mínimo / efectos distribución",
     "n": 0,
     "papers": [],
     "het_ref": "Card & Krueger, economía institucional / monopsonio",
-    "proxy": "Mercado de trabajo competitivo, efectos sobre empleo"
+    "proxy": "Mercado de trabajo competitivo, efectos sobre empleo",
+    "proxy_papers": [
+      {
+        "clave": "2004-03",
+        "anio": 2004,
+        "titulo": "Wage Rigidities in Mexico: Evidence from the Administrative Records of the Mexican Social Security Institute (Instituto Mexicano del Seguro Social).",
+        "autores": [
+          "Castellanos Pascacio Sara Gabriela",
+          "García Verdú Rodrigo",
+          "Kaplan David"
+        ],
+        "snippet": "…agnitude of downward nominal wage rigidities in the Mexican <mark>labor market</mark>. We use data from the administration records of the Institu…",
+        "url": null
+      },
+      {
+        "clave": "2006-03",
+        "anio": 2006,
+        "titulo": "Changes in the Composition of Employment and Productivity in the Formal Sector of the Mexican Economy.",
+        "autores": [
+          "Alcaraz Carlo",
+          "García Verdú Rodrigo"
+        ],
+        "snippet": "The formal Mexican <mark>labor market</mark> has shown important changes in the last five years: the emp…",
+        "url": null
+      },
+      {
+        "clave": "2008-06",
+        "anio": 2008,
+        "titulo": "Intersectoral Wage Differentials and the Change of the Composition of Urban Employment in Mexico during 2001-2004.",
+        "autores": [
+          "Alcaraz Carlo",
+          "Chiquiar Daniel",
+          "Ramos Francia Manuel"
+        ],
+        "snippet": "…sults also suggest that the main distortions in the Mexican <mark>labor market</mark> seem to be related more with labor regulations that affect …",
+        "url": null
+      },
+      {
+        "clave": "2015-22",
+        "anio": 2015,
+        "titulo": "The Blighted Youth: The Impact of Recessions and Policies on Life-Cycle Unemployment",
+        "autores": [
+          "López-Martín Bernabé",
+          "Takayama Naoki"
+        ],
+        "snippet": "We construct a theoretical model of <mark>labor market</mark>s with human capital accumulation to understand and quantify…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{044287BF-117E-9474-39E6-5447148B7044}.pdf"
+      },
+      {
+        "clave": "2015-25",
+        "anio": 2015,
+        "titulo": "Informality and Segmentation in the Mexican Labor Market",
+        "autores": [
+          "Alcaraz Carlo",
+          "Chiquiar Daniel",
+          "Salcedo Alejandrina"
+        ],
+        "snippet": "… suggests that these two situations may coexist in the same <mark>labor market</mark>. In this paper we identify the proportion of informal worke…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{CBC21739-0FAA-227E-235A-4BDE2C6D04BD}.pdf"
+      },
+      {
+        "clave": "2015-04",
+        "anio": 2015,
+        "titulo": "Aggregate Effects of a Universal Social Insurance Fiscal Reform",
+        "autores": [
+          "Antón Arturo",
+          "Leal-Ordoñez Julio C."
+        ],
+        "snippet": "… transferencias, el ingreso de los trabajadores informales (<mark>salario m</mark>ás transferencias) se incrementa en relación con los ingreso…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{55B3CEFB-3C58-D0E8-B0B2-1B91AEB910EC}.pdf"
+      },
+      {
+        "clave": "2016-23",
+        "anio": 2016,
+        "titulo": "Downward Wage Rigidities in the Mexican Labor Market 1996-2011",
+        "autores": [
+          "Juárez González Laura",
+          "Casarín de la Cabada Daniel"
+        ],
+        "snippet": "Downward Wage Rigidities in the Mexican <mark>Labor Market</mark> 1996-2011",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{028B8CE4-E738-95E9-445D-13C50A2F2322}.pdf"
+      },
+      {
+        "clave": "2016-05",
+        "anio": 2016,
+        "titulo": "Measuring and Understanding Trade in Service Tasks",
+        "autores": [
+          "Yslas Renato",
+          "Tobal Martín",
+          "Chiquiar Daniel"
+        ],
+        "snippet": "…easures of service tradability and to better understand the <mark>labor market</mark> implications of service offshoring. Indeed, recent literatu…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{DD04B82F-404D-7602-B91C-FC6EE8639EA9}.pdf"
+      },
+      {
+        "clave": "2017-01",
+        "anio": 2017,
+        "titulo": "Labor market consequences of trade openness and competition in foreign markets",
+        "autores": [
+          "Chiquiar Daniel",
+          "Covarrubias Enrique",
+          "Salcedo Alejandrina"
+        ],
+        "snippet": "We analyze the <mark>labor market</mark> consequences of international trade, using the evidence pro…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{EC38A50D-E60F-3FDE-BB37-CAFD8643B922}.pdf"
+      },
+      {
+        "clave": "2018-19",
+        "anio": 2018,
+        "titulo": "Informality, Labor Regulation, and the Business Cycle",
+        "autores": [
+          "Leyva Gustavo",
+          "Urrutia Carlos"
+        ],
+        "snippet": "…e a small open economy business cycle model with frictional <mark>labor market</mark>s, labor regulation, and an informal sector, modeled as self…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{69E6A77D-98DA-66E7-9947-A9B0D4B76D8D}.pdf"
+      },
+      {
+        "clave": "2019-13",
+        "anio": 2019,
+        "titulo": "Minimum Wages in Formal and Informal Sectors: Evidence from an Inflation Shock in Colombia",
+        "autores": [
+          "Pérez Pérez Jorge"
+        ],
+        "snippet": "I estimate the effect of a real <mark>minimum wage</mark> increase on formal and informal wages, and employment in Co…",
+        "url": null
+      },
+      {
+        "clave": "2020-09",
+        "anio": 2020,
+        "titulo": "The NAIRU and Informality in the Mexican Labor Market",
+        "autores": [
+          "Aguilar-Argaez Ana María",
+          "Alcaraz Carlo",
+          "Ramírez Claudia",
+          "Rodríguez-Pérez Cid Alonso"
+        ],
+        "snippet": "…ion. We find that both measures of NAIRU and the associated <mark>labor market</mark> slack indicators follow similar patterns over time. However…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{3A87E896-2A89-269F-2A0F-FF673267AF75}.pdf"
+      },
+      {
+        "clave": "2020-05",
+        "anio": 2020,
+        "titulo": "The Efficacy of Hiring Credits in Distressed Areas",
+        "autores": [
+          "Pérez Pérez Jorge",
+          "Suher Michael"
+        ],
+        "snippet": "… efficacy of hiring tax credits, particularly in distressed <mark>labor market</mark>s. These types of programs have proven hard to assess as the…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{E0C300B6-73CD-D57C-036B-8A1F2BDA4DC1}.pdf"
+      },
+      {
+        "clave": "2020-04",
+        "anio": 2020,
+        "titulo": "Automation Technologies and Employment at Risk: The Case of Mexico",
+        "autores": [
+          "Cebreros Alfonso",
+          "Heffner-Rodríguez Aldo",
+          "Livas René",
+          "Puggioni Daniela"
+        ],
+        "snippet": "…ment for the threat that automation may pose to the Mexican <mark>labor market</mark>. We find that almost two thirds of total employment is at h…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{2C07FC41-A983-957C-33FE-27A09DF133C6}.pdf"
+      },
+      {
+        "clave": "2021-19",
+        "anio": 2021,
+        "titulo": "The Impact of the Capture of Leaders of Criminal Organizations on the Labor Market: Evidence from Mexico",
+        "autores": [
+          "Osuna Gómez Daniel"
+        ],
+        "snippet": "… of the capture of leaders of criminal organizations on the <mark>labor market</mark> in municipalities where these organizations operated betwee…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{DCA4702D-D8BE-8F58-B92E-696B3E931D5C}.pdf"
+      },
+      {
+        "clave": "2021-22",
+        "anio": 2021,
+        "titulo": "Effects of Trade and Technology on the Mexican Labor Market",
+        "autores": [
+          "López Noria Gabriela"
+        ],
+        "snippet": "…s the effects of trade and technological change on Mexico's <mark>labor market</mark> between 1994 and 2019. The implications of the exposure of …",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{FE5F557C-DAF1-9E92-0ACA-0312D6BFF8C1}.pdf"
+      },
+      {
+        "clave": "2021-21",
+        "anio": 2021,
+        "titulo": "Informal Labor Markets in Times of Pandemic: Evidence for Latin America and Policy Options",
+        "autores": [
+          "Leyva Gustavo",
+          "Urrutia Carlos"
+        ],
+        "snippet": "We document the evolution of <mark>labor market</mark>s of five Latin American countries during the COVID-19 pande…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{761B0E25-321A-1216-8467-C2982B404685}.pdf"
+      },
+      {
+        "clave": "2021-15",
+        "anio": 2021,
+        "titulo": "How High (Low) are the Possibilities of Teleworking in Mexico?",
+        "autores": [
+          "Leyva Gustavo",
+          "Mora Israel"
+        ],
+        "snippet": "…iman (2020) using teleworking criteria devised for the U.S. <mark>labor market</mark>. Owing to the peculiarities of the Mexican <mark>labor market</mark>, we…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{91EA818C-B43E-CFE1-525E-404FBF508EA7}.pdf"
+      },
+      {
+        "clave": "2022-13",
+        "anio": 2022,
+        "titulo": "Disentangling the Effects of Large Minimum Wage and VAT Changes on Prices: Evidence from Mexico",
+        "autores": [
+          "Calderón Cerbón Mariana",
+          "Cortés Espada Josué Fernando",
+          "Pérez Pérez Jorge",
+          "Salcedo Alejandrina"
+        ],
+        "snippet": "In January 2019, the authorities increased the <mark>minimum wage</mark> and decreased the value-added tax (VAT) in an effort to boo…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{6054F4FE-1365-56AF-AAFF-DE5A371B05A9}.pdf"
+      },
+      {
+        "clave": "2022-11",
+        "anio": 2022,
+        "titulo": "Internal Migration and Drug Violence in Mexico",
+        "autores": [
+          "Aldeco Leo Lorenzo Rodrigo",
+          "Jurado Jose A.",
+          "Ramírez-Álvarez Aurora A."
+        ],
+        "snippet": "… that net migration of skilled workers decreases into local <mark>labor market</mark>s where homicide rates increased after 2007, suggesting work…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{E1680F86-7806-09EF-76B9-AD187924E072}.pdf"
+      }
+    ]
   },
   "instab_fin": {
     "label": "Inestabilidad financiera",
     "n": 0,
     "papers": [],
     "het_ref": "Minsky, Kindleberger",
-    "proxy": "Acelerador financiero (Bernanke-Gertler-Gilchrist)"
+    "proxy": "Acelerador financiero (Bernanke-Gertler-Gilchrist)",
+    "proxy_papers": [
+      {
+        "clave": "1995-09",
+        "anio": 1995,
+        "titulo": "Systemic Risk and Financial System Regulation.",
+        "autores": [
+          "Naranjo González Mauricio"
+        ],
+        "snippet": "<mark>Systemic Risk</mark> and Financial System Regulation.",
+        "url": null
+      },
+      {
+        "clave": "2007-06",
+        "anio": 2007,
+        "titulo": "The Financial Accelerator from a Business Cycle Accounting Perspective.",
+        "autores": [
+          "Antón Sarabia Arturo"
+        ],
+        "snippet": "…er, Gertler, Gilchrist and Natalucci (2006) report that the <mark>financial accelerator</mark> mechanism may account for about half of the fall in output …",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{F8B429DD-48F1-E17B-E0B6-703C94492D6D}.pdf"
+      },
+      {
+        "clave": "2011-17",
+        "anio": 2011,
+        "titulo": "In the Quest of Macroprudential Policy Tools",
+        "autores": [
+          "Sámano Daniel"
+        ],
+        "snippet": "…rudential instruments in order to prevent the occurrence of <mark>systemic risk</mark> episodes. For this reason testing the effectiveness of diff…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{0B176CCE-94A5-E031-6FD1-F645382991A3}.pdf"
+      },
+      {
+        "clave": "2012-16",
+        "anio": 2012,
+        "titulo": "Default Risk and Economic Activity: A Small Open Economy Model with Sovereign Debt and Default",
+        "autores": [
+          "Roldán-Peña Jessica"
+        ],
+        "snippet": "…evelops a general equilibrium small open economy model with <mark>financial friction</mark>s that allows to simultaneously examine the behavior of outp…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{BFB8016E-A088-B8F1-A9CE-7497BF499430}.pdf"
+      },
+      {
+        "clave": "2012-07",
+        "anio": 2012,
+        "titulo": "An Empirical Study of the Mexican Banking System's Network and its Implications for Systemic Risk",
+        "autores": [
+          "Martínez-Jaramillo Serafín",
+          "Alexandrova-Kabadjova Biliana",
+          "Bravo-Benítez Bernardo",
+          "Solórzano-Margain Juan Pablo"
+        ],
+        "snippet": "With the purpose of measuring and monitoring <mark>systemic risk</mark>, some topological properties of the interbank exposures and…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{6F3814F3-68C3-58DF-CCB9-B9903016C408}.pdf"
+      },
+      {
+        "clave": "2014-01",
+        "anio": 2014,
+        "titulo": "Investigating the Zero Lower Bound on the Nominal Interest Rate Under Financial Instability",
+        "autores": [
+          "Carrillo Julio A.",
+          "Poilly Céline"
+        ],
+        "snippet": "…ound. Further, a recessionary shock to the net worth or the <mark>credit spread</mark> generates a positive response for loans, which is counter-i…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{D9A9C28F-3CFE-EF36-411F-F2885FB62EFA}.pdf"
+      },
+      {
+        "clave": "2015-17",
+        "anio": 2015,
+        "titulo": "Estimation of a Financial Conditions Index for Mexico",
+        "autores": [
+          "Armendáriz Villarreal Thelma",
+          "Ramírez Claudia"
+        ],
+        "snippet": "A tool that has been widely used to identify the state of <mark>financial conditions</mark> in a country are the <mark>financial conditions</mark> indexes, since th…",
+        "url": null
+      },
+      {
+        "clave": "2016-12",
+        "anio": 2016,
+        "titulo": "Functional Systemic Risk, Complementarities and Early Warnings",
+        "autores": [
+          "Cañón Salazar Carlos Iván",
+          "Gallón Santiago",
+          "Olivar Santiago"
+        ],
+        "snippet": "This paper proposes a <mark>systemic risk</mark> index based on Functional Data Analysis (FDA), overcoming s…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{E1994FF8-7D6A-5B13-20CE-085E3EED4E22}.pdf"
+      },
+      {
+        "clave": "2017-15",
+        "anio": 2017,
+        "titulo": "The International Bank Lending Channel of Monetary Policy Rates and QE: Credit Supply, Reach-for-Yield, and Real Effects",
+        "autores": [
+          "Ruiz Claudia",
+          "Roldán-Peña Jessica",
+          "Peydró José-Luis",
+          "Morais Bernardo"
+        ],
+        "snippet": "We identify the international <mark>credit channel</mark> of monetary policy by analyzing the universe of corporate l…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{E633510C-7916-0D76-8D1E-7FAA43BC4892}.pdf"
+      },
+      {
+        "clave": "2017-10",
+        "anio": 2017,
+        "titulo": "Tight Money-Tight Credit: Coordination Failure in the Conduct of Monetary and Financial Policies",
+        "autores": [
+          "Carrillo Julio A.",
+          "Mendoza Enrique G.",
+          "Nuguer Victoria",
+          "Roldán-Peña Jessica"
+        ],
+        "snippet": "… produce higher welfare than a monetary rule augmented with <mark>credit spread</mark>s. The latter yields a tight money-tight credit regime in wh…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{03A0F152-7EFC-1696-9A69-2CC086D15C7F}.pdf"
+      },
+      {
+        "clave": "2018-14",
+        "anio": 2018,
+        "titulo": "Finance and Employment Formalization: Evidence from Mexico's ENIGH, 2000-2016",
+        "autores": [
+          "Bazdresch Santiago"
+        ],
+        "snippet": "…strained formal employees that turn into entrepreneurs when <mark>financial conditions</mark> improve. Descriptive statistics on formality, as well as re…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{9110FF71-F561-7B72-D7F9-D1EB5FE6A2F0}.pdf"
+      },
+      {
+        "clave": "2021-20",
+        "anio": 2021,
+        "titulo": "Financial Frictions in Mexico: Evidence from the Credit Spread and its Components",
+        "autores": [
+          "Carabarín Aguirre Mauricio",
+          "Peláez Gómez Carlos D."
+        ],
+        "snippet": "…onomic activity in Mexico by constructing and decomposing a <mark>credit spread</mark> index from bonds issued by non-financial corporations in do…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{F7DAA9C4-61B3-18A7-1550-D392F2F3E7DE}.pdf"
+      },
+      {
+        "clave": "2021-23",
+        "anio": 2021,
+        "titulo": "The COVID-19 Economic Crisis in Mexico through the Lens of a Financial Conditions Index",
+        "autores": [
+          "Carrillo Julio A.",
+          "García Ana Laura"
+        ],
+        "snippet": "…t of an emerging market economy. Accordingly, we estimate a <mark>financial conditions</mark> index for Mexico since 1993 and find that the acute turmoil…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{65CEB19A-B4EF-F2E3-73E0-4E23480F8236}.pdf"
+      },
+      {
+        "clave": "2021-26",
+        "anio": 2021,
+        "titulo": "Revisiting the link between systemic risk and competition based on network theory and interbank exposures",
+        "autores": [
+          "Bátiz-Zuk Enrique",
+          "Lara Sánchez José Luis"
+        ],
+        "snippet": "…rward in analyzing the relationship between competition and <mark>systemic risk</mark>. We use counterfactual bank-level contagion risk indicators…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{93F9E5C1-5AF0-6404-44E6-4C036D92CB2A}.pdf"
+      },
+      {
+        "clave": "2021-01",
+        "anio": 2021,
+        "titulo": "Should monetary policy lean against the wind in a small-open economy? Revisiting the Tinbergen rule",
+        "autores": [
+          "De la Peña Rogelio"
+        ],
+        "snippet": "…open economy DSGE model with the Bernanke-Gertler-Gilchrist <mark>financial accelerator</mark> that features <mark>financial friction</mark>s and monopolistic competit…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{3D8B16FD-A7BD-5C3F-A10B-AFC6D2CF45D7}.pdf"
+      },
+      {
+        "clave": "2023-08",
+        "anio": 2023,
+        "titulo": "Growth at Risk and Uncertainty: Evidence from Mexico",
+        "autores": [
+          "Salgado Alfredo",
+          "Trujillo Alejandro"
+        ],
+        "snippet": "…tes. These results remain robust to alternative measures of <mark>financial conditions</mark>, of economic policy uncertainty, and of risk exposure, as w…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{95BC2EA4-4E45-DC31-5752-9AEFBE0C6147}.pdf"
+      },
+      {
+        "clave": "2023-03",
+        "anio": 2023,
+        "titulo": "Effects of the Extraordinary Measures Implemented by Banco de México during the COVID-19 Pandemic on Financial Conditions",
+        "autores": [
+          "Alba Carlos",
+          "Cuadra Gabriel",
+          "Ibarra Raúl"
+        ],
+        "snippet": "…ented by the Bank of Mexico during the COVID-19 pandemic on <mark>financial conditions</mark>. For this purpose, we estimate a factor-augmented vector au…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{8BED375A-B4B2-A80E-5CDE-C59B9B3E96F5}.pdf"
+      },
+      {
+        "clave": "2024-14",
+        "anio": 2024,
+        "titulo": "Information Effects of US Monetary Policy Announcements on Emerging Economies: Evidence from Mexico",
+        "autores": [
+          "Carlos Alba",
+          "Julio A. Carrillo",
+          "Raúl Ibarra"
+        ],
+        "snippet": "…ositive information shocks from the US central bank improve <mark>financial conditions</mark> in Mexico, appreciate the peso/dollar exchange rate, lower …",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{18C4774B-EC5E-6F7B-2E2B-47C546261C3B}.pdf"
+      },
+      {
+        "clave": "2025-12",
+        "anio": 2025,
+        "titulo": "The Balance Sheet Channel of Fiscal Policy: Sovereign Exposure and Credit to Firms in the European Periphery",
+        "autores": [
+          "Alberto Montagnoli",
+          "Miroslava Quiroga-Trevino",
+          "Christoph Thoenissen"
+        ],
+        "snippet": "This paper provides empirical evidence on the <mark>balance sheet channel</mark> of fiscal policy in peripheral European economies. Our find…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{3AC95C66-A9B4-FB32-B590-07637FC2E803}.pdf"
+      }
+    ]
   },
   "dem_efectiva": {
     "label": "Demanda efectiva / gestión de la demanda",
     "n": 0,
     "papers": [],
     "het_ref": "Kalecki, Keynes original, Lerner",
-    "proxy": "Brecha del producto (output gap) en modelos NK"
+    "proxy": "Brecha del producto (output gap) en modelos NK",
+    "proxy_papers": [
+      {
+        "clave": "2006-06",
+        "anio": 2006,
+        "titulo": "Structural Changes in the Transmission Mechanism of Monetary Policy in Mexico: A Non-linear VAR Approach",
+        "autores": [
+          "Gaytán González Alejandro",
+          "González García Jesús R."
+        ],
+        "snippet": "… reactions of the nominal interest rate to increases in the <mark>output gap</mark> and the rate of inflation; and d) the movements of the nomi…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{3A97C646-D306-A482-1543-79CC88BF65C1}.pdf"
+      },
+      {
+        "clave": "2008-10",
+        "anio": 2008,
+        "titulo": "A Macroeconomic Model of the Term Structure of Interest Rates in Mexico.",
+        "autores": [
+          "Cortés Espada Josué Fernando",
+          "Ramos Francia Manuel"
+        ],
+        "snippet": "…cted future short rates and in risk premia. With respect to <mark>demand shock</mark>s, our results show that a positive shock leads to an upward…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{84B3C8E5-5628-D7A4-6E90-B14935AF971D}.pdf"
+      },
+      {
+        "clave": "2011-18",
+        "anio": 2011,
+        "titulo": "On the Term Structure of Interest Rates of the Mexican Government.",
+        "autores": [
+          "García-Verdú Santiago"
+        ],
+        "snippet": "…conomic variables, specifically the short-term rate and the <mark>output gap</mark> as measured with the IGAE index. Regarding this last point,…",
+        "url": null
+      },
+      {
+        "clave": "2013-11",
+        "anio": 2013,
+        "titulo": "Adjustment Strategies in Response to Supply and Demand Shocks: Evidence from a Mexican Firms Survey",
+        "autores": [
+          "Sánchez-Romeu Paula",
+          "Rattia-Lima Ernesto"
+        ],
+        "snippet": "…nt strategies used by some Mexican firms to face supply and <mark>demand shock</mark>s. The information is provided by a survey carried out in 20…",
+        "url": null
+      },
+      {
+        "clave": "2013-19",
+        "anio": 2013,
+        "titulo": "Endogenous Wage Indexation and Aggregate Shocks",
+        "autores": [
+          "Carrillo Julio A.",
+          "Peersman Gert",
+          "Wauters Joris"
+        ],
+        "snippet": "…ent inflation-target shocks drive output fluctuations; when <mark>aggregate demand</mark> shocks do, workers index to trend-inflation. In addition, w…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{F773D8EC-94B8-DB41-40DA-5080157CBA0D}.pdf"
+      },
+      {
+        "clave": "2017-06",
+        "anio": 2017,
+        "titulo": "Mortgage Default in an Estimated Model of the U.S. Housing Market",
+        "autores": [
+          "Lambertini Luisa",
+          "Nuguer Victoria",
+          "Uysal Pinar"
+        ],
+        "snippet": "…he Great Recession: the mortgage risk shock and the housing <mark>demand shock</mark>. Next we use our estimated model to evaluate a policy that …",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{DED453A7-7538-F562-D198-410CA5466C63}.pdf"
+      },
+      {
+        "clave": "2020-12",
+        "anio": 2020,
+        "titulo": "The limits to robust monetary policy in a small open economy with learning agents",
+        "autores": [
+          "André Marine Charlotte",
+          "Dai Meixing"
+        ],
+        "snippet": "…rade-off for the central bank, i.e., stabilizing inflation (<mark>output gap</mark>) today or stabilizing it tomorrow. The central bank should …",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{516231E5-728A-C649-8178-2279E3B74BAE}.pdf"
+      },
+      {
+        "clave": "2022-15",
+        "anio": 2022,
+        "titulo": "The Influence of Global Inflation on Emerging Market Economies' Inflation",
+        "autores": [
+          "Arango-Castillo Lenin",
+          "Orraca María José",
+          "Molina Martínez G. Stefano"
+        ],
+        "snippet": "…potential stems from its correlation with commodity prices, <mark>output gap</mark> and global financial volatility, but also from the addition…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{06F3DA8D-EE46-4BF5-EF7B-1E2E60F1CBEA}.pdf"
+      },
+      {
+        "clave": "2023-21",
+        "anio": 2023,
+        "titulo": "The Influence of Central Bank's Projections and Economic Narrative on Professional Forecasters' Expectations: Evidence from Mexico",
+        "autores": [
+          "Antón Sarabia Arturo",
+          "Bazdresch Santiago",
+          "Lelo-de-Larrea Alejandra"
+        ],
+        "snippet": "…ive signals related to monetary policy, observed inflation, <mark>aggregate demand</mark>, and inflation and employment projections stand out as the …",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{B8AB126E-466C-6506-17E3-F8CBDCEA7830}.pdf"
+      },
+      {
+        "clave": "2023-18",
+        "anio": 2023,
+        "titulo": "Grab a Bite? Prices in the food away from home industry during the COVID-19 pandemic",
+        "autores": [
+          "Solórzano Diego"
+        ],
+        "snippet": "The pandemic generated heterogeneous <mark>demand shock</mark>s in the food away from home industry's consumption channels…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{5342553C-BCC6-6082-4609-AFD0FA18E6C7}.pdf"
+      },
+      {
+        "clave": "2023-14",
+        "anio": 2023,
+        "titulo": "Monetary Rules, Financial Stability and Welfare in a non-Ricardian Framework",
+        "autores": [
+          "Adame Espinosa Francisco"
+        ],
+        "snippet": "… which fluctuations in household financial wealth influence <mark>aggregate demand</mark>. The optimal monetary policy, corresponding to that of a ce…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{033E4587-A8FB-24D5-CBE2-78EACAA9751B}.pdf"
+      },
+      {
+        "clave": "2023-10",
+        "anio": 2023,
+        "titulo": "Effects of Supply, Demand, and Labor Market Shocks in the Mexican Manufacturing Sector",
+        "autores": [
+          "Colunga L. Fernando",
+          "Torre Cepeda Leonardo"
+        ],
+        "snippet": "This paper analyzes the contribution of supply and <mark>demand shock</mark>s, and labor market shocks, to the evolution of regional pro…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{B062314B-476D-ED64-D38C-D1802C15EE01}.pdf"
+      },
+      {
+        "clave": "2025-14",
+        "anio": 2025,
+        "titulo": "An estimation of the Phillips curve in Mexico using city-level data",
+        "autores": [
+          "Lorenzo Aldeco Leo",
+          "Horacio Reyes Rocha"
+        ],
+        "snippet": "…ion at the city-quarter level is addressed with local labor <mark>demand shock</mark> instruments. We find a statistically significant Phillips c…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{11BCE906-D341-F01C-B04E-D02847C77ACF}.pdf"
+      },
+      {
+        "clave": "2025-04",
+        "anio": 2025,
+        "titulo": "California Gasoline Demand Elasticity Estimated Using Refinery Outages",
+        "autores": [
+          "Armando R. Colina",
+          "Bulat Gafarov",
+          "Jens Hilscher"
+        ],
+        "snippet": "…egulations. The estimating equation controls for persistent <mark>demand shock</mark>s, leading to a lower bound for the long-run elasticity of d…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{217674A4-C97F-BD7F-8A3D-D83B495B2153}.pdf"
+      },
+      {
+        "clave": "2025-06",
+        "anio": 2025,
+        "titulo": "Windfalls for All? International Elasticities and Dutch Disease in a Commodity Exporting Economy",
+        "autores": [
+          "Mauricio Stern"
+        ],
+        "snippet": "…ositive copper price changes resulting from copper-specific <mark>demand shock</mark>s generate a broad GDP expansion, with no visible decline in…",
+        "url": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/{7BC3B0A3-A43C-24D1-4DBF-BFB262EF5F68}.pdf"
+      }
+    ]
   },
   "mmt": {
     "label": "Dinero soberano / MMT",
