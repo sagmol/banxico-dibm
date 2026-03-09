@@ -1134,7 +1134,7 @@ function drawConceptos() {
 // ─────────────────────────────────────────────────────────────────────────────
 function drawVintage() {
   fetch("../data/citation_vintage.json").then(r => r.json()).then(data => {
-    const { overall, por_periodo, por_anio_paper, canon_quinquenal, clasicos_dsge_pct, eras_por_periodo } = data;
+    const { overall, por_periodo, por_anio_paper, canon_quinquenal, clasicos_dsge_pct, eras_por_periodo, top_journals_post10 } = data;
 
     // ── Cards ────────────────────────────────────────────────────────────────
     const cardsEl = document.getElementById("cards-vintage");
